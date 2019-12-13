@@ -266,16 +266,12 @@ Max Bender
 	display: block;
 	padding: 5px 10px 10px 10px;
 	text-align: center;
-
-	/* Only show 2 rows on desktop?? */
-	overflow: hidden;
-	max-height: 180px;
 }
 
 .logosOfLabor img {
 	width: 100%;
 	max-width: 1000px;
-	opacity: 60%;
+	opacity: 50%;
 }
 
 .backToTop {
