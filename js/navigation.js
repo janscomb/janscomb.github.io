@@ -34,20 +34,18 @@ $(document).ready(function () {
 	      	  width: "60px"
       	  });
 	    }
-	});
 
+	    //Back to Top - Scrolling
+	    if ($(window).scrollTop() > 160) {
+	        $(".backToTop").fadeIn( "slow", function() {
+	        });
+	    }
+	    //Back to Top - At Top
+	    if ($(window).scrollTop() < 160) {
+	        $(".backToTop").fadeOut( "slow", function() {
+	        });
+	    }
 
-	//Back to Top - Scrolling
-	$(window).scroll(function () {
-	  if ($(window).scrollTop() > 160) {
-	      $(".backToTop").fadeIn( "slow", function() {
-	      });
-	  }
-	  //Back to Top - At Top
-	  if ($(window).scrollTop() < 160) {
-	      $(".backToTop").fadeOut( "slow", function() {
-	      });
-	  }
 	});
 	
 
