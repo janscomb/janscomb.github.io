@@ -35,17 +35,18 @@ $(document).ready(function () {
       	  });
 	    }
 
+
 	    //Back to Top - Scrolling
 	    if ($(window).scrollTop() > 160) {
 	        $(".backToTop").fadeIn( "slow", function() {
 	        });
 	    }
+	    
 	    //Back to Top - At Top
 	    if ($(window).scrollTop() < 160) {
 	        $(".backToTop").fadeOut( "slow", function() {
 	        });
 	    }
-
 	});
 	
 
