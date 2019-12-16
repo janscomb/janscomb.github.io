@@ -257,7 +257,7 @@ Max Bender
 }
 
 .fluorMobile img {
-	width: 97%;
+	width: 100%;
 }
 
 .logosOfLabor {
@@ -410,7 +410,8 @@ textarea {
 
 
 
-/* Mobile Conditions */
+/*************** Mobile Conditions ********************/
+
 @media screen and (max-width: 961px) {
 
   .contentContainer {
@@ -503,6 +504,14 @@ textarea {
 	input[type=submit], .customSubmit {
 		width: 90%;
 		-webkit-appearance: none;
+	}
+
+	.fluorMobile {
+	top: -38px;
+	}
+
+	.fluorMobile img {
+		width: 96%;
 	}
 
 
