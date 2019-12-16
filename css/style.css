@@ -270,8 +270,15 @@ Max Bender
 
 .logosOfLabor img {
 	width: 100%;
-	max-width: 1000px;
 	opacity: 50%;
+}
+
+.mobileLogos {
+	display: none;
+}
+
+.desktopLogos {
+	display: block;
 }
 
 .backToTop {
@@ -412,7 +419,7 @@ textarea {
 
 /*************** Mobile Conditions ********************/
 
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 701px) {
 
   .contentContainer {
 	padding: 0px 35px;
@@ -431,7 +438,17 @@ textarea {
   .imageLabel {
   	display: none;
 	/* padding: 10px 20px 10px 35px; */
-}
+  }
+
+  .mobileLogos {
+	display: block;
+  }
+
+  .desktopLogos {
+  	display: none;
+  }
+
+
 
   /* Mobile Navigation */
 
