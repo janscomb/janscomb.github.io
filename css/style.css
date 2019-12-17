@@ -264,7 +264,7 @@ Max Bender
 	margin: 0px 0px 60px 0px;
 	background: #f7f8f9;
 	display: block;
-	padding: 5px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
 	text-align: center;
 }
 
@@ -446,6 +446,10 @@ textarea {
 
   .desktopLogos {
   	display: none;
+  }
+
+  .logosOfLabor {
+	padding: 5px 10px 10px 10px;
   }
 
 
