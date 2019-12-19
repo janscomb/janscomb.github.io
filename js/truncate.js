@@ -1,6 +1,6 @@
 function Truncate(obj) {
 	this.className = obj.className;
-	this.char = obj.char || 150;
+	this.char = obj.char || 280;
 	this.numOfTruncateBy = obj.numOfTruncateBy || 3;
 	this.truncateBy = obj.truncateBy || ".";
 	let paragraphTag = document.getElementsByClassName(this.className); 
