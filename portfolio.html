@@ -106,7 +106,7 @@
 		<div class="columnContainer">
 
 			<!-- Left -->
-			<div class="flex flex-1">
+			<div class="flex flex-1 portfolioContent">
 			<h3>Target: Prescription Kiosk</h3>
 
 			<a href="resources/JeffreyAnscomb-2019 - HighRes.pdf" target="_blank" class="imgBtn-Port">
@@ -476,6 +476,7 @@
 
 
 <script type="text/javascript" src="js/navigation.js"></script>
+<script type="text/javascript" src="js/truncate.js"></script>
 
 <script>
     $(document).ready(function () {
@@ -514,6 +515,11 @@
 				});
 			});
 	      });
+	});
+
+    //Truncate Portfolio
+	Truncate({
+		className : "portfolioContent"
 	});
 </script>
 
