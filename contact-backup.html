@@ -107,25 +107,27 @@
 
 		<br clear="all" />
 
-		<form action="https://formspree.io/mqkewano" method="POST">
+		<form method="post" action="contactengine.php">
 
-		  <label for="Name"><span class="ast">*</span> Name:</label><br />
-		  <input type="text" name="name" class="textBox">
-		  
-		  <p>
-		  <label for="Email"><span class="ast">*</span> Email:</label><br />
-		  <input type="email" name="_replyto" class="textBox">
-		  </p>
-		  
-		  <br clear="all" />
+			<div class="ContactForm">
 
-		  <label for="Message"><span class="ast">*</span> Message:</label><br />
-		  <textarea name="message" rows="10" cols="20" class="textBox"></textarea>
+			<label for="Name"><span class="ast">*</span> Name:</label><br />
+			<input type="text" name="Name" id="Name" class="textBox" />
 
-		  <br clear="all" />
+			<p>
+			<label for="Email"><span class="ast">*</span> Email:</label><br />
+			<input type="text" name="Email" id="Email" class="textBox" />
+			</p>
 
-		  <input type="submit" value="Submit" class="submit-button">
-		
+			<br clear="all" />
+			
+			<label for="Message"><span class="ast">*</span> Message:</label><br />
+			<textarea name="Message" rows="10" cols="20" id="Message" class="textBox"></textarea>
+
+			<br clear="all" />
+
+			<input type="submit" name="submit" value="Submit" class="submit-button"  data-wrapper-class="customSubmit" />
+
 		</form>
 
 		<br clear="all" />
