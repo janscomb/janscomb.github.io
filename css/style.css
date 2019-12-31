@@ -215,15 +215,6 @@ h3 {
 	font-weight: 500;
 }
 
-.portfolioImage /* Sawyer Bengtson */ {
-	background-image: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center 75%;
-}
-
 /* OTHER IMAGES
 
 Experience Sketching with Highlighters
@@ -275,6 +266,15 @@ Krisztian Tabori
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center 45%;
+}
+
+.resourcesImage {
+	background-image: url("https://images.unsplash.com/photo-1570560259253-4bfd6d5602bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 22%;
 }
 
 .contactImage {
