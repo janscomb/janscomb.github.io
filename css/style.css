@@ -385,14 +385,14 @@ Krisztian Tabori
 .targetMobile {
 	position: absolute;
 	top: -55px;
-	right: 0px;
+	right: 20px;
 	z-index: 202;
 }
 
 .targetMobile2 {
 	position: absolute;
 	top: -26px;
-	right: 0px;
+	right: -40px;
 	z-index: 201;
 }
 
@@ -659,7 +659,7 @@ hr.briefHR {
   /* Target Kiosk */
   .targetKiosk {
 	position: absolute;
-	top: -40px;
+	top: -35px;
 	right: 40px;
 	z-index: 202;
   }
