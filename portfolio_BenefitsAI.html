@@ -86,15 +86,19 @@
 	</div>
 	<!-- //Top Container -->
 
+	<!-- BACK TO PROJECTS -->
+	<a href="javascript: history.back();" class="backtoPort">&lt; Back to Work</a>
+
 
 	<br clear="all" />
 
 	<div class="contentContainer">
 
-		<span class="headTop"></span>
+
+		<span class="headTop portHeader"></span>
 		<h1 class="withH2">Portfolio</h1>
 
-		<h2>Target: Prescription Kiosk</h2>
+		<h2>Target: Benefits AI</h2>
 
 	</div>
 
@@ -165,6 +169,37 @@
 
 		<br clear="all" />
 
+		<br clear="all" />
+
+		<div class="thePort">
+
+			<div class="portFlex flex-1">
+				<img src="images/target_Login.png" />
+
+				<span class="portLabel">Kiosk's default screen</span>
+
+			</div>
+
+			<div class="portFlex flex-2">
+				<img src="images/target_KioskPreSearch.png" />
+
+				<span class="portLabel">Once the user selects "Get Started"</span>
+
+			</div>
+
+			<div class="portFlex flex-3">
+				<img src="images/target_KioskSearch.png" />
+
+				<span class="portLabel">After scanning or searching for a prescription</span>
+
+			</div>
+
+		</div>
+
+		<br clear="all" />
+
+		<br clear="all" />
+
 		<h3>Process</h3>
 
 		Following our standardized team design process, we started with a discovery step which included interviewing the client, collecting a group of representatives and business spokespeople to conduct a workshop with. The workshop drives the direction and builds the foundation for what pain points and features to build towards. Personas are created to meet the user types learned about in the workshop and the design phase begins.
@@ -215,6 +250,9 @@
 			      	"z-index": "101"
 				});
 			});
+			$('.backtoPort').css({
+	      	  	"z-index": "5"
+  	  		});
 	      });
 
 	      //Collapse Mobile Menu
@@ -229,6 +267,9 @@
 				$(".hamCollapse").css({
 			      	display: "none"
 				});
+				$('.backtoPort').css({
+	      	  		"z-index": "101"
+  	  		});
 			});
 	      });
 	});

@@ -33,6 +33,7 @@ $(document).ready(function () {
 	      $('.logoSVG').css({
 	      	  width: "60px"
       	  });
+
 	    }
 
 
@@ -41,7 +42,7 @@ $(document).ready(function () {
 	        $(".backToTop").fadeIn( "slow", function() {
 	        });
 	    }
-	    
+
 	    //Back to Top - At Top
 	    if ($(window).scrollTop() < 160) {
 	        $(".backToTop").fadeOut( "slow", function() {

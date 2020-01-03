@@ -59,6 +59,24 @@ a.btnPrimary:hover, a.btnPrimary:active, input[type=submit]:hover {
 	color: #007fac;
 }
 
+a.backtoPort, a.backtoPort:visited {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 100;
+	padding: 5px 10px 5px 10px;
+	background-color:rgba(255, 255, 255, 0.75);
+	position: fixed;
+	left: 0px;
+	top: 80px;
+	padding-left: 25px;
+	z-index: 102;
+}
+
+a.backtoPort:hover {
+	background: #007fac;
+	color: #FFF;
+}
+
 .contentContainer {
 	padding: 0px 60px;
 	line-height: 1.5;
@@ -161,6 +179,10 @@ h1 {
 
 .resumeH3 {
 	margin-top: 20px;
+}
+
+.portHeader {
+	margin-top: 25px;
 }
 
 h2 {
@@ -295,11 +317,11 @@ Krisztian Tabori
 	margin: 25px 25px 0px 0px;
 	max-width: 95%;
 	height: auto;
-	text-align: center;
 }
 
 .thePort {
 	padding: 0px;
+	text-align: center;
 
 	display: flex;
 	flex-flow: wrap;
@@ -311,8 +333,16 @@ Krisztian Tabori
 }
 
 .portFlex { 
-	flex: 1 0 0;
-  	flex-basis: 43%; 
+	flex: 1 1 2;
+  	flex-basis: 43%;
+}
+
+.portFlex .portLabel {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 11px;
+	color: #777;
+	display: block;
 }
 
 .fluorMobile {
