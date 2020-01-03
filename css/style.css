@@ -72,7 +72,7 @@ a.backtoPort, a.backtoPort:visited {
 	z-index: 102;
 }
 
-a.backtoPort:hover {
+a.backtoPort:hover, a.backtoPort:active {
 	background: #007fac;
 	color: #FFF;
 }
