@@ -6,7 +6,7 @@ $(document).ready(function () {
 	$(window).scroll(function () {
 
 	    //Scrolling
-	    if ($(window).scrollTop() > 175) {
+	    if ($(window).scrollTop() > 105) {
 
 	      $('.topContainer').css({
 	          position: "fixed",
@@ -23,7 +23,7 @@ $(document).ready(function () {
 	    }
 
 	    //At Top
-	    if ($(window).scrollTop() < 174) {
+	    if ($(window).scrollTop() < 104) {
 	      
 	      //Worklist Bar
 	      $('.topContainer').css({
