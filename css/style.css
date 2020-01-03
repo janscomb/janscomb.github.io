@@ -288,13 +288,31 @@ Krisztian Tabori
 
 /* PROJECT IMAGES */
 
-.targetImage {
-	background-image: url("https://media1.fdncms.com/sevendaysvt/imager/u/original/21881261/front.jpg");
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center 61%;
+
+
+.thePort img {
+	border: 1px solid #ccc;
+	margin: 25px 25px 0px 0px;
+	max-width: 95%;
+	height: auto;
+	text-align: center;
+}
+
+.thePort {
+	padding: 0px;
+
+	display: flex;
+	flex-flow: wrap;
+}
+
+.thePort > * {
+  flex: 1 100%;
+  padding: 0px;
+}
+
+.portFlex { 
+	flex: 1 0 0;
+  	flex-basis: 43%; 
 }
 
 .fluorMobile {
@@ -307,6 +325,32 @@ Krisztian Tabori
 .fluorMobile img {
 	width: 100%;
 }
+
+/* TARGET */
+
+.targetImage {
+	background-image: url("https://media1.fdncms.com/sevendaysvt/imager/u/original/21881261/front.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 61%;
+}
+
+
+/* Target Kiosk */
+.targetKiosk {
+	position: absolute;
+	top: -100px;
+	right: -25px;
+	z-index: 202;
+}
+
+.targetKiosk img {
+	width: 75%;
+}
+
+/* Target App */
 
 .targetMobile {
 	position: absolute;
@@ -473,8 +517,9 @@ hr.briefHR {
 	color: #333;
 }
 
-.briefFlex { flex: 1 0 0;
-  		  flex-basis: 43%; 
+.briefFlex { 
+	flex: 1 0 0;
+  	flex-basis: 43%; 
 }
 
   .flex-1 { order: 1; }
@@ -498,8 +543,9 @@ hr.briefHR {
 }
 
 @media all and (min-width: 600px) {
-  .flex { flex: 1 0 0;
-  		  flex-basis: 43%; 
+  .flex { 
+  	flex: 1 0 0;
+  	flex-basis: 43%; 
   }
 }
 
@@ -564,6 +610,32 @@ hr.briefHR {
 
   .logosOfLabor {
 	padding: 5px 10px 10px 10px;
+  }
+
+
+  /* PROJECTS */
+
+  .thePort img {
+	margin: 25px 0px 0px 0px;
+	width: 100%;
+	height: auto;
+  }
+
+  .portFlex { 
+	flex: 1 0 0;
+  	flex-basis: 100%; 
+}
+
+  /* Target Kiosk */
+  .targetKiosk {
+	position: absolute;
+	top: -40px;
+	right: -25px;
+	z-index: 202;
+  }
+
+  .targetKiosk img {
+	width: 55%;
   }
 
 
