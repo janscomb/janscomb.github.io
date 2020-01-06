@@ -332,6 +332,15 @@ Krisztian Tabori
 	height: auto;
 }
 
+.thePort a img, .thePort a img:visited {
+	margin: 25px 0px 0px 0px;
+}
+
+.thePort a img:hover, .thePort a img:active {
+	border: 1px solid #007fac;
+	opacity: 60%;
+}
+
 .thePort {
 	padding: 0px;
 	text-align: center;
@@ -385,8 +394,9 @@ Krisztian Tabori
 .targetKiosk {
 	position: absolute;
 	top: -100px;
-	right: 40px;
+	right: 120px;
 	z-index: 202;
+	text-align: right;
 }
 
 .targetKiosk img {
@@ -398,15 +408,17 @@ Krisztian Tabori
 .targetMobile {
 	position: absolute;
 	top: -55px;
-	right: 20px;
+	right: 150px;
 	z-index: 202;
+	text-align: right;
 }
 
 .targetMobile2 {
 	position: absolute;
 	top: -26px;
-	right: -40px;
+	right: 80px;
 	z-index: 201;
+	text-align: right;
 }
 
 .targetMobile img {
@@ -672,13 +684,14 @@ hr.briefHR {
   /* Target Kiosk */
   .targetKiosk {
 	position: absolute;
-	top: -35px;
-	right: 40px;
+	top: -25px;
+	right: 150px;
 	z-index: 202;
+	text-align: right;
   }
 
   .targetKiosk img {
-	width: 48%;
+	width: 55%;
   }
 
 
