@@ -26,6 +26,10 @@ hr {
 	border: 0;
 }
 
+.left {
+	text-align: left;
+}
+
 a, a:visited {
 	color: #007fac;
 	text-decoration: none;
