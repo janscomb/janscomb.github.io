@@ -390,8 +390,19 @@ Krisztian Tabori
 	background-position: center 61%;
 }
 
+.homedepotImage {
+	background-image: url("https://corporate.homedepot.com/sites/default/files/styles/hero/public/image_gallery/Pocketguide_3000x935.jpg?itok=enZkHemx");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 61%;
+}
+
+
 
 /* Target Kiosk */
+
 .targetKiosk {
 	position: absolute;
 	top: -100px;
@@ -403,6 +414,8 @@ Krisztian Tabori
 .targetKiosk img {
 	width: 75%;
 }
+
+
 
 /* Target App */
 
@@ -427,6 +440,33 @@ Krisztian Tabori
 }
 
 .targetMobile2 img {
+	width: 55%;
+}
+
+
+/* Home Depot */
+
+.homeDepot1 {
+	position: absolute;
+	top: -55px;
+	left: 50px;
+	z-index: 202;
+	text-align: left;
+}
+
+.homeDepot2 {
+	position: absolute;
+	top: -26px;
+	left: 120px;
+	z-index: 201;
+	text-align: left;
+}
+
+.homeDepot1 img {
+	width: 65%;
+}
+
+.homeDepot2 img {
 	width: 55%;
 }
 
