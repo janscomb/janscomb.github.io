@@ -614,8 +614,7 @@ hr.briefHR {
 }
 
 .briefFlex { 
-	flex: 1 0 0;
-  	flex-basis: 43%; 
+	flex: 1 30%;
 }
 
   .flex-1 { order: 1; }
@@ -638,10 +637,20 @@ hr.briefHR {
   padding: 0px 25px;
 }
 
+@media all and (max-width: 599px) {
+  .briefFlex {
+  	flex: 1 100%;
+  }
+}
+
 @media all and (min-width: 600px) {
   .flex { 
   	flex: 1 0 0;
   	flex-basis: 43%; 
+  }
+
+  .briefFlex {
+  	flex: 1 30%;
   }
 }
 
