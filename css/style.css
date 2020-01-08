@@ -455,8 +455,8 @@ Krisztian Tabori
 
 .homeDepot1 {
 	position: absolute;
-	top: -45px;
-	left: 50px;
+	top: -35px;
+	left: 60px;
 	z-index: 202;
 	text-align: left;
 }
@@ -470,7 +470,7 @@ Krisztian Tabori
 }
 
 .homeDepot1 img {
-	width: 65%;
+	width: 35%;
 }
 
 .homeDepot2 img {
@@ -750,6 +750,27 @@ hr.briefHR {
 
   .targetKiosk img {
 	width: 55%;
+  }
+
+  /* Home Depot */
+
+  .homeDepot1 {
+	top: -25px;
+	left: 50px;
+  }
+
+  .homeDepot2 {
+	top: 55px;
+	left: 22px;
+  }
+
+  .homeDepot1 img {
+	width: 42%;
+  }
+
+  .homeDepot2 img {
+	max-width: 50%;
+	min-width: 350px;
   }
 
 
