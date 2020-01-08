@@ -755,13 +755,13 @@ hr.briefHR {
   /* Home Depot */
 
   .homeDepot1 {
-	top: -25px;
-	left: 50px;
+	top: 10px;
+	left: 45px;
   }
 
   .homeDepot2 {
 	top: 55px;
-	left: 22px;
+	left: 12px;
   }
 
   .homeDepot1 img {
