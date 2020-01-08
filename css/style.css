@@ -749,7 +749,33 @@ hr.briefHR {
   }
 
   .targetKiosk img {
-	width: 55%;
+	width: 75%;
+  }
+
+  /* Target App */
+
+  .targetMobile {
+	position: absolute;
+	top: -26px;
+	right: 150px;
+	z-index: 202;
+	text-align: right;
+  }
+
+  .targetMobile2 {
+	position: absolute;
+	top: -26px;
+	right: 80px;
+	z-index: 201;
+	text-align: right;
+  }
+
+  .targetMobile img {
+	width: 65%;
+  }
+
+  .targetMobile2 img {
+	width: 65%;
   }
 
   /* Home Depot */
