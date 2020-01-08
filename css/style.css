@@ -363,9 +363,16 @@ Krisztian Tabori
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 11px;
-	color: #777;
+	color: #555;
 	display: block;
 	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+.portLabel b {
+	border-left: 1px solid #ccc;
+	padding: 8px 0px 6px 10px;
+	font-weight: 400;
 }
 
 .fluorMobile {
@@ -448,7 +455,7 @@ Krisztian Tabori
 
 .homeDepot1 {
 	position: absolute;
-	top: -55px;
+	top: -45px;
 	left: 50px;
 	z-index: 202;
 	text-align: left;
@@ -456,8 +463,8 @@ Krisztian Tabori
 
 .homeDepot2 {
 	position: absolute;
-	top: -26px;
-	left: 120px;
+	top: -13px;
+	left: 5px;
 	z-index: 201;
 	text-align: left;
 }
@@ -467,7 +474,8 @@ Krisztian Tabori
 }
 
 .homeDepot2 img {
-	width: 55%;
+	max-width: 50%;
+	min-width: 350px;
 }
 
 .logosOfLabor {
