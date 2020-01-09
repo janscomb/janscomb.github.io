@@ -742,14 +742,14 @@ hr.briefHR {
   /* Target Kiosk */
   .targetKiosk {
 	position: absolute;
-	top: -18px;
+	top: -22px;
 	right: 85px;
 	z-index: 202;
 	text-align: right;
   }
 
   .targetKiosk img {
-	width: 72%;
+	width: 71%;
   }
 
   /* Target App */
@@ -764,14 +764,14 @@ hr.briefHR {
 
   .targetMobile2 {
 	position: absolute;
-	top: -30px;
-	right: 65px;
+	top: -35px;
+	right: 55px;
 	z-index: 201;
 	text-align: right;
   }
 
   .targetMobile img {
-	width: 85%;
+	width: 83%;
   }
 
   .targetMobile2 img {
@@ -781,7 +781,7 @@ hr.briefHR {
   /* Home Depot */
 
   .homeDepot1 {
-	top: -15px;
+	top: -20px;
 	left: 50px;
   }
 
@@ -791,7 +791,7 @@ hr.briefHR {
   }
 
   .homeDepot1 img {
-	width: 46%;
+	width: 45%;
   }
 
   .homeDepot2 img {
