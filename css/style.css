@@ -417,13 +417,13 @@ Krisztian Tabori
 .targetKiosk {
 	position: absolute;
 	top: -100px;
-	right: 120px;
+	right: 115px;
 	z-index: 202;
 	text-align: right;
 }
 
 .targetKiosk img {
-	width: 75%;
+	width: 72%;
 }
 
 
