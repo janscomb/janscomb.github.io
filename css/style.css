@@ -359,6 +359,10 @@ Krisztian Tabori
   	flex-basis: 43%;
 }
 
+.portFlex img {
+	max-width: 750px;
+}
+
 .portFlex .portLabel {
 	text-transform: uppercase;
 	text-align: center;
