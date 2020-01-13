@@ -416,14 +416,14 @@ Krisztian Tabori
 
 .targetKiosk {
 	position: absolute;
-	top: -100px;
+	top: -80px;
 	right: 110px;
 	z-index: 202;
 	text-align: right;
-}d
+}
 
 .targetKiosk img {
-	width: 70%;
+	width: 82%;
 }
 
 
@@ -775,7 +775,7 @@ hr.briefHR {
   }
 
   .targetMobile img {
-	width: 82%;
+	width: 64%;
   }
 
   .targetMobile2 img {
