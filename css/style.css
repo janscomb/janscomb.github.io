@@ -754,13 +754,13 @@ hr.briefHR {
   .targetKiosk {
 	position: absolute;
 	top: -25px;
-	right: 90px;
+	right: 80px;
 	z-index: 202;
 	text-align: right;
   }
 
   .targetKiosk img {
-	width: 82%;
+	width: 75%;
   }
 
   /* Target App */
@@ -782,7 +782,7 @@ hr.briefHR {
   }
 
   .targetMobile img {
-	width: 64%;
+	width: 82%;
   }
 
   .targetMobile2 img {
