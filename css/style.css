@@ -380,6 +380,19 @@ Krisztian Tabori
 	margin-top: 0px;
 }
 
+.theProcess .portFlex {
+	text-align: center;
+}
+
+.theProcess .portFlex a img {
+	border: 1px solid #ccc;
+	width: 90%;
+}
+
+.theProcess .portFlex a img:hover {
+	border-color: #007fac;
+}
+
 .portLabel b {
 	border-left: 1px solid #ccc;
 	padding: 8px 0px 6px 10px;
