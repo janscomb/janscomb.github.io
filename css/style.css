@@ -430,6 +430,15 @@ Krisztian Tabori
 	background-position: center 61%;
 }
 
+.mutareImage {
+	background-image: url("https://images.unsplash.com/photo-1457257495536-67f31bc9773d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1523&q=80");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 61%;
+}
+
 
 
 /* Target Kiosk */
@@ -450,7 +459,7 @@ Krisztian Tabori
 
 /* Target App */
 
-.targetMobile {
+.targetMobile, .mutareMobile {
 	position: absolute;
 	top: -55px;
 	right: 150px;
@@ -458,7 +467,7 @@ Krisztian Tabori
 	text-align: right;
 }
 
-.targetMobile2 {
+.targetMobile2, .mutareMobile2 {
 	position: absolute;
 	top: -26px;
 	right: 80px;
@@ -472,6 +481,14 @@ Krisztian Tabori
 
 .targetMobile2 img {
 	width: 55%;
+}
+
+.mutareMobile img {
+	width: 41%;
+}
+
+.mutareMobile2 img {
+	width: 35%;
 }
 
 
@@ -808,7 +825,7 @@ hr.briefHR {
 
   /* Target App */
 
-  .targetMobile {
+  .targetMobile, .mutareMobile {
 	position: absolute;
 	top: -50px;
 	right: 120px;
@@ -816,7 +833,7 @@ hr.briefHR {
 	text-align: right;
   }
 
-  .targetMobile2 {
+  .targetMobile2, .mutareMobile2 {
 	position: absolute;
 	top: -40px;
 	right: 55px;
@@ -829,6 +846,14 @@ hr.briefHR {
   }
 
   .targetMobile2 img {
+	width: 60%;
+  }
+
+  .mutareMobile img {
+	width: 82%;
+  }
+
+  .mutareMobile2 img {
 	width: 60%;
   }
 
