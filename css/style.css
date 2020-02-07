@@ -475,14 +475,15 @@ Krisztian Tabori
 	text-align: right;
 }
 
-.targetMobile img {
+.targetMobile img, .mutareMobile img {
 	width: 65%;
 }
 
-.targetMobile2 img {
+.targetMobile2 img, .mutareMobile2 img {
 	width: 55%;
 }
 
+/*
 .mutareMobile img {
 	width: 41%;
 }
@@ -490,6 +491,7 @@ Krisztian Tabori
 .mutareMobile2 img {
 	width: 35%;
 }
+*/
 
 
 /* Home Depot */
