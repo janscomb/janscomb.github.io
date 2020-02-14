@@ -473,7 +473,7 @@ Krisztian Tabori
 .targetMobile, .mutareMobile, .PPCMobile {
 	position: absolute;
 	top: -55px;
-	right: 150px;
+	right: 10px;
 	z-index: 202;
 	text-align: right;
 }
@@ -847,16 +847,16 @@ hr.briefHR {
 
   .targetMobile, .mutareMobile, .PPCMobile {
 	position: absolute;
-	top: -50px;
-	right: 120px;
+	top: -45px;
+	right: 135px;
 	z-index: 202;
 	text-align: right;
   }
 
   .targetMobile2, .mutareMobile2, .PPCMobile2 {
 	position: absolute;
-	top: -40px;
-	right: 55px;
+	top: -30px;
+	right: 70px;
 	z-index: 201;
 	text-align: right;
   }
