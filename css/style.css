@@ -441,6 +441,15 @@ Krisztian Tabori
 	background-position: center 61%;
 }
 
+.PPCMobileImage {
+	background-image: url("https://images.unsplash.com/photo-1580615631392-aeb060d526e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 61%;
+}
+
 
 
 /* Target Kiosk */
@@ -461,7 +470,7 @@ Krisztian Tabori
 
 /* Target App */
 
-.targetMobile, .mutareMobile {
+.targetMobile, .mutareMobile, .PPCMobile {
 	position: absolute;
 	top: -55px;
 	right: 150px;
@@ -469,7 +478,7 @@ Krisztian Tabori
 	text-align: right;
 }
 
-.targetMobile2, .mutareMobile2 {
+.targetMobile2, .mutareMobile2, .PPCMobile2 {
 	position: absolute;
 	top: -26px;
 	right: 80px;
@@ -477,15 +486,14 @@ Krisztian Tabori
 	text-align: right;
 }
 
-.targetMobile img, .mutareMobile img {
+.targetMobile img {
 	width: 65%;
 }
 
-.targetMobile2 img, .mutareMobile2 img {
+.targetMobile2 img {
 	width: 55%;
 }
 
-/*
 .mutareMobile img {
 	width: 41%;
 }
@@ -493,7 +501,7 @@ Krisztian Tabori
 .mutareMobile2 img {
 	width: 35%;
 }
-*/
+
 
 
 /* Home Depot */
@@ -802,6 +810,10 @@ hr.briefHR {
 
 
   /* PROJECTS */
+
+  .projectImage .imageLabelInside {
+  	display: none;
+  }
 
   .thePort img {
 	margin: 25px 0px 0px 0px;
