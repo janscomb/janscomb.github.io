@@ -847,8 +847,8 @@ hr.briefHR {
 
   .targetMobile, .mutareMobile, .PPCMobile {
 	position: absolute;
-	top: -45px;
-	right: 135px;
+	top: -50px;
+	right: 140px;
 	z-index: 202;
 	text-align: right;
   }
@@ -856,17 +856,17 @@ hr.briefHR {
   .targetMobile2, .mutareMobile2, .PPCMobile2 {
 	position: absolute;
 	top: -30px;
-	right: 70px;
+	right: 75px;
 	z-index: 201;
 	text-align: right;
   }
 
-  .targetMobile img, , .PPCMobile img {
-	width: 82%;
+  .targetMobile img {
+	width: 90%;
   }
 
-  .targetMobile2 img, , .PPCMobile2 img {
-	width: 60%;
+  .targetMobile2 img {
+	width: 58%;
   }
 
   .mutareMobile img {
@@ -875,6 +875,16 @@ hr.briefHR {
 
   .mutareMobile2 img {
 	width: 60%;
+  }
+
+
+  /* PPC */
+  .PPCMobile img {
+	width: 82%;
+  }
+
+  .PPCMobile2 img {
+	width: 57%;
   }
 
   /* Home Depot */
