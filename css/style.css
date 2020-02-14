@@ -450,6 +450,14 @@ Krisztian Tabori
 	background-position: center 61%;
 }
 
+.watchImage {
+	background-image: url("../images/WatchBG.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 61%;
+}
 
 
 /* Target Kiosk */
@@ -464,6 +472,20 @@ Krisztian Tabori
 
 .targetKiosk img {
 	width: 82%;
+}
+
+/* Apple Watch */
+
+.appleWatch {
+	position: absolute;
+	top: -25px;
+	left: -60px;
+	z-index: 202;
+	text-align: right;
+}
+
+.appleWatch img {
+	width: 55%;
 }
 
 
@@ -848,7 +870,7 @@ hr.briefHR {
   .targetMobile, .mutareMobile, .PPCMobile {
 	position: absolute;
 	top: -43px;
-	right: 145px;
+	right: 145 px;
 	z-index: 202;
 	text-align: right;
   }
@@ -883,6 +905,20 @@ hr.briefHR {
   }
 
   .PPCMobile2 img {
+	width: 55%;
+  }
+
+  /* Apple Watch */
+
+  .appleWatch {
+	position: absolute;
+	top: -25px;
+	left: 10px;
+	z-index: 202;
+	text-align: right;
+  }
+
+  .appleWatch img {
 	width: 55%;
   }
 
