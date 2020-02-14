@@ -913,7 +913,7 @@ hr.briefHR {
   .appleWatch {
 	position: absolute;
 	top: -25px;
-	left: 10px;
+	left: -10px;
 	z-index: 202;
 	text-align: right;
   }
