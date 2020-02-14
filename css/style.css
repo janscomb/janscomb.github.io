@@ -848,7 +848,7 @@ hr.briefHR {
   .targetMobile, .mutareMobile, .PPCMobile {
 	position: absolute;
 	top: -50px;
-	right: 140px;
+	right: 150px;
 	z-index: 202;
 	text-align: right;
   }
@@ -862,7 +862,7 @@ hr.briefHR {
   }
 
   .targetMobile img {
-	width: 65%;
+	width: 75%;
   }
 
   .targetMobile2 img {
@@ -879,7 +879,7 @@ hr.briefHR {
 
   /* PPC */
   .PPCMobile img {
-	width: 62%;
+	width: 75%;
   }
 
   .PPCMobile2 img {
