@@ -397,6 +397,8 @@ Krisztian Tabori
 	border-left: 1px solid #ccc;
 	padding: 8px 0px 6px 10px;
 	font-weight: 400;
+	font-size: 11px;
+	text-transform: uppercase;
 }
 
 .fluorMobile {
@@ -809,8 +811,12 @@ hr.briefHR {
 
   .portFlex { 
 	flex: 1 0 0;
-  	flex-basis: 100%; 
-}
+  	flex-basis: 100%;
+  }
+
+  .portFlex img { 
+	width: 100% !important;
+  }
 
   /* Target Kiosk */
   .targetKiosk {
