@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:x2="http://www.w3.org/2002/06/xhtml2">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head><title>Dashboard Prototype - Production Coding</title>
+
+<!-- Bootstrap Generic CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../css/bootstrap.css">
+<!-- Bootstrap Timepicker and Datepicker -->
+<link rel="stylesheet" href="../../../css/bootstrap-timepicker.min.css" />
+<link rel="stylesheet" href="../../../css/bootstrap-datepicker.min.css" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="../../../css/main.css">
+
+<!-- Bootstrap Generic JS -->
+<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.mousewheel.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="top">
+
+  <!-- Back to Top -->
+  <a href="#top" class="backToTop"><span class="fa fa-chevron-up"></span></a>
+
+<!-- Top Bar -->
+<!-- User Bar -->
+<div class="userBar">
+<span class="currently">Currently logged in as:</span> <strong>Nathan Anderson</strong> <span class="topGrep"></span> <a href="../../../demo.html"><i class="fa fa-sign-out"></i></a> <span class="topGrep"></span> <i class="fa fa-thumb-tack local"></i> &nbsp;<select><option>Select</option><option>Flex</option></select>
+</div>
+
+<!-- Navi -->
+<div class="container-fluid topBar">
+
+        <!-- Logo -->
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo">
+            <a href="../../../index.html"><img src="../../../images/logo-Accretive.png" height="24" /></a>
+            <span class="roleType">Code Recovery</span>
+        </div>
+
+        <!-- Nav -->
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 nav">
+            <ul>
+                <li><a href="" class="navSearch"><span class="fa fa-search"></span></a></li>
+                <li><a href="../Worklist/index.html">Worklist</a></li>
+                <li><a href="../Dashboard/index.html" class="activePage">Dashboard</a></li>
+            </ul>
+        </div>
+
+</div>
+<!-- //Top Bar -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+
+        <!-- Dashboard -->
+        <div class="row">
+
+            <!-- Content -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dashLayout">
+
+                <!-- Snapshot -->
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <h3 class="dash">My Worklist Snapshot</h3>
+                </div>
+
+                <!-- Actions -->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 pull-right WLMenuDash noPadRight">
+
+                <!-- Container Menu -->
+
+                    <!-- Settings -->
+                    <a class="menuFilters"><span class="fa fa-gear"></span></a>
+
+                    <!-- Close / Show Section -->
+                    <a class="menuFilters hideItems mySnap" style="border: 0px;"><span class="fa fa-chevron-up"></span></a>
+
+                            <!-- Show -->
+                            <a class="menuFilters showItems mySnap" style="border: 0px;"><span class="fa fa-chevron-down"></span></a>
+
+
+                <!-- //Container Menu -->
+                </div>
+
+                <!-- //Actions -->
+
+                <div class="clearfix"></div>
+
+                <hr class="headLine mySnap" />
+
+                <div class="clearfix"></div>
+
+                <div class="dashContainer snapArea noPadLeft noPadRight">
+
+                    <!-- Snap #1 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 col-md-offset-1 snapBox forceRed">
+                        <div class="snapMetric warningCentric">22</div>
+                        <div class="clearfix"></div>
+                        Unworked
+                    </a>
+                    <!-- //Snap #1 -->
+
+                    <!-- Snap #2 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric codingCentric">16</div>
+                        <div class="clearfix"></div>
+                        In-Process
+                    </a>
+                    <!-- //Snap #2 -->
+
+                    <!-- Snap #3 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric explanationCentric">8</div>
+                        <div class="clearfix"></div>
+                        High Risk
+                    </a>
+                    <!-- //Snap #3 -->
+
+                    <!-- Snap #4 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric esculationCentric">4</div>
+                        <div class="clearfix"></div>
+                        External Review
+                    </a>
+                    <!-- //Snap #4 -->
+
+                    <!-- Snap #5 -->
+                    <!-- IE last-child not working, need to use inline border-right -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox" style="border-right: 0px;">
+                        <div class="snapMetric completeCentric">0</div>
+                        <div class="clearfix"></div>
+                        Completed Today
+                    </a>
+                    <!-- //Snap #5 -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- /Snapshot -->
+
+                <div class="clearfix"></div>
+
+                <br clear="all" /><br clear="all" />
+
+                <!-- Worklist Left, Content Right -->
+
+                <!-- Worklist -->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 noPadLeft treePane">
+
+                    <h3 class="dash" style="padding-left: 10px;">Worklist</h3>
+
+                    <div class="treeList" style="min-height: 721px;">
+
+                        <!-- Header -->
+                        <div class="treeHead">
+                            <span class="glyphicon glyphicon-tree-conifer treeIcon"></span>
+                            <span class="grep treeGrep"></span>
+                            <span class="treeHeader">Worklist Tree</span>
+                            <a data="treeAcc" class="treeToggle" id="treeSlideOut"><span class="glyphicon glyphicon-chevron-left pull-right"></span></a>
+                            <a data="treeAcc" class="treeToggleIn" id="treeSlideIn"><span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <!-- //Header -->
+
+
+                        <!-- Buttons // Initially Hidden -->
+                        <div class="miniNav rotate270 positioning">
+                            <a class="miniNavButton">Favorites</a>
+                            <a class="miniNavButton">Worklist Items</a>
+                        </div>
+                        <!-- //Buttons // Initially Hidden -->
+
+
+                        <!-- Tree Results -->
+                        <div class="treeResults">
+
+                            <ol class="tree">
+                                <li>
+                                    <label for="favorites">Favorites</label> <input type="checkbox" id="favorites" />
+                                    <ol>
+                                        <!-- <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Today</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Tomorrow</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Unworked - This Week</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Next Week</a></li> -->
+                                    </ol>
+                                </li>
+
+                                <!-- Patient Engagement -->
+                                <li>
+                                <label for="folder1">Code Recovery Services</label> <input type="checkbox" id="folder1" checked />
+                                    <ol>
+                                        <li class="step1">
+                                        <label for="pesubfolder1">Unworked</label> <input type="checkbox" id="pesubfolder1" checked />
+                                            <ol>
+                                                <li class="leaf step1"><a href="../Worklist/index.html">HCC</a></li>
+                                                <li class="leaf step1"><a href="../Worklist/index.html">Quality Measures</a></li>
+                                                <li class="leaf step1"><a href="../Worklist/index.html">HAC</a></li>
+                                                <li class="leaf step1"><a href="../Worklist/index.html">Morality</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="step1">
+                                        <label for="pesubfolder2" stlye="padding-left: 20px;">In-Process</label> <input type="checkbox" id="pesubfolder2" checked />
+                                            <ol>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">HCC</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">Quality Measures</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">HAC</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">Morality</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="step1">
+                                        <label for="pesubfolder3">High Risk</label> <input type="checkbox" id="pesubfolder3" checked />
+                                            <ol>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">HCC</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">Quality Measures</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">HAC</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">Morality</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="step1">
+                                        <label for="pesubfolder4">External Review</label> <input type="checkbox" id="pesubfolder4" />
+                                            <ol>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">HCC</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">Quality Measures</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">HAC</a></li>
+                                              <li class="leaf step1"><a href="../Worklist/index.html">Morality</a></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- //Worklist -->
+
+                <!-- Content -->
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 noPadRight dashContentRight">
+
+
+                    <!-- Work Metrics -->
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <h3 class="dash">Work Metrics</h3>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 pull-right WLMenuDash noPadRight">
+                    <!-- Container Menu -->
+
+                        <!-- View Selector Tooltip -->
+                        <div class="layoutSelector">
+                        <ul id="cbp-tm-menu" class="cbp-tm-menu">
+                            <li>
+                                <a href="#" class="chartView"><i class="fa fa-bar-chart"></i> &nbsp; Chart View Selector</a>
+                                <ul class="cbp-tm-submenu">
+                                    <li><a href="#">1 Chart - x - 1 Row</a></li>
+                                    <li><a href="#">2 Chart - x - 1 Row</a></li>
+                                    <li><a href="#">3 Chart - x - 1 Row</a></li>
+                                    <li><a href="#">2 Chart - x - 2 Row</a></li>
+                                    <li><a href="#">3 Chart - x - 2 Row</a></li>
+                                    <li><a href="#">4 Chart - x - 2 Row</a></li>
+                                    <li><a href="#">5 Chart - x - 2 Row</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <!-- View Selector  ((SIMPLE))
+                        <div class="layoutSelector">
+                        <select>
+                            <option>1 Chart - x - 1 Row</option>
+                            <option>2 Charts - x - 1 Row</option>
+                            <option>3 Charts - x - 1 Row</option>
+                        </select>
+                        </div> -->
+
+                        <!-- Settings -->
+                        <a class="menuFilters"><span class="fa fa-gear"></span></a>
+
+                        <!-- Close / Show Section -->
+                        <a class="menuFilters hideItems workMetrics" style="border: 0px;"><span class="fa fa-chevron-up"></span></a>
+
+                            <!-- Show -->
+                            <a class="menuFilters showItems workMetrics" style="border: 0px;"><span class="fa fa-chevron-down"></span></a>
+
+
+                    <!-- //Container Menu -->
+                    </div>
+                    <!-- //Actions -->
+
+                    <div class="clearfix"></div>
+
+                    <hr class="headLine workMetrics" />
+
+                    <div class="clearfix"></div>
+
+
+                    <div class="dashContainer workMetricsCont">
+
+                    <span class="metricsHead">Inventory Trending</span><br />
+                    6 Week Snapshot.
+
+                    <p>
+                    <div id="stackedBarChart"></div>
+                    </p>
+
+                    </div>
+                    <!-- //Work Metrics -->
+
+                    <div class="clearfix"></div>
+
+                    <br clear="all" />
+
+                    <div class="row noMargin noPad">
+
+                      <div class="dashContainer workMetricsCont col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                        <span class="metricsHead">Productivity</span><br />
+                        30 Day Trending.
+
+                      <div id="productivity"></div>
+
+                      </div>
+
+                      <div class="dashContainer workMetricsCont col-xs-12 col-sm-5 col-md-5 col-lg-5 pull-right">
+
+                        <span class="metricsHead">User Activities</span><br />
+                        30 Day Trending.
+
+                        <!-- Key Button -->
+                        <a class="btn-green-o btn-gloss-green lockNav graphKey"><span class="fa fa-key"></span> &nbsp;Key</a>
+
+                        <!-- Key -->
+                        <div class="keyToGraph">
+
+                          <div class="pull-right"><a class="closeBanner closeKey"><span class="fa fa-times"></span></a></div>
+
+                          <ul>
+                            <li><i class="greenDisc"></i>Sent to Coding</li>
+                            <li><i class="redDisc"></i>Other</li>
+                            <li><i class="blueDisc"></i>No Action</li>
+                            <li><i class="yellowDisc"></i>Sent to Documentation</li>
+                          </ul>
+
+                        </div>
+                        <!-- //Key -->
+
+                      <div id="userActivities"></div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //Content -->
+
+                <!-- //Worklist Left, Content Right -->
+
+                <div class="clearfix"></div>
+
+
+
+                <br clear="all" /><br clear="all" />
+
+
+
+                <!-- High Risk Worklist -->
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <h3 class="dash">High Risk Worklist</h3>
+                </div>
+
+                <!-- Actions -->
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 pull-right WLMenuDash noPadRight">
+                    <!-- Search -->
+                    <a class="menuFav" data-toggle="modal" data-target="#addFavorites"><span class="fa fa-search"></span></a>
+
+                    <!-- Close / Show Section -->
+                    <a class="menuFilters hideItems patientSrch" style="border: 0px;"><span class="fa fa-chevron-up"></span></a>
+
+                        <!-- Show -->
+                        <a class="menuFilters showItems patientSrch" style="border: 0px;"><span class="fa fa-chevron-down"></span></a>
+
+                </div>
+                <!-- //Actions -->
+
+                <div class="clearfix"></div>
+
+                <hr class="headLine patientSrch" />
+
+                <div class="clearfix"></div>
+
+
+                <div class="dashContainer patientSrchCont" style="padding-top: 20px; margin-bottom: 20px;">
+
+                    <!-- Table Results -->
+                    <table>
+
+                      <thead>
+                          <tr>
+                              <th>Patient Name</th>
+                              <th class="center" width="134">Defects</th>
+                              <th>MPI</th>
+                              <th>MRN</th>
+                              <th>DOB</th>
+                              <th>Defect</th>
+                              <th>RAF</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+
+
+                          <tr class="urgent">
+                              <th><a href="../PointOfCare/index.html">Edwards, Jack</a></th>
+
+                              <th class="tdStatus center">
+                                <!-- HCC -->
+                                <a href="../CodingDocumentation/index.html"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HCC">H</div></a>
+                                <!-- Quality Measures -->
+                                <a href="../CodingDocumentation/index.html#QualityMeasures"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Quality Measures">Q</div></a>
+                                <!-- HAC -->
+                                <a href="../CodingDocumentation/index.html#HACReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HAC">H</div></a>
+                                <!-- Mortality -->
+                                <a href="../CodingDocumentation/index.html#MortalityReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Mortality">M</div></a>
+                                <!-- Wellness -->
+                                <a href="../CodingDocumentation/index.html#Wellness"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Wellness">W</div></a>
+                                <!-- TCM -->
+                                <a href="../CodingDocumentation/index.html#TCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="TCM">T</div></a>
+                                <!-- CCM -->
+                                <a href="../CodingDocumentation/index.html#CCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="CCM">C</div></a>
+                              </th>
+
+                              <td>2566635</td>
+                              <td>A32347879</td>
+                              <td>08/24/1943</td>
+                              <td>Multiple</td>
+                              <td>RAF</td>
+                          </tr>
+
+
+                          <tr class="urgent">
+                              <th><a href="../PointOfCare/index.html">Norton, Frank</a></th>
+
+                              <th class="tdStatus center">
+                                <!-- HCC -->
+                                <a href="../CodingDocumentation/index.html"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HCC">H</div></a>
+                                <!-- Quality Measures -->
+                                <a href="../CodingDocumentation/index.html#QualityMeasures"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Quality Measures">Q</div></a>
+                                <!-- HAC -->
+                                <a href="../CodingDocumentation/index.html#HACReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HAC">H</div></a>
+                                <!-- Mortality -->
+                                <a href="../CodingDocumentation/index.html#MortalityReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Mortality">M</div></a>
+                                <!-- Wellness -->
+                                  <a href="../CodingDocumentation/index.html#Wellness"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Wellness">W</div></a>
+                                  <!-- TCM -->
+                                  <a href="../CodingDocumentation/index.html#TCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="TCM">T</div></a>
+                                  <!-- CCM -->
+                                  <a href="../CodingDocumentation/index.html#CCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="CCM">C</div></a>
+                              </th>
+
+                              <td>2606784</td>
+                              <td>ENC12345678</td>
+                              <td>03/5/1921</td>
+                              <td>HCC</td>
+                              <td>RAF</td>
+                          </tr>
+
+
+                          <tr class="urgent">
+                              <th><a href="../PointOfCare/index.html">Kennedy, Kathleen</a></th>
+
+                              <th class="tdStatus center">
+                                <!-- HCC -->
+                                <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HCC">H</div></a>
+                                <!-- Quality Measures -->
+                                <a href="../CodingDocumentation/index.html#QualityMeasures"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Quality Measures">Q</div></a>
+                                <!-- HAC -->
+                                <a href="../CodingDocumentation/index.html#HACReview"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HAC">H</div></a>
+                                <!-- Mortality -->
+                                <a href="../CodingDocumentation/index.html#MortalityReview"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Mortality">M</div></a>
+                                <!-- Wellness -->
+                                  <a href="../CodingDocumentation/index.html#Wellness"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Wellness">W</div></a>
+                                  <!-- TCM -->
+                                  <a href="../CodingDocumentation/index.html#TCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="TCM">T</div></a>
+                                  <!-- CCM -->
+                                  <a href="../CodingDocumentation/index.html#CCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="CCM">C</div></a>
+                              </th>
+
+                              <td>2819890</td>
+                              <td>ENC12345678</td>
+                              <td>07/18/1947</td>
+                              <td>Multiple</td>
+                              <td>RAF</td>
+                          </tr>
+
+
+                          <tr class="urgent">
+                              <th><a href="../PointOfCare/index.html">Walker, Henry</a></th>
+
+                              <th class="tdStatus center">
+                                <!-- HCC -->
+                                <a href="../CodingDocumentation/index.html"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HCC">H</div></a>
+                                <!-- Quality Measures -->
+                                <a href="../CodingDocumentation/index.html#QualityMeasures"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Quality Measures">Q</div></a>
+                                <!-- HAC -->
+                                <a href="../CodingDocumentation/index.html#HACReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HAC">H</div></a>
+                                <!-- Mortality -->
+                                <a href="../CodingDocumentation/index.html#MortalityReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Mortality">M</div></a>
+                                <!-- Wellness -->
+                                  <a href="../CodingDocumentation/index.html#Wellness"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Wellness">W</div></a>
+                                  <!-- TCM -->
+                                  <a href="../CodingDocumentation/index.html#TCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="TCM">T</div></a>
+                                  <!-- CCM -->
+                                  <a href="../CodingDocumentation/index.html#CCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="CCM">C</div></a>
+                              </th>
+
+                              <td>2869858</td>
+                              <td>ENC12345678</td>
+                              <td>07/14/1928</td>
+                              <td>HCC</td>
+                              <td>RAF</td>
+                          </tr>
+
+
+                          <tr class="important">
+                              <th><a href="../PointOfCare/index.html">Rodgers, Lyle</a></th>
+
+                              <th class="tdStatus center">
+                                <!-- HCC -->
+                                <a href="../CodingDocumentation/index.html"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HCC">H</div></a>
+                                <!-- Quality Measures -->
+                                <a href="../CodingDocumentation/index.html#QualityMeasures"><div class="urgent statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Quality Measures">Q</div></a>
+                                <!-- HAC -->
+                                <a href="../CodingDocumentation/index.html#HACReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="HAC">H</div></a>
+                                <!-- Mortality -->
+                                <a href="../CodingDocumentation/index.html#MortalityReview"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Mortality">M</div></a>
+                                <!-- Wellness -->
+                                  <a href="../CodingDocumentation/index.html#Wellness"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Wellness">W</div></a>
+                                  <!-- TCM -->
+                                  <a href="../CodingDocumentation/index.html#TCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="TCM">T</div></a>
+                                  <!-- CCM -->
+                                  <a href="../CodingDocumentation/index.html#CCM"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="CCM">C</div></a>
+                              </th>
+
+                              <td>2815746</td>
+                              <td>A68848256</td>
+                              <td>01/05/1934</td>
+                              <td>Multiple</td>
+                              <td>RAF</td>
+                          </tr>
+
+                        </tbody>
+                        </table>
+
+                      </table>
+                    <!-- //Table Results -->
+
+                </div>
+                <!-- //High Risk Worklist -->
+
+
+            </div>
+            <!-- //Content -->
+
+        </div>
+        <!-- //Dashboard -->
+
+    </div>
+    <!-- //Main Container -->
+
+</div>
+<!-- //Content Container -->
+
+
+<!-- Footer -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footerContainer pull-center">
+&copy; Copyright 2015 Accretive Health, Inc. <span class="grep"></span> <a href="../../../privacy.html">Privacy Statement</a> <span class="grep"></span> <a href="../../../terms.html">Terms of Use</a>
+</div>
+<!-- //Footer -->
+
+
+
+<!-- ####################################### Modals ######################################### -->
+
+
+<!-- Patient Information Modal -->
+<div class="modal fade" id="patientInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+        <!-- Header / Edit / Banner -->
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Patient Information</h4>
+
+            <!-- Success Banner -->
+            <div class="successBanner bannerPI">
+
+                <div class="successIcon"><span class="fa fa-check"></span></div>
+
+                <div class="bannerContentSuccess">
+
+                    <span class="bannerHead banSuccess">Patient Information Updated - Pending EMR Syncing</span><br />
+                    Your updates have been made, however, they are awaiting MPI syncing.
+
+                </div>
+
+                <div class="pull-right"><a class="closeBanner dismissBannerPI"><span class="fa fa-times"></span></a></div>
+
+                <br clear="all" />
+
+            </div>
+            <!-- //Success Banner -->
+
+          <!-- Edit Button -->
+          <a class="btn lockNav pull-right patientUnlock"><span class="fa fa-unlock"></span> &nbsp; Edit</a>
+
+          <!-- Lock Button // Initially Hidden -->
+          <a class="btn lockNav pull-right patientLock"><span class="fa fa-lock"></span> &nbsp; Finish</a>
+
+        </div>
+        <!-- //Header / Edit / Banner -->
+
+        <!-- Contents -->
+        <div class="modal-body">
+
+          <!-- Locked -->
+          <div class="lockedPatientInformation">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Jonathan" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Smith" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="11701 W. Sandstone Avenue" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Address 2</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Apartment 125C" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">City</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Chicago" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">State</label>
+                    <div class="col-sm-3">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>Illinois</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Zip</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="60091" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                </fieldset>
+
+                <br clear="all" />
+
+              <h5>Contact Information</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="jonathan.smith@gmail.com" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="(312) 253 - 9821" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-3">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>Mobile</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+                </div>
+
+              </fieldset>
+
+              <br clear="all" />
+
+              <p align="center" style="margin-top: 20px;">
+                  <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+              </p>
+
+          </form>
+
+          </div>
+
+          <!-- Unlocked -->
+          <div class="unlockedPatientInformation">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Jonathan" />
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" value="Smith" />
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" value="11701 W. Sandstone Avenue" />
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Address 2</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Apartment 125C" />
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">City</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" value="Chicago" />
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">State</label>
+                    <div class="col-sm-3">
+                    <select class="form-control placeholder">
+                        <option selected>Illinois</option>
+                          <option>Other States Here</option>
+                    </select>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Zip</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="60091" />
+                    </div>
+                </div>
+
+                </fieldset>
+
+                <br clear="all" />
+
+              <h5>Contact Information</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" value="jonathan.smith@gmail.com" />
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="addContact firstContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                        <div class="removeContact firstContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                        <div class="makePrimary firstContact"><a>Set as Primary</a></div>
+                        <div class="setPrimary firstContact">Primary</div>
+                    </div>
+
+                </div>
+
+                <!-- Secondary Email // Initally Hidden -->
+                <div class="form-group has-feedback has-feedback-right secondaryEmail">
+                <label for="" class="col-sm-2 control-label">Secondary Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="Enter a secondary Email" />
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="addContact secondContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                        <div class="removeContact secondContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                        <div class="makePrimary secondContact"><a>Set as Primary</a></div>
+                    </div>
+
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="(312) 253 - 9821" />
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-3">
+                    <select class="form-control placeholder">
+                        <option selected>Mobile</option>
+                          <option>Home</option>
+                          <option>Work</option>
+                          <option>Other</option>
+                    </select>
+                    </div>
+
+                    <div class="col-sm-3 addContact"><a><span class="fa fa-plus-circle"></span></a>
+                        <div class="removeContact firstPhone"><a><span class="fa fa-minus-circle"></span></a></div>
+                    </div>
+
+                </div>
+
+              </fieldset>
+
+              <br clear="all" />
+
+          </form>
+
+          </div>
+
+      </div>
+        <!-- //Contents -->
+
+          <!-- Update Button --  Initially hidden -->
+          <div class="modal-footer updatePatientButtons">
+            <button type="button" class="btn btn-primary updatePatientInformation">Update Patient Information</button>
+            <span class="grep"></span>
+            <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+          </div>
+          <!-- //Update Button --  Initially hidden -->
+
+    </div>
+  </div>
+</div>
+<!-- //Patient Information Modal -->
+
+<!-- Insurance Modal -->
+<div class="modal fade" id="insuranceInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Patient Insuranace Information</h4>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+
+          <h5>Primary Insurance</h5>
+          <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <!-- Left Pane -->
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 insuranceCard">
+
+                  <p>
+                  <img src="../../../images/BCBS.gif" width="100%" alt="Payor" />
+                  </p>
+
+                  <div class="ICContent">
+                  Member ID: <strong>ISC3HZN9999999</strong><br/ >
+                  Group Number: <strong>75999-0000</strong><br/ >
+                  Type: <strong>Family</strong><br/ >
+                  BC/BS Plan Codes: <strong>280/780</strong><br/ >
+                  RXBIN: <strong>004336</strong><br/ >
+                  RXPCN: <strong>HZRX</strong> &nbsp; &ndash; &nbsp; Issuer: <strong>(80840)</strong><br/ >
+                  RXGRP: <strong>0075990000</strong>
+                  </div>
+
+              </div>
+              <!-- //Left Pane -->
+
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+
+              <!-- Right Pane -->
+
+                  <!-- Edit Button -->
+                  <a href="" class="btn lockNav pull-right"><span class="fa fa-unlock"></span> &nbsp; Edit</a>
+
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 insuranceCoverage">
+
+                  Primary Member<br />
+                  <span class="insuranceName">Jonathan Smith</span>
+
+                  <div class="insInfo">
+
+                      <!-- Left -->
+                      <div class="insLeft">
+                      <u>Insurance Coverage Type</u><br />
+                      Primary Care:<br />
+                      Specialist:<br />
+                      Emergency Room:<br />
+                      Inpatient Hosp Copay:
+                      </div>
+                      <!-- //Left -->
+
+                      <!-- Right -->
+                      <div class="insRight">
+                      <u>Out-of-Pocket Cost</u><br />
+                      <strong>$20</strong><br />
+                      <strong>$30</strong><br />
+                      <strong>$125</strong><br />
+                      <strong>$130</strong>
+                      </div>
+                      <!-- //Right -->
+
+                  </div>
+
+                  <br clear="all" />
+
+              </div>
+              <!-- //Right Pane -->
+
+          <br clear="all" />
+
+
+          <h5>Secondary Insurance</h5>
+          <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <!-- Left Pane -->
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 insuranceCard">
+
+                  <p>
+                  <img src="../../../images/Medicare.gif" width="100%" alt="Payor" />
+                  </p>
+
+                  <div class="ICContent">
+                  Member ID: <strong>ISC3HZN9999999</strong><br/ >
+                  Group Number: <strong>75999-0000</strong><br/ >
+                  Type: <strong>Family</strong><br/ >
+                  RXBIN: <strong>004336</strong><br/ >
+                  RXPCN: <strong>HZRX</strong> &nbsp; &ndash; &nbsp; Issuer: <strong>(80840)</strong><br/ >
+                  RXGRP: <strong>0075990000</strong>
+                  </div>
+
+              </div>
+              <!-- //Left Pane -->
+
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+
+              <!-- Right Pane -->
+
+                  <!-- Edit Button -->
+                  <a href="" class="btn lockNav pull-right"><span class="fa fa-unlock"></span> &nbsp; Edit</a>
+
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 insuranceCoverage">
+
+                  Primary Member<br />
+                  <span class="insuranceName">Jonathan Smith</span>
+
+                  <div class="insInfo">
+
+                      <!-- Left -->
+                      <div class="insLeft">
+                      <u>Insurance Coverage Type</u><br />
+                      Primary Care:<br />
+                      Specialist:<br />
+                      Emergency Room:<br />
+                      Inpatient Hosp Copay:
+                      </div>
+                      <!-- //Left -->
+
+                      <!-- Right -->
+                      <div class="insRight">
+                      <u>Out-of-Pocket Cost</u><br />
+                      <strong>$20</strong><br />
+                      <strong>$30</strong><br />
+                      <strong>$125</strong><br />
+                      <strong>$130</strong>
+                      </div>
+                      <!-- //Right -->
+
+                  </div>
+
+                  <br clear="all" />
+
+              </div>
+              <!-- //Right Pane -->
+
+          <br clear="all" />
+
+          <p align="center" style="margin-top: 40px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+      </div>
+      <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Insurance Modal -->
+
+<!-- Call History Modal -->
+<div class="modal fade" id="callHistoryInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Call History</h4>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body" style="padding-top: 0px;">
+
+          <!-- Coding Summary Head Items -->
+          <div class="row">
+
+                  <!-- Actions -->
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 actions">
+
+                      <!-- Results -->
+                      ( Results: <span class="resultsNo">7</span> )
+                      <!-- //Results -->
+
+                      <!-- Show All -->
+                      <a class="barNav expander showMore" data-name="show">show all</a>
+                      <!-- //Show All -->
+
+                      <!-- Show Less -->
+                      <a class="barNav expander showLess" data-name="show">show less</a>
+                      <!-- //Show Less -->
+
+                  </div>
+                  <!-- //Actions -->
+
+          </div>
+          <!-- //Coding Summary Head Items -->
+
+          <br clear="all" />
+
+          <!-- Table Results -->
+          <div class="callLog">
+
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Action</th>
+                              <th>Date / Time</th>
+                              <th class="noteField">Note</th>
+                              <th>Caller</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th>No answer, left message with person</th>
+                              <td>04/27/2015 - 9:02 AM</td>
+                              <td class="noteField">Jonathan was not home. A message was left with his sister.</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+                          <tr>
+                              <th>Busy Signal</th>
+                              <td>04/25/2015 - 10:23 AM</td>
+                              <td class="noteField">N/A</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+                          <tr>
+                              <th>Left Voicemail</th>
+                              <td>04/21/2015 - 11:05 AM</td>
+                              <td class="noteField">No answer. Left message.</td>
+                              <td>Jared Allen</td>
+                          </tr>
+                          <tr>
+                              <th>Guarantor Requests Call Back</th>
+                              <td>03/27/2015 - 3:02 PM</td>
+                              <td class="noteField">Spoke with Jonathan, however something came up and the call needed to be disconnected</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+                          <tr>
+                              <th>No answer, left message with person</th>
+                              <td>04/27/2015 - 9:02 AM</td>
+                              <td class="noteField">Jonathan was not home. A message was left with his sister.</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+                          <tr>
+                              <th>No answer, left message with person</th>
+                              <td>04/27/2015 - 9:02 AM</td>
+                              <td class="noteField">Jonathan was not home. A message was left with his sister.</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+                          <tr>
+                              <th>No answer, left message with person</th>
+                              <td>04/27/2015 - 9:02 AM</td>
+                              <td class="noteField">Jonathan was not home. A message was left with his sister.</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+
+                      </tbody>
+                  </table>
+
+              </div>
+          <!-- //Table Results -->
+
+
+          <br clear="all" />
+
+          <p align="center" style="margin-top: 40px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+        </div>
+        <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Call History Modal -->
+
+
+<!-- ####################################### Scripts ######################################### -->
+
+<!-- Dynamic Date Scripts -->
+<script type="text/javascript" src="../../../js/moment.js"></script>
+<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
+
+<!-- Sticky Table Scripts -->
+<script src="../../../js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="../../../js/jquery.stickyheader.js"></script>
+
+<!-- Basics -->
+<script src="../../../js/basics.js"></script>
+
+<!-- Dashboard -->
+<script src="../../../js/dashboard.js"></script>
+
+<!-- Tree -->
+<script src="../../../js/tree.js"></script>
+
+
+<!-- Tooltip Menu -->
+<script src="../../../js/modernizr.custom.js"></script>
+<script src="../../../js/cbpTooltipMenu.min.js"></script>
+<script>
+    var menu = new cbpTooltipMenu( document.getElementById( 'cbp-tm-menu' ) );
+</script>
+
+
+<!-- Chart -->
+<script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="http://www.amcharts.com/lib/3/pie.js"></script>
+<script src="http://www.amcharts.com/lib/3/serial.js"></script>
+<script src="http://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<script>
+// Inventory controls
+var chart = AmCharts.makeChart("stackedBarChart", {
+  "type": "serial",
+	"theme": "light",
+  "legend": {
+        "horizontalGap": 10,
+        "maxColumns": 1,
+        "position": "right",
+        "autoMargins":false,
+        "marginBottom": 0,
+        "marginTop": 0,
+        "marginLeft": 20,
+        "marginRight": 0,
+        "useGraphSettings": false,
+		    "markerSize": 14,
+        "markerType": "circle",
+        "align": "right",
+        "valueWidth": 0
+    },
+    "dataProvider": [{
+        "week": "08/28",
+        "extreviews": 56,
+        "high": 4,
+        "inProcess": 8,
+        "unworked": 47,
+        "total": 115
+    }, {
+        "week": "09/04",
+        "extreviews": 52,
+        "high": 6,
+        "inProcess": 10,
+        "unworked": 50,
+        "total": 118
+    }, {
+        "week": "09/11",
+        "extreviews": 50,
+        "high": 12,
+        "inProcess": 14,
+        "unworked": 44,
+        "total": 120
+    }, {
+        "week": "09/18",
+        "extreviews": 54,
+        "high": 9,
+        "inProcess": 12,
+        "unworked": 38,
+        "total": 113
+    }, {
+        "week": "09/25",
+        "extreviews": 60,
+        "high": 12,
+        "inProcess": 8,
+        "unworked": 42,
+        "total": 122
+    }, {
+        "week": "This Week",
+        "extreviews": 62,
+        "high": 8,
+        "inProcess": 12,
+        "unworked": 48,
+        "total": 130
+    }],
+    "valueAxes": [{
+        "stackType": "regular",
+        "axisAlpha": 0.3,
+        "gridAlpha": 0
+    }],
+    "graphs": [{
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "External Reviews",
+        "type": "column",
+		"color": "#000000",
+        "fillColors": "#00CC00",
+        "valueField": "extreviews"
+    }, {
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "Worked",
+        "type": "column",
+		"color": "#000000",
+        "fillColors": "#3D80DA",
+        "valueField": "worked"
+    }, {
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "High-Risk",
+        "type": "column",
+		"color": "#000000",
+        "fillColors": "#FF6239",
+        "valueField": "high"
+    }, {
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "In-Process",
+        "type": "column",
+		"color": "#000000",
+        "fillColors": "#A459F2",
+        "valueField": "inProcess"
+    }, {
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "Unworked",
+        "type": "column",
+		"color": "#000000",
+        "fillColors": "#CC3300",
+        "valueField": "unworked"
+    }, {
+        //Trend Line
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0,
+        "labelText": "[[value]]",
+        "lineAlpha": 1,
+        "lineThickness": 3,
+        "bullet": "round",
+        "title": "Total",
+        "type": "line",
+		"color": "#e6c300",
+        "fillColors": "#e6c300",
+        "lineColor": "#e6c300",
+        "valueField": "total"
+    }],
+    "categoryField": "week",
+    "categoryAxis": {
+        "gridPosition": "start",
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "position": "left"
+    },
+    "export": {
+    	"enabled": true
+     }
+
+});
+
+//Labels and Close
+$("#stackedBarChart").click(function () {
+    //Direct window to section
+    window.location.href = "../Worklist/index.html";
+    return false;
+});
+
+// Productivity
+var chart2 = AmCharts.makeChart("productivity", {
+    "type": "serial",
+    "theme": "light",
+    "marginRight": 5,
+    "autoMarginOffset": 0,
+    "dataDateFormat": "YYYY-MM-DD",
+    "valueAxes": [{
+        "id": "v1",
+        "axisAlpha": 0,
+        "position": "left",
+        "logarithmic": true,
+        "dashLength": 1,
+        "guides": [{
+            "dashLength": 6,
+            "inside": true,
+            "label": "Target (80)",
+            "lineAlpha": 1,
+            "value": 80
+        }],
+        "position": "left"
+    }],
+    "balloon": {
+        "borderThickness": 1,
+        "shadowAlpha": 0
+    },
+    "graphs": [{
+        "id": "g1",
+        "bullet": "round",
+        "bulletBorderAlpha": 1,
+        "bulletColor": "#FFFFFF",
+        "bulletSize": 5,
+        "hideBulletsCount": 50,
+        "lineThickness": 2,
+        "title": "red line",
+        "useLineColorForBulletBorder": true,
+        "valueField": "value",
+        "balloonText": "<div style='margin:5px; font-size:19px;'><span style='font-size:13px;'>[[category]]</span><br>[[value]]</div>"
+    }],
+    "chartScrollbar": {
+        "graph": "g1",
+        "oppositeAxis":false,
+        "offset":30,
+        "scrollbarHeight": 80,
+        "backgroundAlpha": 0,
+        "selectedBackgroundAlpha": 0.1,
+        "selectedBackgroundColor": "#888888",
+        "graphFillAlpha": 0,
+        "graphLineAlpha": 0.5,
+        "selectedGraphFillAlpha": 0,
+        "selectedGraphLineAlpha": 1,
+        "autoGridCount":true,
+        "color":"#AAAAAA"
+    },
+    "chartCursor": {
+        "pan": true,
+        "valueLineEnabled": true,
+        "valueLineBalloonEnabled": true,
+        "cursorAlpha":0,
+        "valueLineAlpha":0.2
+    },
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true,
+        "dashLength": 1,
+        "minorGridEnabled": true
+    },
+    "export": {
+        "enabled": true
+    },
+    "dataProvider": [{
+        "date": "2012-09-27",
+        "value": 62
+    }, {
+        "date": "2012-09-28",
+        "value": 64
+    }, {
+        "date": "2012-09-29",
+        "value": 68
+    }, {
+        "date": "2012-09-30",
+        "value": 67
+    }, {
+        "date": "2012-10-01",
+        "value": 64
+    }, {
+        "date": "2012-10-02",
+        "value": 65
+    }, {
+        "date": "2012-10-03",
+        "value": 66
+    }, {
+        "date": "2012-10-04",
+        "value": 68
+    }, {
+        "date": "2012-10-05",
+        "value": 65
+    }, {
+        "date": "2012-10-06",
+        "value": 69
+    }, {
+        "date": "2012-10-07",
+        "value": 64
+    }, {
+        "date": "2012-10-08",
+        "value": 61
+    }, {
+        "date": "2012-10-09",
+        "value": 66
+    }, {
+        "date": "2012-10-10",
+        "value": 66
+    }, {
+        "date": "2012-10-11",
+        "value": 63
+    }, {
+        "date": "2012-10-12",
+        "value": 64
+    }, {
+        "date": "2012-10-13",
+        "value": 61
+    }, {
+        "date": "2012-10-14",
+        "value": 59
+    }, {
+        "date": "2012-10-15",
+        "value": 58
+    }, {
+        "date": "2012-10-16",
+        "value": 57
+    }, {
+        "date": "2012-10-17",
+        "value": 64
+    }, {
+        "date": "2012-10-18",
+        "value": 59
+    }, {
+        "date": "2012-10-19",
+        "value": 59
+    }, {
+        "date": "2012-10-20",
+        "value": 57
+    }, {
+        "date": "2012-10-21",
+        "value": 64
+    }, {
+        "date": "2012-10-22",
+        "value": 61
+    }, {
+        "date": "2012-10-23",
+        "value": 64
+    }, {
+        "date": "2012-10-24",
+        "value": 63
+    }, {
+        "date": "2012-10-25",
+        "value": 61
+    }, {
+        "date": "2012-10-26",
+        "value": 57
+    }, {
+        "date": "2012-10-27",
+        "value": 59
+    }, {
+        "date": "2012-10-28",
+        "value": 65
+    }, {
+        "date": "2012-10-29",
+        "value": 59
+    }, {
+        "date": "2012-10-30",
+        "value": 61
+    }, {
+        "date": "2012-10-31",
+        "value": 62
+    }, {
+        "date": "2012-11-01",
+        "value": 63
+    }, {
+        "date": "2012-11-02",
+        "value": 57
+    }, {
+        "date": "2012-11-03",
+        "value": 58
+    }, {
+        "date": "2012-11-04",
+        "value": 55
+    }, {
+        "date": "2012-11-05",
+        "value": 61
+    }, {
+        "date": "2012-11-06",
+        "value": 65
+    }, {
+        "date": "2012-11-07",
+        "value": 64
+    }, {
+        "date": "2012-11-08",
+        "value": 61
+    }, {
+        "date": "2012-11-09",
+        "value": 56
+    }, {
+        "date": "2012-11-10",
+        "value": 57
+    }, {
+        "date": "2012-11-11",
+        "value": 61
+    }, {
+        "date": "2012-11-12",
+        "value": 63
+    }, {
+        "date": "2012-11-13",
+        "value": 60
+    }, {
+        "date": "2012-11-14",
+        "value": 61
+    }, {
+        "date": "2012-11-15",
+        "value": 57
+    }, {
+        "date": "2012-11-16",
+        "value": 62
+    }, {
+        "date": "2012-11-17",
+        "value": 56
+    }, {
+        "date": "2012-11-18",
+        "value": 60
+    }, {
+        "date": "2012-11-19",
+        "value": 57
+    }, {
+        "date": "2012-11-20",
+        "value": 63
+    }, {
+        "date": "2012-11-21",
+        "value": 65
+    }, {
+        "date": "2012-11-22",
+        "value": 64
+    }, {
+        "date": "2012-11-23",
+        "value": 62
+    }, {
+        "date": "2012-11-24",
+        "value": 63
+    }, {
+        "date": "2012-11-25",
+        "value": 61
+    }, {
+        "date": "2012-11-26",
+        "value": 55
+    }, {
+        "date": "2012-11-27",
+        "value": 59
+    }, {
+        "date": "2012-11-28",
+        "value": 60
+    }, {
+        "date": "2012-11-29",
+        "value": 63
+    }, {
+        "date": "2012-11-30",
+        "value": 61
+    }, {
+        "date": "2012-12-01",
+        "value": 62
+    }, {
+        "date": "2012-12-02",
+        "value": 56
+    }, {
+        "date": "2012-12-03",
+        "value": 55
+    }, {
+        "date": "2012-12-04",
+        "value": 63
+    }, {
+        "date": "2012-12-05",
+        "value": 59
+    }, {
+        "date": "2012-12-06",
+        "value": 58
+    }, {
+        "date": "2012-12-07",
+        "value": 58
+    }, {
+        "date": "2012-12-08",
+        "value": 58
+    }, {
+        "date": "2012-12-09",
+        "value": 64
+    }, {
+        "date": "2012-12-10",
+        "value": 63
+    }, {
+        "date": "2012-12-11",
+        "value": 55
+    }, {
+        "date": "2012-12-12",
+        "value": 60
+    }, {
+        "date": "2012-12-13",
+        "value": 67
+    }, {
+        "date": "2012-12-14",
+        "value": 57
+    }, {
+        "date": "2012-12-15",
+        "value": 62
+    }, {
+        "date": "2012-12-16",
+        "value": 64
+    }, {
+        "date": "2012-12-17",
+        "value": 61
+    }, {
+        "date": "2012-12-18",
+        "value": 59
+    }, {
+        "date": "2012-12-19",
+        "value": 63
+    }, {
+        "date": "2012-12-20",
+        "value": 64
+    }, {
+        "date": "2012-12-21",
+        "value": 56
+    }, {
+        "date": "2012-12-22",
+        "value": 59
+    }, {
+        "date": "2012-12-23",
+        "value": 58
+    }, {
+        "date": "2012-12-24",
+        "value": 55
+    }, {
+        "date": "2012-12-25",
+        "value": 62
+    }, {
+        "date": "2012-12-26",
+        "value": 64
+    }, {
+        "date": "2012-12-27",
+        "value": 60
+    }, {
+        "date": "2012-12-28",
+        "value": 60
+    }, {
+        "date": "2012-12-29",
+        "value": 60
+    }, {
+        "date": "2012-12-30",
+        "value": 62
+    }, {
+        "date": "2012-12-31",
+        "value": 58
+    }, {
+        "date": "2013-01-01",
+        "value": 60
+    }, {
+        "date": "2013-01-02",
+        "value": 57
+    }, {
+        "date": "2013-01-03",
+        "value": 64
+    }, {
+        "date": "2013-01-04",
+        "value": 56
+    }, {
+        "date": "2013-01-05",
+        "value": 60
+    }, {
+        "date": "2013-01-06",
+        "value": 63
+    }, {
+        "date": "2013-01-07",
+        "value": 61
+    }, {
+        "date": "2013-01-08",
+        "value": 60
+    }, {
+        "date": "2013-01-09",
+        "value": 55
+    }, {
+        "date": "2013-01-10",
+        "value": 55
+    }, {
+        "date": "2013-01-11",
+        "value": 57
+    }, {
+        "date": "2013-01-12",
+        "value": 58
+    }, {
+        "date": "2013-01-13",
+        "value": 60
+    }, {
+        "date": "2013-01-14",
+        "value": 60
+    }, {
+        "date": "2013-01-15",
+        "value": 63
+    }, {
+        "date": "2013-01-16",
+        "value": 61
+    }, {
+        "date": "2013-01-17",
+        "value": 64
+    }, {
+        "date": "2013-01-18",
+        "value": 58
+    }, {
+        "date": "2013-01-19",
+        "value": 55
+    }, {
+        "date": "2013-01-20",
+        "value": 62
+    }, {
+        "date": "2013-01-21",
+        "value": 63
+    }, {
+        "date": "2013-01-22",
+        "value": 58
+    }, {
+        "date": "2013-01-23",
+        "value": 55
+    }, {
+        "date": "2013-01-24",
+        "value": 55
+    }, {
+        "date": "2013-01-25",
+        "value": 60
+    }, {
+        "date": "2013-01-26",
+        "value": 57
+    }, {
+        "date": "2013-01-27",
+        "value": 64
+    }, {
+        "date": "2013-01-28",
+        "value": 63
+    }, {
+        "date": "2013-01-29",
+        "value": 64
+    }, {
+        "date": "2013-01-30",
+        "value": 61
+    }]
+});
+
+chart2.addListener("rendered", zoomChart);
+
+zoomChart();
+
+function zoomChart() {
+    chart2.zoomToIndexes(chart2.dataProvider.length - 40, chart2.dataProvider.length - 1);
+}
+
+// Activities
+var chart = AmCharts.makeChart("userActivities", {
+  "type": "pie",
+  "startDuration": 0,
+   "theme": "light",
+  "addClassNames": true,
+  "innerRadius": "30%",
+  "radius": "38%",
+  "defs": {
+    "filter": [{
+      "id": "shadow",
+      "width": "200%",
+      "height": "200%",
+      "feOffset": {
+        "result": "offOut",
+        "in": "SourceAlpha",
+        "dx": 0,
+        "dy": 0
+      },
+      "feGaussianBlur": {
+        "result": "blurOut",
+        "in": "offOut",
+        "stdDeviation": 5
+      },
+      "feBlend": {
+        "in": "SourceGraphic",
+        "in2": "blurOut",
+        "mode": "normal"
+      }
+    }]
+  },
+  "dataProvider": [ {
+    "activity": "No Action",
+    "visits": 134
+  }, {
+    "activity": "Sent to Doc.",
+    "visits": 265
+  }, {
+    "activity": "Sent to Coding",
+    "visits": 302
+  }, {
+    "activity": "Other",
+    "visits": 18
+  } ],
+  "valueField": "visits",
+  "titleField": "activity",
+  "labelsEnabled": false,
+  "autoMargins":false,
+  "marginLeft": 0,
+  "marginTop": 0,
+  "marginBottom": 0,
+  "marginRight": 0,
+  "export": {
+    "enabled": true
+  }
+});
+
+chart.addListener("init", handleInit);
+
+chart.addListener("rollOverSlice", function(e) {
+  handleRollOver(e);
+});
+
+function handleInit(){
+  chart.legend.addListener("rollOverItem", handleRollOver);
+}
+
+function handleRollOver(e){
+  var wedge = e.dataItem.wedge.node;
+  wedge.parentNode.appendChild(wedge);
+}
+</script>
+
+</body>
+</html>

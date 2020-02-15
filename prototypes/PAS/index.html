@@ -1,0 +1,3138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+<meta charset="utf-8" />
+<title>PAS: Denials & Appeals</title>
+<link href="css/font-awesome.css" rel="stylesheet">
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+  <![endif]-->
+
+  <link rel="stylesheet" href="css/fastselect.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/fastselect.standalone.js"></script>
+
+<link href="css/app/default.css" rel="stylesheet">
+<link href="css/app/skin.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-checkbox.css" rel="stylesheet">
+<link href="css/bootstrap-submenu.css" rel="stylesheet">
+<link href="css/dataTables.css" rel=stylesheet type="text/css">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/idm-custom.css" rel="stylesheet">
+<link href="css/pas-custom.css" rel="stylesheet">
+
+<!-- For prototype scenario menu only.  DO NOT COPY TO DEV ENVIRONMENT -->
+<link href="css/ah-prototype.css" rel="stylesheet">
+
+</head>
+<body id="top">
+ <!-- Back to Top -->
+  <a href="#top" class="backToTop"><span class="fa fa-chevron-up"></span></a>
+
+   <!-- For prototype scenario menu only.  DO NOT COPY TO DEV ENVIRONMENT -->
+      <script src="js/pas-prototype-menu.js"></script>
+
+<div class="main-header">
+  <div class="siteHeaderInner">
+    <ul class="nav-login">
+      <li> <a href="javascript:void(0);">Mark Coleman</a> </li>
+      <li>
+        <select>
+          <option>[Select Location]</option>
+          <option>A116 - Alta View Hospital</option>
+          <option>A118 - American Fork Hospital</option>
+          <option>A120 - Bear River Valley Hospital</option>
+          <option>A122 - Cassia Regional Medical Center</option>
+          <option>A124 - Intermountain Cottonwood</option>
+          <option>A125 - Delta Community Medical Center</option>
+          <option>A126 - Dixie Regional Medical Center</option>
+          <option>A127 - Fillmore Community Medical Center</option>
+          <option>A128 - LDS Hospital</option>
+          <option>A130 - Logan Regional Hospital</option>
+          <option>A132 - McKay-Dee Hospital</option>
+          <option>A134 - Orem Community Hospital</option>
+          <option>A138 - Primary Childrens Hospital</option>
+          <option>A139 - Riverton Hospital</option>
+          <option>A140 - Sanpete Valley Hospital</option>
+          <option>A142 - Sevier Valley Hospital</option>
+          <option>A143 - Park City Medical Center</option>
+          <option>A144 - Utah Valley Regional Medical Center</option>
+          <option>A146 - Valley View Medical Center</option>
+          <option>A148 - Heber Valley Medical Center</option>
+          <option>A152 - Garfield Memorial Hospital</option>
+          <option>A154 - Intermountain Medical Center</option>
+          <option>A270 - Intermountain Rehab</option>
+          <option>A364 - McKay-Dee Surgical Center</option>
+          <option>A365 - Park City Medical Center</option>
+          <option>A366 - Intermountain McKay</option>
+          <option>A370 - TOSH The Orthopedic Specialty Hospital</option>
+          <option>AHTT - Accretive Health Test Facility</option>
+          <option>BACC - Borgess Ambulatory Care Center</option>
+          <option>BGMI - Beaumont Grosse Pointe Hospital</option>
+          <option>BHTN - Saint Thomas MIDTOWN HOSPITAL</option>
+          <option>BMAL - St. Vincent's Birmingham</option>
+          <option>BOLE - Borgess Lee Memorial</option>
+          <option>BOMC - Borgess Medical Center</option>
+          <option>BPHC - Borgess Pipp</option>
+          <option>BPMI - Beaumont Professional</option>
+          <option>BRMI - Beaumont Royal Oak Hospital</option>
+          <option selected>BRTX - Valley Baptist Brownsville</option>
+          <option>BTAL - St. Vincent's Blount</option>
+          <option>BTMI - Beaumont Troy Hospital</option>
+          <option>CCWI - Columbia St. Mary's</option>
+          <option>CRAR - Conway Regional Medical Center</option>
+          <option>DEMO - Demo Site</option>
+          <option>DHPN - Dartmouth Hospital Professional North</option>
+          <option>DHPS - Dartmouth Hospital Professional South</option>
+          <option>DHTN - Dartmouth Hospital Technical North</option>
+          <option>EHIN - Elkhart General Hospital</option>
+          <option>ESAL - St. Vincent's East</option>
+          <option>FLEX - File Exchange Enterprise</option>
+          <option>GRMC - Genesys Regional Medical Center</option>
+          <option>HCAZ - Arizona - Holy Cross</option>
+          <option>HFMI - Henry Ford Hospital &amp; Health Network, Cottage &amp; Maplegrove</option>
+          <option>LLNJ - Our Lady of Lourdes Medical Center</option>
+          <option>LMNJ - Lourdes Medical Center</option>
+          <option>MCWI - St. Mary's Milwaukee Campus</option>
+          <option>MGMI - Henry Ford Medical Group – Professional Revenue</option>
+          <option>MHKY - Methodist Hospital - Henderson, KY</option>
+          <option>MHME - Mercy Hospital</option>
+          <option>MPME - Mercy Professional</option>
+          <option>MTTN - Saint Thomas RUTHERFORD HOSPITAL</option>
+          <option>OCWI - St. Mary's Ozaukee</option>
+          <option>PHAL - Providence Hospital, Mobile AL</option>
+          <option>PHDC - Providence DC</option>
+          <option>SCAL - St. Vincent's St. Clair</option>
+          <option>SCCA - Santa Clara Valley Medical Center</option>
+          <option>SCFL - St. Vincent"s Medical Center Clay County</option>
+          <option>SFNJ - St. Francis Medical Center</option>
+          <option>SHFL - Sacred Heart - Florida</option>
+          <option>SHWI - Sacred Hearth Rehabilitation Institute</option>
+          <option>SJAZ - Arizona - SJAZ</option>
+          <option>SJMA - St. John Macomb</option>
+          <option>SJMC - St. John Medical Center</option>
+          <option>SJMO - St. Joseph Medical Center</option>
+          <option>SJNS - St. John North Shore</option>
+          <option>SJOK - St. John Oakland Hospital</option>
+          <option>SJPK - St. John's Providence Park</option>
+          <option>SJPR - St. John Providence Hospital</option>
+          <option>SJRD - St. John River District</option>
+          <option>SLFL - Saint Luke's, FL</option>
+          <option>SMAZ - Arizona - SMAZ</option>
+          <option>SMMC - St. Mary's of Michigan</option>
+          <option>SMMO - St. Mary's Medical Center</option>
+          <option>SMSH - Standish Community Hospital</option>
+          <option>STAH - St Anthony Hospital, Chicago</option>
+          <option>STTN - Saint Thomas WEST HOSPITAL</option>
+          <option>SVFL - St. Vincent's Medical Center, FL</option>
+          <option>TAWA - St. Joseph Health System</option>
+          <option>THAZ - Arizona - THAZ</option>
+          <option>UCKY - Methodist Hospital Union County</option>
+          <option>WBMI - West Bloomfield Hospital</option>
+        </select>
+      </li>
+      <li> <a href="contactus.html">Contact Us</a> </li>
+      <li> <a href="login.html" class="LoginLink" title="Login">Logout</a> </li>
+    </ul>
+    <!-- /.login -->
+  </div>
+  <div id="siteHeadouter">
+    <div class="siteHeaderInner">
+      <div id="logo"> <a href="index.html" title="Accretive Health: Physician Advisory Services (PAS)"> <img alt="Accretive Health: PAS" src="images/logo-Accretive-white.png"> </a> </div>
+      <!--/Logo-->
+      <div id="topNavigation">
+        <ul>
+          <li> &nbsp; </li>
+          <li> <a href="index.html">HOME</a> </li>
+          <li> &nbsp; </li>
+          <li class="dropdown-submenu"> <a href="#">GLOBAL WORKLIST</a>             <ul class="dropdown-menu">
+              <li><a href="loc-global-worklist.html" tabindex="-1">Level of Care </a></li>
+<li><a href="loc-global-physician-worklist.html" tabindex="-1">Level of Care - Physician</a></li>
+<li><a href="loc-dsr-worklist.html" tabindex="-1">Level of Care - DSR</a></li>
+<li><a href="tar-worklist.html" tabindex="-1">TAR Free Review</a></li>
+<li><a href="flr-worklist.html" tabindex="-1">First Level Review</a></li>
+            </ul></li>
+          <li> &nbsp; </li>
+          <li class="dropdown-submenu"> <a href="#" tabindex="-1">WORKLIST</a>
+            <ul class="dropdown-menu">
+              <li><a href="loc-worklist.html" tabindex="-1">Level of Care</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Denials & Appeals</a></li>
+              <li><a href="tar-worklist.html" tabindex="-1">TAR Free Review</a></li>
+<li><a href="flr-worklist.html" tabindex="-1">First Level Review</a></li>
+            </ul>
+          </li>
+          <li> &nbsp; </li>
+          <li> <a href="javascript:void(0);">SETTINGS</a> </li>
+          <li> &nbsp; </li>
+          <li> <a href="javascript:void(0);">ANALYTICS</a> </li>
+          <li> &nbsp; </li>
+          <li> <a href="javascript:void(0);">HELP</a> </li>
+          <li> &nbsp; </li>
+          <li> <a href="oursolutions.html">OUR SOLUTIONS</a> </li>
+        </ul>
+        <button id="navbar-minimize" class="navbar-minimize" type="button"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars fa-2x"></i> </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /main-header -->
+<nav data-spy="affix" data-offset-top="220" id="prm-nav" >
+  <div class="section_header">
+    <div class="panel-heading">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#summary" data-toggle="tab">Summary</a></li>
+        <!-- <li class=""><a href="#radio" data-toggle="tab">PPTP</a></li> -->
+        <!-- <li class="kmd"><a href="#check" data-toggle="tab">KMD</a></li> -->
+        <li class=""><a href="#caselog" data-toggle="tab">Log</a></li>
+      </ul>
+      <!-- /panel-actions -->
+      <h3 class="panel-title"></h3>
+    </div>
+
+
+    <ul class="nav navbar-nav navbar-left">
+      <li class="dropdown"> <a href="denials-appeals-worklist.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Denials & Appeals <span class="caret"></span></a>
+        <ul aria-labelledby="dropdownMenu" role="menu" class="dropdown-menu">
+          <li class="dropdown-submenu"> <a href="denials-appeals-worklist.html" tabindex="-1">My Appeals</a>
+            <ul class="dropdown-menu">
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Letters in Progress</a></li>
+            </ul>
+          </li>
+          <li><a href="denials-appeals-worklist.html" tabindex="-1">Front End</a></li>
+          <li><a href="denials-appeals-worklist.html" tabindex="-1">Preview</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-submenu"> <a href="denials-appeals-worklist.html" tabindex="-1">RFA</a>
+            <ul class="dropdown-menu">
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Medicare Level 1</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Non-Medicare Level</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Other</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu"> <a href="denials-appeals-worklist.html" tabindex="-1">Author Review</a>
+            <ul class="dropdown-menu">
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Internal Review</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Ready for Screening</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu"> <a href="denials-appeals-worklist.html" tabindex="-1">Back End</a>
+            <ul class="dropdown-menu">
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Appeal Reviewed</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">L1/Med/LOC</a></li>
+            </ul>
+          </li>
+          <li><a href="denials-appeals-worklist.html" tabindex="-1">Due Today</a></li>
+          <li><a href="denials-appeals-worklist.html" tabindex="-1">ALJ</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-submenu"> <a href="denials-appeals-worklist.html" tabindex="-1">Awaiting Info</a>
+            <ul class="dropdown-menu">
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Non-Medicare</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Region A</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Region B</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Region C</a></li>
+              <li><a href="denials-appeals-worklist.html" tabindex="-1">Region D</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>    <div class="right">
+        <ul class="rtbUL">
+          <li class="rtbItem rtbBtn">
+          <a href="#" class="addNewAppeal"><span class="fa fa-plus-circle"></span>&nbsp; New Appeal</a>
+          </li>
+
+          <li class="rtbItem rtbBtn"><a href="#" class="rtbWrap"><span class="rtbOut"><span class="rtbMid"><span class="rtbIn"><span class="rtbText">Export</span></span></span></span></a></li>
+          <li class="rtbItem rtbBtn"><a href="#" class="rtbWrap"><span class="rtbOut"><span class="rtbMid"><span class="rtbIn"><span class="rtbText">Batch Print</span></span></span></span></a></li>
+          <li class="rtbItem rtbBtn"><a href="#" class="rtbWrap"><span class="rtbOut"><span class="rtbMid"><span class="rtbIn"><span class="rtbText">Print</span></span></span></span></a></li>
+
+        </ul>
+    </div>
+
+ <ul id="prm-menu" style="position:relative;display:none">
+    <li class="nav-patient"> <a href="#medical"><i class=""></i> Medical Info</a> </li>
+    <li class="nav-auth"> <a href="#auth"><i class=""></i> Claim &amp; Denial Info</a> </li>
+    <li class="nav-residual"> <a href="#residual"><i class=""></i> Appeals Info</a> </li>
+    <li class="nav-services"> <a href="#services"><i class=""></i> Advisor</a> </li>
+    <li class="nav-orderLab"> <a href="#orderLab"><i class=""></i> Documents</a> </li>
+    <li class="nav-notes"> <a href="#notes"><i class=""></i> Notes</a> </li>
+  </ul>
+  </div>
+
+</nav>
+<div class="container" id="main">
+  <div class="row">
+    <div class="col-lg-9" id="prm-menu-col">
+      <div class="row hidden">
+
+        <div class="col-lg-12">
+          <div class="idm-tools" id="searchPRM">
+            <form class="form-inline idm-search" role="form">
+              <div class="form-group" id="searchSelect">
+                <div class="input-group input-group-btn">
+                  <select id="searchBySM">
+                    <option value="1" selected>Visit #</option>
+                    <option value="2">SSN</option>
+                    <option value="3">First/Last Name</option>
+                    <option value="4">Medical Records #</option>
+                  </select>
+                  <!-- /btn-group -->
+                </div>
+                <!-- /input-group -->
+              </div>
+              <div class="form-group" id="searchMain">
+                <label class="" for="exampleInputPassword2">Search By</label>
+                <input type="text" placeholder="Visit #" class="form-control" id="searchInputMain">
+              </div>
+              <div class="form-group hidden" id="searchFName">
+                <label class="" for="exampleInputPassword2">First Name</label>
+                <input type="text" placeholder="First Name" class="form-control" id="searchInputFName">
+              </div>
+              <div class="form-group hidden" id="searchLName">
+                <label class="" for="exampleInputPassword2">Last Name</label>
+                <input type="text" placeholder="Last Name" class="form-control" id="searchInputLName">
+              </div>
+              <div class="form-group" id="searchBtn"> <a class="btn btnPrimary btn-block" href="javascript:void(0);">Submit</a> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="patient" class="panel">
+        <div class="member-details">
+          <div class="hidearrow-bg"><a href="javascript:void(0);" id="hidearrow" class="fa fa-chevron-circle-right fa-2x"  data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Show/Hide Right Pane"></a></div>
+          <div class="row">
+           <div class="col-lg-12"><ul id="mobile-buttons" class="checkoutbtns"></ul></div>
+            <div class="col-lg-6">
+              <!-- /user-photo
+                               <div class="user-photo" id="imagePreview">
+                                  <i class="fa fa-user"></i>
+                               </div>
+
+               <a class="uploadFileImg" href="#"><i class="fa fa-folder-open-o"></i>
+               <span>Edit Photo</span><input id="uploadFile" type="file" name="image" class="img" class="btn btnPrimary" />
+               </a>-->
+
+
+
+              <div class="user-details">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <ul class="patient-data stacked">
+                      <li class="title-heading">
+                        <label>Last Name<b class="astrix">*</b></label>
+                        <input class="ptntLast hidden" type="text" value="">
+                        <span id="ptntLast">Bauer</span><i>,&nbsp;</i> </li>
+                      <li class="title-heading">
+                        <label>First Name<b class="astrix">*</b></label>
+                        <input class="ptntFirst hidden" type="text" value="">
+                        <span id="ptntFirst">Jack</span> </li>
+                      <li class="title-heading">
+                        <label>Middle</label>
+                        <input class="ptntMI hidden" type="text" value="">
+                        <span id="ptntMI"></span> </li>
+                      <li class="clear">
+			  <br clear="all" /></li>
+                      <li>
+                        <label><span data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Date of Birth">DOB</span><b class="astrix">*</b></label>
+                        <input type="text" id="datepicker02" class="ptntDOBInput hidden" value="03/36/1972">
+                        <span class="ptntDOB" id="ptntdob">03/06/1972</span><b id="calc-age"></b><i class="fa fa-calendar cal-icon"></i> </input>
+                      </li>
+                      <li>
+                        <label>Gender<b class="astrix">*</b></label>
+                        <select class="ptntGenderInput hidden" value="">
+                          <option>[Select]</option>
+                          <option selected>Male</option>
+                          <option>Female</option>
+                        </select>
+                        <span class="ptntGender">Male</span> </li>
+                      <li>
+                        <label><span  data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Medical Records Number">MRN</span></label>
+                        <input class="ptntDOSInput hidden" type="text" value="">
+                        <span class="ptntDOS">LZD5RYND</span> </li>
+                      <li>
+                        <label><span >Account Number</span><b class="astrix">*</b></label>
+                        <input class="ptntMRNInput hidden" type="text" value="">
+                        <span class="ptntMRN">719365206</span> </li>
+                      <li>
+                        <label>Facility<b class="astrix">*</b></label>
+                        <b>BRTX - Valley Baptist Brownsville</b>
+                        <!-- <input class="ptntFacilityInput hidden" type="text" value=""><span class="ptntFacility">BRTX - Valley Baptist Brownsville</span>-->
+                      </li>
+                    </ul>
+                    <!-- /patient-data -->
+
+                    
+
+                  </div>
+
+                  <!--col-lg-3-->
+                </div>
+                <!-- /row -->
+
+              </div>
+            </div>
+
+            <!-- /user-details -->
+            <div class="col-lg-6">
+              <div class="col-lg-12 case-checkedother">
+    			       <span><i class="fa fa-lock" data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Currently checked out by Alan Lockwood, BRTX"></i> <strong>Incomplete:</strong> Checked out to <strong>Alan Lockwood</strong></span>
+              </div>
+
+              <div role="alert" class="alert alert-danger"> <i class="fa fa-exclamation-triangle fa-2x pull-left"></i>
+                <div class="pull-left"> <strong>Top Priority</strong>
+                  <p>Remaining: <strong>4d 2h 43m 13s</strong></p>
+                </div>
+              </div>
+
+                    <h4>Episode Information</h4>
+                        <ul class="patient-data stacked">
+                          <li>
+                            <label>Admission<b class="astrix">*</b></label>
+                            <input type="text" class="admitdateInput hidden" id="datepicker02" placeholder="MM/DD/YY" />
+                            <span id="admitdate">07/08/2012</span><i class="fa fa-calendar cal-icon"></i> </li>
+                          <li>
+                            <label>Discharge</label>
+                            <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                            <span>08/03/2012</span><i class="fa fa-calendar cal-icon"></i> </li>
+                          <li>
+                            <label><span >Length of Stay (LOS)</span></label>
+                            <b>20 Days</b>
+                          </li>
+                          <li>
+                            <label>Patient Type</label>
+                            <select class="hidden">
+                              <OPTION>[Select]</OPTION>
+                              <OPTION>IN - Inpatient</OPTION>
+                              <OPTION>IO - Initial Observation</OPTION>
+                              <OPTION selected>OU - Outpatient</OPTION>
+                              <OPTION>UN - Unknown</OPTION>
+                              <OPTION>XO - Extended Observation</OPTION>
+                            </select>
+                            <span class="ptntLoc">OU - Outpatient</span> </li>
+                        </ul>
+			  
+            </div>
+          </div>
+
+        </div>
+        <!-- /member-details -->
+
+
+        <!-- /user-details -->
+        <div class="row">
+          <div class="col-lg-12"> </div>
+        </div>
+      </div>
+
+
+
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="summary">
+
+              <!-- BEGIN SUMMARY TAB -->
+
+              <div class="panel panel-tab anchor" id="medical">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Medical Information</h3>
+
+                  <!-- /panel-actions -->
+                  <ul class="nav nav-tabs hidden">
+                    <li class="active"><a data-toggle="tab" href="#visit">Visit Details</a></li>
+                    <li><a data-toggle="tab" href="#facility">Facility Info</a></li>
+                    <li><a data-toggle="tab" href="#address">Address</a></li>
+                    <li><a data-toggle="tab" href="#guarantor">Guarantor</a></li>
+                  </ul>
+                  <!-- /panel-actions -->
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div id="visit" class="tab-pane fade in active">
+                      <div class="row">
+                        
+                        <!--col-lg-6-->
+                        <div class="col-lg-6">
+                          <h4>Physician Info</h4>
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Attending Last Name</label>
+                              <input class="hidden" type="text" value="">
+                              <span>Ryerson</span> </li>
+                            <li>
+                              <label>Attending First Name</label>
+                              <input class="hidden" type="text" value="">
+                              <span>Ned</span> </li>
+                            <li>
+                              <label>Phone</label>
+                              <input class="hidden" type="text" value="">
+                              <span>(312) 793-1200</span> </li>
+                          </ul>
+
+                        </div>
+                        <!--/col-lg-6-->
+                        <!--col-lg-6-->
+                        <div class="col-lg-6">
+                          <h4>Facility Info</h4>
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Facility Contact</label>
+                              <input class="hidden" type="text" value="">
+                              <span>Jason Schwartz</span> </li>
+                              <li>
+                                <label>Phone</label>
+                                <input class="hidden" type="text" value="">
+                                <span>(312) 793-1200</span> </li>
+                              <li>
+                                <label>Extension</label>
+                                <input class="hidden" type="text" value="">
+                                <span>11784</span> </li>
+                          </ul>
+                        </div>
+                        <!--/col-lg-6-->
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12 divider"> </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h4>Medical Diagnosis &amp; Additional Information</h4>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>System</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-10">
+                          <ul class="patient-data stacked stretch">
+                            <li>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION>[Select]</OPTION>
+                                <OPTION>Cardiovascular</OPTION>
+                                <OPTION>Endocrine/Metabolic</OPTION>
+                                <OPTION>Gastrointestinal</OPTION>
+                                <OPTION>General</OPTION>
+                                <OPTION>Hematology</OPTION>
+                                <OPTION>Infection</OPTION>
+                                <OPTION>Musculoskeletal/Connective Tissue</OPTION>
+                                <OPTION>Neurology</OPTION>
+                                <OPTION>OBGYN</OPTION>
+                                <OPTION>Oncology</OPTION>
+                                <OPTION>Pediatrics</OPTION>
+                                <OPTION>Peripheral Vascular</OPTION>
+                                <OPTION>Pulmonary</OPTION>
+                                <OPTION>Renal/Genitourinary</OPTION>
+                                <OPTION selected>Surgery/Procedure</OPTION>
+                                <OPTION>Trauma</OPTION>
+                              </SELECT>
+                              <span>Surgery/Procedure</span> </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Diagnosis</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-10">
+                          <ul class="patient-data stacked stretch">
+                            <li>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION>[Select]</OPTION>
+                                <OPTION>Cardiovascular- AICD/Pacemaker</OPTION>
+                                <OPTION>Cardiovascular- PCI/Cardiac Catherization</OPTION>
+                                <OPTION>Cardiovascular-Ablation</OPTION>
+                                <OPTION>Cardiovascular-Unspecified</OPTION>
+                                <OPTION>EENT- Unspecified</OPTION>
+                                <OPTION >Gastrointestinal- Appendicitis</OPTION>
+                                <OPTION selected>Gastrointestinal- Lap Chole</OPTION>
+                                <OPTION>Gastrointestinal- Unspecified</OPTION>
+                                <OPTION>Genitourinary/GYN</OPTION>
+                                <OPTION>Genitourinary/GYN- TURP</OPTION>
+                                <OPTION>Musculoskeletal- Back/Spinal</OPTION>
+                                <OPTION>Musculoskeletal- Replacement (Knee, hip, disk)</OPTION>
+                                <OPTION>Musculoskeletal- Unspecified</OPTION>
+                                <OPTION>Post-op - Bleeding</OPTION>
+                                <OPTION>Post-op - Hyper/Hypotension</OPTION>
+                                <OPTION>Post-op - Persistent Pain</OPTION>
+                                <OPTION>Post-op - Unspecified</OPTION>
+                                <OPTION>Post-op - Urinary Retention</OPTION>
+                                <OPTION>Renal-Unspecified</OPTION>
+                                <OPTION >Unspecified</OPTION>
+                              </SELECT>
+                              <span>Gastrointestinal- Lap Chole</span> </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- /row -->
+
+					  <div class="row">
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Additional Diagnosis</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-10">
+                              <span id="conditionschecked">Arrhythmia- Unspecified, Chest Pain, Dehydration, Fatigue/Weakness</span> </li>
+                        </div>
+                      </div>
+                      <!-- /row -->
+					  
+
+                      <div class="row add-diag">
+                        <div class="col-lg-12">
+
+                          <!-- /patient-data -->
+                          <div class="toggle-inner-btn">
+
+                          <!--
+                           &nbsp; <i class="fa fa-plus-circle"> </i> <strong>Add / Edit Additional Diagnosis</strong>
+                           -->
+
+                           <div role="alert" class="alert alert-info protocol addtDiag">
+                              <div class="pull-left" style="width:95%"> 
+                                <div class="toggle-inner-btn">
+                                <!--<strong>Additional Diagnosis: </strong> <span > &nbsp; Arrhythmia- Unspecified,Chest Pain,Dehydration,Fatigue/Weakness</span>
+                                 -->
+                                <i class="fa fa-chevron-down"> </i> &nbsp;<strong>Add / Edit Additional Diagnosis</strong></div>
+                                <div class="toggle-inner-content">
+                                
+                                  <div class="row conditiontable">
+                                    <div class="col-lg-4"> <span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Abdominal Pain">
+                                      </span><span class="condition">Abdominal Pain </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Acid-base imbalance">
+                                      </span><span class="condition">Acid-base imbalance </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="ACS/Unstable Angina">
+                                      </span><span class="condition">ACS/Unstable Angina </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Acute life threatening event (ALTE)">
+                                      </span><span class="condition">Acute life threatening event (ALTE) </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Acute Renal Insufficiency/Injury">
+                                      </span><span class="condition">Acute Renal Insufficiency/Injury </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Adverse drug reaction">
+                                      </span><span class="condition">Adverse drug reaction </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Altered Mental Status">
+                                      </span><span class="condition">Altered Mental Status </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Anaphylaxis">
+                                      </span><span class="condition">Anaphylaxis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Anemia">
+                                      </span><span class="condition">Anemia </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" checked value="Arrhythmia- Unspecified">
+                                      </span><span class="condition">Arrhythmia- Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Arthritis">
+                                      </span><span class="condition">Arthritis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Asthma">
+                                      </span><span class="condition">Asthma </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Asthma/Wheezing">
+                                      </span><span class="condition">Asthma/Wheezing </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Atrial Fibrillation/Flutter">
+                                      </span><span class="condition">Atrial Fibrillation/Flutter </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Back Pain">
+                                      </span><span class="condition">Back Pain </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Bacteremia/Sepsis">
+                                      </span><span class="condition">Bacteremia/Sepsis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Bowel">
+                                      </span><span class="condition">Bowel </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Breast">
+                                      </span><span class="condition">Breast </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Bronchiloitis">
+                                      </span><span class="condition">Bronchiloitis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Ca++ - Hyper/Hypo">
+                                      </span><span class="condition">Ca++ - Hyper/Hypo </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Cardiovascular- AICD/Pacemaker">
+                                      </span><span class="condition">Cardiovascular- AICD/Pacemaker </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Cardiovascular- PCI/Cardiac Catherization">
+                                      </span><span class="condition">Cardiovascular- PCI/Cardiac Catherization </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Cardiovascular-Ablation">
+                                      </span><span class="condition">Cardiovascular-Ablation </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Cardiovascular-Unspecified">
+                                      </span><span class="condition">Cardiovascular-Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Cellulitis">
+                                      </span><span class="condition">Cellulitis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Chemotherapy related">
+                                      </span><span class="condition">Chemotherapy related </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" checked value="Chest Pain">
+                                      </span><span class="condition">Chest Pain </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="CHF Exacerbation">
+                                      </span><span class="condition">CHF Exacerbation </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Cirrhosis">
+                                      </span><span class="condition">Cirrhosis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Claudication">
+                                      </span><span class="condition">Claudication </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Coagulation Disorders">
+                                      </span><span class="condition">Coagulation Disorders </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Concussion">
+                                      </span><span class="condition">Concussion </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Constipation/Diarrhea">
+                                      </span><span class="condition">Constipation/Diarrhea </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="COPD exacerbation">
+                                      </span><span class="condition">COPD exacerbation </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Croup">
+                                      </span><span class="condition">Croup </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Deep Vein Thrombosis">
+                                      </span><span class="condition">Deep Vein Thrombosis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" checked value="Dehydration">
+                                      </span><span class="condition">Dehydration </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Delirium">
+                                      </span><span class="condition">Delirium </span> <span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Diabetes">
+                                      </span><span class="condition">Diabetes </span> </div>
+                                    <div class="col-lg-4"> <span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Diabetic Foot Ulcer">
+                                      </span><span class="condition">Diabetic Foot Ulcer </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Dialysis related">
+                                      </span><span class="condition">Dialysis related </span> <span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Dizziness/Vertigo">
+                                      </span><span class="condition">Dizziness/Vertigo </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Dyspnea/Shortness of breath">
+                                      </span><span class="condition">Dyspnea/Shortness of breath </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Edema">
+                                      </span><span class="condition">Edema </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="EENT- Unspecified">
+                                      </span><span class="condition">EENT- Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Failure to thrive/weight loss">
+                                      </span><span class="condition">Failure to thrive/weight loss </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Fall">
+                                      </span><span class="condition">Fall </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" checked value="Fatigue/Weakness">
+                                      </span><span class="condition">Fatigue/Weakness </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Fever">
+                                      </span><span class="condition">Fever </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Fever/FUO">
+                                      </span><span class="condition">Fever/FUO </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Fibromyalgia">
+                                      </span><span class="condition">Fibromyalgia </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Gastroenteritis">
+                                      </span><span class="condition">Gastroenteritis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Gastrointestinal- Appendicitis">
+                                      </span><span class="condition">Gastrointestinal- Appendicitis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Gastrointestinal- Lap Chole">
+                                      </span><span class="condition">Gastrointestinal- Lap Chole </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Gastrointestinal- Unspecified">
+                                      </span><span class="condition">Gastrointestinal- Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Genitourinary/GYN">
+                                      </span><span class="condition">Genitourinary/GYN </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Genitourinary/GYN- TURP">
+                                      </span><span class="condition">Genitourinary/GYN- TURP </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="GI Bleed">
+                                      </span><span class="condition">GI Bleed </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Headache">
+                                      </span><span class="condition">Headache </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Hematuria">
+                                      </span><span class="condition">Hematuria </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Hepatic Encephalopathy">
+                                      </span><span class="condition">Hepatic Encephalopathy </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Hyperbilirubinemia">
+                                      </span><span class="condition">Hyperbilirubinemia </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Hypertensive Urgency/Emergency">
+                                      </span><span class="condition">Hypertensive Urgency/Emergency </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Ingestions (drugs, toxins/poisons)">
+                                      </span><span class="condition">Ingestions (drugs, toxins/poisons) </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Intoxication">
+                                      </span><span class="condition">Intoxication </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Jaundice/Hyperbilirubinemia">
+                                      </span><span class="condition">Jaundice/Hyperbilirubinemia </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="K+ - Hyper/Hypo">
+                                      </span><span class="condition">K+ - Hyper/Hypo </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Leukemia">
+                                      </span><span class="condition">Leukemia </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Lung">
+                                      </span><span class="condition">Lung </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Metabolic disorders">
+                                      </span><span class="condition">Metabolic disorders </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Motor Vehicle Accident">
+                                      </span><span class="condition">Motor Vehicle Accident </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Musculoskeletal- Back/Spinal">
+                                      </span><span class="condition">Musculoskeletal- Back/Spinal </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Musculoskeletal- Replacement (Knee, hip, disk)">
+                                      </span><span class="condition">Musculoskeletal- Replacement (Knee, hip, disk) </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Musculoskeletal- Unspecified">
+                                      </span><span class="condition">Musculoskeletal- Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Na - Hyper/Hypo">
+                                      </span><span class="condition">Na - Hyper/Hypo </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Nausea/Vomiting">
+                                      </span><span class="condition">Nausea/Vomiting </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Neutropenia">
+                                      </span><span class="condition">Neutropenia </span> </div>
+                                    <div class="col-lg-4"> <span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Obstruction">
+                                      </span><span class="condition">Obstruction </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Oncology">
+                                      </span><span class="condition">Oncology </span> <span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Osteomyelitis">
+                                      </span><span class="condition">Osteomyelitis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Other - Inactive">
+                                      </span><span class="condition">Other - Inactive </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Overdose">
+                                      </span><span class="condition">Overdose </span> <span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Pain (Chronic/Acute)">
+                                      </span><span class="condition">Pain (Chronic/Acute) </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Pancreatic">
+                                      </span><span class="condition">Pancreatic </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Pancreatitis">
+                                      </span><span class="condition">Pancreatitis </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Pneumonia">
+                                      </span><span class="condition">Pneumonia </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Post-op - Bleeding">
+                                      </span><span class="condition">Post-op - Bleeding </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Post-op - Hyper/Hypotension">
+                                      </span><span class="condition">Post-op - Hyper/Hypotension </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Post-op - Persistent Pain">
+                                      </span><span class="condition">Post-op - Persistent Pain </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Post-op - Unspecified">
+                                      </span><span class="condition">Post-op - Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Post-op - Urinary Retention">
+                                      </span><span class="condition">Post-op - Urinary Retention </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Pressure Ulcers">
+                                      </span><span class="condition">Pressure Ulcers </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Preterm Labor">
+                                      </span><span class="condition">Preterm Labor </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Prostate">
+                                      </span><span class="condition">Prostate </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Pseudoaneurism">
+                                      </span><span class="condition">Pseudoaneurism </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Pulmonary Embolism">
+                                      </span><span class="condition">Pulmonary Embolism </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Renal-Unspecified">
+                                      </span><span class="condition">Renal-Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Respiratory Infection">
+                                      </span><span class="condition">Respiratory Infection </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Seizure">
+                                      </span><span class="condition">Seizure </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Sickle cell anemia">
+                                      </span><span class="condition">Sickle cell anemia </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Sickle cell anemia/hemoglobinopathy">
+                                      </span><span class="condition">Sickle cell anemia/hemoglobinopathy </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="SLE">
+                                      </span><span class="condition">SLE </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Soft Tissue Infection (erysipelas, necrotizing fasciitis)">
+                                      </span><span class="condition">Soft Tissue Infection (erysipelas, necrotizing fasciitis) </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Stones/Colic (Nephrolithisis)">
+                                      </span><span class="condition">Stones/Colic (Nephrolithisis) </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Suicide Attempt">
+                                      </span><span class="condition">Suicide Attempt </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Suspected Abuse">
+                                      </span><span class="condition">Suspected Abuse </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Syncope/ Presyncope">
+                                      </span><span class="condition">Syncope/ Presyncope </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Thyroid ? Hyper/Hypo">
+                                      </span><span class="condition">Thyroid ? Hyper/Hypo </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="TIA/CVA">
+                                      </span><span class="condition">TIA/CVA </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Trauma (MVA, falls etc.)">
+                                      </span><span class="condition">Trauma (MVA, falls etc.) </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Unspecified">
+                                      </span><span class="condition">Unspecified </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Urinary Retention">
+                                      </span><span class="condition">Urinary Retention </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Urinary Tract Infection">
+                                      </span><span class="condition">Urinary Tract Infection </span><span class="table-check">
+                                      <input type="checkbox" class="checkbox-condition"name="condition" value="Vaginal Bleeding">
+                                      </span><span class="condition">Vaginal Bleeding</span> </div>
+                                  </div>
+
+                                </div>  
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label><span data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Diagnosis Related Group">DRG</span></label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3">
+                          <ul class="patient-data stacked flow">
+                            <li>
+                              <div class="ptntDRGInput hidden">
+                              <select class="multipleSelect" multiple name="language">
+                                <option value="300">300</option>
+                                <option value="301">301</option>
+                                <option value="302">302</option>
+                                <option value="303">303</option>
+                                <option value="304">304</option>
+                                <option value="305">305</option>
+                                <option value="306">306</option>
+                                <option value="307">307</option>
+                                <option value="308">308</option>
+                                <option value="309">309</option>
+                                <option value="310">310</option>
+                                <option value="311">311</option>
+                                <option value="312">312</option>
+                                <option selected value="313">313</option>
+                                <option value="314">314</option>
+                                <option value="315">315</option>
+                                <option value="316">316</option>
+                                <option value="317">317</option>
+                                <option value="318">318</option>
+                                <option value="319">319</option>
+                                <option value="320">320</option>
+                                <option value="321">321</option>
+                                <option value="322">322</option>
+                                <option value="323">323</option>
+                                <option value="324">324</option>
+                                <option value="325">325</option>
+                                <option value="326">326</option>
+                                <option value="327">327</option>
+                              </select>
+
+                              <script>
+
+                                  $('.multipleSelect').fastselect();
+
+                              </script>
+                              </div>
+
+                              <span class="ptntDRG">313</span>
+                            </li>
+                          </ul>
+
+                        </div>
+
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label><span data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Current Procedural Terminology / Healthcare Provider Service">CPT / HCPS</span></label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-5">
+                          <ul class="patient-data stacked flow">
+                            <li>
+                              <div class="ptntDRGInput hidden">
+                              <select class="multipleSelect" multiple name="language">
+                                <option value="780.00">780.00</option>
+                                <option value="780.50">780.00</option>
+                                <option selected value="781.00">780.00</option>
+                                <option value="781.50">780.00</option>
+                                <option value="782.00">780.00</option>
+                                <option value="782.50">780.00</option>
+                                <option value="783.00">780.00</option>
+                                <option value="783.50">780.00</option>
+                                <option value="784.00">780.00</option>
+                                <option value="784.50">780.00</option>
+                                <option value="785.00">780.00</option>
+                                <option value="785.50">780.00</option>
+                                <option value="786.00">780.00</option>
+                                <option selected value="786.50">786.50</option>
+                                <option value="787.00">787.00</option>
+                                <option value="787.50">787.50</option>
+                                <option value="788.00">788.00</option>
+                                <option value="788.50">788.50</option>
+                                <option value="789.00">789.00</option>
+                                <option value="789.50">789.50</option>
+                                <option value="790.00">790.00</option>
+                                <option value="790.50">790.50</option>
+                                <option value="795.00">795.00</option>
+                                <option value="795.50">795.50</option>
+                                <option value="800.00">800.00</option>
+                                <option value="800.50">800.50</option>
+                              </select>
+
+                              <script>
+
+                                  $('.multipleSelect').fastselect();
+
+                              </script>
+                              </div>
+
+                              <span class="ptntDRG">780.00, 786.50</span> </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- /row -->
+
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Medical Info</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-10">
+                          <ul class="patient-data stacked stretch">
+                            <li>
+                              <textarea class="col-lg-12 hidden" value="Patient fell after acute cerebral anoxia from cardiac or respiratory arrest."></textarea>
+                              <span>Patient fell after acute cerebral anoxia from cardiac or respiratory arrest.</span> </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- /row -->
+                    </div>
+                    <!-- /tab-pane -->
+                  </div>
+                  <!--/tab-content-->
+                </div>
+                <!-- /panel-body -->
+              </div>
+              <!-- /panel -->
+              <div class="panel panel-tab anchor" id="auth">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Claim / Denial Information </h3>
+
+                  <!-- /panel-actions -->
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <ul class="patient-data stacked">
+                        <li>
+                          <label>Submitted On</label>
+                          05/28/14</li>
+                        <li>
+                          <label>Completed On</label>
+                          Incomplete</li>
+
+                        <li>
+                          <label>Payor Name</label>
+                          <select class="ptntLocInput hidden" value="">
+                            <option selected="selected" value="-1">[Select]</option>
+                            <option value="104">Aetna</option>
+                            <option value="140">Affinity Health Plan</option>
+                            <option value="45">Amerigroup Corporation</option>
+                            <option value="137">Anthem BlueCross BlueShield</option>
+                            <option value="147">Anthem Healthkeepers</option>
+                            <option value="115">Anthem UM Services</option>
+                            <option value="97">Blue Cross Blue Shield</option>
+                            <option value="141">BlueCross BlueShield Alabama</option>
+                            <option value="57">BlueCross BlueShield of Western New York</option>
+                            <option value="46">BlueCross BlueShield Tennessee</option>
+                            <option value="123">C2C Solutions</option>
+                            <option value="17">Cahaba GBA</option>
+                            <option value="62">Care Allies</option>
+                            <option value="89">CGS</option>
+                            <option value="94">Childrenâ€™s Community Health Plan</option>
+                            <option value="4">Cigna Healthcare</option>
+                            <option value="93">Community Connect</option>
+                            <option value="106">Connolly</option>
+                            <option value="102">Coventry</option>
+                            <option value="80">Default</option>
+                            <option value="54">Equiclaim</option>
+                            <option value="77">First Coast Service Options</option>
+                            <option value="90">First Coast Services Options, Inc.</option>
+                            <option value="95">FMQAI</option>
+                            <option value="99">Health Data Insights</option>
+                            <option value="143">Health First</option>
+                            <option value="103">Health Management Systems, Inc.</option>
+                            <option value="7">Health Plus</option>
+                            <option value="105">Healthspring</option>
+                            <option value="125">Healthspring Medicare Plan</option>
+                            <option value="144">Horizon NJ Health</option>
+                            <option value="101">HSAG</option>
+                            <option value="50">Humana</option>
+                            <option value="126">ICRS</option>
+                            <option value="138">Keystone First</option>
+                            <option value="87">Maximus Federal Services</option>
+                            <option value="142">MVP Healthcare</option>
+                            <option value="96">National Government Services</option>
+                            <option value="91">Noridian</option>
+                            <option value="86">Novitas</option>
+                            <option value="133">NYCHSRO/Medreview Inc.</option>
+                            <option value="130">OmniClaim</option>
+                            <option value="85">Other</option>
+                            <option value="88">Palmetto GBA</option>
+                            <option value="107">Performant Recovery</option>
+                            <option value="100">SCAN Health Plan</option>
+                            <option value="98">SCIO Health Analytics</option>
+                            <option value="1">Secure Horizons_PO BOX</option>
+                            <option value="110">Test_data1</option>
+                            <option value="11">Texas HHSC UR</option>
+                            <option value="113">UnitedHealthcare</option>
+                            <option value="122">UnitedHealthcare Community Plan</option>
+                            <option value="114">WellCare Health Plans</option>
+                            <option value="92">Wisconsin Physicians Service</option>
+                            <option value="92">Other</option>
+                          </SELECT>
+                          <span>OmniClaim</span> </li>
+                        <li>
+                          <label>Payor Type</label>
+                          <select class="ptntHospInput hidden" value="">
+                            <option>[Select]</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Managed Medicaid">Managed Medicaid</option>
+                            <option value="Managed Medicare">Managed Medicare</option>
+                            <option value="Medicaid">Medicaid</option>
+                            <option selected="selected" value="Medicare">Medicare</option>
+                          </select>
+                          <span class="denialReason">Managed Medicaid</span> </li>
+                        <li>
+                          <label>Audit Type</label>
+                          <input type="text" class="ptntServLocalInput hidden">
+                          <span>Enter an Audit Type</span> </li>
+                        <li>
+                          <label>Plan Code</label>
+                          <input type="text" class="ptntServLocalInput hidden">
+                          <span>Code Here</span> </li>
+                        <li>
+                          <label>Policy/HIC Number</label>
+                          <input class="ptntPPCInput hidden" type="text" value="">
+                          <span class="ptntPPC">A30303</span> </li>
+                        <li>
+                          <label>Claim Number</label>
+                          <input type="text" class="ptntServLocalInput hidden">
+                          <span>4798749827</span> </li>
+
+                        <li>
+                          <label><span data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Appointment of Representative">AOR</span></label>
+                          <input type="radio" class=" hidden" name="chartAudit1" id="ChartAudit1" value="Yes" checked> <label id="radio1" for="ChartAudit1">Yes</label></input> &nbsp;  
+              <input type="radio" class=" hidden" name="chartAudit1" id="ChartAudit2" value="No"> <label id="radio2" for="ChartAudit2">No</label></input> <span id="chartAuditLabel">Yes</span>
+                        </li>
+
+                        <li>
+                          <label>Chart Audit</label>
+                          <input type="radio" class=" hidden" name="chartAudit1" id="ChartAudit1" value="Yes" checked> <label id="radio1" for="ChartAudit1">Yes</label></input> &nbsp;  
+              <input type="radio" class=" hidden" name="chartAudit1" id="ChartAudit2" value="No"> <label id="radio2" for="ChartAudit2">No</label></input> <span id="chartAuditLabel">Yes</span>
+                        </li>
+
+                        <li>
+                          <label>PTP Appeal</label>
+                          <input type="radio" class=" hidden" name="chartAudit1" id="ChartAudit1" value="Yes" checked> <label id="radio1" for="ChartAudit1">Yes</label></input> &nbsp;  
+              <input type="radio" class=" hidden" name="chartAudit1" id="ChartAudit2" value="No"> <label id="radio2" for="ChartAudit2">No</label></input> <span id="chartAuditLabel">Yes</span>
+                        </li>
+
+                      </ul>
+                      <!-- /patient-data -->
+                    </div>
+                    <!--col-lg-6-->
+
+                    <!--col-lg-6-->
+                    <div class="col-lg-6">
+                      <!-- <ul class="patient-data stacked">
+                            <strong data-toggle="tooltip" data-placement="top" title="Days from Discharge">DFD</strong>
+                        <li>
+                          <label>Denial Calculated Age</label>
+                          28 Days</li>
+                        <li>
+                          <label>Denial Reason<b class="astrix">*</b></label>
+                          <select value="" class="ptntHospInput hidden">
+                            <OPTION value=-1>[Select]</OPTION>
+                            <OPTION>DRG Validation</OPTION>
+                            <OPTION>IP vs Obv</OPTION>
+                            <OPTION>NCD/LCD</OPTION>
+                            <OPTION>Experimental / Investigational</OPTION>
+                            <OPTION>Readmission</OPTION>
+                            <OPTION selected>Medical Necessity</OPTION>
+                          </SELECT>
+                          <span class="denialReason">Medical Necessity</span> </li>
+                      </ul> -->
+                      <!-- /patient-data -->
+
+                      <ul class="patient-data stacked">
+                        <li>
+                          <label> <strong>Prior Payment Amount</strong> </label>
+                          <input type="text" class="deniedAmount hidden">
+                          <span>$0.00</span> </li>
+                        <li>
+                          <label> <strong>Denied Amount</strong> </label>
+                          <input type="text" class="deniedAmount hidden">
+                          <span>$0.00</span> </li>
+                        <li>
+                          <label>Recovered Amount</label>
+                          <input type="text" class="approvedAmount hidden">
+                          <span class="denialReason">$0.00</span> </li>
+                        <li>
+                          <label>Final Appeal Result</label>
+                          <select value="" class="ptntLocInput hidden">
+                            <option value="Approved">[Select]</option>
+                            <OPTION>[Select]</OPTION>
+                            <OPTION>All Denied</OPTION>
+                            <OPTION>Approved</OPTION>
+                            <OPTION>Denied</OPTION>
+                            <OPTION>Inpatient to Inpatient</OPTION>
+                            <OPTION>Inpatient to Observation</OPTION>
+                            <OPTION>Observation to Inpatient</OPTION>
+                            <OPTION>Partial Approval</OPTION>
+                            <OPTION selected>Pending</OPTION>
+                            <OPTION>Unable</OPTION>
+                          </SELECT>
+                          <span class="ptntLoc">Pending</span> </li>
+                        <li>
+                              <label> <strong >Root Cause</strong></label>
+                              <select class="ptntLocInput hidden" value="">
+                <OPTION selected value=-1>[Not Selected]</OPTION>
+                                <option>DRG Downgrade</option>
+                                <option>ER Non Emergent</option>
+                                <option>Not FDA Approved / Experimental</option>
+                                <option>Readmission</option>
+                                <option>IP not approved by payer</option>
+                                <option>No auth requested</option>
+                                <option>LCD/NCD denial</option>
+                                <option>MUE denial</option>
+                                <option>Auth Service Mismatch</option>
+                              </SELECT>
+                              <span class="ptntLoc"></span> </li>
+                        <li>
+                              <label> <strong >Rating</strong></label>
+                              <select class="ptntLocInput hidden" value="">
+                <OPTION selected value=-1>[Select]</OPTION>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>3</option>
+                                <option>5</option>
+                              </SELECT>
+                              <span class="ptntLoc"></span> </li>
+                      </ul>
+                      <!-- /patient-data -->
+                    </div>
+                    <!--col-lg-6-->
+
+                  </div>
+
+                    <div class="row">
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Note</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-10">
+                          <ul class="patient-data stacked stretch">
+                            <li>
+                              <textarea class="col-lg-12 hidden" value="Lorem ipsum"></textarea>
+                              <span>Lorem Ipsum</span> </li>
+                          </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /panel-body -->
+              </div>
+              <!-- /panel -->
+
+              <!---->
+              <div class="panel panel-tab anchor" id="residual">
+                <div class="panel-heading panHeadWithNav">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Appeals Information</h3>
+
+                  <!-- /panel-actions -->
+                  <ul class="nav nav-tabs">
+				  <li class="level4"><a data-toggle="tab" href="#appeal-tab04">New Appeal Level</a></li>
+                    <li class="active level3"><a data-toggle="tab" href="#appeal-tab03">Level 3 - ALJ Hearing</a></li>
+                    <li class="level2"><a data-toggle="tab" href="#appeal-tab02">Level 2 - Appeal</a></li>
+                    <li class="level1"><a data-toggle="tab" href="#appeal-tab01">Level 1 - Appeal</a></li>
+                  </ul>
+                  <!-- /panel-actions -->
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-body">
+                  <div class="tab-content">
+
+				                      <!-- Appeal Level 4 -->
+                    <div id="appeal-tab04" class="tab-pane fade in">
+                    
+                    <div class="pull-right gridbuttons">
+                    	<!-- <a class="btn table-delete" href="javascript:void(0);"  data-toggle="modal" data-target="#deleteRecord"> <span><i class="fa fa-trash"></i> Delete</span> </a> -->
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-share-square-o"></i> &nbsp;Send to Help Desk</span> </a>
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-print"></i> &nbsp;Print Form</span> </a>
+                        <a class="btn btnPrimary table-addmore" href="javascript:void(0);"> <span><i class="fa fa-plus-circle"></i> &nbsp;New Level</span> </a> 
+					           </div>
+                    <div class="clearfix"></div>
+					
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>
+                                <!--<strong data-toggle="tooltip" data-placement="top" title="Days from Discharge">DFD</strong>-->
+                                Appeal Level</label>
+                              <select class="ptntHospInput appealname hidden" value="">
+                                <option>[Select]</option>
+                                <option value="7">Level 0 - PPTP</option>
+                                <option value="8">Level 0 - PreReview</option>
+                                <option value="1">Level 1 - Appeal</option>
+                                <option value="2">Level 2 - Appeal</option>
+                                <option value="3">Level 3 - ALJ Appeal</option>
+                                <option value="9">Level 3 - ALJ Hearing</option>
+                                <option value="4">Level 3 - Non-MCR Appeal</option>
+                                <option value="5">Level 4 - Appeal</option>
+                                <option value="6">Level 5 - Appeal</option>
+                              </select>
+                              <span class="ptntHospInput"></span> </li>
+
+                            <li>
+                              <label>Appealed Amount</label>
+                              <input class="ptntPPCInput hidden" type="text">
+                              <span class="ptntPPC"></span> </li>
+                            <li>
+                              <label>Denial<b class="astrix">*</b></label>
+                              <input type="text" id="datepicker02" class="ptntServLocalInput hidden" placeholder="MM/DD/YY">
+                              <span></span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label>Appeal Due to Payor</label>
+                              <input class="ptntServLocalInput hidden" type="text" value="08/03/2012" />
+                              <span></span></li>
+                            <li>
+                              <label>Appeal Due to Client</label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span></span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label> <strong >Status</strong></label>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION selected value=-1>[Select]</OPTION>
+                                <option value="56">Accepted CMS Settlement</option>
+                                <option value="23">Awaiting AOR Form from Client (1)</option>
+                                <option value="38">Awaiting AOR Form From Client (2)</option>
+                                <option value="39">Awaiting AOR Form From Client (3)</option>
+                                <option value="11">Awaiting Chart &amp; Denial Letter from Client (1)</option>
+                                <option value="41">Awaiting Chart &amp; Denial Letter from Client (2)</option>
+                                <option value="42">Awaiting Chart &amp; Denial Letter from Client (3)</option>
+                                <option value="1">Awaiting Chart from Client (1)</option>
+                                <option value="43">Awaiting Chart from Client (2)</option>
+                                <option value="44">Awaiting Chart from Client (3)</option>
+                                <option value="27">Awaiting Client Decision</option>
+                                <option value="45">Awaiting Client Decision (2)</option>
+                                <option value="46">Awaiting Client Decision (3)</option>
+                                <option value="2">Awaiting Denial Letter from Client (1)</option>
+                                <option value="47">Awaiting Denial Letter from Client (2)</option>
+                                <option value="48">Awaiting Denial Letter from Client (3)</option>
+                                <option value="21">Awaiting Hearing Date</option>
+                                <option value="14">Back Office Review</option>
+                                <option value="7">Coding Review</option>
+                                <option value="10">Completed</option>
+                                <option value="29">Denial Information Incomplete (1)</option>
+                                <option value="49">Denial Information Incomplete (2)</option>
+                                <option value="50">Denial Information Incomplete (3)</option>
+                                <option value="9">Denial Verification in Progress (1)</option>
+                                <option value="51">Denial Verification in Progress (2)</option>
+                                <option value="52">Denial Verification in Progress (3)</option>
+                                <option value="24">Hearing Cancelled</option>
+                                <option value="22">Hearing Completed</option>
+                                <option value="18">Hearing Date Confirmed</option>
+                                <option value="25">Hearing Postponed</option>
+                                <option value="26">Internal Review</option>
+                                <option value="3">Letter in Progress</option>
+                                <option value="34">Letter Review - Training</option>
+                                <option value="4">Letter Sent to Client</option>
+                                <option value="5">Letter Sent to Payor</option>
+                                <option value="30">MR Documents Incomplete (1)</option>
+                                <option value="53">MR Documents Incomplete (2)</option>
+                                <option value="54">MR Documents Incomplete (3)</option>
+                                <option value="6">No Appeal Letter</option>
+                                <option value="20">Notice Received</option>
+                                <option value="12">Ready for Assignment</option>
+                                <option value="37">Ready for Screening / Audit</option>
+                                <option value="19">Response/AOR Sent</option>
+                                <option value="55">Screening / Audit In Progress</option>
+                                <option value="17">Unable to Complete</option>
+                              </SELECT>
+                              <span class="ptntLoc"></span> </li>
+                            <li>
+                              <label>Appeal Sent</label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span></span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label> <strong >Expected Decision</strong> </label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span></span><i class="fa fa-calendar cal-icon"></i> </li>
+                            
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            
+                            <li>
+                              <label>Appeal Result <b class="astrix">*</b></label>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION selected value=-1>[Select]</OPTION>
+                                <option value="1">Approved</option>
+                                <option value="2">Denied</option>
+                                <option value="6">Hearing Granted</option>
+                                <option value="3">Partial Approval</option>
+                                <option value="7">Remanded</option>
+                                <option value="5">Unknown</option>
+                              </SELECT>
+                              <span class="ptntLoc"></span> </li>
+                            <li>
+                              <label>Appealed Outcome Amount<b class="astrix">*</b></label>
+                              <input class="ptntPPCInput hidden" type="text">
+                              <span class="ptntPPC"></span> </li>
+                            <li>
+                              <label>Accretive Advisor</label>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION selected value=-1>[Select]</OPTION>
+                <OPTION selected value=-1>[Select]</OPTION>
+                                <option value="NBRENNAN">Brennan Nadine</option>
+                                <option value="NCOBAUGH">Cobaugh Nichol</option>
+                                <option value="MGOODWIN">Goodwin Mary</option>
+                                <option value="LHATTON">HATTON LASHON</option>
+                                <option value="APPAUTHORUSER">L AppAuthorUser</option>
+                                <option value="JMOORE">Moore Jane</option>
+                                <option value="PMULSHINE">Mulshine Pamela</option>
+                                <option value="PPAPP">Papp Paula</option>
+                                <option value="AWILSON2">Wilson Adam</option>
+                              </select>
+                              <span class="ptntLoc"></span> </li>
+							  
+                            <li>
+                              <label>Payor Denial</label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span></span><i class="fa fa-calendar cal-icon"></i> </li>
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <!-- /row -->
+                      </div>
+                      
+                    </div>
+                    <!-- //Appeal Level 4 -->
+				  
+                    <!-- Appeal Level 3 -->
+                    <div id="appeal-tab03" class="tab-pane fade in active">
+                    
+                    <div class="pull-right gridbuttons">
+                    	<!-- <a class="btn table-delete" href="javascript:void(0);"  data-toggle="modal" data-target="#deleteRecord"> <span><i class="fa fa-trash"></i> &nbsp;Delete</span> </a> -->
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-share-square-o"></i> &nbsp;Send to Help Desk</span> </a>
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-print"></i> &nbsp;Print Form</span> </a>
+                        <a class="btn btnPrimary table-addmore" href="javascript:void(0);"> <span><i class="fa fa-plus-circle"></i> &nbsp;New Level</span> </a> 
+					           </div>
+                    <div class="clearfix"></div>
+					
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>
+                                <!--<strong data-toggle="tooltip" data-placement="top" title="Days from Discharge">DFD</strong>-->
+                                Appeal Level</label>
+                              <select class="ptntHospInput hidden" value="">
+                                <option>[Select]</option>
+                                <option value="7">Level 0 - PPTP</option>
+                                <option value="8">Level 0 - PreReview</option>
+                                <option value="1">Level 1 - Appeal</option>
+                                <option value="2">Level 2 - Appeal</option>
+                                <option value="3" selected>Level 3 - ALJ Appeal</option>
+                                <option value="9">Level 3 - ALJ Hearing</option>
+                                <option value="4">Level 3 - Non-MCR Appeal</option>
+                                <option value="5">Level 4 - Appeal</option>
+                                <option value="6">Level 5 - Appeal</option>
+                              </select>
+                              <span class="ptntHospInput">Level 3 - ALJ Hearing</span> </li>
+
+                            <li>
+                              <label>Appealed Amount</label>
+                              <input class="ptntPPCInput hidden" type="text">
+                              <span class="ptntPPC"></span> </li>
+                            <li>
+                              <label>Denied On<b class="astrix">*</b></label>
+                              <input type="text" id="datepicker02" class="ptntServLocalInput hidden" placeholder="MM/DD/YY" />
+                              <span>08/14/2007</span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label>Appeal Due to Payor</label>
+                              <input class="ptntServLocalInput hidden" type="text" value="08/03/2012" />
+                              <span>08/03/2012</span></li>
+                            <li>
+                              <label>Appeal Due to Client</label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span>08/03/2012</span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label> <strong >Status</strong></label>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION selected value=-1>[Select]</OPTION>
+                                <option value="56">Accepted CMS Settlement</option>
+                                <option value="23">Awaiting AOR Form from Client (1)</option>
+                                <option value="38">Awaiting AOR Form From Client (2)</option>
+                                <option value="39">Awaiting AOR Form From Client (3)</option>
+                                <option value="11">Awaiting Chart &amp; Denial Letter from Client (1)</option>
+                                <option value="41">Awaiting Chart &amp; Denial Letter from Client (2)</option>
+                                <option value="42">Awaiting Chart &amp; Denial Letter from Client (3)</option>
+                                <option value="1">Awaiting Chart from Client (1)</option>
+                                <option value="43">Awaiting Chart from Client (2)</option>
+                                <option value="44">Awaiting Chart from Client (3)</option>
+                                <option value="27">Awaiting Client Decision</option>
+                                <option value="45">Awaiting Client Decision (2)</option>
+                                <option value="46">Awaiting Client Decision (3)</option>
+                                <option value="2">Awaiting Denial Letter from Client (1)</option>
+                                <option value="47">Awaiting Denial Letter from Client (2)</option>
+                                <option value="48">Awaiting Denial Letter from Client (3)</option>
+                                <option value="21">Awaiting Hearing Date</option>
+                                <option value="14" selected>Back Office Review</option>
+                                <option value="7">Coding Review</option>
+                                <option value="10">Completed</option>
+                                <option value="29">Denial Information Incomplete (1)</option>
+                                <option value="49">Denial Information Incomplete (2)</option>
+                                <option value="50">Denial Information Incomplete (3)</option>
+                                <option value="9">Denial Verification in Progress (1)</option>
+                                <option value="51">Denial Verification in Progress (2)</option>
+                                <option value="52">Denial Verification in Progress (3)</option>
+                                <option value="24">Hearing Cancelled</option>
+                                <option value="22">Hearing Completed</option>
+                                <option value="18">Hearing Date Confirmed</option>
+                                <option value="25">Hearing Postponed</option>
+                                <option value="26">Internal Review</option>
+                                <option value="3">Letter in Progress</option>
+                                <option value="34">Letter Review - Training</option>
+                                <option value="4">Letter Sent to Client</option>
+                                <option value="5">Letter Sent to Payor</option>
+                                <option value="30">MR Documents Incomplete (1)</option>
+                                <option value="53">MR Documents Incomplete (2)</option>
+                                <option value="54">MR Documents Incomplete (3)</option>
+                                <option value="6">No Appeal Letter</option>
+                                <option value="20">Notice Received</option>
+                                <option value="12">Ready for Assignment</option>
+                                <option value="37">Ready for Screening / Audit</option>
+                                <option value="19">Response/AOR Sent</option>
+                                <option value="55">Screening / Audit In Progress</option>
+                                <option value="17">Unable to Complete</option>
+                              </SELECT>
+                              <span class="ptntLoc">Back Office Review</span> </li>
+                            <li>
+                              <label>Appeal Sent</label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span>08/03/2012</span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label> <strong >Expected Decision</strong> </label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span>08/03/2012</span><i class="fa fa-calendar cal-icon"></i> </li>
+                            
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            
+                            <li>
+                              <label>Appeal Result</label>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION selected value=-1>[Select]</OPTION>
+                                <option value="1">Approved</option>
+                                <option value="2">Denied</option>
+                                <option value="6">Hearing Granted</option>
+                                <option value="3">Partial Approval</option>
+                                <option value="4">Pending</option>
+                                <option value="7">Remanded</option>
+                                <option value="5">Unknown</option>
+                              </SELECT>
+                              <span class="ptntLoc"></span> </li>
+                            <li>
+                              <label>Appealed Outcome Amount<b class="astrix">*</b></label>
+                              <input class="ptntPPCInput hidden" type="text">
+                              <span class="ptntPPC"></span> </li>
+                            <li>
+                              <label>Accretive Advisor</label>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION selected value=-1>[Select]</OPTION>
+                <OPTION selected value=-1>[Select]</OPTION>
+                                <option value="NBRENNAN">Brennan Nadine</option>
+                                <option value="NCOBAUGH">Cobaugh Nichol</option>
+                                <option value="MGOODWIN" selected>Goodwin Mary</option>
+                                <option value="LHATTON">HATTON LASHON</option>
+                                <option value="APPAUTHORUSER">L AppAuthorUser</option>
+                                <option value="JMOORE">Moore Jane</option>
+                                <option value="PMULSHINE">Mulshine Pamela</option>
+                                <option value="PPAPP">Papp Paula</option>
+                                <option value="AWILSON2">Wilson Adam</option>
+                              </SELECT>
+                              <span class="ptntLoc">Goodwin Mary</span> </li>
+							  
+							  <li>
+                              <label>Secondary Presenter</label>
+                              <select class="ptntLocInput hidden" value="">
+                                <OPTION selected value=-1>[Select]</OPTION>
+                <OPTION selected value=-1>[Select]</OPTION>
+                                <option value="NBRENNAN">Brennan Nadine</option>
+                                <option value="NCOBAUGH selected">Cobaugh Nichol</option>
+                                <option value="MGOODWIN">Goodwin Mary</option>
+                                <option value="LHATTON">HATTON LASHON</option>
+                                <option value="APPAUTHORUSER">L AppAuthorUser</option>
+                                <option value="JMOORE">Moore Jane</option>
+                                <option value="PMULSHINE">Mulshine Pamela</option>
+                                <option value="PPAPP">Papp Paula</option>
+                                <option value="AWILSON2">Wilson Adam</option>
+                              </SELECT>
+                              <span class="ptntLoc">Cobaugh Nichol</span> </li>
+							  
+                            <li>
+                              <label>Last Outreach</label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span>08/03/2012</span><i class="fa fa-calendar cal-icon"></i> </li>
+							  
+                            <li>
+                              <label>Payor Denial</label>
+                              <input class="ptntServLocalInput hidden" id="datepicker02" type="text" placeholder="MM/DD/YY" />
+                              <span>08/03/2012</span><i class="fa fa-calendar cal-icon"></i> </li>
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <!-- /row -->
+                      </div>
+                      
+          </div>
+          <!-- //Appeal Level 3 -->
+					
+          <!-- Appeal Level 2 -->
+          <div id="appeal-tab02" class="tab-pane fade in">
+
+            <div class="pull-right gridbuttons">
+                      <!-- <a class="btn table-delete" href="javascript:void(0);"  data-toggle="modal" data-target="#deleteRecord"> <span><i class="fa fa-trash"></i> &nbsp;Delete</span> </a> -->
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-share-square-o"></i> &nbsp;Send to Help Desk</span> </a>
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-print"></i> &nbsp;Print Form</span> </a>
+                     </div>
+                    <div class="clearfix"></div>
+          
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>
+                                <!--<strong data-toggle="tooltip" data-placement="top" title="Days from Discharge">DFD</strong>-->
+                                Appeal Level</label>
+                              Level 2 - Appeal </li>
+
+                            <li>
+                              <label>Appealed Amount</label>
+                              </li>
+                            <li>
+                              <label>Denied On</label>
+                              08/14/2007 </li>
+                            <li>
+                              <label>Appeal Due to Payor</label>
+                              08/03/2012</li>
+                            <li>
+                              <label>Appeal Due to Client</label>
+                              08/03/2012 </li>
+                            <li>
+                              <label> <strong >Status</strong></label>
+                              Back Office Review </li>
+                            <li>
+                              <label>Appeal Sent</label>
+                              08/03/2012</li>
+                            <li>
+                              <label> <strong >Expected Decision</strong> </label>
+                              08/03/2012 </li>
+                            
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            
+                            <li>
+                              <label>Appeal Result</label>
+                              Pending </li>
+                            <li>
+                              <label>Appealed Outcome Amount</label>
+                              </li>
+                            <li>
+                              <label>Accretive Advisor</label>
+                              Goodwin Mary </li>
+                            <li>
+                              <label>Last Outreach</label>
+                              08/03/2012 </li>					  
+                            <li>
+                              <label>Payor Denial</label>
+                              08/03/2012 </li>
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <!-- /row -->
+                      </div>
+
+          </div>
+          <!-- //Appeal Level 2 -->
+
+					<!-- Appeal Level 1 -->
+          <div id="appeal-tab01" class="tab-pane fade in">
+
+            <div class="pull-right gridbuttons">
+                      <!-- <a class="btn table-delete" href="javascript:void(0);"  data-toggle="modal" data-target="#deleteRecord"> <span><i class="fa fa-trash"></i> &nbsp;Delete</span> </a> -->
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-share-square-o"></i> &nbsp;Send to Help Desk</span> </a>
+                        <a class="btn" href="javascript:void(0);"> <span><i class="fa fa-print"></i> &nbsp;Print Form</span> </a>
+                     </div>
+                    <div class="clearfix"></div>
+          
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>
+                                <!--<strong data-toggle="tooltip" data-placement="top" title="Days from Discharge">DFD</strong>-->
+                                Appeal Level</label>
+                              Level 1 - Appeal </li>
+
+                            <li>
+                              <label>Appealed Amount</label>
+                              </li>
+                            <li>
+                              <label>Denied On<b class="astrix">*</b></label>
+                              08/14/2007</li>
+                            <li>
+                              <label>Appeal Due to Payor</label>
+                              08/03/2012</li>
+                            <li>
+                              <label>Appeal Due to Client</label>
+                              08/03/2012 </li>
+                            <li>
+                              <label> <strong >Status</strong></label>
+                                                             
+                              Back Office Review </li>
+                            <li>
+                              <label>Appeal Sent</label>
+                              
+                              08/03/2012</li>
+                            <li>
+                              <label> <strong >Expected Decision</strong> </label>
+                              08/03/2012</li>
+                            
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            
+                            <li>
+                              <label>Appeal Result</label>
+                              Partial Approval </li>
+
+                            <li>
+                              <label>Appealed Outcome Amount</label>
+                              </li>
+                            <li>
+                              <label>Accretive Advisor</label>
+                              Goodwin Mary </li>
+                            <li>
+                              <label>Last Outreach</label>
+                              08/03/2012 </li>
+                            <li>
+                              <label>Payor Denial</label>
+                              08/03/2012 </li>
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <!-- /row -->
+                      </div>
+
+          </div>
+					<!-- //Appeal Level 1 -->
+
+          <div class="row">
+                        <div class="col-lg-12">
+
+                          <!-- /client protocol -->
+                          <div role="alert" class="alert alert-info protocol"> <!-- <i class="fa fa-phone fa-2x pull-left"></i> -->
+                            <div class="pull-left" style="width:95%"> 
+							<div class="toggle-inner-btn">
+                          <!--<strong>Additional Diagnosis: </strong> <span > &nbsp; Arrhythmia- Unspecified,Chest Pain,Dehydration,Fatigue/Weakness</span>
+                           -->
+                          <i class="fa fa-chevron-down"> </i> &nbsp;<strong>Client Protocol</strong></div>
+							<div class="toggle-inner-content">
+                              The status recommendation regarding whether documentation supports inpatient or outpatient classification for billing purposes takes into consideration the patient's clinical presentation, the contributing major comorbid conditions, and the risks associated with complications of the acute illness necessitating care. 
+							</div>  
+							</div>
+                          </div>
+                        </div>
+                      </div>
+				  </div>
+                  <!--/tab-content-->
+                </div>
+                <!-- /panel-body -->
+              </div>
+              <!-- /panel -->
+              <!---->
+              <div class="panel panel-tab anchor" id="services">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Advisor Information </h3>
+
+                  <!-- /panel-actions -->
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div id="authDefault" class="tab-pane fade in active">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h4>Advisor Notes</h4>
+                          <ul class="patient-data stacked">
+                            <li>
+                              <textarea class="col-lg-12 editor hidden">Notes here.</textarea>
+                              <span>Notes here.</span> </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12"> <br>
+                          <ul class="record-data stacked pull-right">
+                            <li> <a id="kmd-jump" data-toggle="tab" href="#check" class="pull-right hidden"> <span>Jump to KMD for Medical References</span> </a> </li>
+                          </ul>
+                          <h4>Medical Literature References</h4>
+                          <br>
+                          <ul class="patient-data stacked">
+                            <li>
+                              <textarea class="col-lg-12 editor hidden">References here (auto-copied from KMD selections).</textarea>
+                              <span>References here (auto-copied from KMD selections).</span> </li>
+                          </ul>
+                        </div>
+                        <!--col-lg-6-->
+                      </div>
+                      <!-- /row -->
+                    </div>
+                    <!-- /tab-pane -->
+                    <div id="authEdit" class="tab-pane fade">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Facility Code</label>
+                              <input class="hidden" type="text" value="">
+                              <span>SJMC</span> </li>
+                            <li>
+                              <label>Facility Name</label>
+                              <input class="hidden" type="text" value="">
+                              <span>St. John Medical Center</span> </li>
+                            <li>
+                              <label>Facility Address</label>
+                              <input class="hidden" type="text" value="">
+                              <span>2201 Moross</span> </li>
+                            <li>
+                              <label>City</label>
+                              <input class="hidden" type="text" value="">
+                              <span>Detroit</span> </li>
+                            <li>
+                              <label>State</label>
+                              <input class="hidden" type="text" value="">
+                              <span>MI</span> </li>
+                            <li>
+                              <label>Zip Code</label>
+                              <input class="hidden" type="text" value="">
+                              <span>48236</span> </li>
+                            <li>
+                              <label>NPI</label>
+                              <input class="hidden" type="text" value="">
+                              <span>1780778969</span> </li>
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <!--col-lg-6-->
+                      </div>
+                      <!-- /row -->
+                    </div>
+                    <!-- /tab-pane -->
+                  </div>
+                  <!--/tab-content-->
+                </div>
+                <!-- /panel-body -->
+              </div>
+              <!-- /panel -->
+              <div class="panel panel-tab anchor" id="orderLab">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Documents </h3>
+
+                  <!-- /panel-actions -->
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h4>Appeal Letters</h4>
+                    </div>
+                    <div class="col-lg-4">
+                      <ul class="patient-data stacked">
+                        <li>
+                          <label> <strong >Appeal Letter Template</strong> </label>
+                          <select class="ptntLocInput hidden" value="">
+                            <option selected="selected" value="50">ALJ Supporting Doc</option>
+                            <option value="42">AOR Form</option>
+                            <option value="47">Awaiting Response</option>
+                            <option value="23">Commercial Template</option>
+                            <option value="24">DRG Appeal Template</option>
+                            <option value="48">Good Cause - Untimely Filing</option>
+                            <option value="49">Good Cause - Vacate Dismissal</option>
+                            <option value="26">Managed Medicare Template</option>
+                            <option value="27">Medicaid Template</option>
+                            <option value="25">Medicare Template</option>
+                          </SELECT>
+                          <span class="ptntLoc">ALJ Supporting Doc</span> </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <ul class="patient-data stacked">
+                        <li>
+                          <label> <strong >Signature</strong> </label>
+                          <select class="ptntLocInput hidden" value="">
+                            <OPTION selected>[Select]</OPTION>
+                            <option value="1">Adrian Davenport</option>
+                            <option value="3">Al Saliman MD</option>
+                          </SELECT>
+                          <span class="ptntLoc"></span> </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <ul class="patient-data stacked">
+                        <li>
+                          <label> <strong >CC</strong> </label>
+                          <select class="ptntLocInput hidden" value="">
+                            <OPTION selected>[Select]</OPTION>
+                            <option value="1">Adrian Davenport</option>
+                            <option value="3">Al Saliman MD</option>
+                          </SELECT>
+                          <span class="ptntLoc"></span> </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-1">
+                      <ul class="record-data stacked">
+                        <li> <a class="btn hidden" href="javascript:void(0);"> <span>Generate</span> </a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- <div class="row">
+                    <div class="col-lg-12 divider"> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <ul class="patient-data stacked">
+                        <li>
+                          <label> <strong >Documentation Status</strong> </label>
+                          <select class="ptntLocInput hidden" value="">
+                            <OPTION selected>Documentation Reviewed</OPTION>
+							 <option value="1">Adrian Davenport</option>
+                            <option value="3">Al Saliman MD</option>
+                          </SELECT>
+                          <span class="ptntLoc">Documentation Reviewed</span> </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <br> -->
+                  <table class="grid-table table-link documentTable">
+				          <thead>
+                    <tr class="table-heading">
+                      <th class="center">Format</th>
+                      <th>Title</th>
+                      <th>Name</th>
+                      <th>Draft</th>hib
+                      <th>Size</th>
+                      <th>Uploaded By</th>
+                      <th>Update Date/Time</th>
+                      <th class="center">Hide</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr >
+                      <td class="center"><a href="files/SSRSReportHandler.pdf" target="_blank"><i class="fa fa-file-word-o fa-2x"></i></a></td>
+                      <td><a href="files/SSRSReportHandler.pdf" target="_blank">Accretive PAS Form</a></td>
+                      <td>Test Document.docx</td>
+                      <td>No</td>
+                      <td>0.009MB</td>
+                      <td>Ziegler, Kathleen</td>
+                      <td>05/28/2014  7:22:45PM</td>
+                      <td class="center"><i class="fa fa-minus-circle"></i></td>
+                    </tr>
+                    <tr >
+                      <td class="center"><a href="files/SSRSReportHandler.pdf" target="_blank"><i class="fa fa-file-word-o fa-2x"></i></a></td>
+                      <td><a href="files/SSRSReportHandler.pdf" target="_blank">Appeal Letter Level 2</a></td>
+                      <td>Test Document.docx</td>
+                      <td>No</td>
+                      <td>0.009MB</td>
+                      <td>Donaldson, Tatiana</td>
+                      <td>05/28/2014  7:22:45PM</td>
+                      <td class="center"><i class="fa fa-minus-circle"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="center"><a href="files/SSRSReportHandler.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x"></i></a></td>
+                      <td><a href="files/SSRSReportHandler.pdf" target="_blank">Appeals Format Guidelines</a></td>
+                      <td>guidelines.pdf</td>
+                      <td>No</td>
+                      <td>0.009MB</td>
+                      <td>Peters, Marc</td>
+                      <td>05/28/2014  7:22:45PM</td>
+                      <td class="center"><i class="fa fa-minus-circle"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="center"><a href="files/SSRSReportHandler.pdf" target="_blank"><i class="fa fa-file-excel-o fa-2x"></i></a></td>
+                      <td><a href="files/SSRSReportHandler.pdf" target="_blank">Appeals Spreadsheet</a></td>
+                      <td>guidelines.xls</td>
+                      <td>No</td>
+                      <td>0.009MB</td>
+                      <td>Peters, Marc</td>
+                      <td>05/28/2014  7:22:45PM</td>
+                      <td class="center"><i class="fa fa-minus-circle"></i></td>
+                    </tr>
+                  </tbody>
+                  </table>
+				  
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Document Type</label>
+                        <select id="resetCatgry" class="form-control">
+                          <option selected="">[Select]</option>
+                          <option selected="">Adobe PDF</option>
+                          <option selected="">Microsoft Excel</option>
+                          <option selected="">Microsoft Word</option>
+                          <option selected="">CSV</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Document Title</label>
+                        <input type="text" placeholder="Enter Document Title" id="exampleInputDoc" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-1">
+                      <label>Draft</label>
+                      <div class="input-group">
+                        <div class="checkbox">
+                          <input type="checkbox" id="draftDoc">
+                          <label for="draftDoc"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <label>File Name</label>
+                      <div class="input-group">
+                        <input type="text" placeholder="Upload File" class="form-control">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default">Browse...</button>
+                        </span> </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="pull-left">
+                        <button class="btn btn-lg btnPrimary">Upload Document</button>
+                        <button class="btn btn-lg">Cancel</button>
+                      </div>
+                      <div class="pull-left">
+                        <ul class="checkbox-group showDocs">
+                          <li>
+                            <div class="checkbox">
+                              <input type="checkbox" id="viewAllDocs">
+                              <label for="viewAllDocs">View All Documents</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /panel-body -->
+
+              </div>
+              <!-- /panel -->
+              <div class="panel panel-tab anchor" id="notes">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Notes </h3>
+                  <ul class="nav nav-tools" style="float:right">
+                    <li class="disabled"> <a data-toggle="tab" href="#notesPrev"> <i class="fa fa-angle-double-left fa-1-5x"></i> <span>Prev 20</span>&nbsp;&nbsp; </a> </li>
+                    <li> <a data-toggle="tab" href="#notesNext"> <span>Next 20</span> <i class="fa fa-angle-double-right fa-1-5x"></i> </a> </li>
+                  </ul>
+                  <!-- /panel-actions -->
+                </div>
+                <!-- /panel-heading -->
+                <br clear="all" />
+                <div class="panel-content">
+                  <ul class="patient-data stacked">
+                    <li>
+                      <div class="hidden">
+                        <label><strong>Add New Note</strong></label>
+                        <textarea class="col-lg-12" rows="10"></textarea>
+
+                        <div class="col-lg-12 noteActions">
+                          <div class="pull-right">
+                            <button class="btn btn-lg btnPrimary">Add Note</button>
+                            <button class="btn btn-lg">Cancel</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="notes-tools">
+                    <div class="notes-details"> <span>Showing 1-20 of 87 Notes </span> </div>
+                    <div class="form-group" id="searchNotes">
+                      <label class="sr-only" for="exampleInputPassword2">Search Notes</label>
+                      <input type="text" placeholder="Search Notes" class="form-control" id="searchNotesInput">
+                    </div>
+                  </div>
+                  <ul class="timeline-activity list-unstyled"  id="notesList">
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to member and they sent me info of payment. Please see attachments</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="strong text-regular" href="javascript:void(0);"><i class="fa fa-file-o text-primary fa-fw"></i> Receipt Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"><i class="fa fa-envelope text-primary fa-fw"></i> Email Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">3/10/2014</span> <span>3:00 p.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Sheldon Schniffell</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to Chartreuse DeepSkyBlue from Clinic AB and they sent me this invoice attachment below</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"> <i class="fa fa-envelope text-primary fa-fw"></i> <span>Email Copy</span> </a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>11:30 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Shon Dervis</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Called member and left a voicemail.</span></div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">John Johansen</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Called member and left a voicemail.</span></div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>1:00 p.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">John Johansen</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Phoned physican. Request 3 or more. They submitted this one on high priority they are hoping to have approved today.</span></div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Darlene Berg</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to member and they sent me info of payment. Please see attachments</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="strong text-regular" href="javascript:void(0);"><i class="fa fa-file-o text-primary fa-fw"></i> Receipt Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"><i class="fa fa-envelope text-primary fa-fw"></i> Email Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Submitted 11/18/2013</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Shon Dervis</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to Chartreuse DeepSkyBlue from Clinic AB and they sent me this invoice attachment below</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"> <i class="fa fa-envelope text-primary fa-fw"></i> <span>Email Copy</span> </a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>11:30 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Lori Mockbee</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Called member and left a voicemail.</span></div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Frank Jackson</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"><span>Called member and left a voicemail.</span></div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>1:00 p.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Frank Jackson</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"><span>Phoned physican. Request 3 or more. They submitted this one on high priority they are hoping to have approved today.</span></div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Darlene Berg</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to member and they sent me info of payment. Please see attachments</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="strong text-regular" href="javascript:void(0);"><i class="fa fa-file-o text-primary fa-fw"></i> Receipt Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"><i class="fa fa-envelope text-primary fa-fw"></i> Email Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">3/10/2014</span> <span>3:00 p.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Lori Mockbee</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to Chartreuse DeepSkyBlue from Clinic AB and they sent me this invoice attachment below</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"> <i class="fa fa-envelope text-primary fa-fw"></i> <span>Email Copy</span> </a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>11:30 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Nancy Desta</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Called member and left a voicemail. </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Sunny Gordon</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Called member and left a voicemail. </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>1:00 p.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Francis Smart</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Phoned physican. Request 3 or more. They submitted this one on high priority they are hoping to have approved today. </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Darlene Berg</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to member and they sent me info of payment. Please see attachments</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="strong text-regular" href="javascript:void(0);"><i class="fa fa-file-o text-primary fa-fw"></i> Receipt Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"><i class="fa fa-envelope text-primary fa-fw"></i> Email Copy</a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">3/10/2014</span> <span>3:00 p.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Spencer Martin</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Talked to Chartreuse DeepSkyBlue from Clinic AB and they sent me this invoice attachment below</span> </div>
+                          <div class="block block-inline box-file hidden"> <a class="" href="javascript:void(0);"> <i class="fa fa-envelope text-primary fa-fw"></i> <span>Email Copy</span> </a>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>11:30 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Spencer Martin</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Called member and left a voicemail. </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Trudy Lawerence</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Called member and left a voicemail. </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>1:00 p.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Pau Gasol</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-file-o"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Phoned physican. Request 3 or more. They submitted this one on high priority they are hoping to have approved today. </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">2/20/2014</span> <span>10:00 a.m.</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Darlene Berg</span> </span> </div>
+                        </div>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /END SUMMARY TAB -->
+
+            </div>
+
+            <!-- /tab-pane BEGIN PPTP TAB-->
+
+            <div class="tab-pane fade" id="radio">
+              <div class="panel panel-tab anchor" id="medical">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Payor Peer-To-Peer Information</h3>
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div id="pptp" class="tab-pane fade in active">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Submitted On</label>
+                              <input type="text" class="ptntDOSInput hidden" value="">
+                              <span class="ptntDOS">05/28/14</span> </li>
+                            <li>
+                              <label> <strong>Completed On</strong> </label>
+                              <input type="text" class="ptntDRGInput hidden" id="datepicker01" placeholder="MM/DD/YY" />
+                              <span class="ptntDRG">07/08/2012</span><i class="fa fa-calendar cal-icon"></i>
+                            </li>
+                            <li>
+                              <label>Contact Date/Time</label>
+                              <input type="text" class="ptntServLocalInput hidden" id="datepicker02" placeholder="MM/DD/YY" />
+                              <span class="">08/14/2007</span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label>
+                                <!--<strong data-toggle="tooltip" data-placement="top" title="Days from Discharge">DFD</strong>-->
+                                Outcome </label>
+                              <select class="ptntHospInput hidden" value="">
+                                <option value="-1">[Select]</option>
+                                <option>Inpatient Approved</option>
+                                <option>Inpatient Denied</option>
+                                <option selected="">Partial Inpatient Approved</option>
+                                <option>Pending</option>
+                                <option>Unable</option>
+                              </select>
+                              <span class="denialReason">Pending</span> </li>
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <!--col-lg-6-->
+                        <div class="col-lg-6">
+                          <ul class="patient-data stacked">
+                            <li>
+                              <label>Accretive Advisor</label>
+                              <select class="ptntLocInput hidden" value="">
+                                <option>[Select]</option>
+                                <option>Abdulla , Cedela</option>
+                                <option>ANDREWS, STEVE</option>
+                                <option>BENAVENTE, MJ</option>
+                                <option>Boch, Philip</option>
+                                <option>BROWN, ANDREW</option>
+                                <option>Brown, John</option>
+                                <option>CESSNA, AARON</option>
+                                <option>Christie, Heather</option>
+                                <option>Danaher, Michele</option>
+                                <option>Dao, Quyen</option>
+                                <option>DaSilva, Freya</option>
+                                <option>Del Valle, Rene</option>
+                                <option>DEPENDER, WILLIAM</option>
+                                <option>Desai, Renuka</option>
+                                <option>Drinan, Kathleen</option>
+                                <option>Echols, Harvey</option>
+                                <option>Gibson, Sandy</option>
+                                <option>Gill, Jaspreet</option>
+                                <option>Goldfinger, Sue</option>
+                                <option>Hirsch, Ronald</option>
+                                <option>Johnson, Shawn</option>
+                                <option>Kelly, Crystal</option>
+                                <option>L, AdminUser</option>
+                                <option>L, LOCPhyLeadUser</option>
+                                <option>Li, Jessica</option>
+                                <option>Lumpkins, Lola</option>
+                                <option>Macintyre, Ann</option>
+                                <option>MENDONCA, ROHINI</option>
+                                <option>Meyerson, William</option>
+                                <option>MILLER, DONALD</option>
+                                <option>Mulshine, Pamela</option>
+                                <option>Murphy, Teresa</option>
+                                <option>Patel, Dilip</option>
+                                <option>Patel, Dilip</option>
+                                <option>Perlman, Neil</option>
+                                <option>Petermann, Kevin</option>
+                                <option>PHANCAO, FRANCOIS</option>
+                                <option>Pierce, Scott</option>
+                                <option>Pierce, Scott</option>
+                                <option>Rade, Stephanie</option>
+                                <option>Rembert, Ronald</option>
+                                <option>Rios, Jeannette</option>
+                                <option>Ripkey, Catherine</option>
+                                <option>Ritzen, Arlene</option>
+                                <option>Roberts, Gerard</option>
+                                <option>Selzer, Kenneth</option>
+                                <option>Stapleton, Ann</option>
+                                <option>THEIN-WAI, WINSTON</option>
+                                <option>Toney, Kimberly</option>
+                                <option>Tran, Kien</option>
+                                <option>Turner, Dana</option>
+                                <option>Turner, Dana</option>
+                                <option>Uyeda, Robert</option>
+                                <option>Vizinas, Edmund</option>
+                                <option selected="">Weinberg, Jennifer</option>
+                                <option>Wien, William</option>
+                                <option>Zilieris, Nick</option>
+                              </select>
+                              <span class="">Weinberg, Jennifer</span> </li>
+                            <li>
+                              <label>Contact Result</label>
+                              <select class="ptntLocInput hidden" value="">
+                                <option value="Approved">[Select]</option>
+                                <option>Approved</option>
+                                <option>Denied</option>
+                                <option>Partial Approval</option>
+                              </select>
+                              <span class="ptntLoc">Approved</span> </li>
+                            <li>
+                              <label>Response</label>
+                              <input type="text" class="ptntServLocalInput hidden" id="datepicker02"  placeholder="MM/DD/YY"/>
+                              <span class="">08/14/2007</span><i class="fa fa-calendar cal-icon"></i> </li>
+                            <li>
+                              <label>Response Time</label>
+                              <input type="text" class="ptntDOSInput hidden" value="">
+                              <span class="ptntDOS"></span> </li>
+                          </ul>
+                          <!-- /patient-data -->
+                        </div>
+                        <!--col-lg-6-->
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12 divider"> </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-2">
+                          <ul class="patient-data stacked stretch">
+                            <li>
+                              <label>Outcome Notes</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-10">
+                          <ul class="patient-data stacked stretch">
+                            <li>
+                              <textarea class="col-lg-12 hidden" value="Patient fell after acute cerebral anoxia from cardiac or respiratory arrest."></textarea>
+                              <span>Patient fell after acute cerebral anoxia from cardiac or respiratory arrest.</span> </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="pull-right"> <a class="btn" href="javascript:void(0);"> <span>New</span> </a> <a class="btn btnPrimary" href="javascript:void(0);"> <span>Add</span> </a> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /tab-pane END PPTP TAB-->
+            <!-- /tab-pane BEGIN KMD TAB-->
+            <div class="tab-pane fade" id="check">
+              <div class="panel panel-tab anchor" id="medical">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Knowledge Management Database</h3>
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div id="kmd" class="tab-pane fade in active">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <ul class="kmd-data">
+                            <li>
+                              <label>Synopsis Details</label>
+                              <input class="ptntDOSInput" type="text" value="heart" placeholder="heart">
+                              <span class="ptntDOS"></span> </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3">
+                          <ul class="kmd-data">
+                            <li>
+                              <label>Search Type</label>
+                              <select class="ptntLocInput" value="">
+                                <option selected>All</option>
+                                <option>Tags</option>
+                                <option>Synopses</option>
+                              </select>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3">
+                          <ul class="kmd-data">
+                            <li>
+                              <label>Sort By</label>
+                              <select class="ptntLocInput" value="">
+                                <option selected>Date</option>
+                                <option></option>
+                                <option></option>
+                              </select>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-2"> <a class="btn btnPrimary" href="javascript:void(0);" id="kmd-search"> <span>Search</span> </a> </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div id="searchresults"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- /tab-pane END KMD TAB-->
+            <!-- /tab-pane BEGIN LOG TAB-->
+
+            <div class="tab-pane fade" id="caselog">
+
+              <!-- /panel -->
+              <div class="panel panel-tab anchor" id="notes">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-chevron-down toggle"></i> Action Log </h3>
+
+                  <!-- /panel-actions -->
+                </div>
+                <!-- /panel-heading -->
+                <div class="panel-content">
+                  <table class="dataTable" id="actionLog">
+                    <thead>
+                      <tr>
+                        <th>Type / Disposition</th>
+                        <th>Task</th>
+                        <th>Updated By</th>
+                        <th>Status</th>
+                        <th>Note</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Rogers, Henry</td>
+                        <td>Added</td>
+                        <td>Document Uploaded - Appeal Letter ALJ & MJTX Final. Appeal Status updated from 'Back Office Review' to 'Letter Sent to Payor'</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Bradley, Tom</td>
+                        <td>Checked Out</td>
+                        <td>Updated Appeal status</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Rogers, Henry</td>
+                        <td>Added</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Bradley, Tom</td>
+                        <td>Checked Out</td>
+                        <td>Updated Appeal status</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td>Document Uploaded - Appeal Letter ALJ & MJTX Final. Appeal Status updated from 'Back Office Review' to 'Letter Sent to Payor'</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Rogers, Henry</td>
+                        <td>Added</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Bradley, Tom</td>
+                        <td>Checked Out</td>
+                        <td>Updated Appeal status</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Rogers, Henry</td>
+                        <td>Added</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Armstrong, Bob</td>
+                        <td>Checked Out</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Bradley, Tom</td>
+                        <td>Checked Out</td>
+                        <td>Updated Appeal status</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Rogers, Henry</td>
+                        <td>Added</td>
+                        <td></td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Young, Stephanie</td>
+                        <td>Checked Out</td>
+                        <td>Document Uploaded - Appeal Letter ALJ & MJTX Final. Appeal Status updated from 'Back Office Review' to 'Letter Sent to Payor'</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Bradley, Tom</td>
+                        <td>Checked Out</td>
+                        <td>Updated Appeal status</td>
+                        <td>08/13/2014</td>
+                        <td>3:15:15 PM</td>
+                      </tr>
+                      <tr>
+                        <td>Task</td>
+                        <td>Denial</td>
+                        <td>Cooper, Charlie</td>
+                        <td>Opened</td>
+                        <td>Cased opened</td>
+                        <td>08/11/2014</td>
+                        <td>1:00:02 PM</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- /tab-pane -->
+            <!-- /tab-pane END LOG TAB-->
+          </div>
+          <!--/tab-content-->
+
+        <!-- /panel-body -->
+
+    </div>
+
+    <!-- /col-lg-9 -->
+    <!-- Right pane -->
+    <div class="col-lg-3 col-ofh">
+      <div class="idm-tools">
+        <div id="rightpane" data-spy="affix" data-offset-top="220">
+          <div class="hidearrow-rightbg"><a class="fa fa-chevron-circle-right fa-2x" id="hidearrow2" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Show/Hide Right Pane"></a></div>
+          <div class="rightpane-content">
+            <div class="row">
+              <div class="col-lg-6">
+                <h4 id="heading-right"><i class="fa fa-lock" data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Currently checked out by Alan Lockwood, BRTX"></i> BAUER, JACK</h4>
+                <ul class="pager pull-left">
+                  <li class="prevAcct"><a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a></li>
+                  <li> <span class="blank">
+                    <p class="text-center"><span class="block"><small>Accounts 1 of 293</small></span></p>
+                    </span> </li>
+                  <li class="nextAcct"><a href="javascript:void(0);"><i class="fa fa-chevron-right"></i> </a></li>
+                </ul>
+                <br clear="both" />
+                <ul class="patientdata-right">
+                  <li>
+                    <label data-toggle="tooltip" data-placement="top" title="Account Number">Acct. #</label>
+                    <span>LZD5RYND</span> </li>
+                  <li>
+                    <label>Facility</label>
+                    <span>BRTX</span> </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="nav nav-tools checkoutbtns">
+                  <li><a href="javascript:void(0);" class="btn btnPrimary checkout"><i class="fa fa-pencil-square-o fa-1-5x"></i><span>Check Out</span></a></li>
+                  <li class="hidden"><a class="btn" data-toggle="" href="#authAssign"><i class="fa fa-exchange fa-1-5x"></i><span>Assign</span></a></li>
+                  <li class="hidden"><a class="btn" data-toggle="" href="#authSchedule"><i class="fa fa-calendar fa-1-5x"></i><span>Schedule</span></a></li>
+                  <li><a class="btn" data-toggle="modal" data-target="#complete" href="#authComplete"><i class="fa fa-check fa-1-5x"></i><span>Complete</span></a>
+                  </li>
+                  <li ><a class="btn turnon disabled" data-toggle="" href="#"><i class="fa fa-1-5x fa-floppy-o"></i><span>Update</span></a></li>
+                  <li><a class="btn turnon disabled" data-toggle="modal" data-target="#deleteRecord" href="#"><i class="fa fa-trash fa-1-5x"></i><span>Delete</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <form name="clockform" id="checkin-timer">
+              <label>Time Checked Out</label>
+              <span>
+              <input name="clock" value="00:00:00" class="timer" id="timer"/>
+              <!-- <input name="starter" onclick="findTIME()" type="button" value="Start" />
+              <input name="clearer" onclick="clearALL()" type="button" value="Reset" /> -->
+              </span>
+            </form>
+            <hr>
+            <h3 class="exceptions-header right-tabs">
+              <ul class="nav nav-tabs pull-right">
+                <li class="active"><a href="#right-tab01" data-toggle="tab">Checked Out Cases <span class="badge">5</span></a></li>
+                <li><a href="#right-tab02" data-toggle="tab" class="completed">Completed Today <span class="badge">4</span></a></li>
+              </ul>
+            </h3>
+            <div class="panel-body">
+              <div class="tab-content">
+                <div class="tab-pane fade active in" id="right-tab01">
+                  <ul class="myassignments timeline-activity list-unstyled" id="cases-box" style="height: 636px;">
+                    <li> <i data-original-title="2 Days Remaining" data-toggle="tooltip" data-container="body" data-placement="top" class="list-icon fa fa-exclamation-triangle icon-alert"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Swanson, Mary</span> </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 4/1/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Appeal Level 1</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="agent"> <i class="fa fa-clock-o"></i> <span class="name">Time Checked Out: 15:59</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i data-original-title="2 Days Remaining" data-toggle="tooltip" data-container="body" data-placement="top" class="list-icon fa fa-exclamation-triangle icon-alert"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Foster, Robert</span> </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 4/1/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Appeal Level 1</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="agent"> <i class="fa fa-clock-o"></i> <span class="name">Time Checked Out: 25:13</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i data-original-title="5 Days" data-toggle="tooltip" data-container="body" data-placement="top" class="list-icon fa fa-exclamation-triangle icon-alert"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> Parr, James </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 4/1/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Appeal Level 1</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="agent"> <i class="fa fa-clock-o"></i> <span class="name">Time Checked Out: 10:10</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i data-original-title="10 Days Remaining" data-toggle="tooltip" data-container="body" data-placement="top" class="list-icon fa fa-exclamation-triangle icon-warning"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> Davis, Betty </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 4/1/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Appeal Level 1</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="agent"> <i class="fa fa-clock-o"></i> <span class="name">Time Checked Out: 00:10</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i data-original-title="12 Days Remaining" data-toggle="tooltip" data-container="body" data-placement="top" class="list-icon fa fa-exclamation-triangle icon-warning"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> Carrington, Blake </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 4/1/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Appeal Level 1</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="agent"> <i class="fa fa-clock-o"></i> <span class="name">Time Checked Out: 10:08</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="right-tab02">
+                  <ul class="myassignments timeline-activity list-unstyled" id="cases-box2">
+                    <li> <i class="list-icon fa fa-check icon-complete" data-placement="top" data-container="body" data-toggle="tooltip" data-original-title="Completed"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Shmoe, Joe</span> </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 3/31/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Complete</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="info"> <i class="fa fa-clock-o "></i> <span class="details">Time to Complete: 25:10</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-check icon-complete" data-placement="top" data-container="body" data-toggle="tooltip" data-original-title="Completed"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> <span>Carr, Jack</span> </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 3/31/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Complete</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="info"> <i class="fa fa-clock-o "></i> <span class="details">Time to Complete: 25:10</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-check icon-complete" data-placement="top" data-container="body" data-toggle="tooltip" data-original-title="Completed"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> Underwood, Lauren </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 3/31/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Complete</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="info"> <i class="fa fa-clock-o "></i> <span class="details">Time to Complete: 25:10</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                    <li> <i class="list-icon fa fa-check icon-complete" data-placement="top" data-container="body" data-toggle="tooltip" data-original-title="Completed"></i>
+                      <div class="block">
+                        <div class="caret hidden"></div>
+                        <a class="" href="loc-details.html">
+                        <div class="box-generic">
+                          <div class="timeline-top-info border-bottom"> Morgan, Michael </div>
+                          <div class="timeline-details"> <span class="timeline"> <i class="fa fa-calendar"></i> <span class="date">Due 3/31/2015</span> </span> <span class="info"> <i class="fa fa-info-circle"></i> <span class="details">Complete</span> </span> <span class="agent"> <i class="fa fa-user"></i> <span class="name">Acct # 8QSVHO4D</span> </span> <span class="info"> <span class="details"> <i class="fa fa-clock-o "></i>Time to Complete: 25:10</span> </span> </div>
+                        </div>
+                        </a>
+                        <div class="separator bottom"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODALS -->
+<script>
+	var deleteclass;
+	function deleteNote(){
+		$('.' + deleteclass).remove();
+	}
+</script>
+<!--delete Record Modal-->
+<div class="modal fade" id="deleteNote" tabindex="-1" role="dialog" aria-labelledby="addLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-msg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="idleLabel">Confirm Deletion</h4>
+      </div>
+      <div class="modal-body">
+        <h3 class="idle-text">Are you sure you would like to delete this note?</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnPrimary" data-toggle="modal" data-target="#taskDeleted" data-dismiss="modal" onClick="deleteNote();">Delete</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--delete Record Modal-->
+<div class="modal fade" id="deleteRecord" tabindex="-1" role="dialog" aria-labelledby="addLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-msg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="idleLabel">Confirm Deletion</h4>
+      </div>
+      <div class="modal-body">
+        <h3 class="idle-text">Are you sure you would like to delete this record?</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnPrimary" data-toggle="modal" data-target="#taskDeleted" data-dismiss="modal">Delete</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Task Updated Modal-->
+<div class="modal fade" id="taskUpdated" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-msg">
+    <div class="modal-content">
+      <div class="modal-body msg-success"> <span><i class="fa fa-check"></i> Patient Record has Been Updated</span> </div>
+    </div>
+  </div>
+</div>
+
+<!--Task Updated Modal-->
+<div class="modal fade" id="taskDeleted" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-msg">
+    <div class="modal-content">
+      <div class="modal-body msg-success"> <span><i class="fa fa-check"></i> Record has been Deleted</span> </div>
+    </div>
+  </div>
+</div>
+
+<!--Patient Lookup Modal-->
+<div class="modal fade" id="PatientLookup" tabindex="-1" role="dialog" aria-labelledby="patientLookupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title"  id="patientLookupLabel">Patient Lookup</h4>
+      </div>
+      <div class="modal-body">
+        <ol class="patient-data stacked pd-modal">
+          <li> <a href="">Ryerson, Aaron</a> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, David</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Ernest</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Ned</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Ryan</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Sam</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Todd</a></strong> (956) 555-1212 </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btnPrimary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Physician Lookup Modal-->
+<div class="modal fade" id="PhysicianLookup" tabindex="-1" role="dialog" aria-labelledby="PhysicianLookupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="PhysicianLookupLabel">Physician Lookup</h4>
+      </div>
+      <div class="modal-body">
+        <ol class="patient-data stacked pd-modal">
+          <li> <a href="">Ryerson, Aaron</a> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, David</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Ernest</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Ned</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Ryan</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Sam</a></strong> (956) 555-1212 </li>
+          <li> <a href="">Ryerson, Todd</a></strong> (956) 555-1212 </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btnPrimary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Loader Modal-->
+<div class="modal fade" id="loader" tabindex="-1" role="dialog" aria-labelledby="loaderLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header hidden">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="loaderLabel">Override</h4>
+      </div>
+      <div class="modal-body"> <i class="fa fa-refresh fa-spin fa-3x text-center"></i>
+        <h3 class="text-center">loading</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Complete Record Modal-->
+<div class="modal fade" id="complete" tabindex="-1" role="dialog" aria-labelledby="completeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-msg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="idleLabel">Confirm Completion</h4>
+      </div>
+      <div class="modal-body">
+        <h3 class="idle-text">Are you sure you would like to complete this record?</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnPrimary" data-toggle="modal" data-target="#taskUpdated" data-dismiss="modal" onClick="clearALL();">Complete</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Idle Modal-->
+<div class="modal fade" id="idle" tabindex="-1" role="dialog" aria-labelledby="idleLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-msg">
+    <div class="modal-content">
+      <div class="modal-header hidden">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="idleLabel">Inactivity</h4>
+      </div>
+      <div class="modal-body">
+        <h3 class="idle-text"></h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btnPrimary" data-dismiss="modal">Continue</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer"> &copy; Copyright 2015 <a href="http://www.accretivehealth.com" target="_blank">Accretive Health, Inc.</a> </div>
+
+<!-- Bootstrap core JavaScript
+         ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-submenu.js"></script>
+<script src="js/pas-custom.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+
+<script src="js/appeals-checkout-timer.js"></script>
+
+<!-- For prototype scenario menu only.  DO NOT COPY TO DEV ENVIRONMENT -->
+<script src="js/ah-prototype.js"></script>
+<script>
+         /*$('.panel > .panel-body').lazyload();*/
+      </script>
+<script>
+        $(document).ready(function() {
+            $('#actionLog').dataTable({
+                "aoColumnDefs": [
+                  {
+                      "bSortable": false,
+                      "aTargets": [ -1 ]
+                  }
+                ]
+            });
+
+
+        });
+    </script>
+</body>
+</html>

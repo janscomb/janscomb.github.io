@@ -1,0 +1,89 @@
+.scenarios-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 40px;
+    height: 45px;
+    padding: 10px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    width: 45px;
+    display: block;
+    border: 2px solid #000;
+    opacity: .7;
+    z-index: 5001;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.scenarios-btn:hover { opacity: 1;}
+
+.scenarios-menu {
+    padding: 80px 10px 10px;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background: #333;
+    color: #fff;
+    left: -200px;
+    top: 0;
+    bottom: 0;
+    z-index: 5000;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.scenarios-menu.open {
+    left: 0px;
+}
+
+.scenarios-menu-close {
+    z-index: 4500;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+.scenarios-menu.open + .scenarios-menu-close {
+    display: inline-block;
+}
+
+.scenarios-menu-close span {
+    text-indent: -9999px;
+    position: relative;
+    opacity: 0;
+}
+
+.scenarios-menu h3, .scenarios-menu h4, .scenarios-menu h5 {
+    color: #ccc;
+    margin: 0 0 10px;
+}
+.scenarios-menu h5 {
+    padding: 0 5px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #fff;
+}
+.scenarios-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.scenarios-menu ul li {
+    margin: 0 0 10px;
+    border-bottom: 1px #ccc dotted;
+    list-style: none;
+}
+.scenarios-menu ul li a {
+    padding: 5px;
+    margin: 0 0 5px;
+    display: block;
+    width: 100%;
+    color: #fff
+}

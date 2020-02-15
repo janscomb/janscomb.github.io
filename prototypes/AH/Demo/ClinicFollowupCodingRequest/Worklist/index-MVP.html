@@ -1,0 +1,885 @@
+<html>
+<head><title>Documentation & Coding Worklist</title>
+
+<!-- Bootstrap Generic CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../css/bootstrap.css">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="../../../css/main.css">
+
+<!-- Print CSS -->
+<link rel="stylesheet" href="../../../css/print.css">
+
+<!-- Bootstrap Generic JS -->
+<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.mousewheel.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+</head>
+
+<body id="top">
+
+  <!-- Back to Top -->
+  <a href="#top" class="backToTop"><span class="fa fa-chevron-up"></span></a>
+
+  <!-- Top Bar -->
+  <!-- User Bar -->
+  <div class="userBar">
+  <span class="currently">Currently logged in as:</span> <strong>Nathan Anderson</strong> <span class="topGrep"></span> <a href="../../../demo.html"><i class="fa fa-sign-out"></i></a> <span class="topGrep"></span> <i class="fa fa-thumb-tack local"></i> &nbsp;<select><option>Select</option><option>Flex</option></select>
+  </div>
+
+  <!-- Navi -->
+  <div class="container-fluid topBar">
+
+          <!-- Logo -->
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo">
+              <a href="../Dashboard/index.html"><img src="../../../images/logo-Accretive.png" height="24" /></a>
+              <span class="roleType">Practice Management</span>
+          </div>
+
+          <!-- Nav -->
+          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 nav">
+              <ul>
+                  <li><a href="" class="navSearch"><span class="fa fa-search"></span></a></li>
+                  <li><a href="../Worklist/index.html" class="activePage">Worklist</a></li>
+                  <li><a href="../Dashboard/index.html">Dashboard</a></li>
+              </ul>
+          </div>
+
+  </div>
+  <!-- //Top Bar -->
+
+
+<!-- Content Container -->
+<div class="container-fluid">
+
+    <!-- Logo -->
+    <span class="Print logoPrint" style="position: absolute; top: 20px; right: -20px;"><img src="../../../images/logo-Accretive_dark.png" /></span>
+
+    <!-- Current Worklist Details -->
+    <div class="row mainContainer relative viewingTitle">
+
+      <div class="col-xs-5 col-sm-8 col-md-9 col-lg-9 titleOverflow noPad">
+
+        <!-- Now Viewing -->
+        <span class="worklistLabel">Now Viewing:</span>
+        <span class="worklistTitle">Documentation &amp; Coding <span class="specialChar">&gt;</span> Coding Requests</span>
+
+        <br />
+        <!-- //Now Viewing -->
+
+      </div>
+
+      <div class="col-xs-7 col-sm-4 col-md-3 col-lg-3 noPad">
+
+        <!-- Worklist Menu -->
+        <div class="WLMenu wrkmenu pull-right">
+
+            <!-- Results -->
+            <span class="menuResults"><strong>20</strong> Results</span>
+
+            <!-- Favorite -->
+            <a class="menuFav favActive" data-toggle="modal" data-target="#addFavorites"><span class="fa fa-star" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Add to Favorites"></span></a>
+
+            <!-- Print -->
+            <a class="menuPrinter" data-toggle="modal" data-target="#printChoices"><span class="glyphicon glyphicon-print" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Batch Print"></span></a>
+
+            <!-- Filter -->
+            <a class="menuFilter"><span class="fa fa-filter" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Filter Results"></span></a>
+
+                <!-- Filter Close - initially hidden -->
+                <a class="menuFilterClose"><span class="fa fa-filter" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Close Filter Box"></span>
+                    <span class="glyphicon glyphicon-remove-sign closeFilter"></span>
+                </a>
+
+            <!-- Search -->
+            <a class="menuSearch"><span class="fa fa-search" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Search Worklist"></span></a>
+
+                <!-- Search Close - initially hidden -->
+                <a class="menuSearchClose"><span class="fa fa-search" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Close Search Box"></span>
+                    <span class="glyphicon glyphicon-remove-sign closeSearch"></span>
+                </a>
+
+        </div>
+        <!-- //Worklist Menu -->
+
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="row WLSeparator"></div>
+
+      <div class="row filterResults">
+
+          <!-- Filtered By -->
+          <span class="worklistLabel">Filtered By:</span>
+          <span class="label label-filter">Physician : Range : A-G : Ascending &nbsp; <a href="" class="removebtn"><span class="glyphicon glyphicon-remove-sign"></span></a></span>
+
+          <a class="labelButton viewFilters">Open / Edit Filters</a>
+          <!-- //Filtered By -->
+      </div>
+
+    </div>
+    <!-- //Current Worklist Details -->
+
+    <!-- Search Bar -->
+    <div class="row searchBar">
+
+        <!-- Main Search -->
+        <div class="col-xs-7 col-sm-7 col-md-9 col-lg-9 mainSearch noPad">
+        <input type="name" placeholder="Search Worklist" />
+        </div>
+
+        <!-- MRN Search -->
+        <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3 MRNSearch noPad">
+        <input type="name" placeholder="MRN" />
+        </div>
+
+        <!-- Buttons -->
+        <div class="searchButtons noPad pull-right">
+            <a href="" class="btn"><span class="fa fa-search"></span></a>
+        </div>
+
+    </div>
+    <!-- //Search Bar -->
+
+    <!-- Filter Bar -->
+    <div class="row filterBar">
+
+        <!-- Close Filter Bar Box -->
+        <a class="closeFilterBox"><i class="fa fa-times"></i></a>
+
+        <!-- Column -->
+        <div class="filterItems noPad form-group">
+        &nbsp; Filter Results By<br />
+        <select class="form-control placeholder">
+            <option disabled selected>Select</option>
+            <option>Encounter</option>
+            <option>POS</option>
+            <option>CPT</option>
+            <option>CPT Description</option>
+            <option>Modifiers</option>
+            <option>Diagnosis</option>
+        </select>
+        </div>
+
+        <div class="grep"></div>
+
+        <!-- Operator -->
+        <div class="filterItems noPad form-group">
+        &nbsp; Operator<br />
+        <select class="form-control placeholder">
+            <option disabled selected>Select</option>
+            <option>Range</option>
+            <option>Equals</option>
+            <option>Less Than</option>
+            <option>Greater Than</option>
+            <option>Less or Equal</option>
+        </select>
+        </div>
+
+        <div class="grep"></div>
+
+        <!-- Field - Range 1 -->
+        <div class="filterItems noPad">
+            &nbsp; Enter a Range<br />
+            <input type="text" name="Range" size="5" placeholder="To" />
+        </div>
+
+        <!-- Sep -->
+        <div class="filterItems noPad" style="padding: 14px 10px; font-size: 10px;">
+            <br />
+            &mdash;
+        </div>
+
+        <!-- Field - Range 2 -->
+        <div class="filterItems noPad">
+            <br />
+            <input type="text" name="Range2" size="5" placeholder="From" />
+        </div>
+
+        <!-- Add Row -->
+        <div class="filterItems noPad addRow">
+        <a class=""><span class="fa fa-plus-circle"></span></a>
+        </div>
+
+        <!-- Filter Results -->
+        <div class="pull-right filterbtn">
+        <a class="btn clickFilter">Filter Results</a>
+        </div>
+
+    </div>
+    <!-- //Filter Bar -->
+
+    <!-- Worklist -->
+    <div class="row mainContainer" style="padding-top: 0px;">
+
+        <!-- Tree -->
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 treePane">
+
+            <div class="treeList practiceTree">
+
+                <!-- Header -->
+                <div class="treeHead">
+                    <span class="glyphicon glyphicon-tree-conifer treeIcon"></span>
+                    <span class="grep treeGrep"></span>
+                    <span class="treeHeader">Worklist Tree</span>
+                    <a data="treeAcc" class="treeToggle" id="treeSlideOut"><span class="glyphicon glyphicon-chevron-left pull-right"></span></a>
+                    <a data="treeAcc" class="treeToggleIn" id="treeSlideIn"><span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                </div>
+                <!-- //Header -->
+
+
+                <!-- Buttons // Initially Hidden -->
+                <div class="miniNav rotate270 positioning">
+                    <a class="miniNavButton">Favorites</a>
+                    <a class="miniNavButton">Worklist Items</a>
+                </div>
+                <!-- //Buttons // Initially Hidden -->
+
+
+                <!-- Tree Results -->
+                <div class="treeResults">
+
+                  <ol class="tree">
+                      <li>
+                          <label for="favorites">Favorites</label> <input type="checkbox" id="favorites" />
+                          <ol>
+                              <!-- <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Today</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Tomorrow</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Unworked - This Week</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Next Week</a></li> -->
+                          </ol>
+                      </li>
+
+                      <!-- Patient Engagement -->
+                      <li>
+                      <label for="folder1">Patient Engagement</label> <input type="checkbox" id="folder1" checked />
+                          <ol>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Wellness Visits</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Care Gaps</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">TCM</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">CCM</a></li>
+                          </ol>
+                      </li>
+                      <li>
+                      <label for="folder2">Scheduling Requests</label> <input type="checkbox" id="folder2" checked />
+                          <ol>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Office Visits</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Surgical Services</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Labratory Services</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Behavioral Medicine</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Mental Health Service</a></li>
+                          </ol>
+                      </li>
+                      <li>
+                      <label for="folder3">Documentation &amp; Coding</label> <input type="checkbox" id="folder3" checked />
+                          <ol>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Documentation Requests</a></li>
+                              <li class="leaf step1 activeSelected"><a href="../Worklist/index.html">Coding Requests</a></li>
+                          </ol>
+                      </li>
+                      <li>
+                      <label for="folder4">Order Requests</label> <input type="checkbox" id="folder4" checked />
+                          <ol>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Diagnostic Imaging</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Office Visits</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Surgical Services</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Labratory Services</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Behavioral Medicine</a></li>
+                              <li class="leaf step1"><a href="../Worklist/index.html">Mental Health Service</a></li>
+                          </ol>
+                      </li>
+                  </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Table -->
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 noPad dashContentRight">
+
+          <div class="componentAll">
+
+          <table class="practiceWorklist">
+
+              <thead>
+                  <tr>
+                      <th>Patient Name</th>
+                      <th class="center" width="100">Status &nbsp; <a class="keyNav" data-toggle="modal" data-target="#statusKey">Key</a></th>
+                      <th>MPI</th>
+                      <th>MRN</th>
+                      <th>DOB</th>
+                      <th>Defect</th>
+                      <th>RAF</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                        <th><a href="../PointOfCare/index.html">Gallagher, Colleen</a></th>
+
+                        <th class="tdStatus center">
+                          <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2540460</td>
+                        <td>A12345678</td>
+                        <td>08/21/1949</td>
+                        <td>HCC</td>
+                        <td>0.451</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Edwards, Jack</a></th>
+
+                        <th class="tdStatus center">
+                          <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2706690</td>
+                        <td>A25634564</td>
+                        <td>03/30/1945</td>
+                        <td>HCC</td>
+                        <td>0.430</td>
+                    </tr>
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Scott, Doris</a></th>
+
+                        <th class="tdStatus center">
+                         <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2621711</td>
+                        <td>A44545623</td>
+                        <td>07/09/1929</td>
+                        <td>Quality Measure</td>
+                        <td>N/A</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Wallace, Margaret</a></th>
+
+                        <th class="tdStatus center">
+                          <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2857158</td>
+                        <td>A12665651</td>
+                        <td>08/05/1950</td>
+                        <td>HAC</td>
+                        <td>N/A</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Doyle, Levi</a></th>
+
+                        <th class="tdStatus center">
+                          <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2607992</td>
+                        <td>A17845659</td>
+                        <td>02/26/1946</td>
+                        <td>Multiple</td>
+                        <td>0.397</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Murphy, Charlotte</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2579099</td>
+                        <td>A32368699</td>
+                        <td>01/08/1944</td>
+                        <td>HCC</td>
+                        <td>0.395</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Summers, Frank</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2606784</td>
+                        <td>A335345690</td>
+                        <td>03/05/1981</td>
+                        <td>HCC</td>
+                        <td>0.394</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Garcia, Maria</a></th>
+
+                        <th class="tdStatus center">
+                          <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2570707</td>
+                        <td>A224345551</td>
+                        <td>03/20/1931</td>
+                        <td>HCC</td>
+                        <td>0.390</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Petrov, Alexander</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2755814</td>
+                        <td>A22434331</td>
+                        <td>11/19/1949</td>
+                        <td>Multiple</td>
+                        <td>0.387</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Trainer, George</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2755338</td>
+                        <td>A252655108</td>
+                        <td>12/14/1948</td>
+                        <td>HAC</td>
+                        <td>N/A</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Bower, Beverly</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2753786</td>
+                        <td>A56375611</td>
+                        <td>05/22/1940</td>
+                        <td>HCC</td>
+                        <td>0.385</td>
+                    </tr>
+
+                  <tr>
+                      <th><a href="../PointOfCare/index.html">Kehrsdale, Gus</a></th>
+
+                      <th class="tdStatus center">
+                        <!-- Code Recovery Services -->
+                        <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                        <!-- Documentation Requests -->
+                        <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                        <!-- Coding Requests -->
+                        <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                      </th>
+
+                      <td>2899593</td>
+                      <td>A87122409</td>
+                      <td>09/19/1923</td>
+                      <td>Quality</td>
+                      <td>N/A</td>
+                  </tr>
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Johnson, Gene</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>27548143</td>
+                        <td>A443245650</td>
+                        <td>03/02/1943</td>
+                        <td>Mortality</td>
+                        <td>N/A</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Samuels, Virginia</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2756655</td>
+                        <td>A42671644</td>
+                        <td>01/03/1950</td>
+                        <td>HCC</td>
+                        <td>0.376</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Adams, Shirley</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                        </th>
+
+                        <td>2775330</td>
+                        <td>A66343201</td>
+                        <td>02/10/1933</td>
+                        <td>HAC</td>
+                        <td>N/A</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Wagner, Mary</a></th>
+
+                        <th class="tdStatus center">
+                           <!-- Code Recovery Services -->
+                          <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                          <!-- Documentation Requests -->
+                          <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                          <!-- Coding Requests -->
+                          <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                          <!-- Billing Requests -->
+                        </th>
+
+                        <td>2735877</td>
+                        <td>A246745678</td>
+                        <td>08/30/1955</td>
+                        <td>Quality Measure</td>
+                        <td>N/A</td>
+                    </tr>
+
+
+                    <tr>
+                        <th><a href="../PointOfCare/index.html">Michaels, Joan</a></th>
+
+                          <th class="tdStatus center">
+                            <!-- Code Recovery Services -->
+                            <a href="../CodingDocumentation/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Code Recovery Services">R</div></a>
+                            <!-- Documentation Requests -->
+                            <a href="../DocumentationRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Documentation Requests">D</div></a>
+                            <!-- Coding Requests -->
+                            <a href="../CodingRequests/index.html"><div class="none statusBox" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Coding Requests">C</div></a>
+                          </th>
+
+                        <td>2741835</td>
+                        <td>A554375612</td>
+                        <td>02/22/1945</td>
+                        <td>Multiple</td>
+                        <td>0.350</td>
+                    </tr>
+              </tbody>
+          </table>
+
+          </div>
+          <!-- //Table Results -->
+
+        </div>
+        <!-- //Table -->
+
+    </div>
+    <!-- //Worklist -->
+
+</div>
+<!-- //Content Container -->
+
+
+<!-- Footer -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footerContainer pull-center">
+&copy; Copyright 2015 Accretive Health, Inc. <span class="grep"></span> <a href="../../../privacy.html">Privacy Statement</a> <span class="grep"></span> <a href="../../../terms.html">Terms of Use</a>
+</div>
+<!-- //Footer -->
+
+
+
+<!-- Key Modal -->
+<div class="modal fade" id="statusKey" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Status Key</h4>
+      </div>
+
+      <div class="modal-body keyModal">
+
+          <h5>Abbreviations</h5>
+
+          <!-- Icon Key -->
+          <div class="keyBox">
+
+            <!-- Code Recovery Service -->
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+
+                <div class="keyCon grey">R</div> <label>Code Recovery Services</label>
+
+            </div>
+
+            <!-- Documentation Requests -->
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+
+                <div class="keyCon grey">D</div> <label>Documentation Request</label>
+
+            </div>
+
+            <!-- Coding Request -->
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+
+                <div class="keyCon grey">D</div> <label>Coding Request</label>
+
+            </div>
+
+          </div>
+          <!-- //Icon Key -->
+
+          <br clear="all" />
+
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Key Modal -->
+
+
+<!-- Add to Favorites Modal -->
+<div class="modal fade" id="addFavorites" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Add Worklist to Favorites?</h4>
+      </div>
+
+      <div class="modal-body">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-4 control-label">Favorite Worklist Name:</label>
+                      <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Enter a Name (30 characters max)" />
+                      </div>
+                  </div>
+
+                </fieldset>
+
+          </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Save to Favorites</button>
+        <span class="grep"></span>
+        <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Add to Favorites Modal -->
+
+
+<!-- Edit Favorite Modal -->
+<div class="modal fade" id="editFavorites" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Edit Favorite</h4>
+      </div>
+
+      <div class="modal-body">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-4 control-label">Favorite Worklist Name:</label>
+                      <div class="col-sm-8">
+                      <input type="text" class="form-control" value="My Favorite Worklist" />
+                      </div>
+                  </div>
+
+                </fieldset>
+
+          </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Update</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+        <span class="grep"></span>
+        <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Edit Favorite Modal -->
+
+
+<!-- Print Modal -->
+<div class="modal fade" id="printChoices" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Multiple Print Choices</h4>
+
+        There are multiple printing options from this worklist.<br />Select the item(s) you wish to print.
+      </div>
+
+      <div class="modal-body">
+
+          <form class="form-horizontal noMargin">
+
+                <fieldset>
+                  <div class="col-sm-4 col-sm-offset-1">
+
+                    <input type="checkbox" name="printOptions" id="print1" class="radio"/>
+                    <label for="print1">Print Point of Care</label>
+
+                  </div>
+
+                  <div class="col-sm-5 col-sm-offset-1">
+
+                    <input type="checkbox" name="printOptions" id="print2" class="radio"/>
+                    <label for="print2">Print HCC Information</label>
+
+                  </div>
+
+                </fieldset>
+
+          </form>
+
+          <br clear="all" />
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-print"></i> &nbsp; Print Results</button>
+        <span class="grep"></span>
+        <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Print Modal -->
+
+
+<!-- ####################################### Scripts ######################################### -->
+
+<!-- Dynamic Date Scripts -->
+<script type="text/javascript" src="../../../js/moment.js"></script>
+<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
+
+<!-- Sticky Table Scripts -->
+<script src="../../../js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="../../../js/jquery.stickyheader.js"></script>
+
+<script src="../../../js/basics.js"></script>
+<script src="../../../js/tree.js"></script>
+<script src="../../../js/modals.js"></script>
+
+
+</body>
+</html>

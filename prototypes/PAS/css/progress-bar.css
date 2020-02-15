@@ -1,0 +1,191 @@
+/*form styles*/
+
+#msform {
+	width: 100%;
+	margin: 5px auto;
+	position: relative;
+    display: block;
+    height: 380px;
+    /*background: #ccc;*/
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+    height: auto;
+	
+	/*stacking fieldsets above each other*/
+	position: absolute;
+}
+
+#msform fieldset li {
+	list-style: none;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform button, #msform .btn, #msform textarea {
+    
+    /*width: 100%;
+	box-sizing: border-box;*/
+	/*padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	
+	color: #2C3E50;
+	font-size: 13px;*/
+}
+
+#msform .btn{
+    min-width: 100px;
+}
+
+#msform input[type=radio], #msform input[type=checkbox] {
+    width: auto;
+    /*display: inline-block;*/
+}
+
+/*buttons*/
+#msform .action-button {
+	/*width: 100px;
+	background: #3d64a8;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 5px 5px;
+	margin: 10px 5px;*/
+}
+
+#msform .action-button.next {
+    /*background: #ccc;*/
+    color: #fff;
+}
+
+#msform .action-button.previous {
+    /*background: #ccc;*/
+    color: #333;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+	/* box-shadow: 0 0 0 2px white, 0 0 0 3px #001C70; */
+    /*background: #001C70;*/
+}
+
+#msform .action-button.previous:hover, #msform .action-button.previous:focus {
+	/* box-shadow: 0 0 0 2px white, 0 0 0 3px #ccc; */
+    /*background: #ccc;*/
+}
+
+.btn-mini.btn-popover {
+    margin: -3px 0 0;
+    padding: 0 5px;
+}
+
+/*headings*/
+h2.fs-title, .panel-body h2.fs-title {
+    color: #3d64a8;
+    border-bottom: 1px solid #E3E8ED;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+}
+
+#msform h4,
+#msform h5 { 
+    font-weight: bold;
+    color: #3d64a8;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/*progressbar*/
+#progressbar {
+	margin-bottom: 10px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+    padding: 0;
+}
+#progressbar li {
+	list-style-type: none;
+	color: #333;
+	font-size: 9px;
+    text-align: center;
+    text-transform: uppercase;
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+#progressbar.steps-5 li {
+	width: 20%;
+}
+
+#progressbar.steps-4 li {
+	width: 25%;
+}
+
+#progressbar.steps-3 li {
+	width: 33.333%;
+}
+
+#progressbar.steps-2 li {
+	width: 50%;
+}
+
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: #E3E8ED;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+    position: relative;
+    z-index: 2;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #E3E8ED;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: 1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps blue*/
+#progressbar li.progActive:before,  #progressbar li.progActive:after{
+	background: #3d64a8;
+	color: #fff;
+}
+
+#progressbar.complete li.progActive:before, #progressbar.complete li.progActive:after {
+    background: #6f933d;
+    color: #fff;
+}
+
+.panel.progressbar {
+    
+} 
+
+.panel.progressbar .panel-body {
+    padding: 5px 0 0;
+}

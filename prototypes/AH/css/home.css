@@ -1,0 +1,34 @@
+body {
+margin: 50px;
+padding: 50px;
+background: #3d64a8;
+color: #FFF;
+letter-spacing: 0.05em;
+line-height: 1.8;
+font-weight: 100;
+}
+
+h2 {
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-family: "Lato-Light", "OpenSans-Light", sans-serif;
+}
+
+a, a:visited, a:Link {
+  color: yellow;
+  padding: 5px 10px;
+}
+
+a:hover {
+  background: #FFF;
+  text-decoration: none;
+  color: #3d64a8;
+}
+
+strong {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: underline;
+}

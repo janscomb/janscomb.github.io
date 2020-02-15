@@ -1,0 +1,240 @@
+.container {
+    max-width: 100% !important;
+}
+#dnn_ctr853_HtmlModule_lblContent {
+    margin-left: -20%;
+}
+h1 {
+    font-size: 16px;
+}
+.hpBanner {background:transparent;border:none;box-shadow:none;padding:0px 20px 0px 0px}
+h1 span {font-size:inherit !important}
+.dnnFormItem > .dnnLabel {
+    float: none;
+    text-align: left;
+}
+.dnnForm .dnnFormItem {
+    max-height: 60px;
+}
+.dnnFormItem > label.dnnFormLabel {
+    height: 0;
+    margin: 0;
+    text-align: left;
+    width: inherit;
+}
+.solutions_link {
+    display: none;
+}
+.col-lg-4 {
+    width: 100%;
+}
+#pas_homepage_content {
+    background-color: #fff;
+    border: 1px solid #e3e8ed;
+    margin:100px auto auto;
+    padding: 20px;
+    text-align: left;
+    width: 780px;
+    z-index: 1;
+}
+.pas_homepage_content .Container-H1 {
+    z-index: 2;
+	background: none repeat scroll 0 0 #e7e7e6;
+}
+.home #dnn_RowOne_Grid3_Pane {
+    background: none repeat scroll 0 0 #e7e7e6;
+    margin-left: 40px;
+    margin-top: 120px;
+    padding: 0;
+    position: relative;
+    width: 250px;
+    z-index: 2;
+}
+#dnn_RowOne_Grid3_Pane h1 {
+    background: none repeat scroll 0 0 #3a5cac;
+    color: #fadd90;
+    font-family: "Antic Slab";
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.dnnPrimaryAction, #dnn_RowOne_Grid3_pane a.dnnPrimaryAction {
+    background: linear-gradient(to bottom, #9dc44a 0%, #84a53f 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border: 1px solid #759d1e !important;
+    color: #fff !important;
+    float: left;
+    font-family: "Antic Slab";
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #000 !important;
+    width: 100%;
+}
+.dnnPrimaryAction:hover, #dnn_RowOne_Grid3_pane a.dnnPrimaryAction:hover {
+    background: none repeat scroll 0 0 #9dc44a !important;
+}
+.dnnForm .dnnFormItem {
+    position: inherit;
+}
+.dnnForm.dnnLoginService.dnnClear {
+    padding: 20px;
+}
+#pas_homepage_content .col-lg-8 h1 {
+    color: #3d64a8;
+    font-family: "Antic Slab";
+    font-size: 35px;
+    font-weight: bold !important;
+    left: -240px;
+    position: absolute;
+    top: -80px;
+}
+.dnnActions {
+    padding-top: 0;
+}
+.container {
+    background-color: #fff;
+    background-image: url("../images/doctor_bg.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    padding: 0;
+    top: 138px;
+    width: 100%;
+	
+}
+.rt-big-icon {
+    display: block;
+    font-size: 30px;
+    padding: 0;
+}
+.loginContent {background:#e7e7e6}
+.sprocket-mosaic-item {box-shadow:none;padding: 0 0 10px;}
+.sprocket-mosaic-item p {
+    margin-left: 50px;
+}
+#pas_homepage_content .box1, #pas_homepage_content .box2, #pas_homepage_content .box3 {
+    ;
+}
+.box3 {width:auto}
+.box1, .box2, .box3 {
+    background-color: transparent;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.box1, .sprocket-mosaic-item h4.head1 {
+    color: #3d64a8;
+}
+.box2, .sprocket-mosaic-item h4.head2 {
+    color: #6f933d;
+}
+.box3, .sprocket-mosaic-item h4.head3 {
+    color: #801e5f;
+}
+.body_bg h4 {
+    padding-left: 50px;
+}
+#dnn_ctr861_Login_Login_DNN_cmdCancel {
+    display: none;
+}
+.DnnModule.DnnModule-DNN_HTML.DnnModule-788 {
+    margin-left: 20px;
+
+}
+.DnnModule-852 {
+    margin-left: 20px;
+}
+.home .col-sm-3, .home .col-sm-4 {
+    width: 100%;
+}
+.dnnLoginService input[type="text"], .dnnLoginService input[type="password"] {
+    width: 100%;
+}
+.body_bg .loginContent .dnnFormItem a.dnnPrimaryAction {
+    width: 100%;
+}
+.dnnLoginRememberMe {
+    float: left;
+    margin-bottom: -20px;
+    margin-top: -5px;
+}
+#dnn_ctr861_Login_Progdnn_ctr861_Login_UP {
+    top: 305px !important;
+}
+@media (max-width: 1200px) {
+	#dnn_ctr853_HtmlModule_lblContent {
+    margin-left: 20px;
+}
+	.container {background-image:none}
+	#pas_homepage_content .col-lg-8 h1 {position:inherit;left:inherit;}
+.home #dnn_content {
+    background-image: none;
+}
+#pas_homepage_content {
+    border: 0 none;
+    width: auto;
+	margin: 0px;
+}
+.home #dnn_RowOne_Grid3_Pane, .DnnModule-852, .DnnModule.DnnModule-DNN_HTML.DnnModule-788 {
+    margin-left: 0;
+}
+#pas_homepage_content h1 {
+    left: -250px;
+}
+.dnnLoginRememberMe {
+    float: left;
+    margin-bottom: -20px;
+    margin-top: 0;
+}
+}
+@media (max-width: 780px) {
+.hedaer_minHeight {
+    height: auto;
+}
+#pas_homepage_content {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 20px 20px 0;
+    position: inherit;
+}
+#pas_homepage_content h1 {
+    left: 0;
+    line-height: 35px;
+    position: inherit;
+}
+.home #dnn_RowOne_Grid3_Pane {
+    margin-left: 0;
+    margin-top: 20px;
+    width: auto;
+}
+.DnnModule.DnnModule-DNN_HTML.DnnModule-788 {
+    margin-top: 20px;
+}
+.solutions_bullets {
+    display: none;
+}
+.solutions_link {
+    display: inline;
+}
+.dnnLabel, .dnnLoginService input[type="text"], .dnnLoginService input[type="password"] {
+    max-width: 100%;
+    width: 100%;
+}
+.body_bg .loginContent .dnnFormItem a.dnnPrimaryAction {
+    margin-top: 20px;
+}
+.dnnSecondaryAction {
+    width: 100%;
+}
+.dnnActions.dnnClear > li {
+    float: right;
+    margin-top: -20px;
+}
+.col-lg-8 {
+    width: 100%;
+}
+}

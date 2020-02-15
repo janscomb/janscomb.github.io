@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:x2="http://www.w3.org/2002/06/xhtml2">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head><title>Point of Care Prototype</title>
+
+<!-- Bootstrap Generic CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../css/bootstrap.css">
+<!-- Bootstrap Timepicker and Datepicker -->
+<link rel="stylesheet" href="../../../css/bootstrap-timepicker.min.css" />
+<link rel="stylesheet" href="../../../css/bootstrap-datepicker.min.css" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="../../../css/main.css">
+    
+<!-- Ribbon Navigation -->
+<link rel="stylesheet" href="../../../css/ribbonNavigation.css">
+
+<!-- Print -->
+<link rel="stylesheet" href="../../../css/print.css">
+
+<!-- Bootstrap Generic JS -->
+<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.mousewheel.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+</head>
+
+<body id="top">
+
+  <!-- Back to Top -->
+  <a href="#top" class="backToTop"><span class="fa fa-chevron-up"></span></a>
+
+  <!-- Top Bar -->
+  <!-- User Bar -->
+  <div class="userBar">
+  <span class="currently">Currently logged in as:</span> <strong><a href="../CRWorklist/index.html">Samantha Holmes</a></strong> <span class="topGrep"></span> <a href="../../../demo.html"><i class="fa fa-sign-out"></i></a> <span class="topGrep"></span> <i class="fa fa-thumb-tack local"></i> &nbsp;<select><option>Select</option><option>Flex</option></select>
+  </div>
+
+  <!-- Navi -->
+  <div class="container-fluid topBar">
+
+    <!-- Logo -->
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 logo">
+        <a href="../../../index.html"><img src="../../../images/logo-Accretive.png" height="24" /></a>
+    </div>
+
+    <div class="navSearch2">
+    <span class="fa fa-search"></span>
+    <input type="text" placeholder="Search" />
+    </div>
+
+    <!-- Nav -->
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-10 nav">
+
+        <ul>
+            <li><a href="" class="navSearch"><span class="fa fa-search"></span></a></li>
+            <li><a href="../Worklist/index.html">Worklist</a></li>
+            <li><a href="../Dashboard/index.html">Dashboard</a></li>
+            
+            <!-- Nav Pointer -->
+            <li class="balloonTop"></li>
+        </ul>
+    </div>
+
+  </div>
+  <!-- //Top Bar -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+
+    <!-- Logo -->
+    <span class="Print logoPrint" style="position: absolute; top: 20px; right: -20px;"><img src="../../../images/logo-Accretive_dark.png" /></span>
+
+    <!-- Print Items @ Top -- Name, Demographics -->
+    <div class="Print row" style="position: relative; width: 100%;">
+
+        <!-- Print Patient Name -->
+        <div class="Print prntPatientName" style="width: 100%;"><a href="#">Jonathan Moretti</a>
+            <span class="prntMRN">2618651</span>
+        </div>
+
+        <!-- Demographics for Print -->
+        <div class="Print row" style="width: 100%;">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 patDemo">
+                <u>Demographic Information</u><br />
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 patDemoLabels" style="padding-top: 5px;">
+                <strong>DOB (Age)</strong><br />
+                <strong>Gender</strong><br />
+                <strong>Address</strong><br />
+                <strong>City State, Zip</strong><br />
+                <strong>Telephone</strong><br />
+                <strong>Email</strong>
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: 5px;">
+                03/30/1945 (70)<br />
+                Male<br />
+                1049 Spring Rd.<br />
+                Park View IL, 60318<br />
+                (630) 919-3696<br />
+                Jonathan.A.Moretti@gmail.com
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 patDemo">
+                <u>Payor &amp; Appointment Information</u><br />
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 patDemoLabels" style="padding-top: 5px;">
+                <strong>Primary Payor</strong><br />
+                <strong>Network</strong><br />
+                <strong>Primary Care</strong><br />
+                <strong>Last Appt.</strong><br />
+                <strong>Reason</strong><br />
+                <strong>Appt. Date</strong>
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: 5px;">
+                MEDICARE PLUS BLUE<br />
+                Superior Assigned<br />
+                Michael Phillips<br />
+                10/12/2014<br />
+                Wellness Visit<br />
+                None scheduled
+                </div>
+
+            </div>
+
+        </div>
+        <!-- //Demographics for Print -->
+
+    </div>
+    <!-- //Print Items @ Top -->
+
+
+    <!-- Main Container -->
+    <div class="row mainContainer relative noPad">
+
+        <!-- Back to Worklist -->
+        <p class="backwork">
+        <a href="../Worklist/index.html" class="backNav">&lt; Back to Worklist</a>
+        </p>
+
+        <!-- Patient Card -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 patientCard2">
+
+            <div class="patientName">Moretti, Jonathan</div>
+
+            <div class="patientDeets">
+                <label>MRN: 2618651</label>
+                <label><span class="dateMinus25642"></span> &nbsp; (70)</label>
+                <label>Male</label>
+            </div>
+
+            <!-- Quick Launch Buttons -->
+            <div class="noPad quikLaunch">
+
+                <ul>
+                <li data-toggle="tooltip" data-placement="bottom" title="Patient Information"><a data-toggle="modal" data-target="#patientInfo"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Providers"><a data-toggle="modal" data-target="#providerInfo" class="smallIcon"><span class="fa fa-stethoscope"></span></a></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Patient Insurance / Payor Information"><a data-toggle="modal" data-target="#insuranceInfo"><span class="fa fa-credit-card"></span></a></li>
+                <li data-toggle="tooltip" data-placement="auto" title="Activity Log"><a data-toggle="modal" data-target="#callHistoryInfo"><span class="fa fa-book"></span></a></li>
+                <!-- <li><a data-toggle="tooltip" data-placement="bottom" title="Patient Notes"><span class="fa fa-book"></span></a></li> -->
+                <li data-toggle="tooltip" data-placement="bottom" title="Upcoming Appointments"><a data-toggle="modal" data-target="#upcomingAppointments"><span class="fa fa-calendar"></span></a></li>
+                <!-- <li data-toggle="tooltip" data-placement="bottom" title="Add to Watchlist"><a data-toggle="modal" data-target="#addWatchlist"><span class="fa fa-eye"></span></a></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Flag Patient"><a data-toggle="modal" data-target="#addTag"><span class="fa fa-flag"></span></a></li> -->
+                </ul>
+
+            </div>
+            <!-- //Quick Launch Buttons -->
+
+        </div>
+        <!-- //Patient Card -->
+
+        <div class="clearfix"></div>
+        
+        <!-- Milestone Navigation -->
+        <div class="mileNav">
+        <ul class="mainMilestones">
+
+            <!-- Patient Engagement -->
+            <li><a class="patientEngagement notcomplete"><span><i class="fa fa-close"></i></span>Patient Engagement<span class="accord"></span></a>
+                <ul class="patientEngagementMenu">
+                    <li><a href="../PatientEngagement/index.html#QualifyingGuarantor" class="pe1 notcomplete"><span><i class="fa fa-close"></i></span>Outreach</a></li>
+                    <li><a href="../PatientEngagement/index.html#AttributionConfirmation" class="pe2 notcomplete"><span><i class="fa fa-close"></i></span>Attribution Confirmation</a></li>
+                    <li><a href="../PatientEngagement/index.html#PreventativeServices" class="pe3 notcomplete"><span><i class="fa fa-close"></i></span>Service Eligibility</a></li>
+                    <li><a href="../PatientEngagement/index.html#ContactVerificationPreferences" class="pe4 notcomplete"><span><i class="fa fa-close"></i></span>Contact Profile Verification</a></li>
+                    <li><a href="../PatientEngagement/index.html#EngagementOutcome" class="pe5 notcomplete"><span><i class="fa fa-close"></i></span>Outcomes Review</a></li>
+                </ul>
+            </li>
+            <!-- //Patient Engagement -->
+
+            <!-- Scheduling & Follow-Up -->
+            <li><a class="scheduling notcomplete"><span><i class="fa fa-close"></i></span>Scheduling &amp; Follow-Up<span class="accord"></span></a>
+                <ul class="schedulingMenu">
+                    <li><a href="../Scheduling/index.html#OrderStatus" class="sc1 nostate"><span><i class="fa fa-minus"></i></span>Order Status</a></li>
+                    <li><a href="../Scheduling/index.html#Outreach" class="sc2 nostate"><span><i class="fa fa-minus"></i></span>Outreach</a></li>
+                    <li><a href="../Scheduling/index.html#DemographicConfirmation" class="sc3 notcomplete"><span><i class="fa fa-close"></i></span>Demographic Confirmation</a></li>
+                    <li><a href="../Scheduling/index.html#InsurVerif" class="sc4 notcomplete"><span><i class="fa fa-close"></i></span>Insurance Verification</a></li>
+                    <li><a href="../Scheduling/index.html#OutcomesReview" class="sc5 notcomplete"><span><i class="fa fa-close"></i></span>Outcomes Review</a></li>
+                </ul>
+            </li>
+            <!-- //Scheduling & Follow-Up -->
+
+            <!-- Claims & Registry -->
+            <li><a class="claimsRegistry nostate"><span><i class="fa fa-minus"></i></span>Claims &amp; Registry<span class="accord"></span></a>
+                <ul class="claimsRegistryMenu">
+                    <li><a href="../ClaimsRegistry/index.html#AttribRecon" class="cr1 nostate"><span><i class="fa fa-minus"></i></span>Attribution Reconciliation</a></li>
+                    <li><a href="../ClaimsRegistry/index.html#DemographicInsuranceRecon" class="cr2 nostate"><span><i class="fa fa-minus"></i></span>Demographic / Insurance Reconciliation</a></li>
+                    <li><a href="../ClaimsRegistry/index.html#ClaimsRecon" class="cr3 nostate"><span><i class="fa fa-minus"></i></span>Claims Reconciliation</a></li>
+                    <li><a href="../ClaimsRegistry/index.html#RegistryRecon" class="cr4 nostate"><span><i class="fa fa-minus"></i></span>Registry Reconciliation</a></li>
+                </ul>
+            </li>
+            <!-- //Claim & Registry -->
+
+            <!-- Other -->
+            <li><a class="other nostate"><span><i class="fa fa-minus"></i></span>Other<span class="accord"></span></a>
+                <ul class="otherMenu">
+                    <li><a class="ot1 nostate"><span><i class="fa fa-minus"></i></span>Medical Records Request</a></li>
+                    <li><a class="ot2 nostate"><span><i class="fa fa-minus"></i></span>Order Requests</a></li>
+                    <li><a class="ot3 nostate"><span><i class="fa fa-minus"></i></span>Authorization Follow-Up</a></li>
+                </ul>
+            </li>
+            <!-- //Other -->
+        </ul>
+
+        <!-- POC Menu -->
+        <ul class="codingRecoveryServicesMenu POCWiz">
+            <li><a class="goBack"><span class="chevron"></span></a></li>
+            <!-- <li><a href="#PatientVitals">Patient Vitals</a></li> -->
+            <li><a href="#UtilizationHistory">Utilization History</a></li>
+            <li><a href="#HCCHistory">HCC History</a></li>
+            <li><a href="#PreventativeQualityServices">Preventative / Quality Services</a></li>
+            <li><a href="#DemographicsInsurance">Demographics / Insurance / Attribution</a></li>
+            <li><a href="#ContactHistory">Contact History</a></li>
+            
+            <!-- Print -->
+            <a href="javascript: window.print();" class="printAction pull-right">Print &nbsp; <span class="glyphicon glyphicon-print"></span></a>
+        </ul>
+        <!-- //POC Menu -->
+
+        </div>
+        <!-- //Milestone Navigation -->
+
+        <div class="clearfix"></div>
+
+    </div>
+
+        <!-- Point of Care -->
+        <div class="row containerContent">
+
+            <!-- Content -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 patientEngagementLeft">
+
+                    <span id="PatientVitals"></span>
+
+                <!-- Patient Vitals
+                <div class="subContainer POCCont">
+
+                    <h4 class="col-sm-9 noPad">Patient Vitals</h4>
+
+                      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pull-right actions noPad">
+
+                      <img src="../../../images/applewatch.png" height="15" />
+                      <img src="../../../images/myfitnesspal.gif" height="15" />
+                      <img src="../../../images/fitbit.png" height="15" />
+
+                      </div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="PSOSect"></div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="snapArea">
+
+                      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-3 snapBox">
+                          <div class="snapMetric fitnessCentric">17.1</div>
+                          <div class="clearfix"></div>
+                          <span class="snapTitle">Miles Walked (last 7 days)</span>
+
+                          <div class="clearfix"></div>
+
+                          <div id="fitnessChart" class="amChartSmall"></div>
+                      </a>
+
+                      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-3 snapBox">
+                          <div class="snapMetric heartCentric">98</div>
+                          <div class="clearfix"></div>
+                          <span class="snapTitle">Last Recorded Heart Rate</span>
+
+                          <div class="clearfix"></div>
+
+                          <div id="heartChart" class="amChartSmall"></div>
+                      </a>
+
+                      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-3 snapBox">
+                          <div class="snapMetric foodCentric">2,865</div>
+                          <div class="clearfix"></div>
+                          <span class="snapTitle">Calorie Intake (avg. daily)</span>
+
+                          <div class="clearfix"></div>
+
+                          <div id="foodChart" class="amChartSmall"></div>
+                      </a>
+
+                      <a href="file://ahv-phsdevweb01/User-Experience-Standards/VBR/UX/Worklist/Prototype/index.html" class="col-xs-6 col-sm-4 col-md-3 col-lg-3 snapBox">
+                          <div class="snapMetric healthCentric">145</div>
+                          <div class="clearfix"></div>
+                          <span class="snapTitle">Last Recorded Weight (lbs.)</span>
+
+                          <div class="clearfix"></div>
+
+                          <div id="weightChart" class="amChartSmall"></div>
+                      </a>
+
+                      </div>
+
+                      <div class="clearfix"></div>
+
+                </div>
+                -->
+
+                    <span id="UtilizationHistory"></span>
+
+                <!-- Utilization History -->
+                <div class="subContainer POCCont">
+
+                    <!-- Header -->
+                    <h4 class="col-sm-9 noPad">Utilization History</h4>
+
+                        <!-- Actions -->
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pull-right actions noPad">
+
+                          <!-- Results -->
+                          ( Results: <span class="resultsNo">1</span> )
+                          <!-- //Results -->
+
+                        </div>
+                        <!-- //Actions -->
+
+                        <div class="clearfix"></div>
+
+                    <div class="PSOSect"></div>
+                    <!-- //Header -->
+
+                    <div class="clearfix"></div>
+
+                          <!-- Table Results -->
+                          <div class="POCLog">
+
+                                  <table>
+                                      <thead>
+                                          <tr>
+                                              <th>Care Type</th>
+                                              <th>Location</th>
+                                              <th>Service Date</th>
+                                              <th class="noteField">Visit Reason</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th>Emergency Department Visit</th>
+                                              <td>Holy Cross Hospital</td>
+                                              <td><span class="dateMinus15"></span></td>
+                                              <td class="noteField">Chest Pain</td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+
+                              </div>
+                          <!-- //Table Results -->
+
+                </div>
+                <!-- //Utilization History -->
+
+                    <!-- Next Section Anchor -->
+                    <span id="HCCHistory"></span>
+
+                <!-- HCC History -->
+                <div class="subContainer POCCont">
+
+                  <!-- Header -->
+                  <h4 class="col-sm-10 noPad">HCC History
+                      <span class="sectionNotification fa fa-bell exampleClearHider"><span>3</span></span>
+                  </h4>
+
+                  <div class="col-sm-2 noPad pull-right headShow">
+
+                    <!-- Show All -->
+                    <a class="barNav expanderHCCHist showMore" data-name="show">show all</a>
+                    <!-- //Show All -->
+
+                    <!-- Show Less -->
+                    <a class="barNav depanderHCCHist showLess" data-name="show">show less</a>
+                    <!-- //Show Less -->
+
+                  </div>
+
+                      <div class="clearfix"></div>
+
+                  <div class="PSOSect"></div>
+
+                      <br clear="all" />
+
+                    <!-- Current Year -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 noPad dualTables print50 leftp50 relative" style="padding-right: 15px;">
+
+                        <h6 class="col-sm-5 noPad">Current Year</h6>
+
+                        <!-- Date Range -->
+                        <span class="Print hcc-date">01/01/2016 - Today</span>
+
+                            <!-- Actions -->
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right actions noPad" style="margin: -10px 10px 0 0;">
+
+                              <!-- Results -->
+                              ( Results: <span class="resultsNo">4</span> )
+                              <!-- //Results -->
+
+                            </div>
+                            <!-- //Actions -->
+
+                            <div class="clearfix"></div>
+
+                            <!-- Table Results -->
+                            <div class="POCLog exampleClear HCCHist">
+
+                                  <table class="HCCHistory">
+                                      <thead>
+                                          <tr>
+                                              <th>HCC / Diagnosis</th>
+                                              <th>Date / Physician</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th class="alertNotification">
+                                                  <span class="warnList">19 - Diabetes without Complications</span><br />
+                                                  <span class="hccTag">N/A</span>
+
+                                                  <!-- Alert -->
+                                                  <div class="alertBox">
+                                                      <div><span class="redAlert">Consider Assesment</span><br />
+                                                      1 year since last assessment.</div>
+                                                      <span class="alertTail"></span>
+                                                  </div>
+
+                                              </th>
+                                              <td>
+                                              &mdash;
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th class="alertNotification">
+                                                  <span class="warnList">108 - Vascular Disease</span><br />
+                                                  <span class="hccTag">N/A</span>
+
+                                                  <!-- Alert -->
+                                                  <div class="alertBox">
+                                                      <div><span class="redAlert">Consider Assesment</span><br />
+                                                      1 year since last assessment.</div>
+                                                      <span class="alertTail"></span>
+                                                  </div>
+
+                                              </th>
+                                              <td>
+                                              &mdash;
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th class="alertNotification">
+                                                  <span class="warnList">22 - Morbid Obesity</span><br />
+                                                  <span class="hccTag">N/A</span>
+
+                                                  <!-- Alert -->
+                                                  <div class="alertBox">
+                                                      <div><span class="redAlert">Consider Assesment</span><br />
+                                                      1 year since last assessment.</div>
+                                                      <span class="alertTail"></span>
+                                                  </div>
+
+                                              </th>
+                                              <td>
+                                              &mdash;
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th>
+                                                  <span class="goodList">96 - Specified Heart Arrhythmias</span><br />
+                                                  <span class="hccTag">V55.9 - Artial flutter</span>
+                                              </th>
+                                              <td>
+                                                  <span class="dateMinus45"></span><br />
+                                                  <span class="physician">Dr. Cathleen White</span>
+                                              </td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+
+                            </div>
+                            <!-- //Table Results -->
+
+                            <!-- Example of Clear Section -->
+                            <div class="clearEvent">
+                            There are no HCCs for this patient in the current calendar year.
+                            </div>
+                            <!-- //Example of Clear Section -->
+
+                        </div>
+                    <!-- //Current Year -->
+
+                    <!-- Prior Three Years -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 noPad dualTables print50 rightp50 relative" style="padding-left: 15px;">
+
+                            <h6 class="col-sm-5 noPad">Prior Three Years</h6>
+
+                            <!-- Date Range -->
+                            <span class="Print hcc-date">01/01/2014 - 12/31/2015</span>
+
+                            <!-- Actions -->
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right actions noPad" style="margin: -10px 10px 0 0;">
+
+                              <!-- Results -->
+                              ( Results: <span class="resultsNo">4</span> )
+                              <!-- //Results -->
+
+                            </div>
+                            <!-- //Actions -->
+
+                            <div class="clearfix"></div>
+
+                            <!-- Table Results -->
+                            <div class="POCLog exampleClear HCCHist">
+
+                                  <table class="HCCHistory">
+                                      <thead>
+                                          <tr>
+                                              <th>HCC / Diagnosis</th>
+                                              <th>Date / Physician</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th>
+                                                  <span class="completeList">19 - Diabetes without Complications</span><br />
+                                                  <span class="hccTag">250.00 - DMII wo comp nt st uncntrld</span>
+                                              </th>
+                                              <td>
+                                                  <span class="dateMinus375"></span><br />
+                                                  <span class="physician">Dr. Michael Phillips</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th>
+                                                  <span class="completeList">108 - Vascular Disease</span><br />
+                                                  <span class="hccTag">443.9 - Periph vascular dis NOS</span>
+                                              </th>
+                                              <td>
+                                                  <span class="dateMinus375"></span><br />
+                                                  <span class="physician">Dr. Michael Phillips</span>
+                                              </td>
+                                          </tr>
+                                           <tr>
+                                              <th>
+                                                  <span class="completeList">22 - Morbid Obesity</span><br />
+                                                  <span class="hccTag">V85.43 - BMI 50.0 - 59.9 Adult</span>
+                                              </th>
+                                              <td>
+                                                  <span class="dateMinus852"></span><br />
+                                                  <span class="physician">Dr. Sam Jones</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th>
+                                                  <span class="completeList">96 - Specified Heart Arrhythmias</span><br />
+                                                  <span class="hccTag">V55.9 - Artial flutter</span>
+                                              </th>
+                                              <td>
+                                                  <span class="dateMinus487"></span><br />
+                                                  <span class="physician">Dr. Cathleen White</span>
+                                              </td>
+                                          </tr>
+                                                                                </tbody>
+                                  </table>
+
+                          </div>
+                          <!-- //Table Results -->
+
+                          <!-- Example of Clear Section -->
+                          <div class="clearEvent">
+                          There are no HCCs for this patient in the past three years.
+                          </div>
+                          <!-- //Example of Clear Section -->
+
+                        </div>
+                    <!-- //Prior Three Years -->
+
+                    <br clear="all" />
+
+                </div>
+                <!-- //HCC History -->
+
+                    <!-- Next Section Anchor -->
+                    <span id="PreventativeQualityServices"></span>
+
+                <!-- Preventative / Quality Services -->
+                <div class="subContainer POCCont">
+
+                    <!-- Header -->
+                    <h4 class="col-sm-9 noPad">Preventive / Quality Services
+                        <span class="sectionNotification fa fa-bell"><span>3</span></span>
+                    </h4>
+
+                        <div class="clearfix"></div>
+
+                    <div class="PSOSect"></div>
+
+                        <br clear="all" />
+
+                        <!-- Open -->
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 noPad dualTables print50 leftp50" style="padding-right: 15px;">
+
+                            <h6 class="col-sm-5 noPad">Open</h6>
+
+                            <!-- Actions -->
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right actions noPad" style="margin: -10px 10px 0 0;">
+
+                              <!-- Results -->
+                              ( Results: <span class="resultsNo">3</span> )
+                              <!-- //Results -->
+
+                              <!-- Show All -->
+                              <a class="barNav expanderPrevOpen showMore" data-name="show">show all</a>
+                              <!-- //Show All -->
+
+                              <!-- Show Less -->
+                              <a class="barNav depanderPrevOpen showLess" data-name="show">show less</a>
+                              <!-- //Show Less -->
+
+                            </div>
+                            <!-- //Actions -->
+
+                            <div class="clearfix"></div>
+
+                            <!-- Table Results -->
+                            <div class="POCLog PrevOpen">
+
+                                  <table class="HCCHistory">
+                                      <thead>
+                                          <tr>
+                                              <th>Care Type / Visit Reason</th>
+                                              <th>Eligible Service Dates</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th class="alertNotification">
+                                                  <span class="warnList">Comprehensive Diabetes Care</span><br />
+                                                  <span class="thIndent"><strong>Last Completed:</strong> <span class="dateMinus375"></span></span>
+
+                                                  <!-- Alert -->
+                                                  <div class="alertBox">
+                                                      <div><span class="redAlert">Consider Assessment</span><br />
+                                                      Preventive Service visit due.</div>
+                                                      <span class="alertTail"></span>
+                                                  </div>
+                                              </th>
+                                              <td>
+                                              01/01/2016 - 12/31/2016
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th class="alertNotification">
+                                                  <span class="warnList">Flu Vaccine</span><br />
+                                                  <span class="thIndent"><strong>Last Completed:</strong> 09/20/2015</span>
+
+                                                  <!-- Alert -->
+                                                  <div class="alertBox">
+                                                      <div><span class="redAlert">Consider Assessment</span><br />
+                                                      Quality Service visit due.</div>
+                                                      <span class="alertTail"></span>
+                                                  </div>
+                                              </th>
+                                              <td>
+                                              01/01/2016 - 12/31/2016
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th class="alertNotification">
+                                                  <span class="warnList">Adult BMI</span><br />
+                                                  <span class="thIndent"><strong>Last Completed:</strong> <span class="dateMinus375"></span></span>
+
+                                                  <!-- Alert -->
+                                                  <div class="alertBox">
+                                                      <div><span class="redAlert">Consider Referral</span><br />
+                                                      Preventive Service visit due.</div>
+                                                      <span class="alertTail"></span>
+                                                  </div>
+                                              </th>
+                                              <td>
+                                                01/01/2016 - 12/31/2016
+                                              </td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+
+                          </div>
+                          <!-- //Table Results -->
+
+                        </div>
+                        <!-- //Open -->
+
+                        <!-- Closed -->
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 noPad dualTables print50 rightp50" style="padding-left: 15px;">
+
+                            <h6 class="col-sm-5 noPad">Closed</h6>
+
+                            <!-- Actions -->
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right actions noPad" style="margin: -10px 10px 0 0;">
+
+                              <!-- Results -->
+                              ( Results: <span class="resultsNo">2</span> )
+                              <!-- //Results -->
+
+                            </div>
+                            <!-- //Actions -->
+
+                            <div class="clearfix"></div>
+
+                            <!-- Table Results -->
+                          <div class="POCLog PrevClosed">
+
+                                  <table class="HCCHistory">
+                                      <thead>
+                                          <tr>
+                                              <th>Care Type / Visit Reason</th>
+                                              <th>Service Date / Location</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th>
+                                                  <span class="completeList">Colorectal Cancer Screening</span><br />
+                                                  <span class="thIndent">Colonoscopy</span>
+                                              </th>
+                                              <td>
+                                                  <span class="dateMinus1278"></span><br />
+                                                  <span class="physician">Northland Medical Center</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <th>
+                                                  <span class="completeList">Pneumococcal Conjugate Vaccine</span><br />
+                                                  <span class="thIndent">PCV13</span>
+                                              </th>
+                                              <td>
+                                                  <span class="dateMinus1734"></span><br />
+                                                  <span class="physician">Northland Community Care</span>
+                                              </td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+
+                          </div>
+                          <!-- //Table Results -->
+
+                        </div>
+                        <!-- //Closed -->
+
+                    <br clear="all" />
+
+                </div>
+                <!-- //Preventative / Quality Services -->
+
+                    <!-- Next Section Anchor -->
+                    <span id="DemographicsInsurance"></span>
+
+                <!-- Demographics / Insurance -->
+                <div class="subContainer POCCont">
+
+                    <!-- Header -->
+                    <h4 class="col-sm-9 noPad">Demographics / Insurance / Attribution</h4>
+
+                        <!-- Actions -->
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pull-right actions noPad">
+
+                          <!-- Results -->
+                          ( Results: <span class="resultsNo">1</span> )
+                          <!-- //Results -->
+
+                        </div>
+                        <!-- //Actions -->
+
+                        <div class="clearfix"></div>
+
+                    <div class="PSOSect"></div>
+                    <!-- //Header -->
+
+                    <div class="clearfix"></div>
+
+                          <!-- Table Results -->
+                          <div class="POCLog">
+
+                                  <table>
+                                      <thead>
+                                          <tr>
+                                              <th>Disposition</th>
+                                              <th class="noteField">Note</th>
+                                              <th>Owner</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th>Demographic Reconciliation</th>
+                                              <td class="noteField">Contact Information Changed</td>
+                                              <td>Practice Central Operations</td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+
+                              </div>
+                          <!-- //Table Results -->
+
+
+                </div>
+                <!-- //Demographics / Insurance / Attribution -->
+
+                    <!-- Next Section Anchor -->
+                    <span id="ContactHistory"></span>
+
+                <!-- Contact History -->
+                <div class="subContainer POCCont contactHistory">
+
+                    <!-- Header -->
+                    <h4 class="col-sm-9 noPad">Contact History
+                    </h4>
+
+                        <!-- Actions -->
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pull-right actions noPad">
+
+                          <!-- Results -->
+                          ( Results: <span class="resultsNo">1</span> )
+                          <!-- //Results -->
+
+                        </div>
+                        <!-- //Actions -->
+
+                        <div class="clearfix"></div>
+
+                    <div class="PSOSect"></div>
+                    <!-- //Header -->
+
+                    <div class="clearfix"></div>
+
+                          <!-- Table Results -->
+                          <div class="POCLog">
+
+                                  <table>
+                                      <thead>
+                                          <tr>
+                                              <th>Action</th>
+                                              <th>Call Reason</th>
+                                              <th>When</th>
+                                              <th>Note</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+
+                                          <tr>
+                                              <th>Scheduled Patient for Well Visit</th>
+                                              <td>Well Visit </td>
+                                              <td><span class="todayDate"></span></td>
+                                              <td class="noteField">N/A</td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+
+                              </div>
+                          <!-- //Table Results -->
+
+                </div>
+                <!-- //Contact History -->
+
+
+            </div>
+            <!-- //Content -->
+
+        </div>
+        <!-- //Point of Care -->
+
+    </div>
+    <!-- //Main Container -->
+
+</div>
+<!-- //Content Container -->
+
+
+<!-- Footer -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footerContainer pull-center">
+&copy; Copyright 2015 Accretive Health, Inc. <span class="grep"></span> <a href="../../../privacy.html">Privacy Statement</a> <span class="grep"></span> <a href="../../../terms.html">Terms of Use</a>
+</div>
+<!-- //Footer -->
+
+
+
+<!-- ##################################################### Modals ################################################# -->
+
+<!-- Patient Information Modal -->
+<div class="modal fade" id="patientInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content relative">
+
+        <!-- Header / Edit / Banner -->
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Patient Information</h4>
+
+            <!-- Success Banner -->
+            <div class="successBanner bannerPI">
+
+                <div class="successIcon"><span class="fa fa-check"></span></div>
+
+                <div class="bannerContentSuccess">
+
+                    <span class="bannerHead banSuccess">Patient Information Updated - Pending EMR Syncing</span><br />
+                    Your updates have been made, however, they are awaiting MPI syncing.
+
+                </div>
+
+                <div class="pull-right"><a class="closeBanner dismissBannerPI"><span class="fa fa-times"></span></a></div>
+
+                <br clear="all" />
+
+            </div>
+            <!-- //Success Banner -->
+
+        </div>
+        <!-- //Header / Edit / Banner -->
+
+        <!-- Contents -->
+        <div class="modal-body">
+
+          <!-- Edit Button -->
+          <a class="btn lockNav pull-right patientUnlock"><span class="fa fa-unlock"></span> &nbsp; Edit</a>
+
+          <!-- Lock Button // Initially Hidden -->
+          <a class="btn lockNav pull-right patientLock" style="display: none;"><span class="fa fa-lock"></span></a>
+
+          <!-- Locked -->
+          <div class="lockedPatientInformation">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Jonathan" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Moretti" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="1025 Augusta Drive" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Address 2</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">City</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Agloe" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">State</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>IL</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Zip</label>
+                    <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="60351" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                </fieldset>
+
+              <br clear="all" />
+
+              <h5>Contact Information</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="jmoretti@gmail.com" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="(312) 253 - 9821" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>Mobile</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+              </fieldset>
+
+              <br clear="all" />
+
+              <h5>Preferences</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Language</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="English" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-2 designation">Primary</div>
+
+                    <div class="col-sm-2">
+                      <strong>Translator Needed?</strong>
+                    </div>
+
+                    <div class="col-sm-3">
+                       <input type="radio" name="translator" class="radio" id="translatorYes" value="yes" /> <label for="translatorYes">Yes</label> &nbsp; &nbsp; <input type="radio" name="translator" class="radio" id="translatorNo" value="no" checked /> <label for="translatorNo" style="margin-left: 20px;">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Spanish" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+              </fieldset>
+
+              <br clear="all" />
+
+              <h5>Care Team</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Fredrick Parker" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Relationship</label>
+                    <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="Sibling" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="fparker@gmail.com" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="(847) 342-7860" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>Mobile</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+
+              </fieldset>
+
+          </form>
+          </div>
+          <!-- //Locked -->
+
+          <!-- Unlocked -->
+          <div class="unlockedPatientInformation">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Jonathan" />
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" value="Moretti" />
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" value="1025 Augusta Drive" />
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Address 2</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="" />
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">City</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Agloe" />
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">State</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder">
+                        <option selected>Illinois</option>
+                          <option>Other States Here</option>
+                    </select>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Zip</label>
+                    <div class="col-sm-2">
+                    <input type="text" class="form-control" value="60351" />
+                    </div>
+                </div>
+
+                </fieldset>
+
+                <br clear="all" />
+
+              <h5>Contact Information</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" value="jmoretti@gmail.com" />
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="addContact firstContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                        <div class="removeContact firstContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                        <div class="makePrimary firstContact"><a>Set as Primary</a></div>
+                        <div class="setPrimary firstContact">Primary</div>
+                    </div>
+
+                </div>
+
+                <!-- Secondary Email // Initally Hidden -->
+                <div class="form-group has-feedback has-feedback-right secondaryEmail">
+                <label for="" class="col-sm-2 control-label">Secondary Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="Enter a secondary Email" />
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="addContact secondContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                        <div class="removeContact secondContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                        <div class="makePrimary secondContact"><a>Set as Primary</a></div>
+                    </div>
+
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="(312) 253 - 9821" />
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder">
+                        <option selected>Mobile</option>
+                          <option>Home</option>
+                          <option>Work</option>
+                          <option>Other</option>
+                    </select>
+                    </div>
+
+                    <div class="col-sm-4 addContact"><a><span class="fa fa-plus-circle"></span></a>
+                        <div class="removeContact firstPhone"><a><span class="fa fa-minus-circle"></span></a></div>
+                    </div>
+
+                </div>
+
+                <br clear="all" />
+
+                <h5>Preferences</h5>
+                <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+                <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Language</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="English" />
+                      </div>
+                      <div class="col-sm-2">
+                          <div class="addLang firstLangPlus" style="display: none;"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeLang firstLangMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary firstLang"><a>Set as Primary</a></div>
+                          <div class="setPrimary firstLang" style="display: inline;">Primary</div>
+                      </div>
+
+                      <div class="col-sm-2">
+                        <strong>Translator Needed?</strong>
+                      </div>
+
+                      <div class="col-sm-3">
+                         <input type="radio" name="translator" class="radio" id="translatorYes" value="yes" /> <label for="translatorYes">Yes</label> &nbsp; &nbsp; <input type="radio" name="translator" class="radio" id="translatorNo" value="no" checked /> <label for="translatorNo" style="margin-left: 20px;">No</label>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right secondaryLanguage">
+                  <label for="" class="col-sm-2 control-label"></label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="Spanish" />
+                      </div>
+
+                      <div class="col-sm-3">
+                          <div class="addLang secondLangPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeLang secondLangMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary secondLang" style="display: inline;"><a>Set as Primary</a></div>
+                      </div>
+                  </div>
+
+                </fieldset>
+
+                <br clear="all" />
+
+                <h5>Care Team</h5>
+                <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+                <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Name</label>
+                      <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="Fredrick Parker" />
+                      </div>
+
+                  <label for="" class="col-sm-2 control-label">Relationship</label>
+                      <div class="col-sm-2">
+                      <select class="form-control placeholder">
+                          <option selected>Sibling</option>
+                            <option>Parent</option>
+                            <option>Guardian</option>
+                            <option>Friend</option>
+                            <option>Other</option>
+                      </select>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-7">
+                      <input type="text" class="form-control" value="fparker@gmail.com" />
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="addContact firstContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeContact firstContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary firstContact"><a>Set as Primary</a></div>
+                          <div class="setPrimary firstContact">Primary</div>
+                      </div>
+
+                  </div>
+
+                  <!-- Secondary Email // Initally Hidden -->
+                  <div class="form-group has-feedback has-feedback-right secondaryEmail">
+                  <label for="" class="col-sm-2 control-label">Secondary Email</label>
+                      <div class="col-sm-7">
+                      <input type="text" class="form-control" placeholder="Enter a secondary Email" />
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="addContact secondContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeContact secondContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary secondContact"><a>Set as Primary</a></div>
+                      </div>
+
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Phone</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" value="(312) 253 - 9821" />
+                      </div>
+
+                  <label for="" class="col-sm-1 control-label">Type</label>
+                      <div class="col-sm-2">
+                      <select class="form-control placeholder">
+                          <option selected>Mobile</option>
+                            <option>Home</option>
+                            <option>Work</option>
+                            <option>Other</option>
+                      </select>
+                      </div>
+
+                      <div class="col-sm-4 addContact"><a><span class="fa fa-plus-circle"></span></a>
+                          <div class="removeContact firstPhone"><a><span class="fa fa-minus-circle"></span></a></div>
+                      </div>
+
+                  </div>
+
+
+              </fieldset>
+
+              <br clear="all" />
+
+          </form>
+
+          </div>
+
+      </div>
+        <!-- //Contents -->
+
+          <!-- Update Button --  Initially hidden -->
+          <div class="modal-footer">
+            <p class="updatePatientButtons">
+            <button type="button" class="btn btn-primary updatePatientInformation">Update Patient Information</button>
+            <span class="grep"></span>
+            <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+            </p>
+
+            <p class="closeModal" align="center">
+                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+            </p>
+          </div>
+          <!-- //Update Button --  Initially hidden -->
+
+    </div>
+  </div>
+</div>
+<!-- //Patient Information Modal -->
+
+<!-- Providers Modal -->
+<div class="modal fade" id="providerInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4 class="modal-title" id="myModalLabel">Provider Information</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right patHistHead">
+
+          <!-- Results -->
+          ( Results: <span class="resultsNo">4</span> )
+          <!-- //Results -->
+
+        </div>
+
+        <!-- Close Modal -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+
+          <!-- Provider Cards -->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Primary Care Provider</span>
+                </p>
+
+                <div class="ICContent">
+                PCP Name: <strong>Dr. Michael Phillips</strong><br/ >
+                Location Name: <strong>Northland Community</strong><br/ >
+                Physician Specialty: <strong>Family Medicine</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong><span class="dateMinus375"></span></strong><br/ >
+                Most Recent Visit Reason: <strong>Wellness Visit</strong><br/ >
+                System: <strong>Regional Medical</strong><br/ >
+                Physician Phone: <strong>(312) 569-3320</strong>
+
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set1" style="display: none;">Set as PCP</a>
+                  <span class="PCPStar star1 fa fa-star" style="display: inline;"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Specialist</span>
+                </p>
+
+                <div class="ICContent">
+                Provider Name: <strong>Dr. Sam Jones</strong><br/ >
+                Location Name: <strong>Northland Cardiology</strong><br/ >
+                Physician Specialty: <strong>Cardiology</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong><span class="dateMinus45"></span></strong><br/ >
+                Most Recent Visit Reason: <strong>Echocardiogram</strong><br/ >
+                System: <strong>Regional Medical</strong><br/ >
+                Physician Phone: <strong>(312) 987-2200</strong>
+
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set2">Set as PCP</a>
+                  <span class="PCPStar star2 fa fa-star"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <br clear="all" />
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Specialist</span>
+                </p>
+
+                <div class="ICContent">
+                Provider Name: <strong>Dr. James Thomas</strong><br/ >
+                Location Name: <strong>University Medical (Main Campus)</strong><br/ >
+                Physician Specialty: <strong>ENT</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong><span class="dateMinus578"></span></strong><br/ >
+                Most Recent Visit Reason: <strong>Consultation</strong><br/ >
+                System: <strong>University Medical</strong><br/ >
+                Physician Phone: <strong>(312) 776-1108</strong>
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set3">Set as PCP</a>
+                  <span class="PCPStar star3 fa fa-star"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Specialist</span>
+                </p>
+
+                <div class="ICContent">
+                                Provider Name: <strong>Dr. Daniel Dunn</strong><br/ >
+                Location Name: <strong>East Shore Medical</strong><br/ >
+                Physician Specialty: <strong>Podiatry</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong><span class="dateMinus425"></span></strong><br/ >
+                Most Recent Visit Reason: <strong>Preventive Screening</strong><br/ >
+                System: <strong>Regional Medical</strong><br/ >
+                Physician Phone: <strong>(312) 443-0049</strong>
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set4">Set as PCP</a>
+                  <span class="PCPStar star4 fa fa-star"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <!-- //Provider Cards -->
+
+        </div>
+        <!-- //Modal Content -->
+
+        <div class="clearfix"></div>
+
+        <!-- Close Modal -->
+        <div class="modal-footer">
+        <p align="center">
+            <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+        </p>
+        </div>
+        <!-- //Close Modal -->
+
+    </div>
+  </div>
+</div>
+<!-- //Providers Modal -->
+
+<!-- Insurance Modal -->
+<div class="modal fade" id="insuranceInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Patient Insurance Information</h4>
+
+        <a class="btn-green btn-gloss-green lockNav addNewCard clickAddCard"><span class="fa fa-plus-circle"></span> &nbsp;Add a New Card</a>
+
+        <!-- Updated Success -->
+        <div class="successBanner bannerIns">
+
+            <div class="successIcon"><span class="fa fa-check"></span></div>
+
+            <div class="bannerContentSuccess">
+
+                <span class="bannerHead banSuccess">Insurance Card Updated</span><br />
+                Your updates have been made, however, they are awaiting MPI syncing.
+
+            </div>
+
+            <div class="pull-right"><a class="closeBanner dismissBannerIns"><span class="fa fa-times"></span></a></div>
+
+            <br clear="all" />
+
+        </div>
+        <!-- //Updated Success -->
+
+        <!-- Updated Success -->
+        <div class="successBanner bannerIns2">
+
+            <div class="successIcon"><span class="fa fa-check"></span></div>
+
+            <div class="bannerContentSuccess">
+
+                <span class="bannerHead banSuccess">Insurance Card Added</span><br />
+                The new insurance card added for this patient was added successfully.
+
+            </div>
+
+            <div class="pull-right"><a class="closeBanner dismissBannerIns"><span class="fa fa-times"></span></a></div>
+
+            <br clear="all" />
+
+        </div>
+        <!-- //Updated Success -->
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+
+          <div class="cardDetails">
+
+              <h5>Current Coverage</h5>
+              <hr class="separator" style="margin: 10px 0px;" />
+
+              <ul id="sortable1" class="connectedSortable">
+
+                <!-- Card One -->
+                <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard sortable">
+
+                    <!-- Nunmber -->
+                    <span class="numbBox insNumb">1</span>
+
+                    <!-- Title & Menu -->
+                    <div class="insTitle col-sm-8 noPad noMargin">
+                    <span class="cardHead">Medicare &nbsp; (US Health)</span>
+                    </div>
+
+                    <div class="insNav col-sm-4 pull-right noPad noMargin">
+                    <!-- Active or No -->
+                    <a class="activeCov" style="border: 0px;"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                    <!-- Check Eligibility
+                    <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a> -->
+                    <!-- Edit
+                    <a class="editCov clickEdit1"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a> -->
+                    </div>
+                    <!-- //Title & Menu -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="ICContent">
+                    Primary Member<br />
+                    <span class="insuranceName">Jonathan Smith</span><br />
+                    <p>
+                    Code: <strong>C52</strong><br/ >
+                    Source: <strong>Payer</strong><br/ >
+                    Group: <strong>123456789A</strong><br/ >
+                    Subscriber #: <strong>298393821</strong><br/ >
+                    Verification Status: <span class="green"><strong>Passed</strong></span><br />
+                    Verification Date: <span class="red"><strong><span class="dateMinus183"></span></strong></span>
+                    </p>
+                    </div>
+
+                  </li>
+                  <!-- //Card One -->
+
+                  <!-- Card Two-->
+                  <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard sortable">
+
+                    <!-- Nunmber -->
+                    <span class="numbBox insNumb">2</span>
+
+                    <!-- Title & Menu -->
+                    <div class="insTitle col-sm-8 noPad noMargin">
+                    <span class="cardHead">Medicaid &nbsp; (US Health)</span>
+                    </div>
+
+                    <div class="insNav col-sm-4 pull-right noPad noMargin">
+                    <!-- Active or No -->
+                    <a class="activeCov" style="border: 0px;"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                    <!-- Check Eligibility
+                    <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a> -->
+                    <!-- Edit
+                    <a class="editCov clickEdit1"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a> -->
+                    </div>
+                    <!-- //Title & Menu -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="ICContent">
+                      Primary Member<br />
+                      <span class="insuranceName">Jonathan Smith</span><br />
+                      <p>
+                      Code: <strong>A72</strong><br/ >
+                      Source: <strong>Payer</strong><br/ >
+                      Group: <strong>14585324567</strong><br/ >
+                      Subscriber #: <strong>298393821</strong><br/ >
+                      Verification Status: <span class="green"><strong>Passed</strong></span><br />
+                      Verification Date: <strong><span class="dateMinus30"></span></strong>
+                    </p>
+                    </div>
+
+
+                  </li>
+                  <!-- //Card Two -->
+
+              </ul>
+
+              <div class="clearfix"></div>
+              <br clear="all" /><br clear="all" />
+
+
+              <h5>Historical Coverage</h5>
+              <hr class="separator" style="margin: 10px 0px;" />
+
+              <ul id="sortable2" class="connectedSortable">
+
+                  <!-- Card One -->
+                  <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard sortable">
+
+                    <!-- Nunmber -->
+                    <span class="numbBox insNumb">1</span>
+
+                    <!-- Title & Menu -->
+                    <div class="insTitle col-sm-8 noPad noMargin">
+                    <span class="cardHead">Aetna Preferred</span>
+                    </div>
+
+                    <div class="insNav col-sm-4 pull-right noPad noMargin">
+                    <!-- Active or No -->
+                    <a class="inactiveCov" style="border: 0px;"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                    <!-- Check Eligibility
+                    <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a> -->
+                    <!-- Edit
+                    <a class="editCov clickEdit1"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a> -->
+                    </div>
+                    <!-- //Title & Menu -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="ICContent">
+                      Primary Member<br />
+                      <span class="insuranceName">Jonathan Smith</span><br />
+                      <p>
+                      Code: <strong>F32</strong><br/ >
+                      Source: <strong>Payer</strong><br/ >
+                      Group: <strong>12345</strong><br/ >
+                      Subscriber #: <strong>VBR2134523</strong><br/ >
+                      Verification Status: <span class="red"><strong>Not Eligible</strong></span><br />
+                      Verification Date: <span class="red"><strong><span class="todayDate"></span></strong></span><br />
+                      Eligibility Dates: <strong><span class="dateMinus1820"></span> - <span class="dateMinus730"></span></strong>
+                    </p>
+                    </div>
+
+                  </li>
+                  <!-- //Card One -->
+
+                  <!-- Add Card
+                  <div data-toggle="modal" data-target="#insuranceInfo" class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard addInsurance clickAddCard">
+
+                    <div class="addIt">
+                    <span class="fa fa-plus-circle"></span><br />
+                    <span class="addText">Add A New Card</a>
+                    </div>
+
+                  </div>
+                  //Add Card -->
+
+              </ul>
+
+              <br clear="all" />
+
+              <p align="center" style="margin-top: 40px;">
+                  <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+              </p>
+
+          </div>
+
+          <div class="editCardOne">
+
+            <h5>Edit Insurance Card</h5>
+            <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+            <form class="form-horizontal">
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Payor Name</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Medicare (US Health)" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Primary Member Name</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Jonathan Smith" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Source</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Payer"/>
+                    <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Plan</label>
+                <div class="col-sm-4">
+                <select class="form-control placeholder">
+                    <option selected>Family</option>
+                </select>
+                <i class="form-control-feedback fa fa-unlock selectGlyph"></i>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Group #</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="14585324567" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Subscriber</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="123456789A" />
+                  <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Verification Status</label>
+                <div class="col-sm-4">
+                  <select class="form-control placeholder">
+                      <option selected>Passed</option>
+                  </select>
+                  <i class="form-control-feedback selectGlyph fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Verification Date</label>
+                <div class="col-sm-4" id="sandbox-container">
+                  <input type="text" class="form-control" placeholder="09/10/2015" />
+                  <i class="form-control-feedback fa fa-calendar"></i>
+                </div>
+
+            </div>
+
+            </fieldset>
+          </form>
+
+            <br clear="all" />
+
+            <h5>Edit Insurance Out-of-Pocket Costs</h5>
+            <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+            <form class="form-horizontal">
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Primary Care</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="$20.00" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Specialist</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="$30.00" />
+                    <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Emergency Room</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="$125"/>
+                    <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Inpatient Hosp Copay</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="$130"/>
+                      <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+            </div>
+
+            </fieldset>
+          </form>
+
+          <br clear="all" /><br clear="all" />
+
+          <!-- Update Button -->
+          <div class="updateInsButtons">
+            <button type="button" class="btn btn-primary updateInsuranceCard">Update Insurance Card</button>
+            <span class="grep"></span>
+            <a ID="btnCancel" class="btn-cancelIns cancelNav" data-dismiss="modal" aria-label="Close" />Cancel</a>
+          </div>
+          <!-- //Update Button --  Initially hidden -->
+
+        </div>
+
+          <div class="editCardTwo">
+
+              <h5>Add Insurance Card</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <form class="form-horizontal">
+              <fieldset>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Payor Name</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Payor Name" />
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Primary Member Name</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Primary Member Name" />
+                  </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Source</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Source"/>
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Plan</label>
+                  <div class="col-sm-4">
+                  <select class="form-control placeholder">
+                      <option selected>Select</option>
+                  </select>
+                  </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Group #</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Group #" />
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Subscriber</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Add Subscriber" />
+                  </div>
+
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Verification Status</label>
+                  <div class="col-sm-4">
+                    <select class="form-control placeholder">
+                        <option selected>Select</option>
+                    </select>
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Verification Date</label>
+                  <div class="col-sm-4" id="sandbox-container">
+                    <input type="text" class="form-control" placeholder="Enter Verification Date" />
+                  </div>
+
+              </div>
+
+              </fieldset>
+            </form>
+
+              <br clear="all" />
+
+              <h5>Add Insurance Out-of-Pocket Costs</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <form class="form-horizontal">
+              <fieldset>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Primary Care</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Primary Care Costs" />
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Specialist</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Specialist Costs" />
+                  </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Emergency Room</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Emergency Room Costs"/>
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Inpatient Hosp Copay</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Add Hospital Copay"/>
+                  </div>
+              </div>
+
+              </fieldset>
+            </form>
+
+            <br clear="all" /><br clear="all" />
+
+            <!-- Update Button -->
+            <div class="updateInsButtons">
+              <button type="button" class="btn btn-primary addInsuranceCard">Add Insurance Card</button>
+              <span class="grep"></span>
+              <a ID="btnCancel" class="btn-cancelIns cancelNav" data-dismiss="modal" aria-label="Close" />Cancel</a>
+            </div>
+            <!-- //Update Button --  Initially hidden -->
+
+          </div>
+
+      </div>
+      <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Insurance Modal -->
+
+<!-- Activity Log Modal -->
+<div class="modal fade" id="callHistoryInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4 class="modal-title" id="myModalLabel">Activity Log</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right patHistHead">
+
+          <!-- Results -->
+          ( Results: <span class="resultsNo">1</span> )
+          <!-- //Results -->
+
+          <!-- Show All
+          <a class="barNav expanderCallHist" data-name="show">show all</a>
+          //Show All -->
+
+          <!-- Show Less -->
+          <a class="barNav depanderCallHist" data-name="show">show less</a>
+          <!-- //Show Less -->
+
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body" style="padding-top: 0px;">
+
+          <!-- Table Results -->
+          <div class="callLog">
+
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Action</th>
+                              <th>Date &amp; Time</th>
+                              <th class="noteField">Note</th>
+                              <th>Activity</th>
+                              <th>Call User</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th>Completed Scheduling</th>
+                              <td><span class="todayDate"></span> - <span class="fifteenAgo"></span></td>
+                              <td class="noteField">Patient scheduled with Dr. Phillips</td>
+                              <td>Patient Engagement</td>
+                              <td>Paula Smith</td>
+                          </tr>
+
+                          </tr>
+
+                      </tbody>
+                  </table>
+
+              </div>
+          <!-- //Table Results -->
+
+
+          <div class="clearfix"></div>
+
+          <p align="center" style="margin-top: 20px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+        </div>
+        <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Activity Log Modal -->
+
+<!-- Add to Watchlist Modal -->
+<div class="modal fade" id="addWatchlist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Add Patient to Watchlist?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Save to Watchlist</button>
+        <span class="grep"></span>
+        <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Add to Watchlist Modal -->
+
+<!-- Tag / Flag Patient Modal -->
+<div class="modal fade" id="addTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Flag Patient?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Save Flag</button>
+        <span class="grep"></span>
+        <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Tag / Flag Patient Modal -->
+
+<!-- Upcoming Appointments Modal -->
+<div class="modal fade" id="upcomingAppointments" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4 class="modal-title" id="myModalLabel">Upcoming Appointments</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right patHistHead">
+
+          <!-- Results -->
+          ( Results: <span class="resultsNo">2</span> )
+          <!-- //Results -->
+
+          <!-- Show All
+          <a class="barNav expander" data-name="show">show all</a>
+          <!-- //Show All -->
+
+          <!-- Show Less
+          <a class="barNav depander" data-name="show">show less</a>
+          <!-- //Show Less -->
+
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body" style="padding-top: 0px;">
+
+          <!-- Table Results -->
+          <div class="callLog">
+
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Clinic / Department</th>
+                              <th>Physician</th>
+                              <th>Reason</th>
+                              <th>Date</th>
+                              <th>Time</th>
+                              <th>Date Scheduled</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                           <tr>
+                              <th>Northand Community Care</th>
+                              <td>Dr. Phillips</td>
+                              <td>Wellness Visit</td>
+                              <td><span class="datePlus14"></span></td>
+                              <td>2:30 PM</td>
+                              <td><span class="todayDate"></span></td>
+                          </tr>
+                      </tbody>
+                      <tbody>
+                           <tr>
+                              <th>Northand Specialty Care</th>
+                              <td>Dr. Parker</td>
+                              <td>Eye Exam</td>
+                              <td><span class="datePlus32"></span></td>
+                              <td>11:30 AM</td>
+                              <td><span class="dateMinus14"></span></td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+              </div>
+          <!-- //Table Results -->
+
+
+          <div class="clearfix"></div>
+
+          <p align="center" style="margin-top: 20px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+        </div>
+        <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Upcoming Appointments Modal -->
+
+
+<!-- ####################################### Scripts ######################################### -->
+
+<!-- Dynamic Date Scripts -->
+<script type="text/javascript" src="../../../js/moment.js"></script>
+<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
+
+<script type="text/javascript" src="../../../js/modals.js"></script>
+<script type="text/javascript" src="../../../js/navigation.js"></script>
+
+<!-- For Drag and Drop -->
+<script src="../../../js/jquery-ui.min.js"></script>
+
+<script>
+  $(function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  });
+</script>
+
+<script type="text/javascript" src="../../../js/basics.js"></script>
+<script type="text/javascript" src="../../../js/pointofcare.js"></script>
+
+<!-- Sticky Table Scripts -->
+<script src="../../../js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="../../../js/jquery.stickyheader-Mess.js"></script>
+
+<!-- Charts -->
+<script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="http://www.amcharts.com/lib/3/serial.js"></script>
+<script src="http://www.amcharts.com/lib/3/themes/dark.js"></script>
+
+<!-- Fitness -->
+<script>
+var chart = AmCharts.makeChart( "fitnessChart", {
+  "type": "serial",
+  "theme": "dark",
+  "balloon": {
+    "borderAlpha": 1,
+    "borderColor": "#0D8337",
+    "color": "#FFFFFF",
+    "fillColor": "#0D8337"
+  },
+  "dataProvider": [ {
+    "day": "Mo",
+    "miles": 3.15
+  }, {
+    "day": "Tu",
+    "miles": 2.78
+  }, {
+    "day": "We",
+    "miles": 4.02
+  }, {
+    "day": "Th",
+    "miles": 2.61
+  }, {
+    "day": "Fr",
+    "miles": 1.98
+  }, {
+    "day": "Sa",
+    "miles": 3.22
+  }, {
+    "day": "Su",
+    "miles": 2.54
+  } ],
+  "valueAxes": [ {
+    "gridColor": "#FFFFFF",
+    "Color": "#FFFFFF",
+    "gridAlpha": 0.1,
+    "dashLength": 0
+  } ],
+  "gridAboveGraphs": true,
+  "startDuration": 1,
+  "graphs": [ {
+    "balloonText": "[[category]]: <b>[[value]]</b>",
+    "fillAlphas": 1,
+    "lineAlpha": 0,
+    "lineColor": "#FFFFFF",
+    "type": "column",
+    "valueField": "miles"
+  } ],
+  "chartCursor": {
+    "categoryBalloonEnabled": false,
+    "cursorAlpha": 0,
+    "zoomable": false
+  },
+  "categoryField": "day",
+  "categoryAxis": {
+    "gridPosition": "start",
+    "gridAlpha": 0,
+    "tickPosition": "start",
+    "tickLength": 1
+  },
+  "export": {
+    "enabled": false
+  }
+
+} );
+</script>
+<!-- //Fitness -->
+
+<!-- Heart Rate -->
+<script>
+var chart = AmCharts.makeChart("heartChart", {
+    "type": "serial",
+    "theme": "dark",
+    "marginRight":10,
+    "autoMarginOffset":10,
+    "balloon": {
+      "borderAlpha": 1,
+      "borderColor": "#A459F2",
+      "color": "#FFFFFF",
+      "fillColor": "#A459F2"
+    },
+    "dataDateFormat": "YYYY-MM-DD HH:NN",
+    "dataProvider": [{
+        "date": "2012-01-01",
+        "value": 85
+    }, {
+        "date": "2012-01-02",
+        "color":"yellow",
+        "value": 102
+    }, {
+        "date": "2012-01-03",
+        "value": 94
+    }, {
+        "date": "2012-01-04",
+        "value": 89
+    }, {
+        "date": "2012-01-05",
+        "value": 79
+    }, {
+        "date": "2012-01-06",
+        "value": 91
+    }, {
+        "date": "2012-01-07",
+        "value": 85
+    }, {
+        "date": "2012-01-08",
+        "value": 82
+    }, {
+        "date": "2012-01-09",
+        "value": 100
+    }, {
+        "date": "2012-01-10",
+        "value": 85
+    }, {
+        "date": "2012-01-11",
+        "color":"yellow",
+        "value": 92
+    }, {
+        "date": "2012-01-12",
+        "value": 88
+    }, {
+        "date": "2012-01-13",
+        "value": 78
+    }, {
+        "date": "2012-01-14",
+        "value": 101
+    }, {
+        "date": "2012-01-15",
+        "value": 92
+    }, {
+        "date": "2012-01-16",
+        "value": 100
+    }, {
+        "date": "2012-01-17",
+        "value": 79
+    }, {
+        "date": "2012-01-18",
+        "value": 81
+    }, {
+        "date": "2012-01-19",
+        "color":"yellow",
+        "value": 76
+    }, {
+        "date": "2012-01-20",
+        "value": 84
+    }, {
+        "date": "2012-01-21",
+        "value": 86
+    }, {
+        "date": "2012-01-22",
+        "value": 89
+    }, {
+        "date": "2012-01-23",
+        "color":"yellow",
+        "value": 92
+    }],
+    "valueAxes": [{
+        "axisAlpha": 0,
+        "guides": [{
+            "fillAlpha": 0.1,
+            "fillColor": "#FFFFFF",
+            "lineAlpha": 0,
+            "toValue": 16,
+            "value": 10
+        }],
+        "position": "left",
+        "tickLength": 0
+    }],
+    "graphs": [{
+        "balloonText": "[[category]]<br><b><span style='font-size:14px;'>value:[[value]]</span></b>",
+        "bullet": "round",
+        "dashLength": 3,
+        "colorField":"color",
+        "lineColor": "#FFFFFF",
+        "valueField": "value"
+    }],
+    "trendLines": [{
+        "finalDate": "2012-01-11 12",
+        "finalValue": 92,
+        "initialDate": "2012-01-02 12",
+        "initialValue": 102,
+        "lineColor": "yellow"
+    }, {
+        "finalDate": "2012-01-19 12",
+        "finalValue": 76,
+        "initialDate": "2012-01-23 12",
+        "initialValue": 92,
+        "lineColor": "yellow"
+    }],
+    "chartCursor": {
+        "fullWidth":true,
+        "valueLineEabled":true,
+        "valueLineBalloonEnabled":true,
+        "valueLineAlpha": 1,
+        "cursorAlpha":0
+    },
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true,
+        "axisAlpha": 0,
+        "fillColor": "#FFFFFF",
+        "gridAlpha": 0.2,
+        "minorGridAlpha": 0.2,
+        "minorGridEnabled": true
+    },
+    "export": {
+        "enabled": false
+     }
+});
+</script>
+<!-- //Heart Rate -->
+
+<!-- Calorie Intake -->
+<script>
+var chart = AmCharts.makeChart("foodChart", {
+    "type": "serial",
+    "theme": "dark",
+    "marginRight":10,
+    "autoMarginOffset":10,
+    "balloon": {
+      "borderAlpha": 1,
+      "borderColor": "#FF6239",
+      "color": "#FFFFFF",
+      "fillColor": "#FF6239"
+    },
+    "dataDateFormat": "YYYY-MM-DD HH:NN",
+    "dataProvider": [{
+        "date": "2012-01-01",
+        "value": 3102
+    }, {
+        "date": "2012-01-02",
+        "color":"yellow",
+        "value": 2811
+    }, {
+        "date": "2012-01-03",
+        "value": 2503
+    }, {
+        "date": "2012-01-04",
+        "value": 2633
+    }, {
+        "date": "2012-01-05",
+        "value": 2197
+    }, {
+        "date": "2012-01-06",
+        "value": 3022
+    }, {
+        "date": "2012-01-07",
+        "value": 2887
+    }, {
+        "date": "2012-01-08",
+        "value": 2455
+    }, {
+        "date": "2012-01-09",
+        "value": 3601
+    }, {
+        "date": "2012-01-10",
+        "value": 2871
+    }, {
+        "date": "2012-01-11",
+        "color":"yellow",
+        "value": 2901
+    }, {
+        "date": "2012-01-12",
+        "value": 2512
+    }, {
+        "date": "2012-01-13",
+        "value": 2154
+    }, {
+        "date": "2012-01-14",
+        "value": 3891
+    }, {
+        "date": "2012-01-15",
+        "value": 3100
+    }, {
+        "date": "2012-01-16",
+        "value": 3877
+    }, {
+        "date": "2012-01-17",
+        "value": 2712
+    }, {
+        "date": "2012-01-18",
+        "value": 2544
+    }, {
+        "date": "2012-01-19",
+        "color":"yellow",
+        "value": 2134
+    }, {
+        "date": "2012-01-20",
+        "value": 2752
+    }, {
+        "date": "2012-01-21",
+        "value": 2411
+    }, {
+        "date": "2012-01-22",
+        "value": 2310
+    }, {
+        "date": "2012-01-23",
+        "color":"yellow",
+        "value": 3021
+    }],
+    "valueAxes": [{
+        "axisAlpha": 0,
+        "guides": [{
+            "fillAlpha": 0.1,
+            "fillColor": "#FFFFFF",
+            "lineAlpha": 0,
+            "toValue": 16,
+            "value": 10
+        }],
+        "position": "left",
+        "tickLength": 0
+    }],
+    "graphs": [{
+        "balloonText": "[[category]]<br><b><span style='font-size:14px;'>value:[[value]]</span></b>",
+        "bullet": "round",
+        "dashLength": 3,
+        "colorField":"color",
+        "lineColor": "#FFFFFF",
+        "valueField": "value"
+    }],
+    "trendLines": [{
+        "finalDate": "2012-01-11 12",
+        "finalValue": 92,
+        "initialDate": "2012-01-02 12",
+        "initialValue": 102,
+        "lineColor": "yellow"
+    }, {
+        "finalDate": "2012-01-19 12",
+        "finalValue": 76,
+        "initialDate": "2012-01-23 12",
+        "initialValue": 92,
+        "lineColor": "yellow"
+    }],
+    "chartCursor": {
+        "fullWidth":true,
+        "valueLineEabled":true,
+        "valueLineBalloonEnabled":true,
+        "valueLineAlpha": 1,
+        "cursorAlpha":0
+    },
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true,
+        "axisAlpha": 0,
+        "fillColor": "#FFFFFF",
+        "gridAlpha": 0.2,
+        "minorGridAlpha": 0.2,
+        "minorGridEnabled": true
+    },
+    "export": {
+        "enabled": false
+     }
+});
+
+</script>
+<!-- //Calorie  Intake -->
+
+<!-- Weight -->
+<script>
+var chart = AmCharts.makeChart( "weightChart", {
+  "type": "serial",
+  "theme": "dark",
+  "balloon": {
+    "borderAlpha": 1,
+    "borderColor": "#3D80DA",
+    "color": "#FFFFFF",
+    "fillColor": "#3D80DA"
+  },
+  "dataProvider": [ {
+    "day": "Mo",
+    "weight": 179
+  }, {
+    "day": "Tu",
+    "weight": 178
+  }, {
+    "day": "We",
+    "weight": 179
+  }, {
+    "day": "Th",
+    "weight": 180
+  }, {
+    "day": "Fr",
+    "weight": 183
+  }, {
+    "day": "Sa",
+    "weight": 181
+  }, {
+    "day": "Su",
+    "weight": 179
+  } ],
+  "valueAxes": [ {
+    "gridColor": "#FFFFFF",
+    "Color": "#FFFFFF",
+    "gridAlpha": 0.1,
+    "dashLength": 0
+  } ],
+  "gridAboveGraphs": true,
+  "startDuration": 1,
+  "graphs": [ {
+    "balloonText": "[[category]]: <b>[[value]]</b>",
+    "fillAlphas": 1,
+    "lineAlpha": 0,
+    "lineColor": "#FFFFFF",
+    "type": "column",
+    "valueField": "weight"
+  } ],
+  "chartCursor": {
+    "categoryBalloonEnabled": false,
+    "cursorAlpha": 0,
+    "zoomable": false
+  },
+  "categoryField": "day",
+  "categoryAxis": {
+    "gridPosition": "start",
+    "gridAlpha": 0,
+    "tickPosition": "start",
+    "tickLength": 1
+  },
+  "export": {
+    "enabled": false
+  }
+
+} );
+</script>
+<!-- //Weight -->
+
+<!-- Dynamic Times -->
+<script type="text/javascript" src="../../../js/moment.js"></script>
+<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
+
+<!-- Time Picker / Date Picker -->
+<script type="text/javascript" src="../../../js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+    $('#timepicker3').timepicker({
+        minuteStep: 5,
+        showInputs: false,
+        disableFocus: true
+    });
+
+    $('#sandbox-container input').datepicker({
+        autoclose: true
+    });
+</script>
+
+
+</body>
+</html>

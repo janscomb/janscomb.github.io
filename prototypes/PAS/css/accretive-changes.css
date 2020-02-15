@@ -1,0 +1,887 @@
+
+#dnn_content {
+    background: #fff none repeat scroll 0 0;
+    margin: auto;
+}
+#dnn_wrapper {
+    background: #f7f8f9 none repeat scroll 0 0 !important;
+}
+.PanelDetail td {
+    font-size: 11.5px;
+}
+.TALeft {
+    text-align: left;
+}
+.OtherTabs {
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+.login-container {
+    text-align: left;
+}
+A, A:link, A:active, A:visited, A:hover {
+    color: #3d64a8 !important;
+}
+a.btnPrimary {
+    color: #fff !important;
+}
+body > form #ControlBar_ControlPanel a {
+    color: #fff !important;
+}
+.body_bg .Container-1 .line span {
+    background-color: transparent !important;
+    color: #ddd !important;
+}
+.body_bg .Container-1 .line {
+    background-color: transparent !important;
+}
+.body_bg .Container-1 .line span {
+    background-color: transparent !important;
+}
+.body_bg .list_style5 li .glyphicons {
+    background-color: transparent;
+    border-bottom: 0 none;
+}
+.body_bg .DnnModule-PHSModulesSearch .panel {
+    border: 0 none;
+    box-shadow: none;
+}
+.body_bg hr {
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+.body_bg #to_top:hover {
+    background-color: #3d64a8;
+}
+.body_bg #to_top, .ServeList_5 .Serve_Icon {
+
+}
+.body_bg h1, .body_bg h2, .body_bg h3, .body_bg h4 {
+    color: #555;
+}
+.body_bg .panel {
+    border: 1px solid #e3e8ed;
+    line-height: 1.5em;
+}
+.body_bg h1 {
+    font-size: 20px;
+}
+.body_bg h2 {
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+.body_bg h4 {
+    color: #3d64a8;
+    margin: 0;
+}
+.body_bg .title3 {
+    color: #444;
+}
+.body_bg .backgroundImage5 > div > div > h3 {
+    padding-bottom: 0;
+}
+.body_bg .dnn_layout {
+}
+.body_bg .DnnModule-PHSModulesSearch {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e3e8ed !important;
+    padding: 10px;
+}
+.header_top {
+    background: #001c70 none repeat scroll 0 0 !important;
+}
+.hedaer_minHeight {
+    height: 92px !important;
+}
+.header_bg {
+    width: 100% !important;
+}
+#header1, #header1::before {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #3d64a8 !important;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    opacity: 1;
+}
+.header_bg .dnn_logo {
+    height: 55px !important;
+    line-height: 55px !important;
+}
+.nav_box {
+    margin-right: -20px;
+    margin-top: 5px;
+    text-align: right !important;
+    width: auto;
+}
+#dnngo_megamenu > div > ul > li > a > span {
+    text-transform: inherit !important;
+}
+.header_top, .header_top a:link, .header_top a:active, .header_top a:visited, .header_top .Normal {
+    color: #fff !important;
+}
+#dnngo_megamenu .primary_structure > li > a, .searchbut {
+    color: #fff !important;
+}
+#dnngo_megamenu > div > ul > li > a > span {
+    height: 45px !important;
+    line-height: 45px !important;
+}
+#loc {
+    display: inline-block;
+    float: right;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.Login .loginGroup, .Login .registerGroup, .loginGroupPHS {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    vertical-align: middle;
+}
+.Breadcrumb_bg {
+    background: #f7f8f9 none repeat scroll 0 0 !important;
+}
+.breadcrumbBox, .breadcrumbBox a, .breadcrumbBox a:link, .breadcrumbBox a:active, .breadcrumbBox a:visited, .breadcrumbBox .breadcrumb {
+    color: gray !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    padding: 10px 0 !important;
+}
+.breadcrumbBox {
+    border-bottom: 1px solid #ccc;
+}
+.breadcrumbBox h3 {
+    color: #333 !important;
+    display: none;
+    font-size: 16px !important;
+}
+.breadcrumbRight {
+    text-align: left !important;
+}
+#dnngo_megamenu .dnngo_slide_menu, #dnngo_megamenu .dnngo_slide_menu .dnngo_submenu, #dnngo_megamenu .dnngo_boxslide {
+    background-color: #fff !important;
+    border-top-color: #ddd !important;
+}
+#dnngo_megamenu > div > ul > li > a:hover > span, #dnngo_megamenu > div > ul > li.menu_hover > a > span, #dnngo_megamenu > div > ul > li.current > a > span {
+    color: #fff !important;
+    text-decoration: underline;
+}
+#dnngo_megamenu .dnngo_boxslide .menu_centerbox > ul > li > a > span, #dnngo_megamenu .dnngo_boxslide .dnngo_masonrymenu > ul > li > a > span {
+    color: #333 !important;
+}
+#dnngo_megamenu .dnngo_boxslide .menu_centerbox ul li li a:hover {
+    text-decoration: underline;
+}
+#dnngo_megamenu .dnngo_boxslide .menu_centerbox > ul > li > a > span, #dnngo_megamenu .dnngo_boxslide .dnngo_masonrymenu > ul > li > a > span, #dnngo_megamenu .dnngo_boxslide .menu_centerbox ul li li a:hover {
+    color: #3d64a8 !important;
+}
+.multi_menu ul li a {
+    border-bottom: 1px solid #ccc !important;
+}
+.LoginPanel {
+    width: 100% !important;
+}
+.body_bg .Container-1 .dnntitle {
+    text-align: left;
+}
+.body_bg .title1 {
+    font-size: 22px;
+}
+.panel h3 {
+    background: #f7f8f9 none repeat scroll 0 0;
+    border-bottom: 1px solid #e3e8ed;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 10px 15px;
+}
+.body_bg table.display.dataTable th, .body_bg table.dataTable th {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+}
+.body_bg table.dataTable tr.odd {
+    background-color: #fff;
+}
+.body_bg table.dataTable tr.odd td, .body_bg table.dataTable tr.even td {
+    border-bottom: 1px solid #e4e4e4;
+}
+.body_bg table.dataTable tr.odd td, .body_bg table.dataTable tr.even td {
+    border-bottom: 1px solid #e4e4e4;
+}
+.body_bg table.dataTable tr.even:hover td, .body_bg table.dataTable tr.odd:hover td {
+    background-color: #f3f3f3;
+    cursor: default;
+}
+.dataTable td img, .dataTable td input[type="image"], .dataTable td a i {
+    background: #fefefe none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 18px;
+    margin-left: 5px;
+    padding: 3px;
+    width: 18px;
+}
+.body_bg .dataTable td img:hover, .body_bg .dataTable td input[type="image"]:hover, .body_bg .dataTable td a i:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #001c70;
+}
+.body_bg table.dataTable {
+    border: 1px solid #e4e4e4;
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+}
+table.dataTable tr.odd td, table.dataTable tr.even td, table.dataTable tr td {
+    background-color: #fff;
+    border-color: -moz-use-text-color -moz-use-text-color #e4e4e4;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    padding: 4px 5px;
+}
+.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction {
+    background: #3d64a8 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff !important;
+    font-weight: 700;
+}
+.dnnPrimaryAction:hover, .dnnFormItem input[type="submit"]:hover, a.dnnPrimaryAction:hover {
+    background: #001c70 none repeat scroll 0 0;
+    border: 0 none;
+    text-decoration: underline;
+}
+.dnnSecondaryAction, a.dnnSecondaryAction, ul.dnnAdminTabNav li a, .dnnLogin .LoginTabGroup span {
+    background: #f5f5f5 none repeat scroll 0 0;
+    box-shadow: 0 1px 0 0 #ccc;
+    color: #333;
+}
+.dnnSecondaryAction:hover, a.dnnSecondaryAction:hover, ul.dnnAdminTabNav li a:hover, .dnnLogin .LoginTabGroup span:hover {
+    background: #e8e8e8 none repeat scroll 0 0;
+    color: #555;
+}
+.loginButton {
+}
+.formInline .dnnLabel {
+    float: none;
+    margin-right: 0;
+    padding-right: 5px;
+    width: auto;
+}
+.body_bg .footer_box {
+    background-image: none;
+}
+.body_bg .footer_bottom {
+    border-top: medium none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.FooterPane .Normal, .copyright_style, .copyright_style a, .copyright_style a:link, .copyright_style a:active, .copyright_style a:visited, .FooterPane .social-icons a {
+    color: #fff !important;
+}
+.footer_mid.clearfix {
+    margin: auto;
+    text-align: center;
+}
+.copyright_style {
+    float: none !important;
+}
+#pas_homepage_content {
+}
+.body_bg .loginContent .dnnFormItem a.dnnPrimaryAction {
+    margin-right: 5px;
+	height:33px;
+}
+.body_bg .home-content {
+    color: #333;
+    line-height: 1.5em;
+    padding: 10px 2%;
+    width: 70%;
+}
+.body_bg .backgroundImage8 {
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("images/img_bg_8.jpg");
+    background-origin: padding-box;
+    background-position: right 60px;
+    background-repeat: no-repeat;
+    background-size: initial;
+    border-bottom: 5px solid #ddd;
+    box-shadow: 3px 2px 2px #ccc;
+    height: 500px;
+    text-align: left;
+}
+.body_bg .font_sytle_1 h3 {
+    color: #3d64a8;
+    font-size: 20px;
+    font-weight: 700;
+}
+.body_bg .font_sytle_1 li {
+    list-style-type: none;
+}
+.body_bg .font_sytle_1 li span {
+    color: #3d64a8;
+    margin-right: 10px;
+}
+.body_bg .ServeList_5 .Serve_Icon {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    font-size: 38px;
+    top: 0;
+}
+.body_bg .ServeList_5 .Serve_Icon span {
+    background-color: transparent;
+    color: #3d64a8;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    width: auto;
+}
+.body_bg .ServeList_5 .ServeBox {
+    padding-left: 75px;
+    position: relative;
+}
+.body_bg .ServeList_5 {
+    float: right;
+    margin: 0;
+    width: 70%;
+}
+.body_bg .DnnModule-Authentication {
+}
+.body_bg .DnnModule-Authentication .dnntitle {
+    padding: 0;
+}
+.body_bg .DnnModule-Authentication .dnntitle .title3 {
+    color: #333;
+}
+.body_bg .Container-9 .dnntitle {
+    padding: 0 0 5px;
+    text-align: left;
+}
+.body_bg .Container-9 .dnntitle .title9 {
+    font-size: 25px;
+}
+.body_bg .backgroundImage5 {
+    background: transparent none repeat scroll 0 0;
+    border-bottom: 0 none;
+    border-top: 0 none;
+}
+.body_bg .list_style5 li .glyphicons {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #3d64a8;
+    height: 30px;
+    line-height: 29px;
+    width: 30px;
+}
+.body_bg .list_style5 li {
+    padding: 3px 0;
+}
+.body_bg .horizontalTab_Top_1 ul.resp-tabs-list li, .body_bg .horizontalTab_Top_1 ul.resp-tabs-list li:hover {
+    margin-right: 1px;
+}
+.body_bg .horizontalTab_Top_1 ul.resp-tabs-list li span, .body_bg .horizontalTab_Top_1 ul.resp-tabs-list li:hover span {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px;
+}
+.body_bg .resp-tab-content label {
+    font-weight: 200;
+}
+.body_bg .flip_box_1 .front, .body_bg .flip_box_1 .back {
+    padding: 15px;
+}
+.body_bg .flip_box_1 .back {
+    text-align: left;
+}
+.body_bg .flip_box_1 .back h4 {
+    font-size: 12px;
+    font-weight: 700;
+}
+.body_bg .flip_box_1 .back h4 i {
+    padding-right: 5px;
+}
+.body_bg .stat-box {
+    margin: 0 0 10px;
+}
+.body_bg .stat-box.flip:hover .front i.bg-warning {
+    background: #ff8c00 none repeat scroll 0 0;
+}
+.body_bg .stat-box.flip:hover .front i.bg-info {
+    background: #3d64a8 none repeat scroll 0 0;
+}
+.stat-box.flip.bc:hover h1, .stat-box.flip.bc:hover h4, .stat-box.flip.bc:hover i {
+    color: #444;
+}
+.stat-box.flip.bc:hover .front h1, .stat-box.flip.bc:hover .front h4, .stat-box.flip.bc:hover .front i {
+    background: #fff none repeat scroll 0 0;
+}
+.no-csstransitions .stat-box.flip:hover .front i {
+    background: #fff none repeat scroll 0 0;
+    color: #3d64a8;
+}
+.no-csstransitions .stat-box.flip:hover .front i.bg-success {
+    color: #8bbf61;
+}
+.no-csstransitions .stat-box.flip:hover .front i.bg-warning {
+    color: #ff8c00;
+}
+.no-csstransitions .stat-box.flip:hover .front i.bg-info {
+    color: #3d64a8;
+}
+.stat-box.flip .front h1, .stat-box.flip .front h2, .stat-box.flip .front h4 {
+    left: 70px;
+    position: absolute;
+}
+.stat-box.flip .front h1, .stat-box.flip .front h2 {
+    margin-top: 10px;
+    top: 1px;
+}
+.stat-box.flip .front h4 {
+    font-size: 1.1em;
+    font-weight: 700;
+    top: 43px;
+}
+.stat-box.flip .back h4 {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+    padding: 3px 0;
+}
+.stat-box.flip .back h2 {
+    color: #3d64a8;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0;
+    padding: 3px 0;
+}
+.stat-box .front i {
+    background: #3d64a8 none repeat scroll 0 0;
+    border-radius: 3px 0 0 3px;
+    box-shadow: 2px 0 3px 0 #ccc;
+    color: #fff;
+    font-size: 33px;
+    height: 93px;
+    left: 0;
+    margin: -10px;
+    padding: 25px 14px;
+    top: 0;
+    width: 55px;
+}
+.nav-tabs > li > a:hover {
+    border-width: 0 1px;
+}
+.nav-tabs > li.active > a:hover {
+    border-width: 0 1px;
+}
+.stat-box.flip .back i {
+    background: transparent none repeat scroll 0 0;
+    color: #444;
+    font-size: 14px;
+    height: auto;
+    left: auto;
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: relative;
+    top: auto;
+    width: auto;
+}
+.stat-box.flip .back i.bg-success {
+    color: #8bbf61;
+}
+.stat-box.flip .back i.bg-warning {
+    color: #ff8c00;
+}
+.stat-box.flip .back i.bg-info {
+    color: #3d64a8;
+}
+.stat-box.flip {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 solid #e4e4e4;
+    box-shadow: none;
+    padding: 0;
+    position: inherit;
+    z-index: 9;
+}
+.panel.ah-sg div h3 {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: medium none;
+    font-size: 15px;
+    margin: 20px 0 10px;
+    padding: 0;
+}
+.flip-wrapper:hover front i, .flip-wrapper:hover front h2, .flip-wrapper:hover front h4, .flip-wrapper front:hover i, .flip-wrapper front:hover h2, .flip-wrapper front:hover h4 {
+    color: #fff;
+    display: none;
+    visibility: hidden;
+}
+.flip-wrapper {
+    height: 95px;
+    padding: 0;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.25s ease-out 0s;
+    width: 100%;
+}
+.flip:hover .flip-wrapper {
+    transform: rotateY(180deg);
+}
+.flip-wrapper .front, .flip-wrapper .back {
+    backface-visibility: hidden;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px #ececec;
+    color: #444;
+    height: 100%;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.flip-wrapper .front {
+    z-index: 1;
+}
+.flip-wrapper .back {
+    background: #fff none repeat scroll 0 0;
+    text-align: center;
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+.no-csstransitions .flip-wrapper .back {
+    display: none;
+}
+.no-csstransitions .flip-wrapper:hover .back {
+    display: block;
+}
+.flip-wrapper:hover .front {
+    display: none;
+}
+.flip-wrapper:hover .back {
+    backface-visibility: visible;
+    display: block;
+}
+.no-csstransitions .stat-box.flip.bc:hover h1, .stat-box.flip.bc:hover h4, .stat-box.flip.bc:hover i {
+    color: #3d64a8;
+}
+.no-csstransitions .stat-box.flip.bc:hover .front h1, .stat-box.flip.bc:hover .front h4, .stat-box.flip.bc:hover .front i {
+    background: transparent none repeat scroll 0 0;
+}
+.body_bg .tab-content > ul > li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    font-size: 12px;
+    list-style: outside none none;
+    padding: 8px 15px 8px 10px;
+    transition: all 0.1s linear 0s;
+}
+.body_bg .tab-content > ul > li a {
+    padding-right: 10px;
+}
+#outstandingGapSummaryBox h3.panel-title {
+    background: #3d64a9 none repeat scroll 0 0;
+    border-bottom: 1px solid #e3e8ed;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0;
+    padding: 10px;
+}
+.body_bg .panel .nopadding {
+    margin: -10px 0 0 -10px;
+    padding: 0;
+}
+.body_bg #outstandingGapSummaryBox table.dataTable tr th {
+    background: #f7f8fa none repeat scroll 0 0;
+    font-size: 13px;
+    padding: 10px 5px;
+    text-align: center;
+}
+.body_bg #outstandingGapSummaryBox .dataTable td img {
+    border: medium none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.body_bg .panel table.dataTable tr.total, .body_bg table.dataTable tr.total td, .body_bg table.dataTable tr.table td {
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.flip_box_1 .front .glyphicons {
+    margin-bottom: 10px;
+}
+.body_bg .front h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.panel-content {
+    padding: 10px 15px;
+}
+.user-photo i {
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 47px;
+    padding: 8px;
+    vertical-align: top;
+}
+.user-details h2 {
+    border-bottom: 0 none;
+    color: #3d64a8;
+    font-weight: 700;
+    margin: 0 0 5px;
+    padding: 0;
+}
+.user-details h2 span a {
+    font-size: 20px;
+}
+.user-contact {
+    margin-top: 23px;
+}
+.user-contact i {
+    color: #ccc;
+    padding: 3px 0 0;
+    position: absolute;
+}
+.user-contact .contact-label {
+    padding-left: 22px;
+}
+.list-group .user-photo i {
+    font-size: 37px;
+    padding: 5px;
+}
+.panel-heading > .nav-tabs > li > a {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-width: 0 1px;
+    color: inherit;
+    font-size: 13px;
+    height: 36px;
+    margin-right: 0;
+    padding: 10px 9px;
+}
+.panel.panel-tab h3.panel-title {
+    padding: 10px 15px;
+}
+ul.actions {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+ul.actions li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 15px 0 0;
+}
+ul.actions li a {
+    cursor: pointer;
+}
+.timeline-activity li {
+    border-left: 1px solid #efefef;
+    margin-left: 25px;
+    padding: 5px 0;
+    position: relative;
+}
+.timeline-activity li i.list-icon {
+    background-color: #fff;
+    border: 2px solid #dfdfdf;
+    border-radius: 30px;
+    color: #dfdfdf;
+    font-size: 18px;
+    height: 36px;
+    left: -18px;
+    line-height: 34px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    width: 36px;
+}
+.timeline-activity li .block {
+    padding: 0 0 0 35px;
+    position: relative;
+}
+.timeline-activity li .caret {
+    border-color: #fff #dfdfdf #fff #fff;
+    border-style: solid solid solid dotted;
+    border-width: 8px 8px 8px 0;
+    content: "";
+    height: 0;
+    left: 26px;
+    margin-top: 5px;
+    position: absolute;
+    top: 10px;
+    vertical-align: middle;
+    width: 8px;
+}
+.timeline-details {
+    border-top: 1px solid #ddd;
+    color: #666;
+    padding-top: 5px;
+}
+.timeline-details i {
+    margin: 0 3px 0 6px;
+}
+.bg-primary-light {
+    background: #f7f8f9 none repeat scroll 0 0;
+}
+.timeline-activity li .block.block-inline {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px;
+}
+.list-unstyled {
+    margin-left: 0;
+}
+.box-generic {
+    border: 1px solid #e2e1e1;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 #dbdbdb;
+    margin: 0 0 14px;
+    padding: 10px 15px;
+    position: relative;
+}
+.panel .text-primary {
+    color: #3a5cac;
+}
+.innerLR {
+    padding-left: 14px;
+    padding-right: 14px;
+    position: relative;
+}
+.inline-block {
+    display: inline-block;
+}
+.margin-none {
+    margin: 0 !important;
+}
+.form-control {
+    font-size: 12px;
+    height: 30px;
+    padding: 6px;
+}
+.input-group input.form-control[type="text"], .input-group select.form-control, .input-group textarea.form-control, .input-group input.form-control[type="email"], .input-group input.form-control[type="search"], .input-group input.form-control[type="password"] {
+    margin-bottom: 0;
+    width: 100%;
+}
+table#ParameterTable_dnn_ctr480_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr1612_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr1633_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr1638_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr1639_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr1640_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr489_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr531_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr1563_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr3658_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr3659_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr3681_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr3662_ReportViewer_ctl00_ctl04, table#ParameterTable_dnn_ctr3680_ReportViewer_ctl00_ctl04 {
+    background: #fff none repeat scroll 0 0 !important;
+    border: 1px solid #ccc;
+}
+#dnn_ctr480_ReportViewer_ctl00, #dnn_ctr1612_ReportViewer_ctl00 {
+    width: 100%;
+}
+.dnnPrimaryAction, .dnnFormItem input.dnnPrimaryAction[type="submit"], a.dnnPrimaryAction, a.btnPrimary, a.btn-primary, input#dnn_ctr480_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr1612_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr1638_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr1633_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr1639_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr489_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr531_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr1563_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr3658_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr3659_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr3681_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr3662_ReportViewer_ctl00_ctl04_ctl00, input#dnn_ctr3680_ReportViewer_ctl00_ctl04_ctl00 {
+    background: #3d64a8 none repeat scroll 0 0;
+    border: 0 solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 0 #ddd;
+    color: #efefef;
+    font-weight: 700;
+    padding: 5px 10px;
+    text-shadow: 0 -1px 0 #185b93;
+}
+.dnnPrimaryAction:hover, .dnnFormItem input.dnnPrimaryAction[type="submit"]:hover, a.dnnPrimaryAction:hover, input#dnn_ctr480_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr1612_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr1633_ReportViewer_ctl00_ctl04_ctl00:hover, input#input#dnn_ctr1639_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr489_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr531_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr1563_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr3658_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr3659_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr3681_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr3662_ReportViewer_ctl00_ctl04_ctl00:hover, input#dnn_ctr3680_ReportViewer_ctl00_ctl04_ctl00:hover, a.btnPrimary:hover, a.btn-primary:hover, a.btnPrimary:active, a.btn-primary:active {
+    background: #001c70 none repeat scroll 0 0;
+    border: 0 solid #fff;
+    color: #fff;
+}
+@media only screen and (max-width: 1124px) {
+.body_bg .backgroundImage8 {
+    background: #f3f3f3 none repeat scroll 0 0;
+}
+.body_bg .home-content {
+    width: 100%;
+}
+}
+@media only screen and (max-width: 767px) {
+.mobile_icon .glyphicons {
+    background-color: #001c70 !important;
+}
+#mobile_menu, .multi_menu ul ul {
+    background: #fff none repeat scroll 0 0 !important;
+}
+.header_element .element_box, .header_element .registerGroup {
+    background: #001c70 none repeat scroll 0 0 !important;
+}
+.header_element .element_box {
+    margin-right: 10px !important;
+}
+.header_element .icon, .header_top, .header_top a:link, .header_top a:active, .header_top a:visited, .header_top .Normal {
+    color: #fff !important;
+}
+.body_bg .header_bg .dnn_logo, .body_bg .roll_menu.roll_activated .dnn_logo {
+    height: 50px;
+}
+.header_bg .dnn_logo, .roll_menu.roll_activated .dnn_logo {
+    height: 55px !important;
+    line-height: 55px !important;
+    padding: 0 !important;
+}
+#dnn_dnnLOGOphone_hypLogo {
+    height: 50px;
+}
+.dnn_logo {
+    height: 50px;
+}
+.BannerPane {
+    height: auto !important;
+    min-height: inherit !important;
+}
+.body_bg .backgroundImage8 {
+    background: #f3f3f3 none repeat scroll 0 0;
+    height: inherit;
+}
+.body_bg .font_sytle_1 h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.body_bg .DnnModule-Authentication {
+    margin: 0;
+    position: relative;
+    top: 10px;
+    width: 100%;
+}
+.body_bg .home-content {
+    background: #f3f3f3 none repeat scroll 0 0;
+    width: 100%;
+}
+.body_bg .ServeList_5 {
+    background: #f3f3f3 none repeat scroll 0 0;
+    width: 100%;
+}
+.body_bg .ServeList_5 .ServeBox {
+    padding-left: 60px;
+    position: relative;
+}
+.body_bg .panel-tab h3 {
+    display: block;
+}
+.body_bg .panel-tab ul.nav-tabs {
+    background: #f7f8f9 none repeat scroll 0 0;
+    display: block;
+    margin: 0 -14px;
+    position: inherit;
+}
+.user-photo i {
+    font-size: 35px;
+    padding: 4px;
+}
+.user-contact {
+    border-top: 1px solid #e3e8ed;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+}

@@ -1,0 +1,18 @@
+.head_title { 
+  background: #F7F8F9;
+  border: 1px solid #E3E8ED;
+  border-bottom: 0;
+  padding: 10px 15px;
+}
+
+.TitleHeader {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.c_head_blue .head_title {
+    padding: 10px 0;}
+
+.c_head_blue .TitleHeader {
+    padding: 0 10px;}

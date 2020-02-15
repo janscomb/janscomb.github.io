@@ -1,0 +1,2032 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:x2="http://www.w3.org/2002/06/xhtml2">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head><title>Dashboard Prototype - Production Coding</title>
+
+<!-- Bootstrap Generic CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../css/bootstrap.css">
+<!-- Bootstrap Timepicker and Datepicker -->
+<link rel="stylesheet" href="../../../css/bootstrap-timepicker.min.css" />
+<link rel="stylesheet" href="../../../css/bootstrap-datepicker.min.css" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="../../../css/main.css">
+
+<!-- Bootstrap Generic JS -->
+<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.mousewheel.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="top">
+
+  <!-- Back to Top -->
+  <a href="#top" class="backToTop"><span class="fa fa-chevron-up"></span></a>
+
+<!-- Top Bar -->
+<!-- User Bar -->
+<div class="userBar">
+<span class="currently">Currently logged in as:</span> <strong>Nathan Anderson</strong> <span class="topGrep"></span> <a href="../../../demo.html"><i class="fa fa-sign-out"></i></a> <span class="topGrep"></span> <i class="fa fa-thumb-tack local"></i> &nbsp;<select><option>Select</option><option>Flex</option></select>
+</div>
+
+<!-- Navi -->
+<div class="container-fluid topBar">
+
+        <!-- Logo -->
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo">
+            <a href="../../../index.html"><img src="../../../images/logo-Accretive.png" height="24" /></a>
+            <span class="roleType">Practice Management</span>
+        </div>
+
+        <!-- Nav -->
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 nav">
+            <ul>
+                <li><a href="" class="navSearch"><span class="fa fa-search"></span></a></li>
+                <li><a href="../Worklist/index.html">Worklist</a></li>
+                <li><a href="../Dashboard/index.html" class="activePage">Dashboard</a></li>
+            </ul>
+        </div>
+
+</div>
+<!-- //Top Bar -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+
+        <!-- Dashboard -->
+        <div class="row">
+
+            <!-- Content -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dashLayout">
+
+                <!-- Snapshot -->
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <h3 class="dash">My Worklist Snapshot</h3>
+                </div>
+
+                <!-- Actions -->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 pull-right WLMenuDash noPadRight">
+
+                <!-- Container Menu -->
+
+                    <!-- Settings -->
+                    <a class="menuFilters"><span class="fa fa-gear"></span></a>
+
+                    <!-- Close / Show Section -->
+                    <a class="menuFilters hideItems mySnap" style="border: 0px;"><span class="fa fa-chevron-up"></span></a>
+
+                            <!-- Show -->
+                            <a class="menuFilters showItems mySnap" style="border: 0px;"><span class="fa fa-chevron-down"></span></a>
+
+
+                <!-- //Container Menu -->
+                </div>
+
+                <!-- //Actions -->
+
+                <div class="clearfix"></div>
+
+                <hr class="headLine mySnap" />
+
+                <div class="clearfix"></div>
+
+                <div class="dashContainer snapArea noPadLeft noPadRight">
+
+                    <!-- Snap #1 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric patientCentric">5</div>
+                        <div class="clearfix"></div>
+                        Patient Engagement
+                    </a>
+                    <!-- //Snap #1 -->
+
+                    <!-- Snap #2 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric scheduleCentric">18</div>
+                        <div class="clearfix"></div>
+                        Scheduling Requests
+                    </a>
+                    <!-- //Snap #2 -->
+
+                    <!-- Snap #3 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric codingCentric">20</div>
+                        <div class="clearfix"></div>
+                        Documentation &amp; Coding
+                    </a>
+                    <!-- //Snap #3 -->
+
+                    <!-- Snap #4 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric requestCentric">16</div>
+                        <div class="clearfix"></div>
+                        Order Requests
+                    </a>
+                    <!-- //Snap #4 -->
+
+                    <!-- Snap #5 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric careCentric">10</div>
+                        <div class="clearfix"></div>
+                        Care Management
+                    </a>
+                    <!-- //Snap #5 -->
+
+                    <!-- Snap #6 -->
+                    <a href="../Worklist/index.html" class="col-xs-6 col-sm-4 col-md-2 col-lg-2 snapBox">
+                        <div class="snapMetric completeCentric">0</div>
+                        <div class="clearfix"></div>
+                        Completed Today
+                    </a>
+                    <!-- //Snap #6 -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- /Snapshot -->
+
+                <div class="clearfix"></div>
+
+                <br clear="all" /><br clear="all" />
+
+                <!-- Worklist Left, Content Right -->
+
+                <!-- Worklist -->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 noPadLeft treePane">
+
+                    <h3 class="dash" style="padding-left: 10px;">Worklist</h3>
+
+                    <div class="treeList" style="max-height: 684px;">
+
+                        <!-- Header -->
+                        <div class="treeHead">
+                            <span class="glyphicon glyphicon-tree-conifer treeIcon"></span>
+                            <span class="grep treeGrep"></span>
+                            <span class="treeHeader">Worklist Tree</span>
+                            <a data="treeAcc" class="treeToggle" id="treeSlideOut"><span class="glyphicon glyphicon-chevron-left pull-right"></span></a>
+                            <a data="treeAcc" class="treeToggleIn" id="treeSlideIn"><span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <!-- //Header -->
+
+
+                        <!-- Buttons // Initially Hidden -->
+                        <div class="miniNav rotate270 positioning">
+                            <a class="miniNavButton">Favorites</a>
+                            <a class="miniNavButton">Worklist Items</a>
+                        </div>
+                        <!-- //Buttons // Initially Hidden -->
+
+
+                        <!-- Tree Results -->
+                        <div class="treeResults">
+
+                            <ol class="tree">
+                                <li>
+                                    <label for="favorites">Favorites</label> <input type="checkbox" id="favorites" />
+                                    <ol>
+                                        <!-- <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Today</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Tomorrow</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Unworked - This Week</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Unworked - Next Week</a></li> -->
+                                    </ol>
+                                </li>
+
+                                <!-- Patient Engagement -->
+                                <li>
+                                <label for="folder1">Patient Engagement</label> <input type="checkbox" id="folder1" checked />
+                                    <ol>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Wellness Visits</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Care Gaps</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">TCM</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">CCM</a></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                <label for="folder2">Scheduling Requests</label> <input type="checkbox" id="folder2" checked />
+                                    <ol>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Office Visits</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Surgical Services</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Labratory Services</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Behavioral Medicine</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Mental Health Service</a></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                <label for="folder3">Documentation &amp; Coding</label> <input type="checkbox" id="folder3" checked />
+                                    <ol>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Documentation Requests</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Coding Requests</a></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                <label for="folder4">Order Requests</label> <input type="checkbox" id="folder4" checked />
+                                    <ol>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Diagnostic Imaging</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Surgical Services</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Labratory Services</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Behavioral Medicine</a></li>
+                                        <li class="leaf step1"><a href="../Worklist/index.html">Mental Health Service</a></li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- //Worklist -->
+
+                <!-- Content -->
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 noPadRight dashContentRight">
+
+
+                    <!-- Work Metrics -->
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <h3 class="dash">Work Metrics</h3>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 pull-right WLMenuDash noPadRight">
+                    <!-- Container Menu -->
+
+                        <!-- View Selector Tooltip -->
+                        <div class="layoutSelector">
+                        <ul id="cbp-tm-menu" class="cbp-tm-menu">
+                            <li>
+                                <a href="#" class="chartView"><i class="fa fa-bar-chart"></i> &nbsp; Chart View Selector</a>
+                                <ul class="cbp-tm-submenu">
+                                    <li><a href="#">1 Chart - x - 1 Row</a></li>
+                                    <li><a href="#">2 Chart - x - 1 Row</a></li>
+                                    <li><a href="#">3 Chart - x - 1 Row</a></li>
+                                    <li><a href="#">2 Chart - x - 2 Row</a></li>
+                                    <li><a href="#">3 Chart - x - 2 Row</a></li>
+                                    <li><a href="#">4 Chart - x - 2 Row</a></li>
+                                    <li><a href="#">5 Chart - x - 2 Row</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <!-- View Selector  ((SIMPLE))
+                        <div class="layoutSelector">
+                        <select>
+                            <option>1 Chart - x - 1 Row</option>
+                            <option>2 Charts - x - 1 Row</option>
+                            <option>3 Charts - x - 1 Row</option>
+                        </select>
+                        </div> -->
+
+                        <!-- Settings -->
+                        <a class="menuFilters" data-toggle="modal" data-target="#chartSettings"><span class="fa fa-gear"></span></a>
+
+                        <!-- Close / Show Section -->
+                        <a class="menuFilters hideItems workMetrics" style="border: 0px;"><span class="fa fa-chevron-up"></span></a>
+
+                            <!-- Show -->
+                            <a class="menuFilters showItems workMetrics" style="border: 0px;"><span class="fa fa-chevron-down"></span></a>
+
+
+                    <!-- //Container Menu -->
+                    </div>
+                    <!-- //Actions -->
+
+                    <div class="clearfix"></div>
+
+                    <hr class="headLine workMetrics" />
+
+                    <div class="clearfix"></div>
+
+                    <div class="dashContainer workMetricsCont noBottomPad col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                    <span class="metricsHead">Inventory Snapshot by Account Owner</span>
+
+                    <p>
+                    <div id="inventoryClinic"></div>
+                    </p>
+
+                    </div>
+
+                    <div class="dashContainer workMetricsCont noBottomPad col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                    <span class="metricsHead">Practice Inventory Snapshot by Account Status</span>
+
+                    <p>
+                    <div id="practiceClinic"></div>
+                    </p>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <br clear="all" />
+
+                    <div class="dashContainer workMetricsCont col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-bottom: 20px;">
+
+                      <span class="metricsHead">Activities</span><br />
+                      30 Day Trending.
+
+                    <div id="productivityClinic"></div>
+
+                    </div>
+
+                    <div class="dashContainer workMetricsCont col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-bottom: 20px;">
+
+                      <span class="metricsHead">Completed Requests</span><br />
+                      30 Day Trending.
+
+                      <!-- Key Button -->
+                      <a class="btn-green-o btn-gloss-green lockNav graphKey"><span class="fa fa-key"></span> &nbsp;Key</a>
+
+                      <!-- Key -->
+                      <div class="keyToGraph">
+
+                        <div class="pull-right"><a class="closeBanner closeKey"><span class="fa fa-times"></span></a></div>
+
+                        <ul>
+                          <li><i class="redDisc"></i>Coding</li>
+                          <li><i class="pinkDisc"></i>Orders</li>
+                          <li><i class="blueDisc"></i>Patient Engagement</li>
+                          <li><i class="yellowDisc"></i>Scheduling</li>
+                          <li><i class="greenDisc"></i>Documentation</li>
+                        </ul>
+
+                      </div>
+                      <!-- //Key -->
+
+                    <div id="userActivitiesClinic"></div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- //Content -->
+
+                <!-- //Worklist Left, Content Right -->
+
+                <div class="clearfix"></div>
+
+
+
+                <br clear="all" /><br clear="all" />
+
+
+
+                <!-- Notifications / Inbox -->
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 notificationHead">
+                <h3 class="dash">Notifications / Inbox <span class="badge">4</span></h3>
+                </div>
+
+                    <!-- Archive Head -->
+                    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 archiveHead">
+                    <h3 class="dash">Archived Notifications</h3>
+                    </div>
+
+                <!-- Actions -->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 pull-right WLMenuDash noPadRight relative">
+                <!-- Container Menu -->
+
+                    <!-- Subscribe -->
+                    <a class="subscribe subs" data-toggle="modal" data-target="#notificationSub"><span class="fa fa-envelope"></span>Subscriptions</a>
+
+                        <!-- You Aee Subscribe -->
+                        <a class="subscribe subd" data-toggle="modal" data-target="#notificationSub"><span class="fa fa-envelope"></span>Unsubscribe All</a>
+
+                    <!-- Archive -->
+                    <a class="archiveIcon"><span class="fa fa-archive"></span></a>
+
+                    <!-- Notificiations -->
+                    <a class="notificationIcon"><span class="fa fa-bell"></span></a>
+
+                    <!-- Close / Show Section -->
+                    <a class="menuFilters hideItems patientSrch" style="border: 0px;"><span class="fa fa-chevron-up"></span></a>
+
+                        <!-- Show -->
+                        <a class="menuFilters showItems patientSrch" style="border: 0px;"><span class="fa fa-chevron-down"></span></a>
+
+
+                <!-- //Container Menu -->
+                </div>
+                <!-- //Actions -->
+
+                <div class="clearfix"></div>
+
+                <hr class="headLine patientSrch" />
+
+                <div class="clearfix"></div>
+
+                <div class="dashContainer patientSrchCont">
+
+                    <!-- Notification Table -->
+                    <div class="POCLog notiLog">
+
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th>Notification</th>
+                                      <th width="95">Date</th>
+                                      <th width="140">Action</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="mess1" data-toggle="modal" data-target="#openMessage">
+                                      <th class="newNoti">
+                                      <span class="notiSubject">Delinquent Documentation Request</span><br />
+                                      <span class="notiBody">
+                                      2 High Risk documentation requests have been in queue for over 3 days.  Please review delinquent accounts and action as required
+                                      </span>
+                                      </th>
+                                      <td>08/14/2015</td>
+                                      <td class="notiIcons">
+                                        <a class="keep1" data-toggle="tooltip" data-placement="auto" title="Keep"><span class="fa fa-thumb-tack"></a>
+                                        <a class="archive1" data-toggle="tooltip" data-placement="auto" title="Archive"><span class="fa fa-archive"></a>
+                                        <a class="delete1" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                        <a class="env1" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                      </td>
+                                  </tr>
+
+                                  <tr class="mess2" data-toggle="modal" data-target="#openMessage">
+                                    <th class="newNoti">
+                                    <span class="notiSubject">Delinquent Coding Request</span><br />
+                                    <span class="notiBody">
+                                      1 High Risk documentation request has been in queue for over 3 days.  Please review delinquent accounts and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="keep2" data-toggle="tooltip" data-placement="auto" title="Keep"><span class="fa fa-thumb-tack"></a>
+                                      <a class="archive2" data-toggle="tooltip" data-placement="auto" title="Archive"><span class="fa fa-archive"></a>
+                                      <a class="delete2" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env2" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess3" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">High Volume Order Request Queue</span><br />
+                                    <span class="notiBody">
+                                      The order request queue is currently above maximum target value (15).  Please review order request queue
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="keep3" data-toggle="tooltip" data-placement="auto" title="Keep"><span class="fa fa-thumb-tack"></a>
+                                      <a class="archive3" data-toggle="tooltip" data-placement="auto" title="Archive"><span class="fa fa-archive"></a>
+                                      <a class="delete3" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env3" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess4" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="keep4" data-toggle="tooltip" data-placement="auto" title="Keep"><span class="fa fa-thumb-tack"></a>
+                                      <a class="archive4" data-toggle="tooltip" data-placement="auto" title="Archive"><span class="fa fa-archive"></a>
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+
+                              </tbody>
+                          </table>
+
+                      </div>
+                    <!-- //Notification Table -->
+
+                    <!-- Archive Table -->
+                    <div class="POCLog archiveLog">
+
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th>Notification</th>
+                                      <th width="95">Date</th>
+                                      <th width="95">Action</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="mess1" data-toggle="modal" data-target="#openMessage">
+                                      <th>
+                                      <span class="notiSubject">Delinquent Documentation Request</span><br />
+                                      <span class="notiBody">
+                                      2 High Risk documentation requests have been in queue for over 3 days.  Please review delinquent accounts and action as required
+                                      </span>
+                                      </th>
+                                      <td>08/14/2015</td>
+                                      <td class="notiIcons">
+                                        <a class="delete1" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                        <a class="env1" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                      </td>
+                                  </tr>
+
+                                  <tr class="mess2" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Coding Request</span><br />
+                                    <span class="notiBody">
+                                      1 High Risk documentation request has been in queue for over 3 days.  Please review delinquent accounts and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete2" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env2" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess3" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">High Volume Order Request Queue</span><br />
+                                    <span class="notiBody">
+                                      The order request queue is currently above maximum target value (15).  Please review order request queue
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete3" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env3" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess4" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess5" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess6" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess7" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess8" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess9" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess10" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess11" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="mess12" data-toggle="modal" data-target="#openMessage">
+                                    <th>
+                                    <span class="notiSubject">Delinquent Patient Engagement Requet</span><br />
+                                    <span class="notiBody">
+                                      2 Unworked patient engagement requests have been in queue for over 7 days.  Please review unworked accounta and action as required
+                                    </span>
+                                    </th>
+                                    <td>08/14/2015</td>
+                                    <td class="notiIcons">
+                                      <a class="delete4" data-toggle="tooltip" data-placement="auto" title="Delete"><span class="fa fa-trash"></a>
+                                      <a class="env4" data-toggle="tooltip" data-placement="auto" title="Subscribe"><span class="fa fa-envelope"></a>
+                                    </td>
+                                  </tr>
+
+                              </tbody>
+                          </table>
+
+                      </div>
+                    <!-- //Archive Table -->
+
+                </div>
+                <!-- //Notifications / Inbox -->
+
+                <br clear="all" />
+
+            </div>
+            <!-- //Content -->
+
+        </div>
+        <!-- //Dashboard -->
+
+    </div>
+    <!-- //Main Container -->
+
+</div>
+<!-- //Content Container -->
+
+
+<!-- Footer -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footerContainer pull-center">
+&copy; Copyright 2015 Accretive Health, Inc. <span class="grep"></span> <a href="../../../privacy.html">Privacy Statement</a> <span class="grep"></span> <a href="../../../terms.html">Terms of Use</a>
+</div>
+<!-- //Footer -->
+
+
+
+<!-- ####################################### Modals ######################################### -->
+
+<!-- Chart Settings Modal -->
+<div class="modal fade" id="chartSettings" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title pull-left" id="myModalLabel">Graph Settings</h4>
+
+        <a class="pull-right btn-green"><span class="fa fa-plus-circle"></span> &nbsp; Add Graph</a>
+
+      </div>
+
+      <div class="clearfix"></div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+
+          <br clear="all" />
+
+          <h5>Inventory Snapshot by Account Owner</h5>
+          <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+          <form class="form-horizontal">
+
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Chart Title</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Inventory Snapshot by Account Owner" />
+                </div>
+                <div class="col-sm-1 pull-right" style="padding-top: 7px;">
+                  <a class="btn-red"><span class="fa fa-close"></span></a>
+                </div>
+            </div>
+
+            </fieldset>
+
+          </form>
+
+
+          <div class="clearfix"></div>
+
+          <br clear="all" />
+
+          <h5>Practice Inventory Snapshot by Account Status</h5>
+          <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+          <form class="form-horizontal">
+
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Chart Title</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Practice Inventory Snapshot by Account Status" />
+                </div>
+                <div class="col-sm-1 pull-right" style="padding-top: 7px;">
+                  <a class="btn-red"><span class="fa fa-close"></span></a>
+                </div>
+            </div>
+
+            </fieldset>
+
+          </form>
+
+
+          <div class="clearfix"></div>
+
+          <br clear="all" />
+
+          <h5>Activities</h5>
+          <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+          <form class="form-horizontal">
+
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Chart Title</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Activities" />
+                </div>
+                <div class="col-sm-1 pull-right" style="padding-top: 7px;">
+                  <a class="btn-red"><span class="fa fa-close"></span></a>
+                </div>
+            </div>
+
+            </fieldset>
+
+          </form>
+
+
+          <div class="clearfix"></div>
+
+          <br clear="all" />
+
+          <h5>Completed Requests</h5>
+          <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+
+          <form class="form-horizontal">
+
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Chart Title</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Completed Requests" />
+                </div>
+                <div class="col-sm-1 pull-right" style="padding-top: 7px;">
+                  <a class="btn-red"><span class="fa fa-close"></span></a>
+                </div>
+            </div>
+
+            </fieldset>
+
+          </form>
+
+
+          <div class="clearfix"></div>
+
+          <p align="center" style="margin-top: 40px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+      </div>
+      <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Chart Settings Modal -->
+
+<!-- Email Subscriptions Modal -->
+<div class="modal fade" id="notificationSub" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Subscribe to Notifications</h4>
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+
+          <h5>Notifications</h5>
+          <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 1 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title One
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 2 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Two
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 3 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Three
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch off-btn pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 4 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Four
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 5 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Five
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 6 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Six
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 5 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Seven
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 6 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Eight
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch off-btn pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 1 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Nine
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 2 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Ten
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 3 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Eleven
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch off-btn pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 4 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Twelve
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 5 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Thirteen
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 6 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Fourteen
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="col-sm-6" style="border-right: 1px solid #dcdcdc;">
+
+            <!-- Subscription 5 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Fifteen
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn btn-activeToggle" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <!-- Subscription 6 -->
+            <div class="row noMargin noPad" style="padding: 7px 15px;">
+
+              <div class="pull-left">
+                Subscription Title Sixteen
+              </div>
+
+              <!-- Button Group Switch On -->
+              <div class="switch off-btn pull-right">
+                <div class="btn-group" role="group" aria-label="">
+                <button class="btn" type="button">On</button>
+                <button class="btn btn-activeToggle" type="button">Off</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <br clear="all" />
+
+          <p align="center" style="margin-top: 40px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+      </div>
+      <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Email Subscriptions Modal -->
+
+<!-- Message Modal -->
+<div class="modal fade" id="openMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Delinquent Documentation Request</h4>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+
+          2 High Risk documentation requests have been in queue for over 3 days.  Please review delinquent accounts and action as required.
+
+
+          <br clear="all" />
+
+          <div class="row noMargin" style="margin-top: 40px;">
+
+            <div class="pull-left notiIcons">
+              <a class="keep3" data-dismiss="modal" data-toggle="tooltip" data-placement="top" title="Keep"><span class="fa fa-thumb-tack"></a>
+              <a class="archive3" data-dismiss="modal" data-toggle="tooltip" data-placement="top" title="Archive"><span class="fa fa-archive"></a>
+              <a class="delete3" data-dismiss="modal" data-toggle="tooltip" data-placement="top" title="Delete"><span class="fa fa-trash"></a>
+              <a class="env3" data-dismiss="modal" data-toggle="tooltip" data-placement="top" title="Subscribe"><span class="fa fa-envelope"></a>
+            </div>
+
+            <div class="pull-right">
+                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+
+          </div>
+
+      </div>
+      <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Message Modal -->
+
+
+<!-- ####################################### Scripts ######################################### -->
+
+<!-- Dynamic Date Scripts -->
+<script type="text/javascript" src="../../../js/moment.js"></script>
+<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
+
+<!-- Sticky Table Scripts -->f
+<script src="../../../js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="../../../js/jquery.stickyheader-Mess.js"></script>
+
+
+<script src="../../../js/tree.js"></script>
+<script src="../../../js/modals.js"></script>
+<script src="../../../js/dashboard.js"></script>
+
+<!-- Tooltip Menu -->
+<script src="../../../js/modernizr.custom.js"></script>
+<script src="../../../js/cbpTooltipMenu.min.js"></script>
+<script>
+    var menu = new cbpTooltipMenu( document.getElementById( 'cbp-tm-menu' ) );
+</script>
+
+<!-- Chart -->
+<script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="http://www.amcharts.com/lib/3/pie.js"></script>
+<script src="http://www.amcharts.com/lib/3/serial.js"></script>
+<script src="http://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<script>
+// Inventory controls
+var chart = AmCharts.makeChart("inventoryClinic", {
+  "type": "serial",
+	"theme": "light",
+  "autoMarginOffset": 0,
+  "autoMargins": false,
+  "marginBottom": 35,
+  "marginTop": 15,
+  "marginLeft": 32,
+  "marginRight": 0,
+  "legend": {
+        "horizontalGap": 10,
+        "maxColumns": 2,
+        "position": "bottom",
+        "autoMargins":false,
+        "marginBottom": 5,
+        "marginTop": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "useGraphSettings": false,
+	    "markerSize": 14,
+        "markerType": "circle",
+        "align": "left",
+        "valueWidth": 0
+    },
+    "dataProvider": [{
+        "week": "Pat. Eng.",
+        "clinic": 5,
+        "shared": 68,
+        //"total": 73
+    }, {
+        "week": "Scheduling",
+        "clinic": 18,
+        "shared": 78,
+        //"total": 96
+    }, {
+        "week": "Doc. & Coding",
+        "clinic": 20,
+        "shared": 64,
+        //"total": 84
+    }, {
+        "week": "Orders Reqs.",
+        "clinic": 16,
+        "shared": 0,
+        //"total": 16
+    }, {
+        "week": "Care Mgmt.",
+        "clinic": 10,
+        "shared": 46,
+        //"total": 56
+    }],
+    "valueAxes": [{
+        "stackType": "regular",
+        "axisAlpha": 0.3,
+        "gridAlpha": 0
+    }],
+    "graphs": [{
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "Clinic",
+        "type": "column",
+		    "color": "#000000",
+        "valueField": "clinic"
+    }, {
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "Shared Service",
+        "type": "column",
+	    "color": "#000000",
+        "valueField": "shared"
+    }], //{
+        //Total
+        //"balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        //"fillAlphas": 0,
+        //"labelText": "[[value]]",
+        //"lineAlpha": 1,
+        //"lineThickness": 3,
+        //"bullet": "round",
+        //"title": "Total",
+        //"type": "line",
+		    //"color": "#e6c300",
+        //"fillColors": "#e6c300",
+        //"lineColor": "#e6c300",
+        //"valueField": "total"
+    //}],
+    "categoryField": "week",
+    "categoryAxis": {
+        "gridPosition": "start",
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "position": "left",
+        "labelRotation": 15
+    },
+    "export": {
+    	"enabled": true
+     }
+});
+
+
+// Practice Inventory Snapshot
+var chart = AmCharts.makeChart("practiceClinic", {
+  "type": "serial",
+    "theme": "light",
+  "autoMarginOffset": 0,
+  "autoMargins": false,
+  "marginBottom": 35,
+  "marginTop": 15,
+  "marginLeft": 25,
+  "marginRight": 0,
+  "legend": {
+        "horizontalGap": 10,
+        "maxColumns": 3,
+        "position": "bottom",
+        "autoMargins":false,
+        "marginBottom": 0,
+        "marginTop": 5,
+        "marginLeft": 20,
+        "marginRight": 0,
+        "useGraphSettings": false,
+		"markerSize": 14,
+        "markerType": "circle",
+        "align": "left",
+        "valueWidth": 0
+    },
+  "guides": [{
+      "dashLength": 6,
+      "inside": true,
+      "label": "Trend",
+      "lineAlpha": 1,
+      "value": 70
+  }],
+    "dataProvider": [{
+        "week": "Pat. Eng.",
+        "high": 2,
+        "inProcess": 1,
+        "unworked": 2,
+        "total": 5
+    }, {
+        "week": "Scheduling",
+        "high": 4,
+        "inProcess": 4,
+        "unworked": 10,
+        "total": 18
+    }, {
+        "week": "Doc. & Coding",
+        "high": 3,
+        "inProcess": 5,
+        "unworked": 12,
+        "total": 20
+    }, {
+        "week": "Orders Reqs.",
+        "high": 1,
+        "inProcess": 5,
+        "unworked": 10,
+        "total": 16
+    }, {
+        "week": "Care Mgmt.",
+        "high": 2,
+        "inProcess": 6,
+        "unworked": 2,
+        "total": 10
+    }],
+    "valueAxes": [{
+        "stackType": "regular",
+        "axisAlpha": 0.3,
+        "gridAlpha": 0
+    }],
+    "graphs": [{
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "High-Risk",
+        "type": "column",
+		"color": "#000000",
+        "valueField": "high"
+    }, {
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "In-Process",
+        "type": "column",
+		"color": "#000000",
+        "valueField": "inProcess"
+    }, {
+        "balloonText": "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b></span>",
+        "fillAlphas": 0.8,
+        "labelText": "[[value]]",
+        "lineAlpha": 0.3,
+        "title": "Unworked",
+        "type": "column",
+		    "color": "#000000",
+        "valueField": "unworked"
+    }],
+
+    "categoryField": "week",
+    "categoryAxis": {
+        "gridPosition": "start",
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "position": "left",
+        "labelRotation": 15
+    },
+    "export": {
+    	"enabled": true
+     }
+
+});
+
+// Activities
+var chart2 = AmCharts.makeChart("productivityClinic", {
+    "type": "serial",
+    "theme": "light",
+    "marginRight": 5,
+    "autoMarginOffset": 0,
+    "dataDateFormat": "YYYY-MM-DD",
+    "valueAxes": [{
+        "id": "v1",
+        "axisAlpha": 0,
+        "position": "left",
+        "logarithmic": true,
+        "dashLength": 1,
+        "position": "left"
+    }],
+    "balloon": {
+        "borderThickness": 1,
+        "shadowAlpha": 0
+    },
+    "graphs": [{
+        "id": "g1",
+        "bullet": "round",
+        "bulletBorderAlpha": 1,
+        "bulletColor": "#FFFFFF",
+        "bulletSize": 5,
+        "hideBulletsCount": 50,
+        "lineThickness": 2,
+        "title": "red line",
+        "useLineColorForBulletBorder": true,
+        "valueField": "value",
+        "balloonText": "<div style='margin:5px; font-size:19px;'><span style='font-size:13px;'>[[category]]</span><br>[[value]]</div>"
+    }],
+    "chartScrollbar": {
+        "graph": "g1",
+        "oppositeAxis":false,
+        "offset":20,
+        "scrollbarHeight": 40,
+        "backgroundAlpha": 0,
+        "selectedBackgroundAlpha": 0.1,
+        "selectedBackgroundColor": "#888888",
+        "graphFillAlpha": 0,
+        "graphLineAlpha": 0.5,
+        "selectedGraphFillAlpha": 0.2,
+        "selectedGraphLineAlpha": 1,
+        "autoGridCount":true,
+        "color":"#AAAAAA"
+    },
+    "chartCursor": {
+        "pan": true,
+        "valueLineEnabled": true,
+        "valueLineBalloonEnabled": true,
+        "cursorAlpha":0,
+        "valueLineAlpha":0.2
+    },
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true,
+        "dashLength": 1,
+        "minorGridEnabled": true
+    },
+    "export": {
+        "enabled": true
+    },
+    "dataProvider": [{
+        "date": "2012-07-27",
+        "value": 35
+    }, {
+        "date": "2012-07-28",
+        "value": 32
+    }, {
+        "date": "2012-07-29",
+        "value": 33
+    }, {
+        "date": "2012-07-30",
+        "value": 39
+    }, {
+        "date": "2012-07-31",
+        "value": 35
+    }, {
+        "date": "2012-08-01",
+        "value": 28
+    }, {
+        "date": "2012-08-02",
+        "value": 34
+    }, {
+        "date": "2012-08-03",
+        "value": 31
+    }, {
+        "date": "2012-08-04",
+        "value": 29
+    }, {
+        "date": "2012-08-05",
+        "value": 25
+    }, {
+        "date": "2012-08-06",
+        "value": 26
+    }, {
+        "date": "2012-08-07",
+        "value": 32
+    }, {
+        "date": "2012-08-08",
+        "value": 33
+    }, {
+        "date": "2012-08-09",
+        "value": 28
+    }, {
+        "date": "2012-08-10",
+        "value": 28
+    }, {
+        "date": "2012-08-11",
+        "value": 29
+    }, {
+        "date": "2012-08-12",
+        "value": 34
+    }, {
+        "date": "2012-08-13",
+        "value": 25
+    }, {
+        "date": "2012-08-14",
+        "value": 31
+    }, {
+        "date": "2012-08-15",
+        "value": 33
+    }, {
+        "date": "2012-08-16",
+        "value": 31
+    }, {
+        "date": "2012-08-17",
+        "value": 33
+    }, {
+        "date": "2012-08-18",
+        "value": 26
+    }, {
+        "date": "2012-08-19",
+        "value": 28
+    }, {
+        "date": "2012-08-20",
+        "value": 29
+    }, {
+        "date": "2012-08-21",
+        "value": 33
+    }, {
+        "date": "2012-08-22",
+        "value": 28
+    }, {
+        "date": "2012-08-23",
+        "value": 35
+    }, {
+        "date": "2012-08-24",
+        "value": 32
+    }, {
+        "date": "2012-08-25",
+        "value": 34
+    }, {
+        "date": "2012-08-26",
+        "value": 28
+    }, {
+        "date": "2012-08-27",
+        "value": 27
+    }, {
+        "date": "2012-08-28",
+        "value": 32
+    }, {
+        "date": "2012-08-29",
+        "value": 33
+    }, {
+        "date": "2012-08-30",
+        "value": 31
+    }, {
+        "date": "2012-08-31",
+        "value": 30
+    }, {
+        "date": "2012-09-01",
+        "value": 27
+    }, {
+        "date": "2012-09-02",
+        "value": 29
+    }, {
+        "date": "2012-09-03",
+        "value": 32
+    }, {
+        "date": "2012-09-04",
+        "value": 34
+    }, {
+        "date": "2012-09-05",
+        "value": 25
+    }, {
+        "date": "2012-09-06",
+        "value": 26
+    }, {
+        "date": "2012-09-07",
+        "value": 31
+    }, {
+        "date": "2012-09-08",
+        "value": 33
+    }, {
+        "date": "2012-09-09",
+        "value": 30
+    }, {
+        "date": "2012-09-10",
+        "value": 29
+    }, {
+        "date": "2012-09-11",
+        "value": 34
+    }, {
+        "date": "2012-09-12",
+        "value": 29
+    }, {
+        "date": "2012-09-13",
+        "value": 34
+    }, {
+        "date": "2012-09-14",
+        "value": 27
+    }, {
+        "date": "2012-09-15",
+        "value": 32
+    }, {
+        "date": "2012-09-16",
+        "value": 29
+    }, {
+        "date": "2012-09-17",
+        "value": 26
+    }, {
+        "date": "2012-09-18",
+        "value": 27
+    }, {
+        "date": "2012-09-19",
+        "value": 25
+    }, {
+        "date": "2012-09-20",
+        "value": 34
+    }, {
+        "date": "2012-09-21",
+        "value": 29
+    }, {
+        "date": "2012-09-22",
+        "value": 27
+    }, {
+        "date": "2012-09-23",
+        "value": 26
+    }, {
+        "date": "2012-09-24",
+        "value": 33
+    }, {
+        "date": "2012-09-25",
+        "value": 34
+    }, {
+        "date": "2012-09-26",
+        "value": 31
+    }, {
+        "date": "2012-09-27",
+        "value": 32
+    }, {
+        "date": "2012-09-28",
+        "value": 34
+    }, {
+        "date": "2012-09-29",
+        "value": 28
+    }, {
+        "date": "2012-09-30",
+        "value": 37
+    }, {
+        "date": "2012-10-01",
+        "value": 34
+    }, {
+        "date": "2012-10-02",
+        "value": 35
+    }, {
+        "date": "2012-10-03",
+        "value": 36
+    }, {
+        "date": "2012-10-04",
+        "value": 28
+    }, {
+        "date": "2012-10-05",
+        "value": 25
+    }, {
+        "date": "2012-10-06",
+        "value": 39
+    }, {
+        "date": "2012-10-07",
+        "value": 34
+    }, {
+        "date": "2012-10-08",
+        "value": 31
+    }, {
+        "date": "2012-10-09",
+        "value": 26
+    }, {
+        "date": "2012-10-10",
+        "value": 26
+    }, {
+        "date": "2012-10-11",
+        "value": 33
+    }, {
+        "date": "2012-10-12",
+        "value": 34
+    }, {
+        "date": "2012-10-13",
+        "value": 31
+    }, {
+        "date": "2012-10-14",
+        "value": 29
+    }, {
+        "date": "2012-10-15",
+        "value": 28
+    }, {
+        "date": "2012-10-16",
+        "value": 27
+    }, {
+        "date": "2012-10-17",
+        "value": 34
+    }, {
+        "date": "2012-10-18",
+        "value": 29
+    }, {
+        "date": "2012-10-19",
+        "value": 29
+    }, {
+        "date": "2012-10-20",
+        "value": 27
+    }, {
+        "date": "2012-10-21",
+        "value": 34
+    }, {
+        "date": "2012-10-22",
+        "value": 31
+    }, {
+        "date": "2012-10-23",
+        "value": 34
+    }, {
+        "date": "2012-10-24",
+        "value":33
+    }, {
+        "date": "2012-10-25",
+        "value": 31
+    }, {
+        "date": "2012-10-26",
+        "value": 27
+    }, {
+        "date": "2012-10-27",
+        "value": 29
+    }, {
+        "date": "2012-10-28",
+        "value": 25
+    }, {
+        "date": "2012-10-29",
+        "value": 29
+    }, {
+        "date": "2012-10-30",
+        "value": 31
+    }, {
+        "date": "2012-10-31",
+        "value": 32
+    }, {
+        "date": "2012-11-01",
+        "value": 33
+    }, {
+        "date": "2012-11-02",
+        "value": 27
+    }, {
+        "date": "2012-11-03",
+        "value": 28
+    }, {
+        "date": "2012-11-04",
+        "value": 25
+    }, {
+        "date": "2012-11-05",
+        "value": 31
+    }, {
+        "date": "2012-11-06",
+        "value": 35
+    }, {
+        "date": "2012-11-07",
+        "value": 34
+    }, {
+        "date": "2012-11-08",
+        "value": 31
+    }, {
+        "date": "2012-11-09",
+        "value": 26
+    }, {
+        "date": "2012-11-10",
+        "value": 27
+    }, {
+        "date": "2012-11-11",
+        "value": 31
+    }, {
+        "date": "2012-11-12",
+        "value": 33
+    }, {
+        "date": "2012-11-13",
+        "value": 30
+    }, {
+        "date": "2012-11-14",
+        "value": 31
+    }, {
+        "date": "2012-11-15",
+        "value": 37
+    }, {
+        "date": "2012-11-16",
+        "value": 32
+    }, {
+        "date": "2012-11-17",
+        "value": 26
+    }, {
+        "date": "2012-11-18",
+        "value": 30
+    }, {
+        "date": "2012-11-19",
+        "value": 27
+    }, {
+        "date": "2012-11-20",
+        "value": 33
+    }, {
+        "date": "2012-11-21",
+        "value": 25
+    }]
+});
+chart2.addListener("rendered", zoomChart);
+
+zoomChart();
+
+function zoomChart() {
+    chart2.zoomToIndexes(chart2.dataProvider.length - 40, chart2.dataProvider.length - 1);
+}
+
+
+// Completed Requests
+var chart = AmCharts.makeChart("userActivitiesClinic", {
+  "type": "pie",
+  "startDuration": 0,
+   "theme": "light",
+   "autoMargins": false,
+   "marginBottom": 0,
+   "marginTop": 0,
+   "marginLeft": 0,
+   "marginRight": 0,
+  "addClassNames": true,
+  "innerRadius": "30%",
+  "radius": "38%",
+  "defs": {
+    "filter": [{
+      "id": "shadow",
+      "width": "200%",
+      "height": "200%",
+      "feOffset": {
+        "result": "offOut",
+        "in": "SourceAlpha",
+        "dx": 0,
+        "dy": 0
+      },
+      "feGaussianBlur": {
+        "result": "blurOut",
+        "in": "offOut",
+        "stdDeviation": 5
+      },
+      "feBlend": {
+        "in": "SourceGraphic",
+        "in2": "blurOut",
+        "mode": "normal"
+      }
+    }]
+  },
+  "dataProvider": [ {
+    "activity": "Patient Engagement",
+    "visits": 50
+  }, {
+    "activity": "Scheduling",
+    "visits": 40
+  }, {
+    "activity": "Documentation",
+    "visits": 100
+  }, {
+    "activity": "Codinig",
+    "visits": 125
+  }, {
+    "activity": "Orders",
+    "visits": 72
+  } ],
+  "valueField": "visits",
+  "titleField": "activity",
+  "labelsEnabled": false,
+  "export": {
+    "enabled": true
+  }
+});
+
+chart.addListener("init", handleInit);
+
+chart.addListener("rollOverSlice", function(e) {
+  handleRollOver(e);
+});
+
+function handleInit(){
+  chart.legend.addListener("rollOverItem", handleRollOver);
+}
+
+function handleRollOver(e){
+  var wedge = e.dataItem.wedge.node;
+  wedge.parentNode.appendChild(wedge);
+}
+</script>
+
+<span id="bottom"></span><a name="bottom"></a>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+@media print {
+
+    @page {
+      margin: 0cm !important;
+    }
+
+    @page :left {
+      margin: 0cm !important;
+    }
+
+    @page :right {
+       margin: 0cm !important;
+    }
+
+    /* Hide Link URLs in Chrome */
+    @media print {
+      a[href]:after {
+        content: none !important;
+      }
+    }
+
+    @media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    body{
+        padding: 0px !important;
+        margin: -23px 0px 0px -5px !important;
+        color: #000;
+        background: #FFF;
+        width: 98%;
+    }
+
+    /* Hide Scrollbars from Print in IE & Chrome */
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: none;
+    -webkit-overflow-style: none;
+    }
+
+    /* Hide Scrollbars from Print in Chrome */
+    body::-webkit-scrollbar, .body_bg::-webkit-scrollbar, html::-webkit-scrollbar { overflow: none; }
+
+    /* Once-and-for-all No Scrollbars in Print*/
+    html,body { overflow: none; }
+
+    .row {
+        margin: 0px -15px 0 -15px;
+        padding: 0px;
+    }
+
+      /* Do not widow items */
+      h1, h2, h3, h4, .POCLog, PSOSect, thead {
+       page-break-after: avoid;
+      }
+
+    /* Show items with .Print class */
+    .Print {
+        display: inline;
+    }
+
+    /* Let's Hide Unneeded Stuff */
+    .topBar, .nav, .backNav, .wizNav, .quikLaunch, .clearfix, .actions, .patientCard2, .sectionNotification, .backwork,
+    .alertNotification:after, .contactHistory, .expander, .showAll, .amChartSmall, .userBar, .backToTop, .footerContainer, .treePane, .WLMenu, .WLSeparator,
+    .mileNav, .mainMilestones, .POCWiz, .codingRecoveryServicesMenu, .topSection, ul.codingRecoveryServicesMenu {
+        display: none !important;
+        /* Hey, this IS important after all */
+    }
+        
+    .viewingTitle, .worklistTitle, .practiceWorklist, .menuResults, .dashContentRight {
+        display: block !important;
+    }
+        
+    .viewingTitle {
+        position: relative;
+        top: 14px;
+    }
+    
+    .worklistTitle {
+        font-size: 15px !important;
+    }
+        
+    .dashContentRight, .practiceWorklist, .componentAll {
+	   position: relative;
+        top: 50px;
+        height: 500px !important;
+    }
+
+    /* Show Logo */
+    .logoPrint {position: absolute; right: 0px; top: 0px; float: right;}
+    .logoPrint img {width:120px;}
+
+    br {
+        line-height: 0.1;
+    }
+
+    .prntPatientName {
+        font-size: 1.2em;
+    }
+
+    .prntMRN {
+        font-size: 10px;
+        padding-left: 10px;
+        position: relative;
+        top: 0px;
+        color: #666 !important;
+    }
+
+    /* Patient Demographics - initially hidden */
+    .patDemo {
+        margin-bottom: 0px;
+        padding-top: 15px;
+        font-size: 8px;
+    }
+
+    .patDemoLabels {
+        text-align: right;
+        padding-right: 5px;
+        font-size: 8px;
+    }
+
+    /* Remove Padding of Containers */
+    .mainContainer, .patientEngagementLeft, .container-fluid {
+        margin: -20px 10px 0 10px !important;
+        padding: 0px !important;
+    }
+
+    .subContainer, .POCCont {
+        padding: 0px 8px;
+        margin: 20px 0px  !important;
+        box-shadow: 0 0 0 0;
+        border: 0px;
+    }
+
+    /* Headers */
+    h4 {
+        font-size: 0.85em !important;
+        margin: 10px 0 0 0;
+        font-weight: bold;
+    }
+
+    h6 {
+        top: 0px;
+        font-size: 0.6em !important;
+        margin-top: 0px;
+    }
+
+    .hcc-date {
+        position: absolute;
+        top: -4px;
+        right: 5%;
+        font-size: 7px;
+    }
+
+    .PSOSect {
+        margin-top: 3px;
+    }
+
+    .physician {
+        width: 100%;
+        border: 0px;
+    }
+
+    .snapBox  {
+      height: 85px;
+    }
+
+    .snapTitle {
+      font-size: 65%;
+      left: 7px;
+      color: #999;
+    }
+
+    .snapMetric {
+      font-size: 30px;
+    }
+
+    .snapMetric:before {
+      font-size: 20px;
+      position: relative;
+      top: -3px;
+    }
+
+    .hccTag:before {
+        font-size: 6px !important;
+        padding-right: 4px;
+    }
+
+    .warnList:before, .goodList:before, .completeList:before {
+        padding-right: 4px;
+    }
+
+    .goodList:before, .completeList:before, .hccTag:before {
+        /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=30);
+
+    /* Netscape */
+    -moz-opacity: 0.3;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.3;
+
+    /* Good browsers */
+    opacity: 0.3;
+    }
+
+    .alertNotification:after {
+        top: 35%;
+        right: 8px;
+    }
+
+    .POCCont {
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    /* Tables */
+    .POCLog {
+        max-height: 10000px !important;
+        border: 1px solid #E4E4E4;
+        border-bottom: 0px solid !important;
+        border-top: 0px solid !important;
+        padding: 0px;
+        margin-bottom: 10px;
+        font-size: 0.5em;
+        overflow: inherit;
+        font-family: "OpenSans", "Lato", Helvetica, Tahoma, Verdana, Arial sans-serif;
+    }
+
+    thead tr th {
+        padding: 0.3em 0.6em !important;
+        font-size: 0.8em !important;
+        background: #666 !important;
+        color: #FFF !important;
+        font-family: Helvetica, Tahoma, Verdana, Arial sans-serif;
+    }
+    thead tr th, thead tr td {
+      border: 0px;
+    }
+
+    td, th {
+        border-right:  1px solid #E4E4E4;
+    }
+
+    tbody tr, tbody tr:nth-child(2n-1), tbody tr td, tbody tr th {
+        background-color: #FFF !important;
+    }
+
+    tbody tr th, tbody tr td,
+    tbody tr:nth-child(2n-1), tbody {
+        font-size: 7px !important;
+        padding: 2px 10px !important;
+        height: 32px !important;
+    }
+
+    tbody tr td, tbody tr th {
+        border-bottom: 1px solid #E4E4E4;
+    }
+
+    .HCCHistory tbody tr td:last-child {
+      font-size: 6px !important;
+      letter-spacing: 0.045em;
+      line-height: 0.85;
+    }
+
+    .HCCHistory tbody tr th:first-child {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+    }
+
+    .print50 {
+        width: 50%;
+        float: left;
+    }
+
+    .print50 .leftp50 {
+        padding-right: 10px !important;
+    }
+
+    .print50 .rightp50 {
+        padding-left: 10px !important;
+    }
+
+
+}

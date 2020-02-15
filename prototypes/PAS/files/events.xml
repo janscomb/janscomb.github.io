@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<eventlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<event url="http://shop.racmonitor.com/SearchResults.asp?Cat=1817" date="2015-06-04">
+		<event-title>RAC Monitor Webinar Presentation </event-title>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1537" date="2015-07-02">
+		<event-title>ACMA Northern California Conference</event-title>
+		<event-location>Napa, CA</event-location>
+		<event-venue>The Meritage Resort and Spa</event-venue>
+		<detail>12th Annual Case Management Conference</detail>
+	</event>
+	<event url="http://www.racsummit.com/" date="2015-07-22">
+		<event-title>3rd Physician Advisor and UR Team Boot Camp</event-title>
+		<event-location>San Antonio, TX </event-location>
+		<event-venue>Grand Hyatt San Antonio</event-venue>
+		<detail>The National RAC Summit</detail>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1558" date="2015-07-25">
+		<event-title>ACMA Washington State Chapter Conference </event-title>
+		<event-location>Seattle, WA</event-location>
+		<event-venue>Swedish Medical Center - Cherry Hill</event-venue>
+		<detail>1st Annual Case Management Conference</detail>
+	</event>
+	<event url="#" date="2015-07-30">
+		<event-title>ACMA Florida Chapter Conference </event-title>
+		<event-location>Championsgate, FL</event-location>
+		<event-venue>Omni Orlando Resort at ChampionsGate</event-venue>
+	</event>
+	<event url="http://shop.racmonitor.com/SearchResults.asp?Cat=1817" date="2015-08-06">
+		<event-title>RAC Monitor Webinar Presentation </event-title>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1539" date="2015-08-08">
+		<event-title>ACMA Georgia Chapter Conference</event-title>
+		<event-location>Atlanta, GA</event-location>
+		<event-venue>Omni Hotel at the CNN Center</event-venue>
+		<detail>10th Annual Case Management Conference</detail>
+	</event>
+	<event url="#" date="2015-08-21">
+		<event-title>ACMA KY-TN Chapter Conference</event-title>
+		<event-location>Nashville, TN</event-location>
+		<event-venue>Nashville Marriott at Vanderbilt University</event-venue>
+	</event>
+	<event url="#" date="2015-09-12">
+		<event-title>ACMA MO-IL Chapter Conferernce</event-title>
+		<event-location>St. Louis, MO</event-location>
+		<event-venue>Hilton St. Louis at the Ballpark</event-venue>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=163" date="2015-09-18">
+		<event-title>ACMA North Carolina Chapter Conference</event-title>
+		<event-location>Concord, NC</event-location>
+		<event-venue>Embassy Suites Charlotte-Concord</event-venue>
+		<detail>13th Annual Case Management Conference</detail>
+	</event>
+	<event url="#" date="2015-09-19">
+		<event-title>ACMA Maryland Chapter Conference </event-title>
+		<event-location>Baltimore, MD</event-location>
+		<event-venue>Hyatt Regency Baltimore</event-venue>
+	</event>
+	<event url="#" date="2015-09-28">
+		<event-title>AHIMA Conference </event-title>
+		<event-location>San Diego, CA</event-location>
+		<event-venue>San Diego Convention Center </event-venue>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1516" date="2015-09-30">
+		<event-title>ACMA MO-KS Chapter Conference </event-title>
+		<event-location>Overland Park, KS</event-location>
+		<event-venue>Overland Park Convention Center</event-venue>
+		<detail>10th Annual Case Management Conference</detail>
+	</event>
+	<event url="#" date="2015-10-03">
+		<event-title>ACMA Western PA Chapter Conference </event-title>
+		<event-location>Pittsburgh, PA</event-location>
+		<event-venue>Sheraton Pittsburgh Station Square</event-venue>
+	</event>
+	<event url="http://shop.racmonitor.com/SearchResults.asp?Cat=1817" date="2015-10-08">
+		<event-title>RAC Monitor Webinar Presentation </event-title>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1522" date="2015-10-10">
+		<event-title>ACMA Virginia Chapter Conference </event-title>
+		<event-location>Richmond, VA</event-location>
+		<event-venue>Greater Richmond Convention Center</event-venue>
+		<detail>9th Annual Case Management Conference</detail>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1523" date="2015-10-12">
+		<event-title>ACMA Great Lakes Chapter Conference </event-title>
+		<event-location>Novi, MI</event-location>
+		<event-venue>Suburban Collection Showplace</event-venue>
+		<detail>9th Annual Case Management Conference</detail>
+	</event>
+	<event url="#" date="2015-10-13">
+		<event-title>ACMA Wisconsin Chapter Conference </event-title>
+		<event-location>Madison, WI</event-location>
+		<event-venue>Sheraton Madison Hotel</event-venue>
+	</event>
+	<event url="#" date="2015-10-15">
+		<event-title>ACMA Ohio Fall Conference </event-title>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1519" date="2015-10-20">
+		<event-title>ACMA Illinois Chapter Conference</event-title>
+		<event-location>Rosemont, IL</event-location>
+		<event-venue>Donald E. Stephens Convention Center</event-venue>
+		<detail>15th Annual Case Management Conference</detail>
+	</event>
+		<event url="#" date="2015-10-22">
+		<event-title>PA Symposium</event-title>
+		<event-location>Chicago, IL</event-location>
+		<event-venue>W - Hotel Lakeshore</event-venue>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1525" date="2015-10-24">
+		<event-title>ACMA Connecticut Chapter Conference</event-title>
+		<event-location>Uncasville, CT</event-location>
+		<event-venue>Mohegan Sun Casino Resort</event-venue>
+		<detail>10th Annual Case Management Conference</detail>
+	</event>
+	<event url="http://www.acmaweb.org/chapter_annual_event.aspx?eid=1520" date="2015-10-29">
+		<event-title>ACMA South Carolina Chapter </event-title>
+		<event-location>Columbia, SC</event-location>
+		<event-venue>Marriott Columbia</event-venue>
+		<detail>13th Annual Case Management Conference</detail>
+	</event>
+	<event url="#" date="2015-10-31">
+		<event-title>ACMA Greater Houston Chapter Conference</event-title>
+		<event-location>Houston, TX</event-location>
+		<event-venue>Hyatt Regency Houston</event-venue>
+	</event>
+	<event url="#" date="2015-11-05">
+		<event-title>HFMA GA - Fall Institute </event-title>
+	</event>
+	<event url="#" date="2015-11-15">
+		<event-title>ACMA 2015 Leadership Conference</event-title>
+		<event-location>Garden Grove, CA</event-location>
+	</event>
+	<event url="http://shop.racmonitor.com/SearchResults.asp?Cat=1817" date="2015-12-03">
+		<event-title>RAC Monitor Webinar Presentation </event-title>
+	</event>
+
+	<!-- DO NOT MODIFY THE CONTENT BELOW -->	
+	<event url="#" date="9999-1-1" class="noevents">
+	<event-title>Sorry, no additional events are currently scheduled.</event-title>
+	</event>
+</eventlist>

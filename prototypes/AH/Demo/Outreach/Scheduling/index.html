@@ -1,0 +1,2771 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:x2="http://www.w3.org/2002/06/xhtml2">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head><title>Scheduling</title>
+
+<!-- Bootstrap Generic CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../css/bootstrap.css">
+<!-- Bootstrap Timepicker and Datepicker -->
+<link rel="stylesheet" href="../../../css/bootstrap-timepicker.min.css" />
+<link rel="stylesheet" href="../../../css/bootstrap-datepicker.min.css" />
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="../../../css/main.css">
+
+<!-- Ribbon Navigation -->
+<link rel="stylesheet" href="../../../css/ribbonNavigation.css">
+
+<!-- Bootstrap Generic JS -->
+<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="top">
+
+  <!-- Back to Top -->
+  <a href="#top" class="backToTop"><span class="fa fa-chevron-up"></span></a>
+
+<!-- Top Bar -->
+<!-- User Bar -->
+<div class="userBar">
+<span class="currently">Currently logged in as:</span> <strong>Nathan Anderson</strong> <span class="topGrep"></span> <a href="../../../demo.html"><i class="fa fa-sign-out"></i></a> <span class="topGrep"></span> <i class="fa fa-thumb-tack local"></i> &nbsp;<select><option>Select</option><option>Flex</option></select>
+</div>
+
+<!-- Navi -->
+<div class="container-fluid topBar">
+
+        <!-- Logo -->
+        <div class="col-xs-4 col-s m-4 col-md-4 col-lg-4 logo">
+            <a href="../Dashboard/index.html"><img src="../../../images/logo-Accretive.png" height="24" /></a>
+            <span class="roleType">Care Facilitation</span>
+        </div>
+
+        <!-- Nav -->
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 nav">
+            <ul>
+                <li><a href="" class="navSearch"><span class="fa fa-search"></span></a></li>
+                <li><a href="../WorklistComplete/index.html">Worklist</a></li>
+                <li><a href="../Dashboard/index.html">Dashboard</a></li>
+            </ul>
+        </div>
+
+</div>
+<!-- //Top Bar -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+
+    <!-- HCC Worklist Bar -->
+    <div class="row HCCWorklistBar">
+
+          <!-- Title -->
+          <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6">
+            <a href="../Worklist/index.html" class="backNav white"><span class="fa fa-chevron-left"></span>&nbsp; Back to Worklist</a>
+          </div>
+
+            <!-- Worklist Navigation -->
+            <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6 worklistNav">
+
+                <a href=""><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>
+                <span class="grep"></span>
+                <a href="">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            </div>
+
+    </div>
+    <!-- //HCC Worklist Bar -->
+
+    <!-- Patient Card -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 patientCard2">
+
+        <div class="patientName"><a href="../PointOfCare/index.html">Parker, Grace</a></div>
+
+        <div class="patientDeets">
+            <label>MRN: 2691570</label>
+            <label>09/02/1939 &nbsp; (76)</label>
+            <label>Female</label>
+        </div>
+
+        <!-- Quick Launch Buttons -->
+        <div class="noPad quikLaunch">
+
+            <ul>
+            <li data-toggle="tooltip" data-placement="bottom" title="Patient Information"><a data-toggle="modal" data-target="#patientInfo"><span class="glyphicon glyphicon-user"></span></a></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="Providers"><a data-toggle="modal" data-target="#providerInfo" class="smallIcon"><span class="fa fa-stethoscope"></span></a></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="Patient Insurance / Payor Information"><a data-toggle="modal" data-target="#insuranceInfo"><span class="fa fa-credit-card"></span></a></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="Patient History"><a data-toggle="modal" data-target="#callHistoryInfo"><span class="fa fa-history"></span></a></li>
+            <!-- <li><a data-toggle="tooltip" data-placement="bottom" title="Patient Notes"><span class="fa fa-book"></span></a></li> -->
+            <li data-toggle="tooltip" data-placement="bottom" title="Upcoming Appointments"><a data-toggle="modal" data-target="#upcomingAppointments"><span class="fa fa-calendar"></span></a></li>
+            <!-- <li data-toggle="tooltip" data-placement="bottom" title="Add to Watchlist"><a data-toggle="modal" data-target="#addWatchlist"><span class="fa fa-eye"></span></a></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="Flag Patient"><a data-toggle="modal" data-target="#addTag"><span class="fa fa-flag"></span></a></li> -->
+            </ul>
+
+        </div>
+        <!-- //Quick Launch Buttons -->
+
+    </div>
+    <!-- //Patient Card -->
+
+    <br clear="all" />
+
+    <!-- Success Banner -->
+    <div class="successBanner bannerView">
+
+        <div class="successIcon"><span class="fa fa-check"></span></div>
+
+        <div class="bannerContentSuccess">
+
+            <span class="bannerHead banSuccess">Scheduling &amp; Follow-Up Completed</span><br />
+            Patient scheduling and follow-up has been completed successfully.
+
+        </div>
+
+        <div class="pull-right"><a class="closeBanner dismissBanner"><span class="fa fa-times"></span></a></div>
+
+        <br clear="all" />
+
+    </div>
+    <!-- //Success Banner -->
+
+    <div class="clearfix"></div>
+
+    <!-- Milestone Navigation -->
+    <div class="mileNav">
+    <ul class="mainMilestones">
+
+        <!-- Patient Engagement -->
+        <li><a class="patientEngagement complete"><span><i class="fa fa-check"></i></span>Patient Engagement<span class="accord"></span></a>
+            <ul class="patientEngagementMenu">
+                <li><a href="../PatientEngagement/index.html#QualifyingGuarantor" class="pe1 complete"><span><i class="fa fa-check"></i></span>Outreach</a></li>
+                <li><a href="../PatientEngagement/index.html#AttributionConfirmation" class="pe2 complete"><span><i class="fa fa-check"></i></span>Attribution Confirmation</a></li>
+                <li><a href="../PatientEngagement/index.html#PreventativeServices" class="pe3 complete"><span><i class="fa fa-check"></i></span>Service Eligibility</a></li>
+                <li><a href="../PatientEngagement/index.html#ContactVerificationPreferences" class="pe4 complete"><span><i class="fa fa-check"></i></span>Contact Profile Verification</a></li>
+                <li><a href="../PatientEngagement/index.html#EngagementOutcome" class="pe5 complete"><span><i class="fa fa-check"></i></span>Outcomes Review</a></li>
+            </ul>
+        </li>
+        <!-- //Patient Engagement -->
+
+        <!-- Scheduling & Follow-Up -->
+        <li><a class="scheduling notcomplete activeMilestone"><span><i class="fa fa-close"></i></span>Scheduling &amp; Follow-Up<span class="accord"></span></a>
+            <ul class="schedulingMenu">
+                <li><a href="../Scheduling/index.html#OrderStatus" class="sc1 nostate"><span><i class="fa fa-minus"></i></span>Order Status</a></li>
+                <li><a href="../Scheduling/index.html#Outreach" class="sc2 nostate"><span><i class="fa fa-minus"></i></span>Outreach</a></li>
+                <li><a href="../Scheduling/index.html#DemographicConfirmation" class="sc3 notcomplete"><span><i class="fa fa-close"></i></span>Demographic Confirmation</a></li>
+                <li><a href="../Scheduling/index.html#InsurVerif" class="sc4 notcomplete"><span><i class="fa fa-close"></i></span>Insurance Verification</a></li>
+                <li><a href="../Scheduling/index.html#OutcomesReview" class="sc5 notcomplete"><span><i class="fa fa-close"></i></span>Outcomes Review</a></li>
+            </ul>
+        </li>
+        <!-- //Scheduling & Follow-Up -->
+
+        <!-- Claims & Registry -->
+        <li><a class="claimsRegistry nostate"><span><i class="fa fa-minus"></i></span>Claims &amp; Registry<span class="accord"></span></a>
+            <ul class="claimsRegistryMenu">
+                <li><a href="../ClaimsRegistry/index.html#AttribRecon" class="cr1 nostate"><span><i class="fa fa-minus"></i></span>Attribution Reconciliation</a></li>
+                <li><a href="../ClaimsRegistry/index.html#DemographicInsuranceRecon" class="cr2 nostate"><span><i class="fa fa-minus"></i></span>Demographic / Insurance Reconciliation</a></li>
+                <li><a href="../ClaimsRegistry/index.html#ClaimsRecon" class="cr3 nostate"><span><i class="fa fa-minus"></i></span>Claims Reconciliation</a></li>
+                <li><a href="../ClaimsRegistry/index.html#RegistryRecon" class="cr4 nostate"><span><i class="fa fa-minus"></i></span>Registry Reconciliation</a></li>
+            </ul>
+        </li>
+        <!-- //Claim & Registry -->
+
+        <!-- Other -->
+        <li><a class="other nostate"><span><i class="fa fa-minus"></i></span>Other<span class="accord"></span></a>
+            <ul class="otherMenu">
+                <li><a class="ot1 nostate"><span><i class="fa fa-minus"></i></span>Medical Records Request</a></li>
+                <li><a class="ot2 nostate"><span><i class="fa fa-minus"></i></span>Order Requests</a></li>
+                <li><a class="ot3 nostate"><span><i class="fa fa-minus"></i></span>Authorization Follow-Up</a></li>
+            </ul>
+        </li>
+        <!-- //Other -->
+    </ul>
+
+    <!-- Scheduling Menu -->
+    <ul class="codingRecoveryServicesMenu">
+        <li><a class="goBack"><span class="chevron"></span></a></li>
+        <li class="codingRecovery sectionHeader">Scheduling &amp; Follow-Up</li>
+        <li><a href="../Scheduling/index.html#OrderStatus" class="OrderStatus nostate"><span><i class="fa fa-minus"></i></span>Order Status</a></li>
+        <li><a href="../Scheduling/index.html#Outreach" class="Outreach nostate"><span><i class="fa fa-minus"></i></span>Outreach</a></li>
+        <li><a href="../Scheduling/index.html#DemographicConfirmation" class="DemographicConfirmation notcomplete"><span><i class="fa fa-close"></i></span>Demographic Confirmation</a></li>
+        <li><a href="../Scheduling/index.html#InsurVerif" class="InsuranceVerifciation notcomplete"><span><i class="fa fa-close"></i></span>Insurance Verification</a></li>
+        <li><a href="../Scheduling/index.html#OutcomesReview" class="OutcomesReview notcomplete"><span><i class="fa fa-close"></i></span>Outcomes Review</a></li>
+
+        <!-- Hide / Show Script -->
+        <a class="hideScripting">Hide Script</a>
+        <a class="showScripting">Show Script</a>
+    </ul>
+
+    </div>
+    <!-- //Milestone Navigation -->
+
+    <div class="clearfix"></div>
+
+
+    <!-- SCHEDULING -->
+    <div class="row containerContent">
+
+      <!-- Content -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 patientEngagementLeft">
+
+        <span id="OrderStatus"></span>
+
+        <!-- Order Status Container -->
+        <div class="subContainer">
+
+          <!-- Header -->
+          <h4><span>1</span>Order Status</h4>
+          <div class="PSOSect"></div>
+
+          <!-- Order Status Contents -->
+          <div class="row">
+
+                  <!-- Header / Acticon Buttons -->
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  </div>
+                  <!-- //Header / Action Buttons -->
+
+          </div>
+          <!-- //HCC Header Contents -->
+
+          <!-- Order Tabs -->
+          <div class="row HCCtabs">
+
+              <ul class="nav nav-tabs" id="tabs">
+                <li class="active"><a href="#Mammogram" data-toggle="tab" class="complete"><span class="fa fa-check"></span>Wellness Visit</a></li>
+              </ul>
+
+          </div>
+
+          <div class="row subContainer" style="margin-top: 0px;">
+
+              <div class="tab-content">
+
+                  <!-- Mammogram -->
+                  <div class="tab-pane active" id="Well Visit">
+
+                      <!-- Orders -->
+                      <div class="contentPane clear">
+
+                          <!-- Required Service -->
+                          <div class="infoPoint">
+                          <span class="title">Required Service</span><br />
+                          <span class="desc">Well Visit</span>
+                          </div>
+
+                          <!-- Order Required -->
+                          <div class="infoPoint">
+                          <span class="title">Order Required</span><br />
+                          <span class="desc green">NO</span>
+                          </div>
+
+                          <!-- Order Status -->
+                          <div class="infoPoint">
+                          <span class="title">Order Status</span><br />
+                          <span class="desc green">N/A</span>
+                          </div>
+
+                          <!-- Authorization Required -->
+                          <div class="infoPoint">
+                          <span class="title">Authorization Required</span><br />
+                          <span class="desc green">NO</span>
+                          </div>
+
+                          <!-- Ordering Provider -->
+                          <div class="infoPoint">
+                          <span class="title">Ordering Provider</span><br />
+                          <span class="desc">White, Cathleen</span>
+                          </div>
+
+                          <!-- Primary Care Provider -->
+                          <div class="infoPoint">
+                          <span class="title">Primary Care Provider</span><br />
+                          <span class="desc">White, Cathleen</span>
+                          </div>
+
+                      </div>
+                      <!-- //Orders -->
+
+                  </div>
+                  <!-- //Mammogram -->
+
+              </div>
+
+          </div>
+          <!-- //Order Tabs -->
+
+        </div>
+        <!-- Order Status Container -->
+
+        <span id="Outreach"></span>
+
+        <!-- Outreach Container -->
+        <div class="subContainer" style="padding-bottom: 40px;">
+
+            <!-- Header -->
+            <h4><span>2</span>Outreach</h4>
+            <div class="PSOSect"></div>
+
+            <!-- Quarantor Box -->
+            <div class="guarantorBox">
+
+              <h5>Patient</h5>
+              <div class="PSOSect"></div>
+
+                <div class="guarSect">
+
+                    <!-- Labels -->
+                    <div class="labels">
+                    Name<br />
+                    DOB (Age)<br />
+                    Gender<br />
+                    Address<br />
+                    </div>
+
+                    <!-- //Content -->
+                    <div class="accContent">
+                    Grace Parker<br />
+                    09/02/1939 &nbsp; ( 76 )<br />
+                    Female<br />
+                    1025 Augusta Dr.<br />
+                    Agloe, IL 60351
+                    </div>
+
+                </div>
+
+                <div class="guarSect">
+
+                    <!-- Labels -->
+                    <div class="labels">
+                    Primary Phone<br />
+                    Secondary Phone<br />
+                    Email
+                    </div>
+
+                    <!-- //Content -->
+                    <div class="accContent">
+                    <a href="tel:">(847) 342-7860</a> (Mobile)<br />
+                    <a href="tel:">(847) 495-9009</a> (Home)<br />
+                    <a href="mailto:">Grace.A.Parker@gmail.com</a>
+                    </div>
+
+                </div>
+
+                <br clear="all" />
+
+                <a class="guarantor">Guarantor Authorization on File</a>
+
+                <!-- Hidden Initially: Upward-arrow button -->
+                <a class="guarantorHide">Guarantor Authorization on File</a>
+
+                <br clear="all" />
+
+                <!-- Guarantor On File -->
+                <div class="guarantorOnFile">
+
+                    <h5>Guarantor On File</h5>
+                    <div class="PSOSect"></div>
+
+                    <div class="guarSect">
+
+                        <!-- Labels -->
+                        <div class="labels">
+                        Name<br />
+                        DOB (Age)<br />
+                        Gender<br />
+                        Address<br />
+                        </div>
+
+                        <!-- //Content -->
+                        <div class="accContent">
+                        Grace Parker<br />
+                        09/02/1939 &nbsp; ( 76 )<br />
+                        Female<br />
+                        1025 Augusta Dr.<br />
+                        Agloe, IL 60351
+                        </div>
+
+                    </div>
+
+                    <div class="guarSect">
+
+                        <!-- Labels -->
+                        <div class="labels">
+                        Primary Phone<br />
+                        Secondary Phone<br />
+                        Email
+                        </div>
+
+                        <!-- //Content -->
+                        <div class="accContent">
+                        <a href="tel:">(847) 342-7860</a> (Mobile)<br />
+                        <a href="tel:">(847) 495-9009</a> (Home)<br />
+                        <a href="mailto:">Grace.A.Parker@gmail.com</a>
+                        </div>
+
+                    </div>
+
+                    <br clear="all" />
+
+                </div>
+                <!-- //Guarantor On File -->
+
+            </div>
+            <!-- //Guarantor Box -->
+
+            <div class="clearfix"></div>
+
+            <!-- Question 1 -->
+            <div class="questionLabel areYouSpeaking" style="margin-top: 10px;">
+            Are you speaking with the right party?
+
+                <!-- Help -->
+                <a data-toggle="tooltip" data-placement="auto" class="helpNav pull-right" title="In order to continue scheduling this visit, you will need to qualify that who you are speaking with is the right party."><span class="fa fa-question-circle"></span></a>
+
+                <!-- Completion Label -->
+                <span class="PSLabel successLabel yesLabel patientLabel pull-right">Completed</span>
+
+                <!-- Completion Label - Right Party not Reached -->
+                <span class="PSLabel successLabel noLabel noAnswer pull-right">Completed</span>
+
+            </div>
+            <div class="questionBox theRightParty">
+            <span class="scripting">
+            May I please speak with <strong>Grace Parker</strong>?
+
+            <p>
+            Hello <strong>Grace</strong>, my name is <strong>Pamela Smith</strong> and I am calling on behalf of <strong>Dr. Cathleen White</strong>'s office in <strong>Chicago, Illinois</strong>. For identification purposes, can you please verify your date of birth?
+            </p>
+            </span>
+
+            <p class="answerButtons">
+                <div class="row noMargin">
+
+                    <!-- Yes -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 yesButton">
+                    <button type="button" class="btn btn-yes btn-md yesWho">Yes</button>
+                    </div>
+
+                    <!-- No -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noButton">
+                    <button type="button" class="btn btn-no btn-md viewWrongPartyOptions">No</button>
+                    </div>
+
+                </div>
+            </p>
+
+                <!-- Wrong Party Choices -->
+                <div class="wrongPartyChoices">
+
+                    <hr class="separator" />
+
+                    <!-- Column 1 -->
+                    <div class="col-lg-4 col-md-7 col-sm-12 col-xs-12 leaveNote">
+                    <input type="radio" name="radio" id="radio1" class="radio"/>
+                    <label for="radio1">Busy Signal</label>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 leaveNote">
+                    <input type="radio" name="radio" id="radio2" class="radio"/>
+                    <label for="radio2">Left Voicemail Message</label>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="col-lg-4 col-md-7 col-sm-12 col-xs-12 leaveNote">
+                    <input type="radio" name="radio" id="radio3" class="radio"/>
+                    <label for="radio3">Guarantor Requests Callback Information</label>
+                    </div>
+
+                    <!-- Column 1 -->
+                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 leaveNote">
+                    <input type="radio" name="radio" id="radio4" class="radio"/>
+                    <label for="radio4">Connection Error</label>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-lg-4 col-md-7 col-sm-12 col-xs-12 leaveNote">
+                    <input type="radio" name="radio" id="radio5" class="radio"/>
+                    <label for="radio5">Guarantor Unavailable</label>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 answeredRequestCallBack">
+                    <input type="radio" name="radio" id="radio6" class="radio"/>
+                    <label for="radio6">Guarantor Requests Callback</label>
+                    </div>
+
+                    <!-- Column 1 -->
+                    <div class="col-lg-4 col-md-7 col-sm-12 col-xs-12 leaveNote">
+                    <input type="radio" name="radio" id="radio7" class="radio"/>
+                    <label for="radio7">Invalid / Full Voicemail</label>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-lg-8 col-md-5 col-sm-12 col-xs-12 leaveNote">
+                    <input type="radio" name="radio" id="radio8" class="radio"/>
+                    <label for="radio8">Incorrect Contact Information</label>
+                    </div>
+
+
+                    <br clear="all" />
+
+                    <hr class="separator" style="margin-top: 40px;" />
+
+
+                        <!-- Answered, Request Call Back -->
+                        <div class="answrRqstCallBack">
+
+                        <h5>Call Back Request Details</h5>
+
+                        <br clear="all" />
+
+                        <form class="form-horizontal">
+
+                        <div>
+
+                            <fieldset>
+
+                            <div class="form-group has-feedback has-feedback-right">
+                              <label for="" class="col-sm-2">Date</label>
+                                  <div class="col-sm-3" id="sandbox-container">
+                                    <input type="text" class="form-control" />
+                                    <i class="form-control-feedback fa fa-calendar"></i>
+                                  </div>
+
+                              <label for="" class="col-sm-2">Time</label>
+                                  <div class="col-sm-3 bootstrap-timepicker">
+                                    <input id="timepicker3" type="text" class="form-control input-small" />
+                                    <i class="form-control-feedback fa fa-clock-o"></i>
+                                  </div>
+                              </div>
+
+                            <br clear="all" />
+
+                            <!-- Phone Number -->
+                            <div class="form-group has-feedback has-feedback-right">
+                              <label for="" class="col-sm-2">Phone Type</label>
+                                  <div class="col-sm-3">
+                                    <select class="form-control placeholder">
+                                        <option disabled selected>Select</option>
+                                        <option>Mobile</option>
+                                          <option>Home</option>
+                                          <option>Work</option>
+                                          <option>Other</option>
+                                    </select>
+                                  </div>
+
+                              <label for="" class="col-sm-2">Phone Number</label>
+                                  <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="Enter a Phone Number" />
+                                  </div>
+                              </div>
+
+                            <br clear="all" />
+
+                            <!-- Text Area -->
+                            <div class="form-group has-feedback has-feedback-right">
+                              <label for="" class="col-sm-2">Call Notes</label>
+                                  <div class="col-sm-9">
+                                    <textarea class="form-control" rows="4" placeholder="Enter a note about this call"></textarea>
+                                  </div>
+                              </div>
+
+                            </fieldset>
+
+                        </div>
+
+                        </form>
+
+                        <hr class="separator" />
+
+                        </div>
+                        <!-- //Answered, Request Call Back -->
+
+
+                        <!-- Leave Note -->
+                        <div class="leaveANote">
+
+                        <h5>Leave a Note About This Call</h5>
+
+                        <br clear="all" />
+
+                        <form class="form-horizontal">
+
+                        <div>
+
+                            <fieldset>
+
+                            <!-- Text Area -->
+                            <div class="form-group has-feedback has-feedback-right">
+                              <label for="" class="col-sm-2">Call Notes</label>
+                                  <div class="col-sm-9">
+                                    <textarea class="form-control" rows="4" placeholder="Enter a note about this call"></textarea>
+                                  </div>
+                              </div>
+
+                            </fieldset>
+
+                        </div>
+
+                        </form>
+
+                        <hr class="separator" />
+
+                        </div>
+                        <!-- //Leave Note -->
+
+
+                    <p align="center">
+                    <button type="button" class="btn btn-primary btn-md viewWrongPartyOptionsCont">Continue</button> <span class="grep"></span> <a class="cancelNav closeWrongPartyOptions">Cancel</a>
+                    </p>
+
+                </div>
+                <!-- //Wrong Party Choices -->
+
+                <!-- Yes, Who are you speaking with -->
+                <div class="yesWhoAreYou">
+
+                    <hr class="separator" style="margin-bottom: 65px;" />
+
+                    <form class="form-horizontal">
+
+                        <div>
+
+                            <fieldset>
+
+                            <!-- Select Who -->
+                            <div class="form-group has-feedback has-feedback-right">
+                              <label for="" class="col-sm-3">Who are you speaking with?</label>
+                                  <div class="col-sm-8">
+                                    <select class="form-control placeholder selectWho">
+                                        <option disabled selected>Select</option>
+                                        <option>Patient</option>
+                                        <option>Caretaker</option>
+                                        <option>Family Member</option>
+                                        <option>Other</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <!-- Select Who -->
+
+                            </fieldset>
+
+                        </div>
+
+                    </form>
+
+                    <hr class="separator" />
+
+
+                    <p align="center">
+                    <button type="button" class="btn btn-primary btn-md rightParty">Continue</button> <span class="grep"></span> <a class="cancelNav closeWrongPartyOptions">Cancel</a>
+                    </p>
+
+                </div>
+                <!-- //Yes, Who are you speaking with -->
+
+            </div>
+            <!-- //Question 1 -->
+
+        </div>
+        <!-- //Outreach Container -->
+
+        <!-- Anchor -->
+        <span id="DemographicConfirmation"></span>
+
+        <!-- Demographic Confirmation Container -->
+        <div class="subContainer demo-conf-anchor">
+
+          <!-- Header -->
+          <h4><span>3</span>Demographic Confirmation</h4>
+          <div class="PSOSect"></div>
+
+          <br clear="all" />
+
+          <!-- Success Banner -->
+          <div class="successBanner bannerPI">
+
+              <div class="successIcon"><span class="fa fa-check"></span></div>
+
+              <div class="bannerContentSuccess">
+
+                  <span class="bannerHead banSuccess">Patient Information Updated - Pending EMR Syncing</span><br />
+                  Your updates have been made, however, they are awaiting MPI syncing.
+
+              </div>
+
+              <div class="pull-right"><a class="closeBanner dismissBannerPI"><span class="fa fa-times"></span></a></div>
+
+              <br clear="all" />
+
+          </div>
+          <!-- //Success Banner -->
+
+            <!-- Edit Button -->
+            <a class="btn lockNav pull-right patientUnlock"><span class="fa fa-unlock"></span> &nbsp; Edit</a>
+
+            <!-- Lock Button // Initially Hidden -->
+            <a class="btn lockNav pull-right patientLock" style="display: none;"><span class="fa fa-lock"></span></a>
+
+          <div style="padding: 40px; padding-top: 15px;">
+            <!-- Locked -->
+            <div class="lockedPatientInformation">
+
+            <form class="form-horizontal">
+
+                  <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">First Name</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="Grace" disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+
+                  <label for="" class="col-sm-2 control-label">Last Name</label>
+                      <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="Parker" disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Address</label>
+                      <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="1025 Augusta Dr." disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+
+                  <label for="" class="col-sm-2 control-label">Address 2</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="" disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">City</label>
+                      <div class="col-sm-9">
+                      <input type="text" class="form-control" placeholder="Agloe" disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">State</label>
+                      <div class="col-sm-3">
+                      <select class="form-control placeholder" id="disabledSelect" disabled>
+                          <option selected>Illinois</option>
+                      </select>
+                          <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                      </div>
+
+                  <label for="" class="col-sm-1 control-label">Zip</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="60351" disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+                  </div>
+
+                  </fieldset>
+
+                  <br clear="all" />
+
+                <h5>Contact Information</h5>
+                <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+                <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-7">
+                      <input type="text" class="form-control" placeholder="Grace.A.Parker@gmail.com" disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Phone</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="(847) 342-7860" disabled />
+                          <i class="form-control-feedback fa fa-lock"></i>
+                      </div>
+
+                  <label for="" class="col-sm-1 control-label">Type</label>
+                      <div class="col-sm-3">
+                      <select class="form-control placeholder" id="disabledSelect" disabled>
+                          <option selected>Mobile</option>
+                      </select>
+                          <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                      </div>
+                  </div>
+
+                </fieldset>
+
+            </form>
+
+            </div>
+
+            <!-- Unlocked -->
+            <div class="unlockedPatientInformation">
+
+            <form class="form-horizontal">
+
+                  <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">First Name</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" value="Grace" />
+                      </div>
+
+                  <label for="" class="col-sm-2 control-label">Last Name</label>
+                      <div class="col-sm-4">
+                      <input type="text" class="form-control" value="Parker" />
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Address</label>
+                      <div class="col-sm-4">
+                      <input type="text" class="form-control" value="1025 Augusta Dr." />
+                      </div>
+
+                  <label for="" class="col-sm-2 control-label">Address 2</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" value="" />
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">City</label>
+                      <div class="col-sm-9">
+                      <input type="text" class="form-control" value="Agloe" />
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">State</label>
+                      <div class="col-sm-3">
+                      <select class="form-control placeholder">
+                          <option selected>Illinois</option>
+                            <option>Other States Here</option>
+                      </select>
+                      </div>
+
+                  <label for="" class="col-sm-1 control-label">Zip</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" value="60351" />
+                      </div>
+                  </div>
+
+                  </fieldset>
+
+                  <br clear="all" />
+
+                <h5>Contact Information</h5>
+                <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+                <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-7">
+                      <input type="text" class="form-control" value="Grace.A.Parkerh@gmail.com" />
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="addContact firstContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeContact firstContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary firstContact"><a>Set as Primary</a></div>
+                          <div class="setPrimary firstContact">Primary</div>
+                      </div>
+
+                  </div>
+
+                  <!-- Secondary Email // Initally Hidden -->
+                  <div class="form-group has-feedback has-feedback-right secondaryEmail">
+                  <label for="" class="col-sm-2 control-label">Secondary Email</label>
+                      <div class="col-sm-7">
+                      <input type="text" class="form-control" placeholder="Enter a secondary Email" />
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="addContact secondContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeContact secondContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary secondContact"><a>Set as Primary</a></div>
+                      </div>
+
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Phone</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" value="(847) 342-7860" />
+                      </div>
+
+                  <label for="" class="col-sm-1 control-label">Type</label>
+                      <div class="col-sm-3">
+                      <select class="form-control placeholder">
+                          <option selected>Mobile</option>
+                            <option>Home</option>
+                            <option>Work</option>
+                            <option>Other</option>
+                      </select>
+                      </div>
+
+                      <div class="col-sm-3 addContact"><a><span class="fa fa-plus-circle"></span></a>
+                          <div class="removeContact firstPhone"><a><span class="fa fa-minus-circle"></span></a></div>
+                      </div>
+
+                  </div>
+
+                </fieldset>
+
+                <br clear="all" />
+
+            </form>
+
+            <br clear="all" />
+
+            <!-- Update Button --  Initially hidden -->
+            <div class="updatePatientButtons">
+              <button type="button" class="btn btn-primary updatePatientInformation">Update Patient Information</button>
+              <span class="grep"></span>
+              <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+            </div>
+            <!-- //Update Button --  Initially hidden -->
+
+            </div>
+
+          </div>
+
+          <hr class="separator" style="margin-top: 0px;" />
+
+          <p align="center">
+          <button type="button" class="btn btn-primary btn-md confirmDemo">Continue</button> <span class="grep"></span> <a class="cancelNav closeWrongPartyOptions">Cancel</a>
+          </p>
+
+        </div>
+        <!-- Demographic Confirmation Container -->
+
+        <span id="InsurVerif"></span>
+
+        <!-- Insurance Verification Container -->
+        <div class="subContainer">
+
+          <!-- Header -->
+          <h4><span>4</span>Insurance Verification</h4>
+          <div class="PSOSect"></div>
+
+          <br clear="all" />
+
+          <div style="padding: 10px 50px 40px 40px;">
+
+            <!-- Drag and Drop -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 insuranceIndi">
+
+              <!-- Current -->
+              <div class="row">
+
+                      <!-- Header / Action Buttons -->
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <span class="subHead">Current Coverage</span>
+                      </div>
+                      <!-- //Header / Action Buttons -->
+
+                      <!-- Actions -->
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 actions">
+
+                          <!-- Results -->
+                          ( Results: <span class="resultsNo">2</span> )
+                          <!-- //Results -->
+
+                      </div>
+                      <!-- //Actions -->
+
+              </div>
+              <!-- //Current -->
+
+            </div>
+
+            <!-- Sortable Area 1 -- CURRENT -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+              <ul id="sortable2" class="connectedSortable">
+
+                <!-- Card One -->
+                <li data-toggle="modal" data-target="#insuranceInfo" class="insuranceCard relative">
+
+                  <!-- Nunmber -->
+                  <span class="numbBox insNumb">1</span>
+
+                  <!-- Title & Menu -->
+                  <div class="insTitle col-sm-8 noPad noMargin">
+                  <span class="cardHead">Medicare &nbsp; (US Health)</span>
+                  </div>
+
+                  <div class="insNav col-sm-4 pull-right noPad noMargin">
+                  <!-- Active or No -->
+                  <a class="activeCov"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                  <!-- Check Eligibility -->
+                  <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a>
+                  <!-- Edit -->
+                  <a class="editCov clickEdit1" data-toggle="modal" data-target="#insuranceInfo"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a>
+                  </div>
+                  <!-- //Title & Menu -->
+
+                  <div class="clearfix"></div>
+
+                  <div class="ICContent">
+                  Code: <strong>C52</strong><br/ >
+                  Source: <strong>Payer</strong><br/ >
+                  Plan: <strong>Family</strong><br/ >
+                  Group: <strong>14585324567</strong><br/ >
+                  Group: <strong>123456789A</strong><br/ >
+                  Office Copay: <strong>$40.00</strong><br/ >
+                  ER Copay: <strong>$150.00</strong><br/ >
+                  Verification Status: <strong>Passed</strong><br />
+                  Verification Date: <strong>09/10/2015</strong>
+                  </div>
+
+                </li>
+
+                <!-- Card Two -->
+                <li data-toggle="modal" data-target="#insuranceInfo" class="insuranceCard relative">
+
+                  <!-- Nunmber -->
+                  <span class="numbBox insNumb">2</span>
+
+                  <!-- Title & Menu -->
+                  <div class="insTitle col-sm-8 noPad noMargin">
+                  <span class="cardHead">Medicaid &nbsp; (US Health)</span>
+                  </div>
+
+                  <div class="insNav col-sm-4 pull-right noPad noMargin">
+                  <!-- Active or No -->
+                  <a class="activeCov"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                  <!-- Check Eligibility -->
+                  <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a>
+                  <!-- Edit -->
+                  <a class="editCov clickEdit1 clickEdit1" data-toggle="modal" data-target="#insuranceInfo"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a>
+                  </div>
+                  <!-- //Title & Menu -->
+
+                  <div class="clearfix"></div>
+
+                  <div class="ICContent">
+                    Code: <strong>A72</strong><br/ >
+                    Source: <strong>Payer</strong><br/ >
+                    Plan: <strong>Family</strong><br/ >
+                    Group: <strong>14585324567</strong><br/ >
+                    Subscriber #: <strong>298393821</strong><br/ >
+                    Office Copay: <strong>$3.00</strong><br/ >
+                    ER Copay: <strong>$0.00</strong><br/ >
+                    Verification Status: <strong>Passed</strong><br />
+                    Verification Date: <strong>09/10/2015</strong>
+                  </div>
+
+                </li>
+
+                <!-- Card Three - Add Card -->
+                <li data-toggle="modal" data-target="#insuranceInfo" class="insuranceCard addInsurance clickAddCard">
+
+                  <div class="addIt">
+                  <span class="fa fa-plus-circle"></span><br />
+                  <span class="addText">Add A New Card</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+            <!-- //Sortable Area 1 -- CURRENT -->
+
+            <div class="clearfix"></div>
+            <hr class="separator" />
+
+            <div class="row">
+
+              <!-- Header / Action Buttons -->
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <span class="subHead">Historical Coverage</span>
+              </div>
+              <!-- //Header / Action Buttons -->
+
+              <!-- Actions -->
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 actions">
+
+                  <!-- Results -->
+                  ( Results: <span class="resultsNo">1</span> )
+                  <!-- //Results -->
+
+              </div>
+              <!-- //Actions -->
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- Sortable Area 2 -- HISTORICAL -->
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+              <ul id="sortable2" class="connectedSortable">
+
+                <!-- Card One -->
+                <li data-toggle="modal" data-target="#insuranceInfo" class="insuranceCard relative">
+
+                  <!-- Nunmber -->
+                  <span class="numbBox insNumb">1</span>
+
+                  <!-- Title & Menu -->
+                  <div class="insTitle col-sm-8 noPad noMargin">
+                  <span class="cardHead">Aetna Preferred</span>
+                  </div>
+
+                  <div class="insNav col-sm-4 pull-right noPad noMargin">
+                  <!-- Active or No -->
+                  <a class="inactiveCov"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                  <!-- Check Eligibility -->
+                  <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a>
+                  <!-- Edit -->
+                  <a class="editCov clickEdit1" data-toggle="modal" data-target="#insuranceInfo"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a>
+                  </div>
+                  <!-- //Title & Menu -->
+
+                  <div class="clearfix"></div>
+
+                  <div class="ICContent">
+                  Code: <strong>F32</strong><br/ >
+                  Source: <strong>Payer</strong><br/ >
+                  Plan: <strong>Family</strong><br/ >
+                  Group: <strong>12345</strong><br/ >
+                  Group: <strong>VBR2134523</strong><br/ >
+                  Office Copay: <strong>$40.00</strong><br/ >
+                  ER Copay: <strong>$75.00</strong><br/ >
+                  Verification Status: <strong>Inactive</strong><br />
+                  Verification Date: <strong>08/01/2014</strong>
+                  </div>
+
+
+                </li>
+
+                <!-- Card Two - Add Card -->
+                <li data-toggle="modal" data-target="#insuranceInfo" class="insuranceCard addInsurance clickAddCard">
+
+                  <div class="addIt">
+                  <span class="fa fa-plus-circle"></span><br />
+                  <span class="addText">Add A New Card</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+            <!-- //Sortable Area 2 -- HISTORICAL -->
+
+          </div>
+
+          <div class="clearfix"></div>
+          <hr class="separator" style="margin-top: 30px;" />
+
+          <p align="center">
+          <button type="button" class="btn btn-primary btn-md confirmIns">Continue</button> <span class="grep"></span> <a class="cancelNav closeWrongPartyOptions">Cancel</a>
+          </p>
+
+        </div>
+        <!-- //Insurance Verification Container -->
+
+        <span id="OutcomesReview"></span>
+
+        <!-- Outcomes Review Container -->
+        <div class="subContainer">
+
+          <!-- Header -->
+          <h4><span>4</span>Outcomes Review</h4>
+          <div class="PSOSect"></div>
+
+          <br clear="all" />
+
+          <div class="row noPad noMargin">
+
+            <!-- Left -->
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+
+              <!-- Not Scheduled -->
+              <div class="notScheduled">
+
+                <!-- Scheduled Items -->
+                <div class="row">
+
+                  <!-- Header / Action Buttons -->
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <span class="subHead">Schedule Visit</span>
+                  </div>
+                  <!-- //Header / Action Buttons -->
+
+                </div>
+                <!-- //Scheduled Items -->
+
+                <br clear="all" />
+
+                <!-- Event Scheduled -->
+                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 bigCal">
+                <span class="fa fa-calendar"></span>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9 eventCont">
+                <h4>Wellness Visit</h4>
+                  <div class="PSOSect"></div>
+
+                  <!-- Schedule -->
+                  <a  class="btn lockNav schedulePatient" style="margin-top: 10px;"><span class="fa fa-calendar-o"></span> &nbsp; Schedule Patient</a>
+
+                </div>
+                <!-- //Event Scheduled -->
+
+            </div>
+            <!-- //Not Scheduled -->
+
+
+              <!-- Scheduled -->
+              <div class="scheduled" style="display: none;">
+
+                <!-- Scheduled Items -->
+                <div class="row">
+
+                  <!-- Header / Action Buttons -->
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <span class="subHead">Scheduling Summary</span>
+                  </div>
+                  <!-- //Header / Action Buttons -->
+
+                </div>
+                <!-- //Scheduled Items -->
+
+                <br clear="all" />
+
+                <!-- Event Scheduled -->
+                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 calendarCont">
+                <span class="monthDate">October</span><br />
+                <span class="dayDate">06</span>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9 eventCont">
+                <h4>Wellness Visit</h4>
+                  <div class="PSOSect"></div>
+                at <strong>Washington Primary Care</strong> - 675 W. Division Street, Chicago at <strong>3:00 PM</strong> (CST)
+                </div>
+                <!-- //Event Scheduled -->
+
+            </div>
+            <!-- //Scheduled -->
+
+            <!-- Schedule Patient -->
+            <script>
+            $(document).ready(function () {
+
+                // Edit Card One
+                $(".schedulePatient").click(function () {
+                    $( ".notScheduled" ).slideUp( "fast", function() {
+                    });
+                    $( ".scheduled" ).slideDown( "slow", function() {
+                    });
+                });
+
+            });
+            </script>
+
+              <br clear="all" />
+
+              <!-- Disposition -->
+              <div class="row" style="margin-top: 40px;">
+
+                  <!-- Header / Action Buttons -->
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <span class="subHead">Disposition</span>
+                  <p>
+                    <div class="col-sm-12 noPad">
+                      <select class="form-control placeholder">
+                        <option disabled selected>Select</option>
+                        <option>Completed required scheduling</option>
+                        <option>Could not complete scheduling - follow up required</option>
+                        <option>Could not complete scheduling - no further action required</option>
+                      </select>
+                    </div>
+                  </p>
+                </div>
+
+              </div>
+              <!-- //Disposition -->
+
+              <br clear="all" />
+
+              <!-- Notes -->
+              <div class="row" style="margin-top: 15px;">
+
+                      <!-- Header / Action Buttons -->
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <span class="subHead">Notes</span>
+                      <p>
+                        <textarea class="form-control" rows="4" placeholder="Enter a note about this scheduling (2000 characters max)"></textarea>
+                      </p>
+                      </div>
+                      <!-- //Header / Action Buttons -->
+
+                      <div class="clearfix"></div>
+
+              </div>
+              <!-- //Notes -->
+
+            </div>
+            <!-- //Left -->
+
+            <!-- Right -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-lg-offset-1, col-md-offset-1">
+
+              <img src="../../../images/graceMap.png" width="100%" style="border: 1px solid #CCC;" />
+
+            </div>
+            <!-- //Right -->
+          </div>
+
+          <br clear="all" />
+
+          <!-- Complete or Cancel Button -->
+          <div class="form-group buttonMargin">
+
+              <div class="col-sm-offset-7 col-sm-4" style="margin-top: 15px; margin-bottom: 40px;">
+                  <p align="right">
+                <button href="#top" type="submit" class="btn btn-default completeSche">Complete Scheduling</button>
+                  <span class="grep"></span>
+                  <a href="" class="cancelNav">Cancel</a>
+                  </p>
+              </div>
+
+              <br clear="all" />
+
+          </div>
+          <!-- //Complete or Cancel Button -->
+
+        </div>
+        <!-- Outcomes Review Container -->
+
+      </div>
+      <!-- //Content -->
+
+    </div>
+    <!-- //SCHEDULING -->
+
+</div>
+<!-- //Content Container -->
+
+
+<!-- Footer -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footerContainer pull-center">
+&copy; Copyright 2015 Accretive Health, Inc. <span class="grep"></span> <a href="../../../privacy.html">Privacy Statement</a> <span class="grep"></span> <a href="../../../terms.html">Terms of Use</a>
+</div>
+<!-- //Footer -->
+
+
+
+<!-- ##################################################### Modals ################################################# -->
+
+<!-- Patient Information Modal -->
+<div class="modal fade" id="patientInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content relative">
+
+        <!-- Header / Edit / Banner -->
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Patient Information</h4>
+
+            <!-- Success Banner -->
+            <div class="successBanner bannerPI">
+
+                <div class="successIcon"><span class="fa fa-check"></span></div>
+
+                <div class="bannerContentSuccess">
+
+                    <span class="bannerHead banSuccess">Patient Information Updated - Pending EMR Syncing</span><br />
+                    Your updates have been made, however, they are awaiting MPI syncing.
+
+                </div>
+
+                <div class="pull-right"><a class="closeBanner dismissBannerPI"><span class="fa fa-times"></span></a></div>
+
+                <br clear="all" />
+
+            </div>
+            <!-- //Success Banner -->
+
+        </div>
+        <!-- //Header / Edit / Banner -->
+
+        <!-- Contents -->
+        <div class="modal-body">
+
+          <!-- Edit Button -->
+          <a class="btn lockNav pull-right patientUnlock"><span class="fa fa-unlock"></span> &nbsp; Edit</a>
+
+          <!-- Lock Button // Initially Hidden -->
+          <a class="btn lockNav pull-right patientLock" style="display: none;"><span class="fa fa-lock"></span></a>
+
+          <!-- Locked -->
+          <div class="lockedPatientInformation">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Grace" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Parker" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="1025 Augusta Drive" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Address 2</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">City</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Agloe" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">State</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>IL</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Zip</label>
+                    <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="60351" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                </fieldset>
+
+              <br clear="all" />
+
+              <h5>Contact Information</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="Grace.A.Parker@gmail.com" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="(312) 253 - 9821" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>Mobile</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+              </fieldset>
+
+              <br clear="all" />
+
+              <h5>Preferences</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Language</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="English" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-2 designation">Primary</div>
+
+                    <div class="col-sm-2">
+                      <strong>Translator Needed?</strong>
+                    </div>
+
+                    <div class="col-sm-3">
+                       <input type="radio" name="translator" class="radio" id="translatorYes" value="yes" /> <label for="translatorYes">Yes</label> &nbsp; &nbsp; <input type="radio" name="translator" class="radio" id="translatorNo" value="no" checked /> <label for="translatorNo" style="margin-left: 20px;">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Spanish" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+
+              </fieldset>
+
+              <br clear="all" />
+
+              <h5>Care Team</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Fredrick Parker" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Relationship</label>
+                    <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="Sibling" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="fparker@gmail.com" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="(847) 342-7860" disabled />
+                        <i class="form-control-feedback fa fa-lock"></i>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder" id="disabledSelect" disabled>
+                        <option selected>Mobile</option>
+                    </select>
+                        <i class="form-control-feedback selectGlyph fa fa-lock"></i>
+                    </div>
+                    <div class="col-sm-3 designation">Primary</div>
+                </div>
+
+
+              </fieldset>
+
+          </form>
+          </div>
+          <!-- //Locked -->
+
+          <!-- Unlocked -->
+          <div class="unlockedPatientInformation">
+
+          <form class="form-horizontal">
+
+                <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Grace" />
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" value="Parker" />
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-4">
+                    <input type="text" class="form-control" value="1025 Augusta Drive" />
+                    </div>
+
+                <label for="" class="col-sm-2 control-label">Address 2</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="" />
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">City</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Agloe" />
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">State</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder">
+                        <option selected>Illinois</option>
+                          <option>Other States Here</option>
+                    </select>
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Zip</label>
+                    <div class="col-sm-2">
+                    <input type="text" class="form-control" value="60351" />
+                    </div>
+                </div>
+
+                </fieldset>
+
+                <br clear="all" />
+
+              <h5>Contact Information</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <fieldset>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" value="Grace.A.Parker@gmail.com" />
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="addContact firstContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                        <div class="removeContact firstContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                        <div class="makePrimary firstContact"><a>Set as Primary</a></div>
+                        <div class="setPrimary firstContact">Primary</div>
+                    </div>
+
+                </div>
+
+                <!-- Secondary Email // Initally Hidden -->
+                <div class="form-group has-feedback has-feedback-right secondaryEmail">
+                <label for="" class="col-sm-2 control-label">Secondary Email</label>
+                    <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="Enter a secondary Email" />
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="addContact secondContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                        <div class="removeContact secondContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                        <div class="makePrimary secondContact"><a>Set as Primary</a></div>
+                    </div>
+
+                </div>
+
+                <div class="form-group has-feedback has-feedback-right">
+                <label for="" class="col-sm-2 control-label">Phone</label>
+                    <div class="col-sm-3">
+                    <input type="text" class="form-control" value="(312) 253 - 9821" />
+                    </div>
+
+                <label for="" class="col-sm-1 control-label">Type</label>
+                    <div class="col-sm-2">
+                    <select class="form-control placeholder">
+                        <option selected>Mobile</option>
+                          <option>Home</option>
+                          <option>Work</option>
+                          <option>Other</option>
+                    </select>
+                    </div>
+
+                    <div class="col-sm-4 addContact"><a><span class="fa fa-plus-circle"></span></a>
+                        <div class="removeContact firstPhone"><a><span class="fa fa-minus-circle"></span></a></div>
+                    </div>
+
+                </div>
+
+                <br clear="all" />
+
+                <h5>Preferences</h5>
+                <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+                <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Language</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="English" />
+                      </div>
+                      <div class="col-sm-2">
+                          <div class="addLang firstLangPlus" style="display: none;"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeLang firstLangMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary firstLang"><a>Set as Primary</a></div>
+                          <div class="setPrimary firstLang" style="display: inline;">Primary</div>
+                      </div>
+
+                      <div class="col-sm-2">
+                        <strong>Translator Needed?</strong>
+                      </div>
+
+                      <div class="col-sm-3">
+                         <input type="radio" name="translator" class="radio" id="translatorYes" value="yes" /> <label for="translatorYes">Yes</label> &nbsp; &nbsp; <input type="radio" name="translator" class="radio" id="translatorNo" value="no" checked /> <label for="translatorNo" style="margin-left: 20px;">No</label>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right secondaryLanguage">
+                  <label for="" class="col-sm-2 control-label"></label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="Spanish" />
+                      </div>
+
+                      <div class="col-sm-3">
+                          <div class="addLang secondLangPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeLang secondLangMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary secondLang" style="display: inline;"><a>Set as Primary</a></div>
+                      </div>
+                  </div>
+
+                </fieldset>
+
+                <br clear="all" />
+
+                <h5>Care Team</h5>
+                <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+                <fieldset>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Name</label>
+                      <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="Fredrick Parker" />
+                      </div>
+
+                  <label for="" class="col-sm-2 control-label">Relationship</label>
+                      <div class="col-sm-2">
+                      <select class="form-control placeholder">
+                          <option selected>Sibling</option>
+                            <option>Parent</option>
+                            <option>Guardian</option>
+                            <option>Friend</option>
+                            <option>Other</option>
+                      </select>
+                      </div>
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-7">
+                      <input type="text" class="form-control" value="fparker@gmail.com" />
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="addContact firstContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeContact firstContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary firstContact"><a>Set as Primary</a></div>
+                          <div class="setPrimary firstContact">Primary</div>
+                      </div>
+
+                  </div>
+
+                  <!-- Secondary Email // Initally Hidden -->
+                  <div class="form-group has-feedback has-feedback-right secondaryEmail">
+                  <label for="" class="col-sm-2 control-label">Secondary Email</label>
+                      <div class="col-sm-7">
+                      <input type="text" class="form-control" placeholder="Enter a secondary Email" />
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="addContact secondContactPlus"><a><span class="fa fa-plus-circle"></span></a></div>
+                          <div class="removeContact secondContactMinus"><a><span class="fa fa-minus-circle"></span></a></div>
+                          <div class="makePrimary secondContact"><a>Set as Primary</a></div>
+                      </div>
+
+                  </div>
+
+                  <div class="form-group has-feedback has-feedback-right">
+                  <label for="" class="col-sm-2 control-label">Phone</label>
+                      <div class="col-sm-3">
+                      <input type="text" class="form-control" value="(312) 253 - 9821" />
+                      </div>
+
+                  <label for="" class="col-sm-1 control-label">Type</label>
+                      <div class="col-sm-2">
+                      <select class="form-control placeholder">
+                          <option selected>Mobile</option>
+                            <option>Home</option>
+                            <option>Work</option>
+                            <option>Other</option>
+                      </select>
+                      </div>
+
+                      <div class="col-sm-4 addContact"><a><span class="fa fa-plus-circle"></span></a>
+                          <div class="removeContact firstPhone"><a><span class="fa fa-minus-circle"></span></a></div>
+                      </div>
+
+                  </div>
+
+
+              </fieldset>
+
+              <br clear="all" />
+
+          </form>
+
+          </div>
+
+      </div>
+        <!-- //Contents -->
+
+          <!-- Update Button --  Initially hidden -->
+          <div class="modal-footer">
+            <p class="updatePatientButtons">
+            <button type="button" class="btn btn-primary updatePatientInformation">Update Patient Information</button>
+            <span class="grep"></span>
+            <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+            </p>
+
+            <p class="closeModal" align="center">
+                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+            </p>
+          </div>
+          <!-- //Update Button --  Initially hidden -->
+
+    </div>
+  </div>
+</div>
+<!-- //Patient Information Modal -->
+
+<!-- Providers Modal -->
+<div class="modal fade" id="providerInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4 class="modal-title" id="myModalLabel">Provider Information</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right patHistHead">
+
+          <!-- Results -->
+          ( Results: <span class="resultsNo">4</span> )
+          <!-- //Results -->
+
+        </div>
+
+        <!-- Close Modal -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body" style="padding-top: 0px;">
+
+          <!-- Provider Cards -->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Primary Care Provider</span>
+                </p>
+
+                <div class="ICContent">
+                PCP Name: <strong>Dr. Cathleen White</strong><br/ >
+                Location Name: <strong>Bayside Family Care</strong><br/ >
+                Physician Specialty: <strong>Family Medicine</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong>08/22/2014</strong><br/ >
+                Most Recent Visit Reason: <strong>Wellness Visit</strong><br/ >
+                System: <strong>Regional Medical</strong><br/ >
+                Physician Phone: <strong>(312) 495-9009</strong>
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set1" style="display: none;">Set as PCP</a>
+                  <span class="PCPStar star1 fa fa-star" style="display: inline;"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Specialist</span>
+                </p>
+
+                <div class="ICContent">
+                PCP Name: <strong>Dr. Michael Lang</strong><br/ >
+                Location Name: <strong>Northside Medical Center</strong><br/ >
+                Physician Specialty: <strong>Endoscopy</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong>01/01/2013</strong><br/ >
+                Most Recent Visit Reason: <strong>Colonoscopy</strong><br/ >
+                System: <strong>Regional Medical</strong><br/ >
+                Physician Phone: <strong>(217) 398-5632</strong>
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set2">Set as PCP</a>
+                  <span class="PCPStar star2 fa fa-star"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+          <br clear="all" />
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Specialist</span>
+                </p>
+
+                <div class="ICContent">
+                PCP Name: <strong>Dr. Jeffrey Adams</strong><br/ >
+                Location Name: <strong>University Medical Center</strong><br/ >
+                Physician Specialty: <strong>Cardiology</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong>03/15/2014</strong><br/ >
+                Most Recent Visit Reason: <strong>Echocardiogram</strong><br/ >
+                System: <strong>University Medical</strong><br/ >
+                Physician Phone: <strong>(312) 890-7700</strong>
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set3">Set as PCP</a>
+                  <span class="PCPStar star3 fa fa-star"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+              <div class="providerCard relative">
+
+                <p>
+                <span class="cardHead">Specialist</span>
+                </p>
+
+                <div class="ICContent">
+                PCP Name: <strong>Dr. Daniel Goodhart</strong><br/ >
+                Location Name: <strong>Bayside Medical (Main Campus)</strong><br/ >
+                Physician Specialty: <strong>Podiatry</strong><br/ >
+                Physician Credential: <strong>MD</strong><br/ >
+                Most Recent Service Date: <strong>04/16/2014</strong><br/ >
+                Most Recent Visit Reason: <strong>Diabetic Foot Screening</strong><br/ >
+                System: <strong>Regional Medical</strong><br/ >
+                Physician Phone: <strong>(312) 442-0861</strong>
+                </div>
+
+                <!-- PCP -->
+                <span class="setPCP">
+                  <a class="set4">Set as PCP</a>
+                  <span class="PCPStar star4 fa fa-star"></span>
+                </span>
+
+                <!-- Schedule Button -->
+                <a data-toggle="modal" data-target="#insuranceInfo" class="btn scheduleVisit pull-right"><span class="fa fa-calendar"></span></a>
+
+              </div>
+
+          </div>
+
+          <!-- //Provider Cards -->
+          <div class="clearfix"></div>
+
+          <!-- Close Modal -->
+          <p align="center" style="margin-top: 20px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+          <!-- //Close Modal -->
+
+        </div>
+        <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Providers Modal -->
+
+<!-- Insurance Modal -->
+<div class="modal fade" id="insuranceInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Patient Insurance Information</h4>
+
+        <a class="btn-green btn-gloss-green lockNav addNewCard clickAddCard"><span class="fa fa-plus-circle"></span> &nbsp;Add a New Card</a>
+
+        <!-- Updated Success -->
+        <div class="successBanner bannerIns">
+
+            <div class="successIcon"><span class="fa fa-check"></span></div>
+
+            <div class="bannerContentSuccess">
+
+                <span class="bannerHead banSuccess">Insurance Card Updated</span><br />
+                Your updates have been made, however, they are awaiting MPI syncing.
+
+            </div>
+
+            <div class="pull-right"><a class="closeBanner dismissBannerIns"><span class="fa fa-times"></span></a></div>
+
+            <br clear="all" />
+
+        </div>
+        <!-- //Updated Success -->
+
+        <!-- Updated Success -->
+        <div class="successBanner bannerIns2">
+
+            <div class="successIcon"><span class="fa fa-check"></span></div>
+
+            <div class="bannerContentSuccess">
+
+                <span class="bannerHead banSuccess">Insurance Card Added</span><br />
+                The new insurance card added for this patient was added successfully.
+
+            </div>
+
+            <div class="pull-right"><a class="closeBanner dismissBannerIns"><span class="fa fa-times"></span></a></div>
+
+            <br clear="all" />
+
+        </div>
+        <!-- //Updated Success -->
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+
+          <div class="cardDetails">
+
+              <h5>Current Coverage</h5>
+              <hr class="separator" style="margin: 10px 0px;" />
+
+              <ul id="sortable1" class="connectedSortable">
+
+                <!-- Card One -->
+                <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard sortable">
+
+                    <!-- Nunmber -->
+                    <span class="numbBox insNumb">1</span>
+
+                    <!-- Title & Menu -->
+                    <div class="insTitle col-sm-8 noPad noMargin">
+                    <span class="cardHead">Medicare &nbsp; (US Health)</span>
+                    </div>
+
+                    <div class="insNav col-sm-4 pull-right noPad noMargin">
+                    <!-- Active or No -->
+                    <a class="activeCov" style="border: 0px;"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                    <!-- Check Eligibility
+                    <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a> -->
+                    <!-- Edit
+                    <a class="editCov clickEdit1"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a> -->
+                    </div>
+                    <!-- //Title & Menu -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="ICContent">
+                    Primary Member<br />
+                    <span class="insuranceName">Jonathan Smith</span><br />
+                    <p>
+                    Code: <strong>C52</strong><br/ >
+                    Source: <strong>Payer</strong><br/ >
+                    Group: <strong>123456789A</strong><br/ >
+                    Subscriber #: <strong>298393821</strong><br/ >
+                    Verification Status: <span class="green"><strong>Passed</strong></span><br />
+                    Verification Date: <span class="red"><strong>04/10/2015</strong></span>
+                    </p>
+                    </div>
+
+                  </li>
+                  <!-- //Card One -->
+
+                  <!-- Card Two-->
+                  <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard sortable">
+
+                    <!-- Nunmber -->
+                    <span class="numbBox insNumb">2</span>
+
+                    <!-- Title & Menu -->
+                    <div class="insTitle col-sm-8 noPad noMargin">
+                    <span class="cardHead">Medicaid &nbsp; (US Health)</span>
+                    </div>
+
+                    <div class="insNav col-sm-4 pull-right noPad noMargin">
+                    <!-- Active or No -->
+                    <a class="activeCov" style="border: 0px;"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                    <!-- Check Eligibility
+                    <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a> -->
+                    <!-- Edit
+                    <a class="editCov clickEdit1"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a> -->
+                    </div>
+                    <!-- //Title & Menu -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="ICContent">
+                      Primary Member<br />
+                      <span class="insuranceName">Jonathan Smith</span><br />
+                      <p>
+                      Code: <strong>A72</strong><br/ >
+                      Source: <strong>Payer</strong><br/ >
+                      Group: <strong>14585324567</strong><br/ >
+                      Subscriber #: <strong>298393821</strong><br/ >
+                      Verification Status: <span class="green"><strong>Passed</strong></span><br />
+                      Verification Date: <strong>09/10/2015</strong>
+                    </p>
+                    </div>
+
+
+                  </li>
+                  <!-- //Card Two -->
+
+              </ul>
+
+              <div class="clearfix"></div>
+              <br clear="all" /><br clear="all" />
+
+
+              <h5>Historical Coverage</h5>
+              <hr class="separator" style="margin: 10px 0px;" />
+
+              <ul id="sortable2" class="connectedSortable">
+
+                  <!-- Card One -->
+                  <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard sortable">
+
+                    <!-- Nunmber -->
+                    <span class="numbBox insNumb">1</span>
+
+                    <!-- Title & Menu -->
+                    <div class="insTitle col-sm-8 noPad noMargin">
+                    <span class="cardHead">Aetna Preferred</span>
+                    </div>
+
+                    <div class="insNav col-sm-4 pull-right noPad noMargin">
+                    <!-- Active or No -->
+                    <a class="inactiveCov" style="border: 0px;"><span class="fa fa-circle" data-toggle="tooltip" data-placement="auto" title="Active / Inactive"></span></a>
+                    <!-- Check Eligibility
+                    <a class="checkEligibility"><span data-toggle="tooltip" data-placement="auto" title="Check Eligibility">E</span></a> -->
+                    <!-- Edit
+                    <a class="editCov clickEdit1"><span class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit Card"></span></a> -->
+                    </div>
+                    <!-- //Title & Menu -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="ICContent">
+                      Primary Member<br />
+                      <span class="insuranceName">Jonathan Smith</span><br />
+                      <p>
+                      Code: <strong>F32</strong><br/ >
+                      Source: <strong>Payer</strong><br/ >
+                      Group: <strong>12345</strong><br/ >
+                      Subscriber #: <strong>VBR2134523</strong><br/ >
+                      Verification Status: <span class="red"><strong>Not Eligible</strong></span><br />
+                      Verification Date: <span class="red"><strong>07/10/2014</strong></span><br />
+                      Eligibility Dates: <strong>01/01/2010 &mdash; 05/05/2014</strong>
+                    </p>
+                    </div>
+
+                  </li>
+                  <!-- //Card One -->
+
+                  <!-- Add Card
+                  <div data-toggle="modal" data-target="#insuranceInfo" class="col-lg-5 col-md-5 col-sm-5 col-xs-5 insuranceCard addInsurance clickAddCard">
+
+                    <div class="addIt">
+                    <span class="fa fa-plus-circle"></span><br />
+                    <span class="addText">Add A New Card</a>
+                    </div>
+
+                  </div>
+                  //Add Card -->
+
+              </ul>
+
+              <br clear="all" />
+
+              <p align="center" style="margin-top: 40px;">
+                  <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+              </p>
+
+          </div>
+
+          <div class="editCardOne">
+
+            <h5>Edit Insurance Card</h5>
+            <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+            <form class="form-horizontal">
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Payor Name</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Medicare (US Health)" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Primary Member Name</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Jonathan Smith" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Source</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Payer"/>
+                    <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Plan</label>
+                <div class="col-sm-4">
+                <select class="form-control placeholder">
+                    <option selected>Family</option>
+                </select>
+                <i class="form-control-feedback fa fa-unlock selectGlyph"></i>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Group #</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="14585324567" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Subscriber</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="123456789A" />
+                  <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Verification Status</label>
+                <div class="col-sm-4">
+                  <select class="form-control placeholder">
+                      <option selected>Passed</option>
+                  </select>
+                  <i class="form-control-feedback selectGlyph fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Verification Date</label>
+                <div class="col-sm-4" id="sandbox-container">
+                  <input type="text" class="form-control" placeholder="09/10/2015" />
+                  <i class="form-control-feedback fa fa-calendar"></i>
+                </div>
+
+            </div>
+
+            </fieldset>
+          </form>
+
+            <br clear="all" />
+
+            <h5>Edit Insurance Out-of-Pocket Costs</h5>
+            <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+            <form class="form-horizontal">
+            <fieldset>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Primary Care</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="$20.00" />
+                <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Specialist</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="$30.00" />
+                    <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback has-feedback-right">
+            <label for="" class="col-sm-2 control-label">Emergency Room</label>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="$125"/>
+                    <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+
+            <label for="" class="col-sm-2 control-label">Inpatient Hosp Copay</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="$130"/>
+                      <i class="form-control-feedback fa fa-unlock"></i>
+                </div>
+            </div>
+
+            </fieldset>
+          </form>
+
+          <br clear="all" /><br clear="all" />
+
+          <!-- Update Button -->
+          <div class="updateInsButtons">
+            <button type="button" class="btn btn-primary updateInsuranceCard">Update Insurance Card</button>
+            <span class="grep"></span>
+            <a ID="btnCancel" class="btn-cancelIns cancelNav" data-dismiss="modal" aria-label="Close" />Cancel</a>
+          </div>
+          <!-- //Update Button --  Initially hidden -->
+
+        </div>
+
+          <div class="editCardTwo">
+
+              <h5>Add Insurance Card</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <form class="form-horizontal">
+              <fieldset>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Payor Name</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Payor Name" />
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Primary Member Name</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Primary Member Name" />
+                  </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Source</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Source"/>
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Plan</label>
+                  <div class="col-sm-4">
+                  <select class="form-control placeholder">
+                      <option selected>Select</option>
+                  </select>
+                  </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Group #</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Group #" />
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Subscriber</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Add Subscriber" />
+                  </div>
+
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Verification Status</label>
+                  <div class="col-sm-4">
+                    <select class="form-control placeholder">
+                        <option selected>Select</option>
+                    </select>
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Verification Date</label>
+                  <div class="col-sm-4" id="sandbox-container">
+                    <input type="text" class="form-control" placeholder="Enter Verification Date" />
+                  </div>
+
+              </div>
+
+              </fieldset>
+            </form>
+
+              <br clear="all" />
+
+              <h5>Add Insurance Out-of-Pocket Costs</h5>
+              <hr class="separator" style="margin: 10px 0px 25px 0px;" />
+
+              <form class="form-horizontal">
+              <fieldset>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Primary Care</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Primary Care Costs" />
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Specialist</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Specialist Costs" />
+                  </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="form-group has-feedback has-feedback-right">
+              <label for="" class="col-sm-2 control-label">Emergency Room</label>
+                  <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Add Emergency Room Costs"/>
+                  </div>
+
+              <label for="" class="col-sm-2 control-label">Inpatient Hosp Copay</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Add Hospital Copay"/>
+                  </div>
+              </div>
+
+              </fieldset>
+            </form>
+
+            <br clear="all" /><br clear="all" />
+
+            <!-- Update Button -->
+            <div class="updateInsButtons">
+              <button type="button" class="btn btn-primary addInsuranceCard">Add Insurance Card</button>
+              <span class="grep"></span>
+              <a ID="btnCancel" class="btn-cancelIns cancelNav" data-dismiss="modal" aria-label="Close" />Cancel</a>
+            </div>
+            <!-- //Update Button --  Initially hidden -->
+
+          </div>
+
+      </div>
+      <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+
+<!-- //Insurance Modal -->
+
+<!-- Call History Modal -->
+<div class="modal fade" id="callHistoryInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4 class="modal-title" id="myModalLabel">Call History</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right patHistHead">
+
+          <!-- Results -->
+          ( Results: <span class="resultsNo">3</span> )
+          <!-- //Results -->
+
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body" style="padding-top: 0px;">
+
+          <!-- Table Results -->
+          <div class="callLog">
+
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Action</th>
+                              <th>whiteNumberBox</th>
+                              <th class="noteField">Note</th>
+                              <th>Activity</th>
+                              <th>Call User</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th>No answer, left message with person</th>
+                              <td>09/27/2015 - 9:02 AM</td>
+                              <td class="noteField">Grace was not home. A message was left with her husband.</td>
+                              <td>Patient Engagement</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+
+                          <tr>
+                              <th>Left Voicemail</th>
+                              <td>09/29/2015 - 11:05 AM</td>
+                              <td class="noteField">No answer. Left message.</td>
+                              <td>Patient Engagement</td>
+                              <td>Jared Allen</td>
+                          </tr>
+                          <tr>
+                              <th>Guarantor Requests Call Back</th>
+                              <td>09/30/2015 - 3:02 PM</td>
+                              <td class="noteField">Spoke with Grace, however something came up and the call needed to be disconnected</td>
+                              <td>Patient Engagement</td>
+                              <td>Susan Peterson</td>
+                          </tr>
+
+                      </tbody>
+                  </table>
+
+              </div>
+          <!-- //Table Results -->
+
+
+          <div class="clearfix"></div>
+
+          <p align="center" style="margin-top: 20px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+        </div>
+        <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Call History Modal -->
+
+<!-- Add to Watchlist Modal -->
+<div class="modal fade" id="addWatchlist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Add Patient to Watchlist?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Save to Watchlist</button>
+        <span class="grep"></span>
+        <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Add to Watchlist Modal -->
+
+<!-- Tag / Flag Patient Modal -->
+<div class="modal fade" id="addTag" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Flag Patient?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Save Flag</button>
+        <span class="grep"></span>
+        <a ID="btnCancel" class="btn-cancelHcc" data-dismiss="modal" aria-label="Close" />Cancel</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //Tag / Flag Patient Modal -->
+
+<!-- Upcoming Appointments Modal -->
+<div class="modal fade" id="upcomingAppointments" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog-large">
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4 class="modal-title" id="myModalLabel">Upcoming Appointments</h4>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right patHistHead">
+
+          <!-- Results -->
+          ( Results: <span class="resultsNo">1</span> )
+          <!-- //Results -->
+
+          <!-- Show All
+          <a class="barNav expander" data-name="show">show all</a>
+          <!-- //Show All -->
+
+          <!-- Show Less
+          <a class="barNav depander" data-name="show">show less</a>
+          <!-- //Show Less -->
+
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-times-circle" aria-hidden="true"></span></button>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body" style="padding-top: 0px;">
+
+          <!-- Table Results -->
+          <div class="callLog">
+
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Clinic / Department</th>
+                              <th>Physician</th>
+                              <th>Reason</th>
+                              <th>Date</th>
+                              <th>Time</th>
+                              <th>Date Scheduled</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                           <tr>
+                              <th>St. Michael's Medical</th>
+                              <td>Dr. Parker</td>
+                              <td>Eye Exam</td>
+                              <td>11/10/2015</td>
+                              <td>11:30 AM</td>
+                              <td>09/15/2015</td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+              </div>
+          <!-- //Table Results -->
+
+
+          <div class="clearfix"></div>
+
+          <p align="center" style="margin-top: 20px;">
+              <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" aria-label="Close">Close</button>
+          </p>
+
+        </div>
+        <!-- //Modal Content -->
+
+    </div>
+  </div>
+</div>
+<!-- //Upcoming Appointments Modal -->
+
+
+<!-- ####################################### Scripts ######################################### -->
+
+<!-- Dynamic Date Scripts -->
+<script type="text/javascript" src="../../../js/moment.js"></script>
+<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
+
+<script type="text/javascript" src="../../../js/basics.js"></script>
+<script type="text/javascript" src="../../../js/modals.js"></script>
+<script type="text/javascript" src="../../../js/scheduling.js"></script>
+<script type="text/javascript" src="../../../js/navigation.js"></script>
+
+
+<!-- Sticky Table Scripts -->
+<script src="../../../js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="../../../js/jquery.stickyheader.js"></script>
+
+<!-- Time Picker / Date Picker -->
+<script type="text/javascript" src="../../../js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+    $('#timepicker3').timepicker({
+        minuteStep: 5,
+        showInputs: false,
+        disableFocus: true
+    });
+
+    $('#sandbox-container input').datepicker({
+        autoclose: true
+    });
+</script>
+
+<!-- Scrolling Tabs
+<script src="js/scrollingTabs.js"></script> -->
+
+<!-- For Drag and Drop -->
+<script src="../../../js/jquery-ui.min.js"></script>
+
+<script>
+  $(function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  });
+</script>
+
+
+</body>
+</html>

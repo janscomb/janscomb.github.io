@@ -1,0 +1,242 @@
+.chevron:before {
+    font-family: 'FontAwesome';
+    content:"\f053";
+}
+
+.accord:before {
+    font-family: 'FontAwesome';
+    content:"\f078";
+    margin: 0 0 0 5px;
+    font-size: 0.4em;
+    position: relative;
+    top: -2px;
+}
+
+.decord:before {
+    font-family: 'FontAwesome';
+    content:"\f077";
+    margin: 0 0 0 5px;
+    font-size: 0.4em;
+    position: relative;
+    top: -2px;
+}
+
+.mileNav {
+    margin-bottom: 10px;
+}
+
+.mileNav ul {
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+    background: #3d64a8;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0px solid #3D64A8;
+    border-top: 0px solid #3D64A8;
+    z-index: 888;
+}
+
+.mileNav ul > li {
+    display: inline-block;
+    /* margin-left: -5px; */
+}
+
+.mileNav ul > li > ul {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    background: #003366;
+    border-bottom: 1px solid #003366;
+    border-top: 1px solid #003366;
+    z-index: 2;
+}
+
+.mileNav ul > li > a, .mileNav ul > li > a:visited, .mileNav ul > li > a:Link {
+    color: #fff;
+    cursor: pointer;
+    padding: 14px 25px 14px 15px;
+    display: block;
+    text-decoration: none;
+    font-family: "Lato-Light", "OpenSans", Tahoma, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.sectionHeader {
+    background: #001C70;
+    padding: 14px 18px 14px 15px;
+    color: #FFF;
+    font-family: "Lato-Light", "OpenSans", Tahoma, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.mileNav ul > li > a.goBack {
+    text-align: right;
+    padding: 14px 4px 14px 12px;
+}
+
+.mileNav ul > li > a.goBack:hover,
+.mileNav > .POCWiz > li > a.goBack:hover,
+.mileNav > .POCWiz > li > a:hover {
+    background-color: #001C70;
+    color: #FFF;
+}
+
+
+.mileNav ul li a span.accord,
+.mileNav ul li a span.decord{
+    background: transparent;
+    color: #FFF;
+    font-size: 16px;
+    position: relative;
+    top: -1px;
+}
+
+.mileNav ul li a:hover span.accord,
+.mileNav ul li a:hover span.decord {
+    color: #FFF;
+}
+
+/* Fix for width extra small */
+@media only screen and (max-width: 1350px) {
+	.mileNav ul > li > a, .mileNav ul > li > a:visited, .mileNav ul > li > a:Link {
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        padding: 10px;
+    }
+
+    .sectionHeader {
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        padding: 10px 16px;
+    }
+
+    .mileNav ul > li > a.goBack {
+        padding: 10px 0px 9px 8px;
+    }
+
+    .mileNav {
+        height: 42px;
+    }
+
+    .mileNav ul li a.notcomplete span, .mileNav ul li a.nostate span, .mileNav ul li a.complete span, .mileNav ul li a.inprogress span {
+        font-size: 7px;
+        top: -2px;
+        font-weight: 100;
+        padding: 1px 3px 2px 3px !important;
+    }
+
+    .mileNav ul li a.nostate span, .mileNav ul li a.inprogress span {
+        padding: 2px 3px 1px 3px !important;
+        top: 0px;
+    }
+
+    .accord, .decord {
+        font-size: 1.2em !important;
+        top: 1px;
+    }
+
+    .hideScripting {
+        font-size: 0.8em;
+        margin-top: 11px;
+    }
+}
+
+/* Fix for width extra small */
+@media only screen and (max-width: 1100px) {
+
+   .mileNav ul > li > a, .mileNav ul > li > a:visited, .mileNav ul > li > a:Link {
+        font-size: 11px;
+        letter-spacing: 0.03em;
+        padding: 7px 8px 9px 8px;
+        font-family: "OpenSans", Tahoma, sans-serif;
+    }
+
+    .sectionHeader {
+        font-size: 11px;
+        letter-spacing: 0.03em;
+        padding: 8px;
+        font-family: "OpenSans", Tahoma, sans-serif;
+    }
+
+    .mileNav ul > li > a.goBack {
+        padding: 8px 0px 7px 8px;
+    }
+
+    .mileNav {
+        height: 40px;
+    }
+
+    .mileNav ul li a.notcomplete span, .mileNav ul li a.nostate span, .mileNav ul li a.complete span, .mileNav ul li a.inprogress span {
+        font-size: 6px;
+        top: -2px;
+        font-weight: 100;
+        padding: 1px 3px !important;
+        margin-right: 5px;
+    }
+
+    .mileNav ul li a.nostate span, .mileNav ul li a.inprogress span {
+        padding: 1px 3px 1px 3px !important;
+        top: 0px;
+    }
+
+    .hideScripting {
+        margin-top: 6px;
+    }
+
+    .accord, .decord {
+        top: 0px !important;
+    }
+
+    /* IE 10+ Fix for checkbox */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .mileNav ul li a.notcomplete span, .mileNav ul li a.nostate span, .mileNav ul li a.complete span, .mileNav ul li a.inprogress span {
+ 		   padding: 0px 2px 2px 2px;
+		}
+    }
+}
+
+/* Fix for width extra small */
+@media only screen and (max-width: 950px) {
+    .mileNav ul > li:first-child, .mileNav ul > li:nth-child(2), .sectionHeader {
+        display: none;
+    }
+}
+
+/* tiny */
+@media only screen and (max-width: 800px) {
+    .mileNav ul li a.notcomplete span, .mileNav ul li a.nostate span, .mileNav ul li a.complete span, .mileNav ul li a.inprogress span {
+        display: none;
+    }
+}
+
+.chevron {
+    background: transparent !important;
+}
+
+.chevron:before {
+    font-size: 13px;
+    position: relative;
+    top: 3px;
+    color: #FFF;
+}
+
+.activeMilestone, .mileNav ul > li > a:hover {
+    background: #FFF;
+    color: #3D64A8;
+}
+
+.activeMilestone {
+    background: rgba(255,255,255,0.35);
+    color: #3D64A8;
+}
+
+.mileHCC,
+/* Hide Sub Milestones Menus */
+.mainMilestones, .patientEngagementMenu, .schedulingMenu, .codingDocumentationMenu, .claimsRegistryMenu, .careManagementMenu, .otherMenu, .cd1Menu {
+    display: none;
+}

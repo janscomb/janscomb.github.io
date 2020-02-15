@@ -1,0 +1,176 @@
+@media print {
+
+    @page {
+        size: landscape
+    }
+
+    @page {
+      margin: 0cm !important;
+    }
+
+    @page :left {
+      margin: 0cm !important;
+    }
+
+    @page :right {
+       margin: 0cm !important;
+    }
+
+    /* Hide Link URLs in Chrome */
+    @media print {
+      a[href]:after {
+        content: none !important;
+      }
+    }
+
+    @media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    body{
+        padding: 0px !important;
+        margin: 0px 0px 0px -5px !important;
+        color: #000;
+        background: #FFF;
+        width: 98%;
+    }
+
+    /* Hide Scrollbars from Print in IE & Chrome */
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: none;
+    -webkit-overflow-style: none;
+    }
+
+    /* Hide Scrollbars from Print in Chrome */
+    body::-webkit-scrollbar, .body_bg::-webkit-scrollbar, html::-webkit-scrollbar { overflow: none; }
+
+    /* Once-and-for-all No Scrollbars in Print*/
+    html,body { overflow: none; }
+
+    .row {
+        margin: 0px -35px 0 -10px;
+        padding: 0px;
+    }
+
+      /* Do not widow items */
+      h1, h2, h3, h4, .POCLog, PSOSect, thead {
+       page-break-after: avoid;
+      }
+
+    /* Show items with .Print class */
+    .Print {
+        display: inline;
+    }
+
+    /* Let's Hide Unneeded Stuff */
+    .topBar, .nav, .backNav, .wizNav, .quikLaunch, .clearfix, .actions, .patientCard2, .sectionNotification, 
+    .backwork, .alertNotification:after, .contactHistory, .expander, .showAll, .amChartSmall, .userBar, .backToTop, 
+    .footerContainer, .treePane, .WLMenu, .WLSeparator, .mileNav, .mainMilestones, .POCWiz, .codingRecoveryServicesMenu, 
+    .topSection, ul.codingRecoveryServicesMenu, .worklistLabel, .filterResults, .treePane, .searchBar, .filterBar, 
+    .keyNav {
+        display: none !important;
+        /* Hey, this IS important after all */
+    }
+
+    /* Show Logo */
+    .logoPrint {position: absolute; right: 0px; top: 0px; float: right;}
+    .logoPrint img {width:120px;}
+
+    
+    .viewingTitle, .worklistTitle, .menuResults, .dashContentRight, .mainContainer {
+        display: block !important;
+    }
+    
+    .worklistTitle {
+        font-size: 15px !important;
+    }
+
+    .titleOverflow {
+        overflow: visible;
+        white-space: nowrap;
+    }
+        
+    .componentAll {
+        width: 100% !important;
+        padding: 0px;
+        margin: 0px;
+        background-color: none !important;
+        background: transparent !important;
+    }
+
+    /* Tables */
+    .dashContentRight {
+        z-index: 9999 !important;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        font-size: 0.5em;
+        overflow: inherit !important;
+        font-family: "OpenSans", "Lato", Helvetica, Tahoma, Verdana, Arial, sans-serif;
+        background-color: none !important;
+        background: transparent !important;
+    }
+
+    .tdStatus div {
+        padding: 2px 3px !important;
+        min-width: 14px;
+    }
+
+    .sticky-col, .sticky-intersect, .sticky-thead {
+        display: none !important;
+    }
+
+    .sticky-wrap {
+        border: 1px solid #ccc !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .sticy-thead, .sticky-enabled, thead, tbody {
+        width: 100% !important;
+    }
+
+    table {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    thead tr th {
+        padding: 0.8em 0.6em !important;
+        font-size: 0.8em !important;
+        background: #666 !important;
+        color: #FFF !important;
+        font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;
+        padding-left: 10px !important;
+    }
+
+    thead tr th, thead tr td {
+      border: 0px;
+    }
+
+    td, th {
+        border-right:  1px solid #E4E4E4;
+    }
+
+    tbody tr, tbody tr:nth-child(2n-1), tbody tr td, tbody tr th {
+        background-color: #FFF !important;
+        color: #000 !important;
+    }
+
+    tbody tr th, tbody tr td,
+    tbody tr:nth-child(2n-1), tbody {
+        font-size: 7px !important;
+        padding: 2px 15px !important;
+        height: 32px !important;
+    }
+
+    tbody tr td, tbody tr th {
+        border-bottom: 1px solid #E4E4E4;
+    }
+
+    tbody tr:last-child, tbody tr:last-child td, tbody tr:last-child th {
+        border-bottom: 0px !important;
+    }
+}

@@ -1,0 +1,529 @@
+h3.dash {
+    color: #666;
+    font-size: 20px;
+    margin: auto auto 10px auto;
+}
+
+/* Worklist Header Menu */
+.WLMenuDash {
+    display: inline;
+    height: 26px;
+    margin-top: 0px;
+    position: relative;
+    text-align: right;
+    top: 0px;
+}
+
+.WLMenuDash a, .WLMenuDash a:visited {
+    color: #999;
+    border-right: 1px solid #999;
+    padding: 5px 12px 7px 8px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.WLMenuDash a:hover {
+    color:  #3D64A8;
+}
+
+.WLMenuDash a:active {
+    background: transparent;
+}
+
+.WLMenuDash a.menuFav:active {
+    color: #FFCC00;
+}
+
+.WLMenuDash a:last-child {
+    border: 0px solid;
+    text-decoration: none;
+}
+
+.dashLayout {
+	padding-top: 20px;
+}
+
+.dashContainer {
+    display: block;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0px;
+    padding: 20px;
+    color: #666;
+    font-size: 13px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+/***********************************************************
+
+    Dashboard
+
+************************************************************/
+
+.snapArea {
+    text-align: center;
+}
+
+.snapBox, a.snapBox, a.snapBox:visited, a.snapBox:Link {
+    /* width: 19.65%; */
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    border-right: 1px solid #CCC;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+/* Default Green */
+.snapBox:hover {
+    background-color: rgba(13,131,55,.1);
+    cursor: pointer;
+}
+
+.snapBox:hover .snapMetric:before {
+    background-color: #FFF;
+}
+
+/* Let's fix some borders */
+/* clearfix is last child so this is set to second-to-last */
+.snapBox:nth-last-child(1), .snapBox:last-child {
+    border-right: 0px !important;
+}
+
+/* If smaller than 768px */
+@media only screen and (max-width: 768px), @media only screen and (min-width: 0px) {
+	.snapBox {
+        border-right: 0px !important;
+    }
+}
+
+/* If smaller than 992px */
+@media only screen and (max-width: 992px), @media only screen and (min-width: 769px) {
+	.snapBox:nth-child(3), .snapBox:nth-child(6), .snapBox:nth-child(9), .snapBox:nth-child(12), .snapBox:nth-child(15) {
+            border-right: 0px !important;
+    }
+}
+
+/* Larger Screens */
+@media only screen and (max-width: 100000px), @media only screen and (min-width: 993px) {
+	.snapBox:nth-child(6), .snapBox:nth-child(12), .snapBox:nth-child(18) {
+            border-right: 1px !important;
+    }
+}
+
+
+/* Default Color: Green */
+.snapMetric {
+    color: #0D8337;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.snapMetric:before {
+    padding: 11px 14px;
+    border: 1px solid #0D8337;
+    color: #0D8337;
+    font-weight: 100;
+    background: #f2f2f2;
+    border-radius: 40px;
+    margin-right: 15px;
+    font-size: 28px;
+    position: relative;
+    top: -7px;
+}
+
+.healthCentric:before {
+	font-family: "FontAwesome";
+    content:'\f0f1';
+}
+
+.heartCentric:before {
+	font-family: "FontAwesome";
+    content:'\f21e';
+	padding: 13px 11px 9px 11px;
+}
+
+.foodCentric:before {
+	font-family: "FontAwesome";
+    content:'\f1ae';
+	padding: 9px 14px 11px 15px;
+}
+
+.fitnessCentric:before {
+	font-family: "FontAwesome";
+    content:'\f041';
+	padding: 11px 18px;
+}
+
+.warningCentric:before {
+	font-family: "FontAwesome";
+    content:'\f071';
+	padding: 10px 12px 12px 12px;
+}
+
+.patientCentric:before {
+	font-family: "FontAwesome";
+    content:'\f007';
+}
+
+.codingCentric:before {
+	font-family: "FontAwesome";
+    content:'\f040';
+}
+
+.documentCentric:before {
+    font-family: "FontAwesome";
+    content:'\f15b';
+    font-size: 0.55em;
+}
+
+.scheduleCentric:before {
+	font-family: "FontAwesome";
+    content:'\f133';
+}
+
+.logCentric:before {
+	font-family: "FontAwesome";
+    content:'\f02d';
+}
+
+.completeCentric:before {
+	font-family: "FontAwesome";
+    content:'\f00c';
+	padding: 11px 12px;
+}
+
+.explanationCentric:before {
+	font-family: "FontAwesome";
+    content:'\f12a';
+	padding: 11px 21px;
+}
+
+.esculationCentric:before {
+	font-family: "FontAwesome";
+    content:'\f062';
+	padding: 11px 13px;
+}
+
+.requestCentric:before {
+	font-family: "FontAwesome";
+    content:'\f075';
+	padding: 10px 13px 12px 13px;
+}
+
+.careCentric:before {
+	font-family: "FontAwesome";
+    content:'\f0f1';
+	padding: 11px 14px;
+}
+
+.workedCentric:before {
+	font-family: "FontAwesome";
+    content:'\f0b1';
+	padding: 11px 12px 11px 12px;
+}
+
+/*** COLOR OPTIONS ***/
+
+/* FORCE RED */
+.forceRed .snapMetric, .forceRed .snapMetric:before {
+     color: #CC3300;
+}
+
+.forceRed .snapMetric:before {
+    border-color: #CC3300;
+}
+
+.forceRed:hover {
+    background-color: rgba(204,51,0,.1);
+}
+
+/* Light Purple */
+.snapBox:nth-child(2) .snapMetric, .snapBox:nth-child(2) .snapMetric:before, .snapBox:nth-child(9) .snapMetric, .snapBox:nth-child(9) .snapMetric:before {
+    color: #A459F2;
+}
+
+.snapBox:nth-child(2) .snapMetric:before, .snapBox:nth-child(9) .snapMetric:before {
+    border-color: #A459F2;
+}
+
+.snapBox:nth-child(2):hover, .snapBox:nth-child(9):hover {
+    background-color: rgba(164,89,242,.1);
+}
+
+/* ORANGE */
+.snapBox:nth-child(3) .snapMetric, .snapBox:nth-child(3) .snapMetric:before, .snapBox:nth-child(10) .snapMetric, .snapBox:nth-child(10) .snapMetric:before {
+    color: #FF6239;
+}
+
+.snapBox:nth-child(3) .snapMetric:before, .snapBox:nth-child(10) .snapMetric:before {
+    border-color: #FF6239;
+}
+
+.snapBox:nth-child(3):hover, .snapBox:nth-child(10):hover {
+    background-color: rgba(255,98,57,.1);
+}
+
+/* LIGHT BLUE */
+.snapBox:nth-child(4) .snapMetric, .snapBox:nth-child(4) .snapMetric:before, .snapBox:nth-child(11) .snapMetric, .snapBox:nth-child(11) .snapMetric:before {
+     color: #3D80DA;
+}
+
+.snapBox:nth-child(4) .snapMetric:before, .snapBox:nth-child(11) .snapMetric:before {
+    border-color: #3D80DA;
+}
+
+.snapBox:nth-child(4):hover, .snapBox:nth-child(11):hover {
+    background-color: rgba(61,128,218,.1);
+}
+
+/* LIGHT GREEN */
+.snapBox:nth-child(5) .snapMetric, .snapBox:nth-child(5) .snapMetric:before, .snapBox:nth-child(12) .snapMetric, .snapBox:nth-child(12) .snapMetric:before {
+     color: #00CC00;
+}
+
+.snapBox:nth-child(5) .snapMetric:before, .snapBox:nth-child(12) .snapMetric:before {
+    border-color: #00CC00;
+}
+
+.snapBox:nth-child(5):hover, .snapBox:nth-child(12):hover {
+    background-color: rgba(0,204,0,.1);
+}
+
+/* DARK PURPLE */
+.snapBox:nth-child(6) .snapMetric, .snapBox:nth-child(6) .snapMetric:before, .snapBox:nth-child(13) .snapMetric, .snapBox:nth-child(13) .snapMetric:before {
+     color: #6F1BB4;
+}
+
+.snapBox:nth-child(6) .snapMetric:before, .snapBox:nth-child(13) .snapMetric:before {
+    border-color: #6F1BB4;
+}
+
+.snapBox:nth-child(6):hover, .snapBox:nth-child(13):hover {
+    background-color: rgba(111,27,180,.1);
+}
+
+
+.headLine {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #CCC;
+	margin-top: 0px;
+    display: none;
+}
+
+/* Change margins on right and left thinner if smaller device */
+@media only screen and (max-width: 550px) {
+
+    .roleType, .treePane {
+        display: none;
+    }
+}
+
+/* Change margins on right and left thinner if smaller device */
+@media only screen and (max-width: 768px) {
+
+    .treePane {
+        display: none;
+    }
+    
+    .noPadRight {
+        padding-left: 0px;
+    }
+
+    .dashboardContentRight .dashContainer {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+/***********************************************************
+
+    CHARTS
+
+************************************************************/
+
+.workMetricsCont {
+    cursor: pointer;
+    /* Simple Fades */
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.workMetricsCont:hover {
+    transform: scale(1.05);
+    z-index: 9999;
+    -webkit-box-shadow: 1px 0px 12px 0px rgba(255, 255, 51, 0.65);
+    -moz-box-shadow:    1px 0px 12px 0px rgba(255, 255, 51, 0.65);
+    box-shadow:         1px 0px 12px 0px rgba(255, 255, 51, 0.65);
+}
+
+
+/***** SMALL CHARTS *****/
+#productTrending, #userActivities, #productivity, #productivityClinic, #stackedBarChart, #stackedBarChart2, #inventoryClinic, #inventoryClinic, #practiceClinic, #practiceClinic2, #userActivitiesClinic {
+    background: #FFF;
+    color: #333;
+    width: 100%;
+    height: 259px;
+}
+
+#userActivities, #userActivitiesClinic {
+    font-size   : 9px;
+    font-family: "OpenSans", "Lato-Light";
+}
+
+.amcharts-pie-slice {
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition-duration: 0.3s;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  cursor: pointer;
+  box-shadow: 0 0 30px 0 #000;
+}
+
+.amcharts-pie-slice:hover {
+  transform: scale(1.1);
+  filter: url(#shadow);
+}
+
+.amcharts-chart-div a {
+    display: none !important;
+}
+
+.amcharts-chart-div {
+    z-index: 2;
+}
+
+/***** LARGE CHARTS *****/
+#stackedBarChart, #chartdiv, #inventoryClinic2, #practiceClinic2 {
+    width: 100%;
+    height: 70vh;
+    max-height: 500px;
+}
+
+/***** SMALL CHARTS *****/
+#productTrending {
+    background: #FFF;
+    color: #333;
+    height: 200px;
+    width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+}
+
+/* Hide Zoom */
+#productTrending g:nth-last-child(2) {
+    display: none;
+}
+
+.amcharts-chart-div a {
+    display: none !important;
+}
+
+.amcharts-chart-div image {
+    display: inline !important;
+}
+
+.amChartSmall {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100px;
+    font-size: 0.04em;
+    letter-spacing: 0.06em;
+    font-family: "OpenSans-Light", "Lato-Light", Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+#weightChart {
+    background: #3D80DA;
+}
+
+#fitnessChart {
+    background: #0D8337;
+}
+
+#heartChart {
+    background: #A459F2;
+}
+
+#foodChart {
+    background: rgba(255,98,57,1);
+}
+
+.keyToGraph, .filterGraph {
+    display: none;
+    border: 1px solid #009900;
+    z-index: 2222;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: #FFF;
+    padding: 20px;
+    min-width: 300px;
+
+    -webkit-box-shadow: 1px 0px 8px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow:    1px 0px 8px 1px rgba(0,0,0,0.1);
+    box-shadow:         1px 0px 8px 1px rgba(0,0,0,0.1);
+}
+
+.filterGraph {
+    min-width: 400px;
+}
+
+.keyToGraph .closeBanner, .filterGraph .closeBanner {
+    top: -10px;
+    right: -5px;
+}
+
+.keyToGraph .closeBanner2, .filterGraph .closeBanner2 {
+    top: -15px;
+    right: -15px;
+}
+
+.keyToGraph ul, .filterGraph ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    line-height: 2.4;
+}
+
+.keyToGraph ul li i, .keyToGraph ul li i {
+    margin-right: 7px;
+    border-radius: 10px;
+    padding: 0px 9px;
+}
+
+.greenDisc {
+    background: #84B760;
+}
+
+.redDisc {
+    background: #CC4749;
+}
+
+.pinkDisc {
+    background: #D2ABC1;
+}
+
+.blueDisc {
+    background: #9DC7DA;
+}
+
+.yellowDisc {
+    background: #D7B400;
+}

@@ -1,0 +1,331 @@
+.main-header {height: 87px;}
+.dnn_layout {
+    width: 1200px;
+	margin:auto;
+}
+.content_mid.clearfix {
+    width: 100%;
+}
+#topNavigation ul li a {
+    color: #fff !important;
+}
+.dnnFormItem > .dnnLabel {
+    float: none;
+    text-align: left;
+}
+.dnnFormItem > label.dnnFormLabel {
+    display: none !important;
+    height: 0;
+    margin: 0;
+    text-align: left;
+    width: inherit;
+}
+.dnnLoginActions {
+    margin-top: 10px;
+	float:left;
+}
+.solutions_link, .additional-links {
+    display: none;
+}
+.LoginPanel {
+    
+    padding-bottom: 0 !important;
+    width: 100% !important;
+}
+.footer_mid.clearfix {
+    font-weight: normal;
+    width: 100%;
+}
+.body_bg h1 {font-weight: normal;}
+.body_bg h2 {
+    background: #3a5cac none repeat scroll 0 0;
+    color: #fff;
+    font-family: "Lato-Light";
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0 0px;
+    padding: 10px;
+    text-align: center;
+}
+.body_bg .login-trouble {
+    font-size: 0.85em;
+}
+.body_bg .login-trouble h2 {
+    background: transparent none repeat scroll 0 0;
+    color: #555;
+    font-family: inherit;
+    padding: 0 0 10px;
+    text-align: left;
+}
+.home .Full_Screen_PaneB {
+    display: block;
+}
+ul.dnnActions {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 10px;
+}
+.dnnLogin {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+	border:1px solid rgba(62, 93, 170, 0.2);
+}
+.dnnLogin UL LI {
+    list-style-type: none;
+}
+span.dnnSecondaryAction input {
+    display: none;
+}
+.dnnSecondaryAction, a.dnnSecondaryAction, ul.dnnAdminTabNav li a, .dnnLogin .LoginTabGroup span, .dnnSecondaryAction:hover, a.dnnSecondaryAction:hover, ul.dnnAdminTabNav li a:hover, .dnnLogin .LoginTabGroup span:hover {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: none;
+    font-size: 11px;
+}
+#header1 .dnn_layout {
+    border-bottom: 1px solid #001c70;
+}
+.dnnFormMessage.dnnFormWarning {
+    background: #ffffd9 none repeat scroll 0 0;
+    border: 1px solid #eaeaa4;
+    display: none;
+    padding: 2px 10px;
+}
+.dnnLoginService input[type="text"], .dnnLoginService input[type="password"] {
+    min-width: inherit;
+	height:33px;
+}
+#pas_homepage_content {
+    background-color:rgba(255, 255, 255, 0.7);
+    color: #555;
+    float: left;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+}
+#pas_homepage_content .row {
+    margin-left: -10px;
+}
+.Container-H1 {
+    z-index: 2;
+}
+.home .loginContent {
+    float: left;
+    width: 100%;
+}
+.col-sm-9 h1 {
+    display: none;
+}
+.col-sm-9 h1.accretive-title {
+    color: #3d64a8;
+    display: block;
+    font-family: Antic Slab;
+    font-size: 35px;
+    font-weight: bold !important;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.Container-H1 .contentpane {
+    padding: 0 !important;
+}
+.dnnPrimaryAction, #dnn_RowOne_Grid3_pane a.dnnPrimaryAction {
+    background-color: #84a53f !important;
+    border: 1px solid #759d1e !important;
+    font-family: Lato-Light;
+    font-size: 14px;
+    text-shadow: 0 1px 0 #000 !important;
+}
+.home .alert {
+    background: rgba(255, 0, 0, 0.15) url("images/bullet_alert.png") no-repeat scroll right 15px center;
+    border-color: rgba(255, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px #fff;
+    width: 91%;
+}
+#dnnPassword .dnnPrimaryAction {
+    background: #001c70 none repeat scroll 0 0 !important;
+}
+.dnnPrimaryAction:hover, #dnn_RowOne_Grid3_pane a.dnnPrimaryAction:hover {
+    background: #9dc44a none repeat scroll 0 0 !important;
+	text-decoration:none !important;
+}
+.dnnForm .dnnFormItem {
+    position: inherit;
+}
+.dnnForm.dnnLoginService.dnnClear {
+    padding: 0 10px;
+}
+.dnnActions {
+    padding-top: 0;
+}
+.home #dnn_content {
+    background-color: #fff;
+    background-image: url("../images/pasBanner.jpg");
+    background-position: right -111px;
+    background-repeat: repeat-x;
+    display: table;
+    height: 100%;
+    padding: 0;
+    top: 138px;
+    width: 100%;
+	background-size: 98% auto;
+}
+.rt-big-icon {
+    display: block;
+    font-size: 30px;
+    padding: 0;
+}
+.sprocket-mosaic-item p {
+    margin-left: 45px;
+}
+#pas_homepage_content .box3 {
+    width: auto;
+}
+#pas_homepage_content .sprocket-mosaic-item {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: none;
+}
+.box1, .box2, .box3 {
+    background-color: transparent;
+    float: left;
+    margin-right: 10px;
+}
+.box1, .sprocket-mosaic-item h4.head1 {
+    color: rgba(62, 93, 170, 0.8);
+}
+.box2, .sprocket-mosaic-item h4.head2 {
+    color: rgba(62, 93, 170, 0.8);
+}
+.box3, .sprocket-mosaic-item h4.head3 {
+    color: rgba(62, 93, 170, 0.8);
+}
+.body_bg h4 {
+    font-family: 'Lato-Light';
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 45px;
+}
+.dnnLabel {
+    width: inherit !important;
+}
+.home .col-sm-3, .home .col-sm-4 {
+    width: 100%;
+}
+.login .dnnLoginService input[type="text"], .dnnLoginService input[type="password"] {
+    height: 33px;
+	width:100%;
+}
+.login .loginContent .dnnFormItem a.dnnPrimaryAction {
+    text-align: center;
+	height:33px;
+	width:100%;
+}
+.dnnLoginRememberMe {
+    float: left;
+    margin-bottom: -20px;
+}
+.DnnModule-855, .DnnModule-788 {
+    margin-left: 20px;
+}
+@media (max-width: 1200px) {
+.body_bg .login-trouble {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+}
+@media (max-width: 780px) {
+body {
+    padding-left: 0;
+    padding-right: 0;
+}
+.row {
+    margin-right: inherit;
+}
+.home #dnn_content {
+    background-image: none;
+}
+.home .alert {
+    margin-left: 0;
+    margin-right: 15px;
+    width: auto;
+}
+#pas_homepage_content {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    padding: 0;
+    width: auto;
+}
+#pas_homepage_content {
+    margin-left: 0;
+    margin-top: 0;
+    min-height: inherit;
+    padding: 0;
+    position: inherit;
+}
+#dnn_RowOne_Grid3_Pane h1.accretive-title {
+    margin-left: 0;
+}
+#dnn_RowOne_Grid3_Pane h1.accretive-title sup {
+    display: none;
+}
+#pas_homepage_content .row {
+    margin-left: -15px;
+}
+#pas_homepage_content h1 {
+    left: 0;
+    line-height: 35px;
+    position: inherit;
+}
+.home .Full_Screen_PaneB {
+    min-height: auto;
+}
+.home #dnn_RowOne_Grid3_Pane {
+    clear: both;
+    margin-left: 0;
+    margin-top: 0px;
+    position: inherit;
+    top: 0;
+    width: auto;
+}
+.dnnLabel, .dnnLoginService input[type="text"], .dnnLoginService input[type="password"] {
+    max-width: 100%;
+    width: 100%;
+}
+.body_bg .loginContent .dnnFormItem a.dnnPrimaryAction {
+    margin-top: 20px;
+}
+.dnnLoginService {
+    position: relative;
+}
+.loginContent .dnnActions.dnnClear > li {
+    bottom: 0;
+    float: right;
+    position: inherit;
+    right: 0;
+}
+.dnnSecondaryAction {
+    width: 100%;
+}
+.dnnActions.dnnClear > li {
+    bottom: 20px;
+    position: absolute;
+}
+.DnnModule-855, .DnnModule-788 {
+    margin-left: 0;
+}
+.body_bg .loginContent .dnnFormItem a.dnnPrimaryAction {
+    margin-bottom: 20px;
+}
+.row [class*="Pane"] {
+    padding: 0 0 0px;
+}
+}
+.stat-box, .owl-wrapper, #dnn_ctr873_ContentPane {
+    display: none !important;
+}

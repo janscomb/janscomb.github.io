@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<eventlist title="Upcoming Events">
+
+  <event category="green" url="#" date="04-21-2015">
+    <event-title>April Event 4/21</event-title>
+    <detail>  
+     Registration is now available for the Ohio Chapter 4th Annual Case Management Conference, which will be held on 4/21 in Columbus, OH. </detail>
+  </event>
+  <event category="blue" url="#" date="05-07-2015">
+    <event-title>April Event 5/7</event-title>
+    <detail>  
+     Registration is now available for the Ohio Chapter 4th Annual Case Management Conference, which will be held on 5/7 in Columbus, OH. </detail>
+  </event>
+  <event category="yellow" url="#" date="05-24-2015">
+    <event-title>May Event 5/24</event-title>
+    <detail>Registration is now available for the Ohio Chapter 5/24/15 4th Annual Case Management Conference, which will be held on 5/24 in Columbus, OH. </detail>
+  </event>
+  <event category="red" url="#" date="06-19-2015">
+    <event-title>June Event 6/19</event-title>
+    <detail>Registration is now available for the Ohio Chapter 4th Annual Case Management Conference, which will be held on 6/19 in Columbus, OH.</detail>
+  </event>
+    <event category="green" url="#" date="07-01-2015">
+    <event-title>April Event 4/21</event-title>
+    <detail>  
+     Registration is now available for the Ohio Chapter 4th Annual Case Management Conference, which will be held on 4/21 in Columbus, OH. </detail>
+  </event>
+  <event category="blue" url="#" date="07-07-2015">
+    <event-title>April Event 7/7</event-title>
+    <detail>  
+     Registration is now available for the Ohio Chapter 4th Annual Case Management Conference, which will be held on 7/7 in Columbus, OH. </detail>
+  </event>
+  <event category="yellow" url="#" date="08-02-2015">
+    <event-title>May Event 5/24</event-title>
+    <detail>Registration is now available for the Ohio Chapter 5/24/15 4th Annual Case Management Conference, which will be held on 8/2 in Columbus, OH. </detail>
+  </event>
+  <event category="red" url="#" date="09-19-2015">
+    <event-title>June Event 6/19</event-title>
+    <detail>Registration is now available for the Ohio Chapter 4th Annual Case Management Conference, which will be held on 9/19 in Columbus, OH.</detail>
+  </event>
+</eventlist>

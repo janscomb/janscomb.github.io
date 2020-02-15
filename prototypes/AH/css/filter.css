@@ -1,0 +1,236 @@
+.filterBar, .universalAdvanced {
+    background: #E4E4E4;
+    border: 1px solid #CCC;
+    padding: 15px 20px 10px 20px;
+    margin: 0px 20px 20px 20px;
+    position: relative;
+    display: none;
+    font-size: 11px;
+    color: #949494;
+}
+
+/* Change margins on right and left thinner if smaller device */
+@media only screen and (max-width: 1000px) {
+
+    .filterBar, .universalAdvanced {
+        margin: 0px 0px 15px 0px;
+    }
+
+    /*.filterbtn a {
+        font-size: 0.9em;
+        letter-spacing: 0.05em;
+        padding: 4px 8px 5px;
+    } */
+
+    .filterBar .grep {
+        display: none;
+    }
+
+    .filterRange {
+        margin-top: 15px;
+    }
+
+    .filterItems {
+        padding-right: 10px;
+    }
+}
+
+.universalAdvanced {
+  position: relative;
+  top: 1px;
+  background: #516a94;
+  color: #FFF;
+  border: 0px;
+  margin: 10px 10px 5px 10px;
+  padding: 7px 10px 5px 17px;
+}
+
+.universalAdvanced .filterbtn a {
+  position: absolute;
+  bottom: 13px;
+  right: 15px;
+  border-radius: 6px;
+  background: #001C70;
+  color: #FFF;
+  font-size: 13px;
+}
+
+.universalAdvanced .filterbtn a:hover {
+  background: #FFF;
+  color: #001C70;
+}
+
+.menuFilterClose {
+    display: none;
+    border-left: 0px solid #999;
+    border-right: 0px solid;
+    margin-top: -5px;
+    margin-left: -1px;
+    margin-right: 4px;
+    padding: 5px 12px 8px 9px !important;
+    /* I hate using "!important" */
+    position: relative;
+    cursor: pointer;
+}
+
+.menuFilterClose span {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+
+    /* Netscape */
+    -moz-opacity: 0.5;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+
+    /* Good browsers */
+    opacity: 0.5;
+}
+
+.menuFilterClose span.closeFilter {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    color: #0099CC;
+    font-size: 11px;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=100);
+
+    /* Netscape */
+    -moz-opacity: 1;
+
+    /* Safari 1.x */
+    -khtml-opacity: 1;
+
+    /* Good browsers */
+    opacity: 1;
+}
+
+.universalAdvanced a.closeFilterBox, .universalAdvanced a.closeFilterBox:visited {
+    color: rgba(255, 255, 255, 0.4);
+    top: 6px;
+    right: 9px;
+}
+
+.universalAdvanced a.closeFilterBox:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.filterItems {
+    float: left;
+    margin: 0px;
+}
+
+.filterBar .grep, .universalAdvanced .grep {
+    border-left: 1px solid #CCC;
+    margin: 0px 25px 5px 15px;
+    padding: 32px 0px 32px 0px;
+    float: left;
+}
+
+.filterBar .secondFilterRow .grep {
+    border-left: 1px solid #CCC;
+    margin: 0px 25px 5px;
+    padding: 32px 0px 15px 0px;
+    float: left;
+}
+
+.filterBar, .universalAdvanced, .filterBar label, .filterBar .secondFilterRow label {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.universalAdvanced {
+    display: none;
+}
+
+.filterBar .addRow a span,
+.universalAdvanced .addRow a span {
+    font-size: 22px;
+    color: #009900 !important;
+    float: left;
+    padding: 26px 20px 0px 20px;
+    cursor: pointer;
+
+    /* Simple Fades */
+  	-webkit-transition: all 0.2s ease-in-out;
+  	-moz-transition: all 0.2s ease-in-out;
+  	-o-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
+}
+
+.filterBar .addRow a span:before,
+.universalAdvanced .addRow a span:before {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow:    0px 0px 13px 0px rgba(255, 255, 255, 0.5);
+    box-shadow:         0px 0px 13px 0px rgba(255, 255, 255, 0.5);
+    padding: 0px 2px 1px 2px;
+}
+
+.filterBar .secondFilterRow .addRow a span {
+    padding: 10px 10px 0px 20px;
+}
+
+.secondFilterRow .addRow a:last-child span {
+  padding-left: 0px;
+}
+
+.filterBar .addRow a span:hover, .filterBar .addRow a span:active,
+.universalAdvanced .addRow a span:hover, .universalAdvanced .addRow a span:active {
+    color: #33CC00 !important;
+    float: left;
+    cursor: pointer;
+}
+
+.filterBar .addRow a.removeIcon span {
+  color: #999 !important;
+}
+
+.filterBar .addRow a.removeIcon:hover span {
+  color: #666 !important;
+}
+
+.filterItems input, .filterItems select {
+    margin: 6px 0px 0px 0px;
+    border: 1px solid #BCBCBC;
+    padding: 6px 11px 8px 11px;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 6px;
+
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 6px;
+
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 6px;
+
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.8), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.8), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 1px 0px 0px rgba(255, 255, 255, 0.8), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 1px 0px 0px rgba(255, 255, 255, 0.8), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* IE 10+ Fix for Search Icon Border */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .filterItems input, .filterItems select {
+        padding-top: 8px;
+    }
+}
+
+.filterResults {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    display: none;
+}

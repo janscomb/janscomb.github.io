@@ -1,0 +1,8 @@
+body {
+  background-color: #FF0000\0/;
+}
+
+/* Hide Elements that just do not work on IE8 */
+.patientCard2 > .patientDeets {
+  
+}

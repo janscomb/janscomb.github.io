@@ -1,0 +1,426 @@
+/***********************************************************
+
+    PATIENT CARD & ASSOCIATED ACCORDION FUNCTION STYLES
+
+************************************************************/
+
+.patientCard, .patientCard2 {
+	padding: 12px 12px 15px 20px;
+    margin: 0px 0px 20px 0px;
+	background: #FFF;
+	border: 1px solid #ccc;
+	border-bottom: 4px solid #b9c3d4;
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    0px 1px 3px 0px rgba(50, 50, 50, 0.25);
+	box-shadow:         0px 1px 3px 0px rgba(50, 50, 50, 0.25);
+	z-index: 1001;
+	font-family: "OpenSans", Open Sans, "SourceSansPro-Light", "Lato-Regular", Lato, Helvetica, Verdana, Tahoma, Arial, sans-serif;
+}
+
+/**** New Patient Card ****/
+
+.patientCard2 > div {
+    float: left;
+}
+
+/* .patientCard2 > .patientDeets {
+    margin-top: 2px;
+} */
+
+.patientCard2 > .quikLaunch {
+    float: right;
+}
+
+/* @media (max-width: 850px) {
+    .patientCard2 > .quikLaunch {
+        float: left;
+        padding: 0 0 18px 0;
+    }
+} */
+
+.quikLaunch ul {
+    margin-left: 0;
+    padding-left: 16px;
+}
+
+.quikLaunch li {
+    margin: 4px 12px 0 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+.quikLaunch li:last-child {
+    margin-right: 0;
+}
+
+.quikLaunch li a.smallIcon {
+	padding: 7px 14px;
+}
+
+.quikLaunch li a {
+	background: #F4F8FB;
+    padding: 7px 12px;
+    border-radius: 4px;
+    border: 1px solid #A8BAD9;
+    font-size: 18px;
+    color: #A8BAD9;
+    cursor: pointer;
+    min-width: 50px;
+
+    webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.0), 0 1px 0 0 rgba(255, 255, 255, 0.95);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.0), 0 1px 0 0 rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.0), 0 1px 0 0 rgba(255, 255, 255, 0.95);
+
+    /* Simple Fades */
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.quikLaunch li a:hover {
+    color: #3d64a8;
+    border: 1px solid #3d64a8;
+
+     webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 -1px 0 0 rgba(255, 255, 255, 0.95);
+    -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 -1px 0 0 rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 -1px 0 0 rgba(255, 255, 255, 0.95);
+}
+
+
+.patientName {
+	font-family: Lato, "Lato-Regular", Open Sans, "OpenSans", "SourceSansPro-Light", Helvetica, Verdana, Tahoma, Arial, sans-serif;
+	font-size: 20px;
+	color: #001c70;
+}
+
+.patientDeets label {
+    margin: 1px 4px 0;
+    padding: 4px 10px;
+    border: 1px solid #C9C9C9;
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 4px;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 4px;
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 4px;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    font-family: "OpenSans", "Lato-Light", Tahoma, Verdana, sans-serif;
+    color: #666;
+    background: #F7F8F9;
+    font-weight: 100;
+}
+
+.patientDeets {
+    text-align: right;
+    margin: 2px 0px 0px 10px;
+}
+
+/* Fix for width between small and extra small */
+@media only screen and (max-width: 700px) {
+		.patientDeets {
+			display: none;
+    }
+}
+
+.contactButtons {
+	text-align: right;
+}
+
+a.PatientBtn, a.PatientBtn:visited, a.btn, a.btn:visited {
+	background: #516a94;
+	padding: 5px 12px 6px 12px;
+	color: #FFF;
+	margin: 0px 4px 0px 0px;
+	font-weight: none;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857;
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 4px;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 4px;
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 4px;
+    -moz-user-select: none;
+
+	/* Simple Fades */
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+a.PatientBtn:hover, a.btn:hover {
+	background: #7393c8;
+    color: #FFF;
+}
+
+a.PatientBtn span {
+	color: #FFF;
+}
+
+/* ACCORDION */
+
+/* Icon font for arrow icons */
+@font-face {
+	font-family: 'accordion';
+	src:url('../fonts/accordion.eot?m0zexg');
+	src:url('../fonts/accordion.eot?#iefixm0zexg') format('embedded-opentype'),
+		url('../fonts/accordion.woff?m0zexg') format('woff'),
+		url('../fonts/accordion.ttf?m0zexg') format('truetype'),
+		url('../fonts/accordion.svg?m0zexg#accordion') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="ac-"], [class*=" ac-"] {
+	font-family: 'accordion';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ac-chevr-left:before {
+	content: "\f053";
+}
+
+.ac-chevr-right:before {
+	content: "\f054";
+}
+
+.ac-chevr-up:before {
+	content: "\f077";
+}
+
+.ac-chevr-down:before {
+	content: "\f078";
+}
+
+.ac-caret-down:before {
+	content: "\f0d7";
+}
+
+.ac-caret-up:before {
+	content: "\f0d8";
+}
+
+.ac-caret-right:before {
+	content: "\f0da";
+}
+
+.ac-angle-right:before {
+	content: "\f105";
+}
+
+.ac-angle-up:before {
+	content: "\f106";
+}
+
+.ac-angle-down:before {
+	content: "\f107";
+}
+
+.ac-circle-up:before {
+	content: "\ea41";
+}
+
+.ac-circle-right:before {
+	content: "\ea42";
+}
+
+.ac-circle-down:before {
+	content: "\ea43";
+}
+
+.ac-circle-left:before {
+	content: "\ea44";
+}
+
+
+/* Accordion styles */
+.main {
+	margin-left: 7px;
+}
+
+.cbp-ntaccordion {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-ntsubaccordion {
+	list-style: none;
+}
+
+.cbp-ntaccordion .cbp-nttrigger {
+	cursor: pointer;
+}
+
+.cbp-ntaccordion h3 {
+	margin: 0 0 1em 0;
+	padding: 0 0 0.5em;
+	border-bottom: 1px solid #ddd;
+	font-size: 1em;
+	font-weight: 300;
+	color: #000;
+	background: none;
+}
+
+.cbp-ntaccordion h4 {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	padding: 0.5em 0 0.5em;
+	margin: 0 0 0.5em;
+}
+
+.cbp-ntaccordion h5 {
+	font-size: 0.8em;
+	color: #aaa;
+	padding: 0.5em 0 0.5em;
+	margin: 0 0 0.5em;
+}
+
+/* Open Accordion Content */
+.cbp-ntaccordion .cbp-ntcontent p {
+	color: #666;
+	font-size: .0.4em;
+	font-weight: 300;
+	line-height: 1.5;
+	padding: 0px 10px 10px 10px;
+	margin: 0;
+}
+
+/* Arrow icons */
+.cbp-ntaccordion > li > .cbp-nttrigger:before,
+.cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	font-family: 'accordion';
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: #ddd;
+	margin-right: 0.5em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cbp-ntaccordion > li > .cbp-nttrigger:before {
+	font-size: 75%;
+}
+
+/* Point Right */
+.cbp-ntaccordion > li > .cbp-nttrigger:before {
+	content: "\ea42";
+}
+
+/* Point Down */
+.cbp-ntaccordion > li > .cbp-nttrigger:hover:before {
+	content: "\ea43";
+	color: inherit;
+}
+
+/* Point Up */
+.cbp-ntaccordion > li.cbp-ntopen > .cbp-nttrigger:before,
+.no-js .cbp-ntaccordion > li > .cbp-nttrigger:before {
+	content: "\ea41";
+	color: inherit;
+}
+
+.cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	content: "\ea42";
+}
+.cbp-ntsubaccordion > li > .cbp-nttrigger:hover:before {
+	content: "\ea43";
+	color: inherit;
+}
+.cbp-ntsubaccordion > li.cbp-ntopen > .cbp-nttrigger:before,
+.no-js .cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	content: "\ea41";
+	color: inherit;
+}
+
+/* Initial height is zero */
+.cbp-ntaccordion .cbp-ntcontent, .cbp-ntaccordion-long {
+	height: 0;
+	overflow: hidden;
+}
+
+/* When open, set height to auto */
+.cbp-ntaccordion .cbp-ntopen > .cbp-ntcontent,
+.cbp-ntsubaccordion .cbp-ntopen > .cbp-ntcontent,
+.no-js .cbp-ntaccordion .cbp-ntcontent {
+	height: auto;
+}
+
+/* Example for media query */
+@media screen and (max-width: 32em) {
+
+	.cbp-ntaccordion {
+		font-size: 70%;
+	}
+
+}
+
+/* Make the accordion pieces 50% */
+ul.cbp-ntaccordion li, ul.cbp-ntsubaccordion li {
+	float: left;
+	width: auto;
+	min-width: 50%;
+}
+
+ul.cbp-ntaccordion li:first-child, ul.cbp-ntsubaccordion li:first-child {
+    padding-right: 40px;
+}
+
+/* Fix for width between small and extra small */
+@media only screen and (max-width: 635px) {
+		ul.cbp-ntaccordion li, ul.cbp-ntsubaccordion li, ul.cbp-ntaccordion li:first-child, ul.cbp-ntsubaccordion li:first-child {
+				min-width: 100%;
+                padding-right: 0px;
+    }
+}
+
+.labels {
+	float: left;
+	width: auto;
+	padding: 5px 10px 5px 15px;
+	margin-bottom: 10px;
+	text-align: right;
+	font-weight: bold;
+	border-right: 1px solid #f2f2f2;
+	font-size: 0.85em;
+}
+
+.accContent {
+	float: left;
+	width: auto;
+	padding: 5px 10px 5px 10px;
+	font-size: 0.85em;
+}
+
+.accordionHeadline {
+	padding: 0px 18px 15px 18px;
+	font-size: 0.8em;
+}
+
+/* Bootstrap no padding fix */
+	.noPad {
+		padding: 0px;
+	}
