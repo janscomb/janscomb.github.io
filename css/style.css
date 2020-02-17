@@ -901,7 +901,23 @@ hr.briefHR {
 
   /* Target App */
 
-  .targetMobile, .PPCMobile {
+  .targetMobile {
+	position: absolute;
+	top: -43px;
+	right: 120px;
+	z-index: 202;
+	text-align: right;
+  }
+
+  .targetMobile2 {
+	position: absolute;
+	top: -30px;
+	right: 70px;
+	z-index: 201;
+	text-align: right;
+  }
+
+   .PPCMobile {
 	position: absolute;
 	top: -43px;
 	right: 130px;
@@ -909,7 +925,7 @@ hr.briefHR {
 	text-align: right;
   }
 
-  .targetMobile2, .PPCMobile2 {
+  .PPCMobile2 {
 	position: absolute;
 	top: -30px;
 	right: 75px;
@@ -927,7 +943,7 @@ hr.briefHR {
 
   /* Mutare */
   .mutareMobile img {
-	width: 89%;
+	width: 88%;
   }
 
   .mutareMobile2 img {
@@ -937,7 +953,7 @@ hr.briefHR {
   .mutareMobile {
 	position: absolute;
 	top: -43px;
-	right: 50px;
+	right: 40px;
 	z-index: 202;
 	text-align: right;
   }
