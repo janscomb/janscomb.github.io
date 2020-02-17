@@ -893,17 +893,17 @@ hr.briefHR {
 
   /* Mutare */
   .mutareMobile img {
-	width: 100%;
+	width: 90%;
   }
 
   .mutareMobile2 img {
-	width: 79%;
+	width: 69%;
   }
 
   .mutareMobile {
 	position: absolute;
 	top: -43px;
-	right: 60px;
+	right: 55px;
 	z-index: 202;
 	text-align: right;
   }
@@ -911,7 +911,7 @@ hr.briefHR {
   .mutareMobile2 {
 	position: absolute;
 	top: -30px;
-	right: 5px;
+	right: 0px;
 	z-index: 201;
 	text-align: right;
   }
