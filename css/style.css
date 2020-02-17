@@ -888,18 +888,22 @@ hr.briefHR {
   }
 
   .targetMobile2 img {
-	width: 55%;
+	width: 59%;
   }
 
-/* Mutare */
+  /* Mutare */
   .mutareMobile img {
-	width: 106%;
+	width: 100%;
+  }
+
+  .mutareMobile2 img {
+	width: 79%;
   }
 
   .mutareMobile {
 	position: absolute;
 	top: -43px;
-	right: 70px;
+	right: 60px;
 	z-index: 202;
 	text-align: right;
   }
@@ -907,13 +911,9 @@ hr.briefHR {
   .mutareMobile2 {
 	position: absolute;
 	top: -30px;
-	right: 15px;
+	right: 5px;
 	z-index: 201;
 	text-align: right;
-  }
-
-  .mutareMobile2 img {
-	width: 85%;
   }
 
   /* PPC */
