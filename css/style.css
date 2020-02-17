@@ -459,6 +459,15 @@ Krisztian Tabori
 	background-position: center 61%;
 }
 
+.fluorImage {
+	background-image: url("../images/Fluor_BG.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 28%;
+}
+
 
 /* Target Kiosk */
 
@@ -528,7 +537,7 @@ Krisztian Tabori
 
 /* Home Depot */
 
-.homeDepot1 {
+.homeDepot1, .fluor1 {
 	position: absolute;
 	top: -35px;
 	left: 60px;
@@ -536,7 +545,7 @@ Krisztian Tabori
 	text-align: left;
 }
 
-.homeDepot2 {
+.homeDepot2, .fluor2 {
 	position: absolute;
 	top: -13px;
 	left: 5px;
@@ -551,6 +560,31 @@ Krisztian Tabori
 .homeDepot2 img {
 	max-width: 50%;
 	min-width: 350px;
+}
+
+.fluor1 {
+	position: absolute;
+	top: -40px;
+	left: 100px;
+	z-index: 202;
+	text-align: left;
+}
+
+.fluor2 {
+	position: absolute;
+	top: -13px;
+	left: 35px;
+	z-index: 201;
+	text-align: left;
+}
+
+.fluor1 img {
+	width: 45%;
+}
+
+.fluor2 img {
+	max-width: 79%;
+	min-width: 400px;
 }
 
 .logosOfLabor {
@@ -893,7 +927,7 @@ hr.briefHR {
 
   /* Mutare */
   .mutareMobile img {
-	width: 90%;
+	width: 89%;
   }
 
   .mutareMobile2 img {
@@ -903,7 +937,7 @@ hr.briefHR {
   .mutareMobile {
 	position: absolute;
 	top: -43px;
-	right: 55px;
+	right: 60px;
 	z-index: 202;
 	text-align: right;
   }
@@ -911,7 +945,7 @@ hr.briefHR {
   .mutareMobile2 {
 	position: absolute;
 	top: -30px;
-	right: 0px;
+	right: 5px;
 	z-index: 201;
 	text-align: right;
   }
@@ -941,21 +975,21 @@ hr.briefHR {
 
   /* Home Depot */
 
-  .homeDepot1 {
+  .homeDepot1, .fluor1 {
 	top: -20px;
 	left: 50px;
   }
 
-  .homeDepot2 {
+  .homeDepot2, .fluor2 {
 	top: 55px;
 	left: 12px;
   }
 
-  .homeDepot1 img {
+  .homeDepot1 img, .fluor1 img {
 	width: 45%;
   }
 
-  .homeDepot2 img {
+  .homeDepot2 img, .fluor2 img {
 	max-width: 50%;
 	min-width: 350px;
   }
