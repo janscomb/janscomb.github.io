@@ -895,6 +895,22 @@ hr.briefHR {
 	width: 110%;
   }
 
+  .mutareMobile {
+	position: absolute;
+	top: -43px;
+	right: 100px;
+	z-index: 202;
+	text-align: right;
+  }
+
+  .mutareMobile2 {
+	position: absolute;
+	top: -30px;
+	right: 45px;
+	z-index: 201;
+	text-align: right;
+  }
+
   .mutareMobile2 img {
 	width: 85%;
   }
