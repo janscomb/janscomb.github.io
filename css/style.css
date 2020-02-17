@@ -904,7 +904,7 @@ hr.briefHR {
   .targetMobile {
 	position: absolute;
 	top: -43px;
-	right: 105px;
+	right: 100px;
 	z-index: 202;
 	text-align: right;
   }
@@ -912,13 +912,13 @@ hr.briefHR {
   .targetMobile2 {
 	position: absolute;
 	top: -30px;
-	right: 60px;
+	right: 55px;
 	z-index: 201;
 	text-align: right;
   }
 
   .targetMobile img {
-	width: 83%;
+	width: 82%;
   }
 
   .targetMobile2 img {
@@ -953,7 +953,7 @@ hr.briefHR {
   .mutareMobile {
 	position: absolute;
 	top: -43px;
-	right: 55px;
+	right: 63px;
 	z-index: 202;
 	text-align: right;
   }
