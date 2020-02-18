@@ -918,7 +918,7 @@ hr.briefHR {
   }
 
   .targetMobile img {
-	width: 82%;
+	width: 75%;
   }
 
   .targetMobile2 img {
@@ -953,7 +953,7 @@ hr.briefHR {
   .mutareMobile {
 	position: absolute;
 	top: -43px;
-	right: 63px;
+	right: 70px;
 	z-index: 202;
 	text-align: right;
   }
