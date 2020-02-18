@@ -450,6 +450,15 @@ Krisztian Tabori
 	background-position: center 61%;
 }
 
+.PPCConnectedCareImage {
+	background-image: url("https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2016/08/Gonda-entrance-16x9.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 61%;
+}
+
 .watchImage {
 	background-image: url("../images/WatchBG.png");
 	-webkit-background-size: cover;
@@ -533,6 +542,18 @@ Krisztian Tabori
 	width: 35%;
 }
 
+.PPCMacBook {
+	position: absolute;
+	top: -15px;
+	right: 45px;
+	z-index: 201;
+	text-align: right;
+}
+
+.PPCMacBook img {
+	max-width: 48%;
+	min-width: 350px;
+}
 
 
 /* Home Depot */
@@ -1007,6 +1028,16 @@ hr.briefHR {
 
   .homeDepot2 img, .fluor2 img {
 	max-width: 50%;
+	min-width: 350px;
+  }
+
+  .PPCMacBook {
+	top: 72px;
+	right: 65px;
+  }
+
+  .PPCMacBook img {
+	max-width: 48%;
 	min-width: 350px;
   }
 
