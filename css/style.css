@@ -1033,12 +1033,12 @@ hr.briefHR {
 
   .PPCMacBook {
 	top: 72px;
-	right: 65px;
+	right: 10px;
   }
 
   .PPCMacBook img {
-	max-width: 48%;
-	min-width: 350px;
+	max-width: 45%;
+	min-width: 320px;
   }
 
 
