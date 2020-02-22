@@ -477,6 +477,15 @@ Krisztian Tabori
 	background-position: center 28%;
 }
 
+.AHPEImage {
+	background-image: url("../images/patientcareBG.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 88%;
+}
+
 
 /* Target Kiosk */
 
