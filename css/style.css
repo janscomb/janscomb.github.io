@@ -1120,6 +1120,13 @@ hr.briefHR {
 		-webkit-appearance: none;
 	}
 
+	a.btnPrimary-fix, a.btnPrimary-fix:visited {
+		display: block;
+		margin-top: 40px;
+		text-align: center;
+		-webkit-appearance: none;
+	}
+
 	input[type=submit], .customSubmit {
 		width: 90%;
 		-webkit-appearance: none;
