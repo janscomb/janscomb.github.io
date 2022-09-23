@@ -44,7 +44,7 @@ a i {
 	font-weight: 100;
 }
 
-a.btnPrimary, a.btnPrimary:visited, input[type=submit] {
+a.btnPrimary, a.btnPrimary:visited, a.btnPrimary-fix, a.btnPrimary-fix:visited, input[type=submit] {
 	background: #007fac;
 	color: #FFF;
 	padding: 4px 18px 7px 18px;
