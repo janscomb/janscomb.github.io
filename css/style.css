@@ -916,6 +916,10 @@ hr.briefHR {
 	width: 100% !important;
   }
 
+  .projectSpacer {
+  	margin-top: 40px;
+  }
+
   /* Target Kiosk */
   .targetKiosk {
 	position: absolute;
