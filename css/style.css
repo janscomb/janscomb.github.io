@@ -787,6 +787,10 @@ hr.briefHR {
   .flex-4 { order: 4; }
   .flex-5 { order: 5; }
   .flex-6 { order: 6; }
+  .flex-7 { order: 7; }
+  .flex-8 { order: 8; }
+  .flex-9 { order: 9; }
+  .flex-10 { order: 10; }
 
 
 /* FLEXBOX */
@@ -916,7 +920,7 @@ hr.briefHR {
 	width: 100% !important;
   }
 
-  .projectSpacer {
+  .resourcesSpacer {
   	margin-top: 40px;
   }
 
