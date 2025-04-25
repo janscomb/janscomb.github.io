@@ -319,12 +319,12 @@ Krisztian Tabori
 }
 
 .contactImage {
-	background-image: url("../images/ThisIsJeff_Big.jpg");
+	background-image: url("https://images.unsplash.com/photo-1545322028-a5133ed46a60?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: center 25%;
+	background-position: center 45%;
 }
 
 /* PROJECT IMAGES */
@@ -486,6 +486,15 @@ Krisztian Tabori
 	background-position: center 88%;
 }
 
+.homedepotImage {
+	background-image: url("https://images.unsplash.com/photo-1631856956334-35db20cb7748?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 61%;
+}
+
 
 /* Target Kiosk */
 
@@ -564,6 +573,15 @@ Krisztian Tabori
 	min-width: 350px;
 }
 
+/* Contact */
+
+.contactPixar {
+	position: absolute;
+	top: -80px;
+	right: 60px;
+	z-index: 202;
+	text-align: right;
+}
 
 /* Home Depot */
 
@@ -963,18 +981,22 @@ hr.briefHR {
 	width: 59%;
   }
 
-   .PPCMobile {
+  .PPCMobile {
 	position: absolute;
 	top: -43px;
-	right: 130px;quotes: 1
+	right: 180px;
 	z-index: 202;
 	text-align: right;
+  }
+
+  .PPCMobile img {
+  	max-width: 240px;
   }
 
   .PPCMobile2 {
 	position: absolute;
 	top: -30px;
-	right: 75px;
+	right: 125px;
 	z-index: 201;
 	text-align: right;
   }
@@ -1026,6 +1048,18 @@ hr.briefHR {
   .appleWatch img {
 	width: 55%;
   }
+
+
+	/* Contact */
+	.contactPixar {
+		top: -22px;
+		right: 10px;
+	}
+
+	.contactPixar img {
+		min-width: 220px;
+	}
+
 
   /* Home Depot */
 
