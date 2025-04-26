@@ -319,12 +319,18 @@ Krisztian Tabori
 }
 
 .contactImage {
-	background-image: url("https://images.unsplash.com/photo-1545322028-a5133ed46a60?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-image: url("https://images.unsplash.com/photo-1643671924814-1625c8d59fcb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center 45%;
+	-moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 /* PROJECT IMAGES */
@@ -578,9 +584,9 @@ Krisztian Tabori
 .contactPixar {
 	position: absolute;
 	top: -80px;
-	right: 60px;
+	left: 60px;
 	z-index: 202;
-	text-align: right;
+	text-align: left;
 }
 
 /* Home Depot */
