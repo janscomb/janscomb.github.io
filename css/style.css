@@ -882,7 +882,20 @@ hr.briefHR {
 }
 
 
+/*************** Mobile Conditions ********************/
 
+@media screen and (max-width: 1001px) {
+
+	/* Contact */
+	.contactPixar {
+		top: -30px;
+	}
+
+	.contactPixar img {
+		min-width: 220px;
+	}
+
+}
 
 
 
@@ -1058,8 +1071,7 @@ hr.briefHR {
 
 	/* Contact */
 	.contactPixar {
-		top: -22px;
-		right: 10px;
+		top: -30px;
 	}
 
 	.contactPixar img {
