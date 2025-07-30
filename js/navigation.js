@@ -17,6 +17,10 @@ $(document).ready(function () {
 	          "z-index": "101",
 	          margin: "0px 0px 0px 0px"
 	      });
+	      $('.whatsIsMyName').css({
+			  margin: "28px 15px 0px 0px",
+			  "font-size": "20px"
+      	  });
 	      $('.logoSVG').css({
 	      	  width: "40px"
       	  });
@@ -30,6 +34,10 @@ $(document).ready(function () {
 	          position: "relative",
 	          height: "100px"
 	      });
+	      $('.whatsIsMyName').css({
+			  margin: "34px 20px 0px 0px",
+			  "font-size": "26px"
+      	  });
 	      $('.logoSVG').css({
 	      	  width: "60px"
       	  });
