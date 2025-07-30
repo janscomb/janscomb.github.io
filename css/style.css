@@ -378,11 +378,11 @@ Krisztian Tabori
 
 .portFlex2 { 
 	flex: 1 1 2;
-  	flex-basis: 33%;
+  	flex-basis: 32%;
 }
 
 .portFlex2 img {
-	max-width: 350px;
+	max-width: 340px;
 	border: 0px;
 }
 
