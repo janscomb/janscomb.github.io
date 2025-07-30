@@ -376,7 +376,17 @@ Krisztian Tabori
 	max-width: 750px;
 }
 
-.portFlex .portLabel {
+.portFlex2 { 
+	flex: 1 1 2;
+  	flex-basis: 33%;
+}
+
+.portFlex2 img {
+	max-width: 350px;
+	border: 0px;
+}
+
+.portFlex .portLabel, .portFlex2 .portLabel {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 11px;
@@ -398,6 +408,11 @@ Krisztian Tabori
 .theProcess .portFlex a img:hover {
 	border-color: #007fac;
 }
+
+.portFlex2 a img:hover {
+	border: 0px;
+}
+
 
 .portLabel b {
 	border-left: 1px solid #ccc;
