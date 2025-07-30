@@ -841,7 +841,7 @@ hr.briefHR {
 
 .columnContainer > * {
   flex: 1 100%;
-  padding: 0px 25px;
+  padding: 0px 55px 20px 10px;
 }
 
 @media all and (max-width: 599px) {
