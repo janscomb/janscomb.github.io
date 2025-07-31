@@ -466,6 +466,15 @@ Krisztian Tabori
 	background-position: center 45%;
 }
 
+.loweshomeImage {
+	background-image: url("https://mobileimages.lowes.com/marketingimages/13ae357c-cbad-4479-a032-f0744d0185df/OG-HOMEPAGE.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 0%;
+}
+
 
 /* TARGET */
 
