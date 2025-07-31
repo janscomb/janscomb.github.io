@@ -467,12 +467,12 @@ Krisztian Tabori
 }
 
 .loweshomeImage {
-	background-image: url("https://mobileimages.lowes.com/marketingimages/13ae357c-cbad-4479-a032-f0744d0185df/OG-HOMEPAGE.jpg");
+	background-image: url("https://mobileimages.lowes.com/marketingimages/d37b41ad-aa2f-41af-a38c-fa1d5df6368d/appliance-installation-services-og.png");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: center 0%;
+	background-position: center 40%;
 }
 
 
@@ -963,6 +963,12 @@ hr.briefHR {
 
 @media screen and (max-width: 701px) {
 
+  video {
+  	width: 90%;
+  	height: 90%;
+  	border: 0px;
+  }
+
   .contentContainer {
 	padding: 0px 35px;
   }
@@ -1014,6 +1020,15 @@ hr.briefHR {
 
   .portFlex img { 
 	width: 100% !important;
+  }
+
+  .portFlex2 { 
+	flex: 1 0 0;
+  	flex-basis: 100%;
+  }
+
+  .portFlex2 img { 
+	width: 75% !important;
   }
 
   .resourcesSpacer {
