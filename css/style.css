@@ -444,6 +444,16 @@ Krisztian Tabori
 	background-position: center 45%;
 }
 
+.lowesgardenImage {
+	background-image: url("https://i.ytimg.com/vi/8P4yFz7_qIs/maxresdefault.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 45%;
+}
+
+
 /* TARGET */
 
 .targetImage {
