@@ -1,6 +1,6 @@
 /* Hide shit */
 
-.hamCollapse, .hamburgerMenu, .mobileNav {
+.hamCollapse, .hamburgerMenu, .hamburgerMenu2, .mobileNav {
 	display: none;
 }
 
@@ -976,6 +976,12 @@ hr.briefHR {
   .hamburgerMenu{ 
   	display: inline;
   	margin: 25px 0px 50px 25px;
+  	float: left;
+  }
+
+  .hamburgerMenu2{ 
+  	display: inline;
+  	margin: 30px 0px 50px 25px;
   	float: left;
   }
 
