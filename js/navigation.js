@@ -24,6 +24,9 @@ $(document).ready(function () {
 	      $('.logoSVG').css({
 	      	  width: "40px"
       	  });
+      	  $('.hamburgerMenu2').css({
+	      	 top: "0px"
+      	  });
 	    }
 
 	    //At Top
@@ -40,6 +43,9 @@ $(document).ready(function () {
       	  });
 	      $('.logoSVG').css({
 	      	  width: "60px"
+      	  });
+      	  $('.hamburgerMenu2').css({
+	      	 top: "10px"
       	  });
 
 	    }
