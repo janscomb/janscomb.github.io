@@ -457,6 +457,15 @@ Krisztian Tabori
 	background-position: center 45%;
 }
 
+.lowesplantaImage {
+	background-image: url("https://images.yourstory.com/cs/2/f49f80307d7911eaa66f3b309d9a28f5/AppFridayPlanta-1659011582249.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center 45%;
+}
+
 
 /* TARGET */
 
