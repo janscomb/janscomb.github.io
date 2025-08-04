@@ -329,12 +329,14 @@ Krisztian Tabori
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center 45%;
+	/*
 	-moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+  */
 }
 
 /* PROJECT IMAGES */
@@ -645,6 +647,15 @@ Krisztian Tabori
 	left: 60px;
 	z-index: 202;
 	text-align: left;
+}
+
+.contactGPK {
+	position: absolute;
+	top: -20px;
+	left: 60px;
+	z-index: 202;
+	width: 25%;
+	box-shadow: 1px;
 }
 
 /* Home Depot */
