@@ -644,9 +644,9 @@ Krisztian Tabori
 .contactPixar {
 	position: absolute;
 	top: -80px;
-	left: 60px;
+	right: 60px;
 	z-index: 202;
-	text-align: left;
+	text-align: right;
 }
 
 .contactGPK {
